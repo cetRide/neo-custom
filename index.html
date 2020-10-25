@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Neon - app</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+    <link href="/style.css" rel="stylesheet">
+
+
+    <!--    google fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Syne+Tactile&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&family=Syne+Tactile&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Syne+Mono&family=Syne+Tactile&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Pacifico&family=Syne+Mono&family=Syne+Tactile&display=swap"
+          rel="stylesheet">
+    <script type="text/javascript" src="/main.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="row mt-5">
+        <div class="col-md-7 display-container">
+            <div class="row">
+                <button class="btn-sm" onclick="toggleTextShadow('off')">OFF</button>
+                <button class="btn-sm" onclick="toggleTextShadow('on')">ON</button>
+            </div>
+            <p style="font-size: 50px; margin-top: 100px" class="text-white" id="displayText"></p>
+        </div>
+        <div class="col-md-5 card">
+            <div class="row text-white justify-content-between">
+                <div class="col-sm py-2 border text-center tabLink" id="defaultOpen" onclick="openTab(event, 'Text')">
+                    TEXT
+                </div>
+                <div class="col-sm py-2 border text-center tabLink" onclick="openTab(event, 'Font')">
+                    FONT
+                </div>
+                <div class="col-sm py-2 border text-center tabLink" onclick="openTab(event, 'Color')">
+                    COLOR
+                </div>
+            </div>
+            <div>
+                <div id="Text" class="tabContent">
+                    <h6 class="text-center">INPUT TEXT</h6>
+                    <textarea style="width: 100%" rows='4' name='text-input' class='textInput' id='textInput'
+                              onkeyUp="displayText(event)">Your Text</textarea>
+
+                    <div class="row px-3 mb-1 alignText">
+                        <div class="col-sm border" onclick="alignText('Left')">
+                            <h2 class="text-center"><i class="fas fa-align-left"></i></h2>
+                        </div>
+                        <div class="col-sm border" onclick="alignText('Center')">
+                            <h2 class="text-center"><i class="fas fa-align-center"></i></h2>
+                        </div>
+                        <div class="col-sm border" onclick="alignText('Right')">
+                            <h2 class="text-center"><i class="fas fa-align-right"></i></h2>
+                        </div>
+                    </div>
+                </div>
+                <div id="Font" class="tabContent">
+                    <h6 class="text-center my-3">CHOOSE FONT</h6>
+                    <div class="row justify-content-between">
+                        <div class="col-sm btn" onclick="changeFontFamily('Syne Tactile')">Syne Tactile</div>
+                        <div class="col-sm btn" onclick="changeFontFamily('Syne Mono')">Syne Mono</div>
+                        <div class="col-sm btn" onclick="changeFontFamily('Dancing Script')">Dancing Script</div>
+                    </div>
+                    <button class="btn" onclick="changeFontFamily('Pacifico')">Pacifico</button>
+                </div>
+
+                <div id="Color" class="tabContent text-center" style="cursor: pointer">
+                    <h6 class="text-center my-3">CHOOSE COLOR</h6>
+                    <div class="row justify-content-between">
+                        <div class="col-sm" onclick="setColor('Warm White')">
+                            <p style="color: #efebd8"><i class="fab fa-bity"></i>
+                            </p>
+                            <p style="font-size: 10px">Warm White</p></div>
+                        <div class="col-sm" onclick="setColor('White')">
+                            <p style="color: #ffffff"><i class="fab fa-bity"></i></p>
+                            <p style="font-size: 10px">White</p>
+                        </div>
+                        <div class="col-sm" onclick="setColor('Lemon Yellow')">
+                            <p style="color: #fff44f"><i class="fab fa-bity"></i>
+                            </p>
+                            <p style="font-size: 10px">Lemon Yellow</p>
+                        </div>
+                        <div class="col-sm" onclick="setColor('Golden Yellow')">
+                            <p style="color: #FFDF00"><i class="fab fa-bity"></i>
+                            <p style="font-size: 10px">Golden Yellow</p>
+                        </div>
+                        <div class="col-sm" onclick="setColor('Orange')">
+                            <p style="color: #FFA500"><i class="fab fa-bity"></i>
+                            <p style="font-size: 10px">Orange</p>
+                        </div>
+                    </div>
+                    <div class="row justify-content-between">
+                        <div class="col-sm" onclick="setColor('Light Red')"><p
+                                style="color: #ffcccb"><i class="fab fa-bity"></i>
+                            <p style="font-size: 10px">Light Red</p>
+                        </div>
+                        <div class="col-sm" onclick="setColor('Red')">
+                            <p style="color: #FF0000"><i class="fab fa-bity"></i>
+                            <p style="font-size: 10px">Red</p>
+                        </div>
+                        <div class="col-sm" onclick="setColor('Candy Floss')">
+                            <p style="color: #f4b8d8"><i class="fab fa-bity"></i>
+                            <p style="font-size: 10px">Candy Floss</p>
+                        </div>
+                        <div class="col-sm" onclick="setColor('Deep Pink')">
+                            <p style="color: #FF1493"><i class="fab fa-bity"></i>
+                            <p style="font-size: 10px">Deep Pink</p>
+                        </div>
+                        <div class="col-sm" onclick="setColor('Purple')">
+                            <p style="color: #800080"><i class="fab fa-bity"></i>
+                            <p style="font-size: 10px">Purple</p>
+                        </div>
+                    </div>
+                    <div class="row justify-content-between">
+                        <div class="col-sm" onclick="setColor('Deep Blue')">
+                            <p style="color: #00BFFF"><i class="fab fa-bity"></i>
+                            <p style="font-size: 10px">Deep Blue</p>
+                        </div>
+                        <div class="col-sm" onclick="setColor('Electric Blue')">
+                            <p style="color: #7DF9FF"><i class="fab fa-bity"></i>
+                            <p style="font-size: 10px">Electric Blue</p>
+                        </div>
+                        <div class="col-sm" onclick="setColor('Ice Blue')">
+                            <p style="color: #A5F2F3"><i class="fab fa-bity"></i>
+                            <p style="font-size: 10px">Ice Blue</p>
+                        </div>
+                        <div class="col-sm" onclick="setColor('Tropical Blue')">
+                            <p style="color: #CBE8F7"><i class="fab fa-bity"></i></p>
+                            <p style="font-size: 10px">Tropical Blue</p>
+                        </div>
+                        <div class="col-sm" onclick="setColor('Mint')">
+                            <p style="color: #98ff98"><i class="fab fa-bity"></i></p>
+                            <p style="font-size: 10px">Mint</p>
+                        </div>
+                    </div>
+                    <div class="row justify-content-between">
+                        <div class="col-sm" onclick="setColor('Deep Green')">
+                            <p style="color: #056608"><i class="fab fa-bity"></i></p>
+                            <p style="font-size: 10px">Deep Green</p>
+                        </div>
+                        <div class="col-sm" onclick="setColor('Green')">
+                            <p style="color: #008000"><i class="fab fa-bity"></i></p>
+                            <p style="font-size: 10px">Green</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="color: #333333; font: 12px Arial,sans-serif" class="px-3">
+                <div class="row justify-content-between">
+                    <div class="col-sm  size" id="smallBox" onclick="selectSize('small')">
+                        <div class="row justify-content-between size-box p-2">
+                            <p class="font-weight-bold">SMALL</p>
+                            <p>Length: <span id="smallLength"></span>cm</p>
+                        </div>
+                        <div class="row justify-content-between p-2">
+                            <p class="font-weight-bold"><i class="fas fa-pound-sign"></i><span>34</span></p>
+                            <p>height: <span id="smallLengthL"></span> - <span id="smallLengthR"></span>cm</p>
+                        </div>
+                    </div>
+                    <div class="col-sm ml-3  size" id="medium" onclick="selectSize('medium')">
+                        <div class="row justify-content-between size-box p-2">
+                            <p class="font-weight-bold">MEDIUM</p>
+                            <p>Length: <span id="mediumLength"></span>cm</p>
+                        </div>
+                        <div class="row justify-content-between p-2">
+                            <p class="font-weight-bold"><i class="fas fa-pound-sign"></i><span>34</span></p>
+                            <p>height: <span id="mediumLengthL"></span> - <span id="mediumLengthR"></span>cm</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-between mt-2">
+                    <div class="col-sm  size" id="large" onclick="selectSize('large')">
+                        <div class="row justify-content-between size-box p-2">
+                            <p class="font-weight-bold">LARGE</p>
+                            <p>Length: <span id="largeLength"></span>cm</p>
+                        </div>
+                        <div class="row justify-content-between p-2">
+                            <p class="font-weight-bold"><i class="fas fa-pound-sign"></i><span>34</span></p>
+                            <p>height: <span id="largeLengthL"></span> - <span id="largeLengthR"></span>cm</p>
+                        </div>
+                    </div>
+                    <div class="col-sm ml-3  size" id="xl" onclick="selectSize('xl')">
+                        <div class="row justify-content-between size-box p-2">
+                            <p class="font-weight-bold">EXTRALARGE</p>
+                            <p>Length: <span id="extraLength"></span></p>
+                        </div>
+                        <div class="row justify-content-between p-2">
+                            <p class="font-weight-bold"><i class="fas fa-pound-sign"></i><span>34</span></p>
+                            <p>height: <span id="extraLengthL"></span> - <span id="extraLengthR"></span>cm</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-between mt-2">
+                    <div class="col-sm  size"  id="xxl" onclick="selectSize('xxl')">
+                        <div class="row justify-content-between size-box p-2">
+                            <p class="font-weight-bold">XXLARGE</p>
+                            <p>Length: <span id="xxLength"></span>cm</p>
+                        </div>
+                        <div class="row justify-content-between p-2">
+                            <p class="font-weight-bold"><i class="fas fa-pound-sign"></i><span>34</span></p>
+                            <p>height: <span id="xxLengthL"></span> - <span id="xxLengthR"></span>cm</p>
+                        </div>
+                    </div>
+                    <div class="col-sm ml-3  size" id="sSized" onclick="selectSize('superSized')">
+                        <div class="row justify-content-between size-box p-2">
+                            <p class="font-weight-bold">SUPERSIZED</p>
+                            <p>Length: <span id="superSized"></span></p>
+                        </div>
+                        <div class="row justify-content-between p-2">
+                            <p class="font-weight-bold"><i class="fas fa-pound-sign"></i><span>34</span></p>
+                            <p>height: <span id="superSizedL"></span> - <span id="superSizedR"></span>cm</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <p class="mt-1" style="color: #333333; font: 12px Arial,sans-serif">
+                    Sizes vary depending on choice of font style, and whether the sign includes text in upper &
+                    lower case. We will always confirm the exact size with you before manufacturing.
+                </p>
+            </div>
+            <div>
+                <div>
+                    <!-- Default checked -->
+                    <div>
+                        <input onclick="selectType('indoor')" type="checkbox" id="indoor" name="indoor" checked>
+                        <label style="color: #2b2b2b; font: 14.6667px Arial,sans-serif" for="indoor">Indoor</label>
+                    </div>
+                    <!-- Default unchecked -->
+                    <div>
+                        <input onclick="selectType('waterResistant')" type="checkbox" id="waterResistant"
+                               name="waterResistant">
+                        <label style="color: #2b2b2b; font: 14.6667px Arial,sans-serif" for="waterResistant">Water
+                            resistant + <i
+                                    class="fas fa-pound-sign"></i><span id="waterResistantPrice"></span></label>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <p style="color: #333333; font: 12px Arial,sans-serif">
+                    Please note: The sign will be treated with a clear seal that will splash-proof it. If the sign will
+                    be exposed to wet weather, please order the 'Clear Acrylic Box' backboard option below.
+                </p>
+            </div>
+            <div>
+                <label style="color: #000000; font: 14.9333px Arial,sans-serif">Electric Pug: </label>
+                <select class="electric-pug" id="selectedElectricPug" onchange="selectElectricPug()">
+                    <option value="United Kingdom">United Kingdom</option>
+                    <option value="European">European</option>
+                    <option value="USA/Canada">USA/Canada</option>
+                    <option value="Australia/NZ">Australia/NZ</option>
+                    <option value="Japan">Japan</option>
+                    <option value="Other">Other: Ask at checkout</option>
+                </select>
+            </div>
+            <div>
+                <h6 class="text-center mt-1">CHOOSE YOUR BACK BOARD</h6>
+                <div class="row ml-auto mr-auto" style="width: 250px">
+                    <div>
+                        <p><img id="blackboard" src="/images/plign.jpg" width="200" height="200"/></p>
+                        <p class="text-center" id="blackboardPrice"></p>
+                    </div>
+                    <div>
+                        <select style="margin-top: 98px; width: 20px" id="selectedBackBoard"
+                                onchange="selectBlackBord()" name="selectedBackBoard">
+                            <option value="0">
+                                <div class="justify-content-end">
+                                    <p>Cut Around Acrylic</p>
+                                    <p class="text-right">FREE</p>
+                                </div>
+                            </option>
+                            <option value="1">
+                                <div class="justify-content-end">
+                                    <p>Rectangle Acrylic</p>
+                                    <p class="text-right">FREE</p>
+                                </div>
+                            </option>
+                            <option value="2">
+                                <div class="justify-content-end">
+                                    <p>Cut To Letter Acrylic</p>
+                                    <p class="text-right">+82</p>
+                                </div>
+                            </option>
+                            <option value="3">
+                                <div class="justify-content-end">
+                                    <p>Stand Acrylic</p>
+                                    +124
+                                </div>
+                            </option>
+                            <option value="4">
+                                <div class="justify-content-end">
+                                    <p>Clear Acrylic Box: For hanging
+                                    </p>
+                                    <p>+284</p>
+                                </div>
+                            </option>
+                            <option value="5">
+                                <div class="justify-content-end">
+                                    <p>Clear Acrylic Box: For wall Mounting</p>
+                                    <p> +284</p>
+                                </div>
+                            </option>
+                            <option value="6">
+                                <div class="justify-content-end">
+                                    <p>Clear Acrylic Box: Free-Standing</p>
+                                    <p>+284</p>
+                                </div>
+                            </option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="mb-4">
+                <p class="text-center">Total with selected options:<span style="font-size: 22pt; margin-left: 3px;">
+                    <i class="fas fa-pound-sign"></i>
+                    <span id="totalPrice"></span></span></p>
+                <button style="background-color: #35398e" onclick="addToCart()" class="btn text-white btn-block">ADD TO CART</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--&lt;!&ndash; JQuery &ndash;&gt;-->
+<!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>-->
+<!--&lt;!&ndash; Bootstrap tooltips &ndash;&gt;-->
+<!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>-->
+<!--&lt;!&ndash; Bootstrap core JavaScript &ndash;&gt;-->
+<!--<script type="text/javascript"-->
+<!--        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>-->
+<!--&lt;!&ndash; MDB core JavaScript &ndash;&gt;-->
+<!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>-->
+</body>
+</html>
