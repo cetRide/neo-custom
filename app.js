@@ -12,4 +12,4 @@ router.get('/add-to-cart',function(req,res){
 });
 app.use('/', router);
 app.use('/add-to-cart', router);
-app.listen(process.env.port || 3000);
+app.listen(process.env.PORT || 5000);
