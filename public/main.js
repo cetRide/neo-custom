@@ -86,6 +86,7 @@ window.onload = function () {
     tabContent = document.getElementsByClassName("tabContent");
     selectSize('small');
     localStorage.setItem('selectBackBoard', '0');
+    localStorage.setItem('text', 'Your text');
     localStorage.setItem('selectType', 'indoor');
     document.getElementById('blackboardPrice').innerHTML = 'Free';
     document.getElementById('totalPrice').innerHTML = totalPrice;
@@ -146,8 +147,6 @@ function openTab(evt, actionName) {
     evt.currentTarget.className += " active";
 }
 
-// document.getElementById("defaultOpen").click();
-
 function changeFontFamily(font) {
     let displayText = document.getElementById('displayText');
     displayText.style.fontFamily = font, 'cursive';
@@ -155,59 +154,75 @@ function changeFontFamily(font) {
 }
 
 function setColor(color) {
-    let color_string;
+    let textColor, color_string;
 
     switch (color) {
         case 'Lemon Yellow':
+            textColor = "#fff44f";
             color_string = "0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff44f, 0 0 30px #fff44f, 0 0 40px #fff44f, 0 0 55px #fff44f, 0 0 75px #fff44f";
             break;
         case 'Mint':
+            textColor = "#98ff98";
             color_string = "0 0 5px #fff, 0 0 10px #fff, 0 0 20px #98ff98, 0 0 30px #98ff98, 0 0 40px #98ff98, 0 0 55px #98ff98, 0 0 75px #98ff98";
             break;
         case 'Golden Yellow':
+            textColor = "#FFDF00";
             color_string = "0 0 5px #fff, 0 0 10px #fff, 0 0 20px #FFDF00, 0 0 30px #FFDF00, 0 0 40px #FFDF00, 0 0 55px #FFDF00, 0 0 75px #FFDF00";
             break;
         case 'Orange':
+            textColor = "#FFA500";
             color_string = "0 0 5px #fff, 0 0 10px #fff, 0 0 20px #FFA500, 0 0 30px #FFA500, 0 0 40px #FFA500, 0 0 55px #FFA500, 0 0 75px #FFA500";
             break;
         case 'Red':
+            textColor = "#FF0000";
             color_string = "0 0 5px #fff, 0 0 10px #fff, 0 0 20px #FF0000, 0 0 30px #FF0000, 0 0 40px #FF0000, 0 0 55px #FF0000, 0 0 75px #FF0000";
             break;
-
         case 'Deep Blue':
+            textColor = "#00BFFF";
             color_string = "0 0 5px #fff, 0 0 10px #fff, 0 0 20px #00BFFF, 0 0 30px #00BFFF, 0 0 40px #00BFFF, 0 0 55px #00BFFF, 0 0 75px #00BFFF";
             break;
         case 'Deep Green':
+            textColor = "#056608";
             color_string = "0 0 5px #fff, 0 0 10px #fff, 0 0 20px #056608, 0 0 30px #056608, 0 0 40px #056608, 0 0 55px #056608, 0 0 75px #056608";
             break;
         case 'Candy Floss':
+            textColor = "#f4b8d8";
             color_string = "0 0 5px #fff, 0 0 10px #fff, 0 0 20px #f4b8d8, 0 0 30px #f4b8d8, 0 0 40px #f4b8d8, 0 0 55px #f4b8d8, 0 0 75px #f4b8d8";
             break;
         case 'Tropical Blue':
+            textColor = "#CBE8F7";
             color_string = "0 0 5px #fff, 0 0 10px #fff, 0 0 20px #CBE8F7, 0 0 30px #CBE8F7, 0 0 40px #CBE8F7, 0 0 55px #CBE8F7, 0 0 75px #CBE8F7";
             break;
         case 'Deep Pink':
+            textColor = "#FF1493";
             color_string = "0 0 5px #fff, 0 0 10px #fff, 0 0 20px #FF1493, 0 0 30px #FF1493, 0 0 40px #FF1493, 0 0 55px #FF1493, 0 0 75px #FF1493";
             break;
         case 'Warm White':
+            textColor = "#efebd8";
             color_string = "0 0 5px #fff, 0 0 10px #fff, 0 0 20px #efebd8, 0 0 30px #efebd8, 0 0 40px #efebd8, 0 0 55px #efebd8, 0 0 75px #efebd8";
             break;
         case 'White':
+            textColor = "#ffffff";
             color_string = "0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ffffff, 0 0 30px #ffffff, 0 0 40px #ffffff, 0 0 55px #ffffff, 0 0 75px #ffffff";
             break;
         case 'Light Red':
+            textColor = "#ffcccb";
             color_string = "0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ffcccb, 0 0 30px #ffcccb, 0 0 40px #ffcccb, 0 0 55px #ffcccb, 0 0 75px #ffcccb";
             break;
         case 'Purple':
+            textColor = "#800080";
             color_string = "0 0 5px #fff, 0 0 10px #fff, 0 0 20px #800080, 0 0 30px #800080, 0 0 40px #800080, 0 0 55px #800080, 0 0 75px #800080";
             break;
         case 'Electric Blue':
+            textColor = "#7DF9FF";
             color_string = "0 0 5px #fff, 0 0 10px #fff, 0 0 20px #7DF9FF, 0 0 30px #7DF9FF, 0 0 40px #7DF9FF, 0 0 55px #7DF9FF, 0 0 75px #7DF9FF";
             break;
         case 'Ice Blue':
+            textColor = "#A5F2F3";
             color_string = "0 0 5px #fff, 0 0 10px #fff, 0 0 20px #A5F2F3, 0 0 30px #A5F2F3, 0 0 40px #A5F2F3, 0 0 55px #A5F2F3, 0 0 75px #A5F2F3";
             break;
         case 'Green':
+            textColor = "#008000";
             color_string = "0 0 5px #fff, 0 0 10px #fff, 0 0 20px #008000, 0 0 30px #008000, 0 0 40px #008000, 0 0 55px #008000, 0 0 75px #008000";
             break;
         default:
@@ -218,6 +233,7 @@ function setColor(color) {
     document.getElementById('displayText').style.color = 'white';
     localStorage.setItem('glow-color-code', color_string);
     localStorage.setItem('glow-color', color);
+    localStorage.setItem('color-code', textColor);
 }
 
 function alignText(direction) {

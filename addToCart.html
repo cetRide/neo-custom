@@ -3,21 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="/style.css">
     <script type="text/javascript" src="/cart.js"></script>
 </head>
 <body>
-<div>
-    <h1>CUSTOM DESIGNED NEON</h1>
-    <P>Custom Details</P>
-    <P>Sign Text:</P>
-    <P> Size: <span id="size"></span></P>
-    <P> Height: <span id="heightOne"></span> - <span id="heightTwo"></span></P>
-    <P> Length: <span id="length"></span></P>
-    <p>(Approximate sizes. We will confirm the size with you before manufacturing.)</p>
-    <p>Special Offer: This sign comes with a free Remote and Dimmer.</p>
-    <p>Usage: <span id="usage"></span></p>
-    <p>Board: <span id="board"></span></p>
-    <p>Electrical Pug: <span id="pug"></span></p>
+<div class="container">
+    <div class="col-md-8 mt-5">
+        <h5 class="font-weight-bold">CUSTOM DESIGNED NEON</h5>
+        <table class="table">
+            <thead>
+            <tr>
+                <th colspan="3">Item</th>
+                <th colspan="2">Price</th>
+                <th colspan="2">Qty</th>
+                <th colspan="2">SubTotal</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td colspan="3">
+                    <div>
+                        <div>
+                            <P>Custom Details</P>
+                            <P>Sign Text:</P>
+                            <P> Size: <span id="size"></span></P>
+                            <P> Height: <span id="heightOne"></span> - <span id="heightTwo"></span></P>
+                            <P> Length: <span id="length"></span></P>
+                            <p>(Approximate sizes. We will confirm the size with you before manufacturing.)</p>
+                            <p>Special Offer: This sign comes with a free Remote and Dimmer.</p>
+                            <p>Usage: <span id="usage"></span></p>
+                            <p>Board: <span id="board"></span></p>
+                            <p>Electrical Pug: <span id="pug"></span></p>
+                        </div>
+                        <div class="border p-3">
+                            <p id="myText"></p>
+                        </div>
+                    </div>
+                </td>
+                <td colspan="3">
+                    <div>
+                        <p><i class="fas fa-pound-sign"> </i><span id="price"></span></p>
+                    </div>
+                </td>
+                <td colspan="2">1</td>
+                <td colspan="2">
+                    <div>
+                        <p><i class="fas fa-pound-sign"> </i><span id="totalPrice"></span></p>
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
 </div>
 </body>
 </html>

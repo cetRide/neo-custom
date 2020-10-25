@@ -4,30 +4,14 @@
     <meta charset="UTF-8">
     <title>Neon - app</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-    <!-- Google Fonts -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
-    <!-- Bootstrap core CSS -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Material Design Bootstrap -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+
     <link href="/style.css" rel="stylesheet">
-
-
-    <!--    google fonts-->
-    <link href="https://fonts.googleapis.com/css2?family=Syne+Tactile&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&family=Syne+Tactile&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Syne+Mono&family=Syne+Tactile&display=swap"
-          rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Pacifico&family=Syne+Mono&family=Syne+Tactile&display=swap"
-          rel="stylesheet">
     <script type="text/javascript" src="/main.js"></script>
 </head>
 <body>
 <div class="container">
     <div class="row mt-5">
-        <div class="col-md-8 display-container customText" style="background-image: url(/images/b1.jpeg)">
+        <div class="col-md-7 display-container customText" style="background-image: url(/images/b1.jpeg)">
             <div class="row">
                 <button class="btn-sm" onclick="toggleTextShadow('off')">OFF</button>
                 <button class="btn-sm" onclick="toggleTextShadow('on')">ON</button>
@@ -77,11 +61,107 @@
                 <div id="Font" class="tabContent">
                     <h6 class="text-center my-3">CHOOSE FONT</h6>
                     <div class="row justify-content-between">
-                        <div class="col-sm btn" onclick="changeFontFamily('Syne Tactile')">Syne Tactile</div>
-                        <div class="col-sm btn" onclick="changeFontFamily('Syne Mono')">Syne Mono</div>
-                        <div class="col-sm btn" onclick="changeFontFamily('Dancing Script')">Dancing Script</div>
+                        <div class="col-sm myFont" onclick="changeFontFamily('Alex Brush')"
+                             style="font-family: Alex Brush">Alexa
+                        </div>
+                        <div class="col-sm myFont" onclick="changeFontFamily('Dancing Script')"
+                             style="font-family: Dancing Script;">Dancer
+                        </div>
+                        <div class="col-sm myFont" onclick="changeFontFamily('Gruenewald')" style="font-family: Gruenewald">
+                            Gruenewald
+                        </div>
                     </div>
-                    <button class="btn" onclick="changeFontFamily('Pacifico')">Pacifico</button>
+                    <div class="row justify-content-between">
+                        <div class="col-sm myFont" onclick="changeFontFamily('Andasia Regular')"
+                             style="font-family: Andasia Regular">Bayshore
+                        </div>
+                        <div class="col-sm myFont" style="font-family: Real Kindly Demo"
+                             onclick="changeFontFamily('Real Kindly Demo')">WildSpirit
+                        </div>
+
+                        <div class="col-sm myFont" onclick="changeFontFamily('Satisfy Regular')"
+                             style="font-family: Satisfy Regular">Satisfy
+                        </div>
+                    </div>
+                    <div class="row justify-content-between">
+                        <div class="col-sm myFont" onclick="changeFontFamily('Kiona')" style="font-family: Kiona">Kiona</div>
+                        <div class="col-sm myFont" onclick="changeFontFamily('Paper Daisy')" style="font-family: Paper Daisy">
+                            Paper Daisy
+                        </div>
+                        <div class="col-sm myFont" onclick="changeFontFamily('RM Typerighter medium')"
+                             style="font-family: RM Typerighter medium">Typewriter
+                        </div>
+                    </div>
+                    <div class="row justify-content-between">
+                        <div class="col-sm myFont" onclick="changeFontFamily('Lovelo')" style="font-family: Lovelo">Lovelo
+                        </div>
+                        <div class="col-sm myFont" onclick="changeFontFamily('Marquee Moon')"
+                             style="font-family: Marquee Moon">Marquee
+                        </div>
+                        <div class="col-sm myFont" onclick="changeFontFamily('Neon Glow')" style="font-family: Neon Glow">Neon
+                            Glow
+                        </div>
+                    </div>
+                    <div class="row justify-content-between">
+                        <div class="col-sm myFont" onclick="changeFontFamily('Pi in the SciFi')"
+                             style="font-family: Pi in the SciFi">SCIFI
+                        </div>
+                        <div class="col-sm myFont" onclick="changeFontFamily('Londrina Outliner')"
+                             style="font-family: Londrina Outline">OUTLINE
+                        </div>
+                        <div class="col-sm myFont" onclick="changeFontFamily('Roboto')" style="font-family: Roboto">Roboto
+                        </div>
+                    </div>
+                    <div class="row justify-content-between">
+                        <div class="col-sm myFont" onclick="changeFontFamily('Dolce Vita')"
+                             style="font-family: Dolce Vita">Dolce Vita
+                        </div>
+                        <div class="col-sm myFont" style="font-family: Decker" onclick="changeFontFamily('Decker')">
+                            AvantGarde
+                        </div>
+                        <div class="col-sm myFont" style="font-family: Bauhaus Regular"
+                             onclick="changeFontFamily('Bauhaus Regular')">Bauhaus
+                        </div>
+                    </div>
+                    <div class="row justify-content-between">
+                        <div class="col-sm myFont" onclick="changeFontFamily('Nixie One')" style="font-family: Nixie One">Nixie
+                            One
+                        </div>
+                        <div class="col-sm myFont" style="font-family: Red Velvet" onclick="changeFontFamily('Red Velvet')">Red
+                            Velvet
+                        </div>
+                        <div class="col-sm myFont" style="font-family: Quinzey" onclick="changeFontFamily('Quinzey')">Quinzey
+                        </div>
+                    </div>
+                    <div class="row justify-content-between">
+                        <div class="col-sm myFont" style="font-family: Sophistica" onclick="changeFontFamily('Sophistica')">
+                            NorthWell
+                        </div>
+                        <div class="col-sm myFont" style="font-family: Hamillton" onclick="changeFontFamily('Hamillton')">
+                            Hamillton
+                        </div>
+                        <div class="col-sm myFont" style="font-family: Lettia" onclick="changeFontFamily('Lettia')">Hesterica
+                        </div>
+                    </div>
+                    <div class="row justify-content-between">
+                        <div class="col-sm myFont" style="font-family: Signature" onclick="changeFontFamily('Signature')">
+                            Signature
+                        </div>
+                        <div class="col-sm myFont" style="font-family: kevinandamandadotcom"
+                             onclick="changeFontFamily('kevinandamandadotcom')">Amanda
+                        </div>
+                        <div class="col-sm myFont" style="font-family: Andrea" onclick="changeFontFamily('Andrea')">
+                            Sebastrian
+                        </div>
+                    </div>
+                    <div class="row justify-content-between">
+                        <div class="col-sm myFont" style="font-family: vintage_MartavanEck"
+                             onclick="changeFontFamily('vintage_MartavanEck')">Vintage
+                        </div>
+                        <div class="col-sm myFont" style="font-family: Yesie" onclick="changeFontFamily('Yesie')">Barceloy
+                        </div>
+                        <div class="col-sm myFont" onclick="changeFontFamily('Syne Mono')">Syne Mono</div>
+                    </div>
                 </div>
                 <div id="Color" class="tabContent text-center" style="cursor: pointer">
                     <h6 class="text-center my-3">CHOOSE COLOR</h6>
@@ -173,7 +253,7 @@
                             <p>height: <span id="smallLengthL"></span> - <span id="smallLengthR"></span>cm</p>
                         </div>
                     </div>
-                    <div class="col-sm ml-3  size" id="medium" onclick="selectSize('Medium')">
+                    <div class="col-sm div2 size" id="medium" onclick="selectSize('Medium')">
                         <div class="row justify-content-between size-box p-2">
                             <p class="font-weight-bold">MEDIUM</p>
                             <p>Length: <span id="mediumLength"></span>cm</p>
@@ -197,7 +277,7 @@
                             <p>height: <span id="largeLengthL"></span> - <span id="largeLengthR"></span>cm</p>
                         </div>
                     </div>
-                    <div class="col-sm ml-3  size" id="xl" onclick="selectSize('Extra Large')">
+                    <div class="col-sm div2  size" id="xl" onclick="selectSize('Extra Large')">
                         <div class="row justify-content-between size-box p-2">
                             <p class="font-weight-bold">EXTRALARGE</p>
                             <p>Length: <span id="extraLength"></span></p>
@@ -219,7 +299,7 @@
                             <p>height: <span id="xxLengthL"></span> - <span id="xxLengthR"></span>cm</p>
                         </div>
                     </div>
-                    <div class="col-sm ml-3  size" id="sSized" onclick="selectSize('Super Sized')">
+                    <div class="col-sm div2 size" id="sSized" onclick="selectSize('Super Sized')">
                         <div class="row justify-content-between size-box p-2">
                             <p class="font-weight-bold">SUPERSIZED</p>
                             <p>Length: <span id="superSized"></span></p>
@@ -331,7 +411,8 @@
                 <p class="text-center">Total with selected options:<span style="font-size: 22pt; margin-left: 3px;">
                     <i class="fas fa-pound-sign"></i>
                     <span id="totalPrice"></span></span></p>
-                <button style="background-color: #35398e" onclick="addToCart()" class="btn mt-0 mb-1 text-white btn-block">
+                <button style="background-color: #35398e" onclick="addToCart()"
+                        class="btn mt-0 mb-1 text-white btn-block">
                     ADD TO
                     CART
                 </button>

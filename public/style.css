@@ -1,6 +1,201 @@
+/*bootstrap*/
+@import "https://use.fontawesome.com/releases/v5.8.2/css/all.css";
+@import "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css";
+@import "https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css";
+/*google fonts*/
+@import "https://fonts.googleapis.com/css2?family=Syne+Tactile&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Syne+Mono&family=Syne+Tactile&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Syne+Mono&family=Syne+Tactile&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Pacifico&family=Syne+Mono&family=Syne+Tactile&display=swap";
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Londrina+Outline&family=Roboto:wght@100&display=swap');
 
 * {
     box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Gruenewald;
+    src: url('./fonts/Gruenewald VA normal.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Andasia Regular;
+    src: url('./fonts/Andasia-OXA3.otf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: Satisfy Regular;
+    src: url('./fonts/Satisfy-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Pi in the SciFi;
+    src: url('./fonts/Pi in the SciFi.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Neon Glow;
+    src: url('/fonts/Neon Glow.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Lovelo;
+    src: url('/fonts/Lovelo Line Light.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Marquee Moon;
+    src: url('/fonts/marquee moon.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: RM Typerighter medium;
+    src: url('/fonts/rm_typerighter_medium.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Paper Daisy;
+    src: url('/fonts/paperdaisy-demo.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Kiona;
+    src: url('/fonts/Kiona-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Nixie One;
+    src: url('/fonts/NixieOne-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Dolce Vita;
+    src: url('/fonts/Dolce Vita.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Bauhaus Regular;
+    src: url('/fonts/Bauhaus.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Decker;
+    src: url('/fonts/Decker.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Real Kindly Demo;
+    src: url('/fonts/Real Kindly Demo.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Red Velvet;
+    src: url('/fonts/red velvet.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Quinzey;
+    src: url('/fonts/Quinzey.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Sophistica;
+    src: url('/fonts/Sophistica 1.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Hamillton;
+    src: url('/fonts/Hamillton.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Sophistica;
+    src: url('/fonts/Sophistica 1.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Lettia;
+    src: url('/fonts/Lettia.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Signature;
+    src: url('/fonts/siignature.TTF');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: kevinandamandadotcom;
+    src: url('/fonts/kevinandamandadotcom.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Andrea;
+    src: url('/fonts/Andrea.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: vintage_MartavanEck;
+    src: url('/fonts/vintage_MartavanEck.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Yesie;
+    src: url('/fonts/Yesie - Free Version.otf');
+    font-weight: normal;
+    font-style: normal;
 }
 
 [class*="col-"] {
@@ -52,6 +247,10 @@
     cursor: pointer;
 }
 
+.div2 {
+    margin-left: 20px;
+}
+
 .btn {
     border: none;
 }
@@ -60,6 +259,10 @@
     .customText {
         height: 400px;
         width: 100%;
+    }
+
+    .div2 {
+        margin: 0;
     }
 
     .tabLink {
@@ -213,5 +416,14 @@
     .col-12 {
         width: 100%;
     }
+}
+
+.myFont {
+    cursor: pointer;
+    text-align: center;
+}
+
+.myFont:hover {
+    background-color: grey;
 }
 
