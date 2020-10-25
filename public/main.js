@@ -2,7 +2,6 @@ let standardPrices = {
     waterResistance: 32
 };
 let totalPrice = 0;
-
 let sizeDetails = {
     length: 9,
     heightOne: 7,
@@ -28,7 +27,6 @@ let sizeDetails = {
     superHeightOne: 22,
     superHeightTwo: 108
 };
-
 let small = {
     length: 9,
     heightL: 7,
@@ -59,6 +57,24 @@ let superSizedLength = {
     heightL: 22,
     heightR: 108
 };
+let backBoard = [
+    {id: "0", url: '/images/back1.png', name: 'Cut Around Acrylic', price: 'Free'},
+    {id: "1", url: '/images/back2.png', name: 'Rectangle Acrylic', price: 'Free'},
+    {id: "2", url: '/images/back3.png', name: 'Cut To Letter Acrylic', price: '82'},
+    {id: "3", url: '/images/back4.png', name: 'Stand Acrylic', price: '124'},
+    {id: "4", url: '/images/back5.png', name: 'Clear Acrylic Box: For hanging', price: '284'},
+    {id: "5", url: '/images/back6.png', name: 'Clear Acrylic Box: For wall Mounting', price: '284'},
+    {id: "6", url: '/images/back7.png', name: 'Clear Acrylic Box: Free-Standing', price: '284'},
+];
+
+let sizePrices = {
+    small: 34,
+    medium: 63,
+    large: 86,
+    xlarge: 107,
+    xxlarge: 128,
+    superSized: 180
+};
 
 window.onload = function () {
     let i, tabContent;
@@ -74,6 +90,13 @@ window.onload = function () {
     document.getElementById('blackboardPrice').innerHTML = 'Free';
     document.getElementById('totalPrice').innerHTML = totalPrice;
     document.getElementById('waterResistantPrice').innerHTML = standardPrices.waterResistance;
+
+    document.getElementById('priceSmall').innerHTML = sizePrices.small;
+    document.getElementById('priceMedium').innerHTML = sizePrices.medium;
+    document.getElementById('priceLarge').innerHTML = sizePrices.large;
+    document.getElementById('priceXl').innerHTML = sizePrices.xlarge;
+    document.getElementById('priceXxl').innerHTML = sizePrices.xxlarge;
+    document.getElementById('priceSized').innerHTML = sizePrices.superSized;
 
     document.getElementById("smallLength").innerHTML = small.length.toString();
     document.getElementById("largeLength").innerHTML = large.length.toString();
@@ -95,6 +118,11 @@ window.onload = function () {
     document.getElementById("extraLengthR").innerHTML = extraLarge.heightR.toString();
     document.getElementById("xxLengthR").innerHTML = xxLarge.heightR.toString();
     document.getElementById("superSizedR").innerHTML = superSizedLength.heightR.toString();
+
+    localStorage.setItem('size', 'Small');
+    localStorage.setItem('length', small.length);
+    localStorage.setItem('heightOne', small.heightL);
+    localStorage.setItem('heightTwo', small.heightR);
     for (i = 0; i < tabContent.length; i++) {
         if (i === 0) {
             tabContent[i].style.display = "block";
@@ -328,16 +356,6 @@ function selectElectricPug() {
     localStorage.setItem('electricPug', electricPug);
 }
 
-let backBoard = [
-    {id: "0", url: '/images/plign.jpg', price: 'Free'},
-    {id: "1", url: '/images/b9.jpeg', price: 'Free'},
-    {id: "2", url: '/images/b6.jpeg', price: '82'},
-    {id: "3", url: '/images/b6.jpeg', price: '124'},
-    {id: "4", url: '/images/b6.jpeg', price: '284'},
-    {id: "5", url: '/images/b6.jpeg', price: '284'},
-    {id: "6", url: '/images/b6.jpeg', price: '284'},
-];
-
 function search(nameKey, myArray) {
     for (let i = 0; i < myArray.length; i++) {
         if (myArray[i].id === nameKey) {
@@ -362,6 +380,32 @@ function selectBlackBord() {
 
 function displayTotalPrice() {
     let totalPrice = 0;
+    let sizePrice = sizePrices.small;
+    let size = localStorage.getItem('size');
+    switch (size) {
+        case 'Small':
+            sizePrice = sizePrices.small;
+            break;
+        case 'Medium':
+            sizePrice = sizePrices.medium;
+            break;
+        case 'Large':
+            sizePrice = sizePrices.large;
+            break;
+        case 'Extra Large':
+            sizePrice = sizePrices.xlarge;
+            break;
+        case 'XXLarge':
+            sizePrice = sizePrices.xxlarge;
+            break;
+        case 'Super Sized':
+            sizePrice = sizePrices.superSized;
+            break;
+        default:
+            sizePrice = sizePrices.small;
+            break;
+
+    }
     let usage = localStorage.getItem('selectType');
     let back = localStorage.getItem('selectBackBoard');
     if (usage !== 'indoor') {
@@ -371,6 +415,8 @@ function displayTotalPrice() {
     if (resultObject.price !== 'Free') {
         totalPrice = totalPrice + parseInt(resultObject.price);
     }
+    totalPrice = totalPrice + parseInt(sizePrice);
+
     document.getElementById('totalPrice').innerHTML = totalPrice.toString();
     localStorage.setItem('totalPrice', totalPrice.toString());
 }
@@ -393,7 +439,7 @@ function toggleTextShadow(state) {
 function selectSize(size) {
     let length, heightL, heightR;
     switch (size) {
-        case 'small':
+        case 'Small':
             document.getElementById('smallBox').style.border = "3px solid #35398e";
             document.getElementById('medium').style.border = "none";
             document.getElementById('large').style.border = "none";
@@ -404,7 +450,7 @@ function selectSize(size) {
             heightL = sizeDetails.heightOne;
             heightR = sizeDetails.heightTwo;
             break;
-        case 'medium':
+        case 'Medium':
             document.getElementById('medium').style.border = "3px solid #35398e";
             document.getElementById('smallBox').style.border = "none";
             document.getElementById('large').style.border = "none";
@@ -415,7 +461,7 @@ function selectSize(size) {
             heightL = sizeDetails.mHeightOne;
             heightR = sizeDetails.mHeightTwo;
             break;
-        case 'large':
+        case 'Large':
             document.getElementById('large').style.border = "3px solid #35398e";
             document.getElementById('smallBox').style.border = "none";
             document.getElementById('medium').style.border = "none";
@@ -426,7 +472,7 @@ function selectSize(size) {
             heightL = sizeDetails.lHeightOne;
             heightR = sizeDetails.lHeightTwo;
             break;
-        case 'xl':
+        case 'Extra Large':
             document.getElementById('xl').style.border = "3px solid #35398e";
             document.getElementById('smallBox').style.border = "none";
             document.getElementById('medium').style.border = "none";
@@ -437,7 +483,7 @@ function selectSize(size) {
             heightL = sizeDetails.xlHeightOne;
             heightR = sizeDetails.xlHeightTwo;
             break;
-        case 'xxl':
+        case 'XXLarge':
             document.getElementById('xxl').style.border = "3px solid #35398e";
             document.getElementById('smallBox').style.border = "none";
             document.getElementById('medium').style.border = "none";
@@ -448,7 +494,7 @@ function selectSize(size) {
             heightL = sizeDetails.xxlHeightOne;
             heightR = sizeDetails.xxlHeightTwo;
             break;
-        case 'superSized':
+        case 'Super Sized':
             document.getElementById('sSized').style.border = "3px solid #35398e";
             document.getElementById('smallBox').style.border = "none";
             document.getElementById('medium').style.border = "none";
@@ -475,8 +521,9 @@ function selectSize(size) {
 }
 
 function addToCart() {
-    window.location.href = window.location.origin+'/add-to-cart';
+    window.location.href = window.location.origin + '/add-to-cart';
 }
+
 setInterval(function () {
     this.displayTotalPrice();
 }, 100);

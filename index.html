@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Neon - app</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
     <!-- Google Fonts -->
@@ -26,22 +27,32 @@
 <body>
 <div class="container">
     <div class="row mt-5">
-        <div class="col-md-7 display-container">
+        <div class="col-md-8 display-container customText" style="background-image: url(/images/b1.jpeg)">
             <div class="row">
                 <button class="btn-sm" onclick="toggleTextShadow('off')">OFF</button>
                 <button class="btn-sm" onclick="toggleTextShadow('on')">ON</button>
             </div>
-            <p style="font-size: 50px; margin-top: 100px" class="text-white" id="displayText"></p>
+            <p style="font-size: 50px; margin-top: 70px" class="text-white" id="displayText"></p>
+            <div class="bg_style row px-5">
+                <div class="col-sm" style="background-image: url(/images/b1.jpeg); width: 100%"
+                     onclick="setBG('/images/b1.jpeg')"></div>
+                <div class="col-sm" style="background-image: url(/images/b2.jpeg);"
+                     onclick="setBG('/images/b2.jpeg')"></div>
+                <div class="col-sm" style="background-image: url(/images/b3.jpeg);"
+                     onclick="setBG('/images/b3.jpeg')"></div>
+                <div class="col-sm" style="background-image: url(images/b4.jpeg);"
+                     onclick="setBG('/images/b4.jpeg')"></div>
+            </div>
         </div>
-        <div class="col-md-5 card">
+        <div class="col-sm card mb-2">
             <div class="row text-white justify-content-between">
-                <div class="col-sm py-2 border text-center tabLink" id="defaultOpen" onclick="openTab(event, 'Text')">
+                <div class="col-md-4 py-2 border text-center tabLink" id="defaultOpen" onclick="openTab(event, 'Text')">
                     TEXT
                 </div>
-                <div class="col-sm py-2 border text-center tabLink" onclick="openTab(event, 'Font')">
+                <div class="col-md-4 py-2 border text-center tabLink" onclick="openTab(event, 'Font')">
                     FONT
                 </div>
-                <div class="col-sm py-2 border text-center tabLink" onclick="openTab(event, 'Color')">
+                <div class="col-md-4 py-2 border text-center tabLink" onclick="openTab(event, 'Color')">
                     COLOR
                 </div>
             </div>
@@ -72,151 +83,150 @@
                     </div>
                     <button class="btn" onclick="changeFontFamily('Pacifico')">Pacifico</button>
                 </div>
-
                 <div id="Color" class="tabContent text-center" style="cursor: pointer">
                     <h6 class="text-center my-3">CHOOSE COLOR</h6>
                     <div class="row justify-content-between">
                         <div class="col-sm" onclick="setColor('Warm White')">
                             <p style="color: #efebd8"><i class="fab fa-bity"></i>
                             </p>
-                            <p style="font-size: 10px">Warm White</p></div>
+                            <p style="font-size: 9px">Warm White</p></div>
                         <div class="col-sm" onclick="setColor('White')">
                             <p style="color: #ffffff"><i class="fab fa-bity"></i></p>
-                            <p style="font-size: 10px">White</p>
+                            <p style="font-size: 9px">White</p>
                         </div>
                         <div class="col-sm" onclick="setColor('Lemon Yellow')">
                             <p style="color: #fff44f"><i class="fab fa-bity"></i>
                             </p>
-                            <p style="font-size: 10px">Lemon Yellow</p>
+                            <p style="font-size: 9px">Lemon Yellow</p>
                         </div>
                         <div class="col-sm" onclick="setColor('Golden Yellow')">
                             <p style="color: #FFDF00"><i class="fab fa-bity"></i>
-                            <p style="font-size: 10px">Golden Yellow</p>
+                            <p style="font-size: 9px">Golden Yellow</p>
                         </div>
                         <div class="col-sm" onclick="setColor('Orange')">
                             <p style="color: #FFA500"><i class="fab fa-bity"></i>
-                            <p style="font-size: 10px">Orange</p>
+                            <p style="font-size: 9px">Orange</p>
+                        </div>
+                        <div class="col-sm" onclick="setColor('Green')">
+                            <p style="color: #008000"><i class="fab fa-bity"></i></p>
+                            <p style="font-size: 9px">Green</p>
+                        </div>
+                        <div class="col-sm" onclick="setColor('Ice Blue')">
+                            <p style="color: #A5F2F3"><i class="fab fa-bity"></i>
+                            <p style="font-size: 9px">Ice Blue</p>
+                        </div>
+                        <div class="col-sm" onclick="setColor('Electric Blue')">
+                            <p style="color: #7DF9FF"><i class="fab fa-bity"></i>
+                            <p style="font-size: 9px">Electric Blue</p>
+                        </div>
+                        <div class="col-sm" onclick="setColor('Deep Blue')">
+                            <p style="color: #00BFFF"><i class="fab fa-bity"></i>
+                            <p style="font-size: 9px">Deep Blue</p>
                         </div>
                     </div>
                     <div class="row justify-content-between">
                         <div class="col-sm" onclick="setColor('Light Red')"><p
                                 style="color: #ffcccb"><i class="fab fa-bity"></i>
-                            <p style="font-size: 10px">Light Red</p>
+                            <p style="font-size: 9px">Light Red</p>
                         </div>
                         <div class="col-sm" onclick="setColor('Red')">
                             <p style="color: #FF0000"><i class="fab fa-bity"></i>
-                            <p style="font-size: 10px">Red</p>
+                            <p style="font-size: 9px">Red</p>
                         </div>
                         <div class="col-sm" onclick="setColor('Candy Floss')">
                             <p style="color: #f4b8d8"><i class="fab fa-bity"></i>
-                            <p style="font-size: 10px">Candy Floss</p>
+                            <p style="font-size: 9px">Candy Floss</p>
                         </div>
                         <div class="col-sm" onclick="setColor('Deep Pink')">
                             <p style="color: #FF1493"><i class="fab fa-bity"></i>
-                            <p style="font-size: 10px">Deep Pink</p>
+                            <p style="font-size: 9px">Deep Pink</p>
                         </div>
                         <div class="col-sm" onclick="setColor('Purple')">
                             <p style="color: #800080"><i class="fab fa-bity"></i>
-                            <p style="font-size: 10px">Purple</p>
-                        </div>
-                    </div>
-                    <div class="row justify-content-between">
-                        <div class="col-sm" onclick="setColor('Deep Blue')">
-                            <p style="color: #00BFFF"><i class="fab fa-bity"></i>
-                            <p style="font-size: 10px">Deep Blue</p>
-                        </div>
-                        <div class="col-sm" onclick="setColor('Electric Blue')">
-                            <p style="color: #7DF9FF"><i class="fab fa-bity"></i>
-                            <p style="font-size: 10px">Electric Blue</p>
-                        </div>
-                        <div class="col-sm" onclick="setColor('Ice Blue')">
-                            <p style="color: #A5F2F3"><i class="fab fa-bity"></i>
-                            <p style="font-size: 10px">Ice Blue</p>
-                        </div>
-                        <div class="col-sm" onclick="setColor('Tropical Blue')">
-                            <p style="color: #CBE8F7"><i class="fab fa-bity"></i></p>
-                            <p style="font-size: 10px">Tropical Blue</p>
+                            <p style="font-size: 9px">Purple</p>
                         </div>
                         <div class="col-sm" onclick="setColor('Mint')">
                             <p style="color: #98ff98"><i class="fab fa-bity"></i></p>
-                            <p style="font-size: 10px">Mint</p>
+                            <p style="font-size: 9px">Mint</p>
                         </div>
-                    </div>
-                    <div class="row justify-content-between">
                         <div class="col-sm" onclick="setColor('Deep Green')">
                             <p style="color: #056608"><i class="fab fa-bity"></i></p>
                             <p style="font-size: 10px">Deep Green</p>
                         </div>
-                        <div class="col-sm" onclick="setColor('Green')">
-                            <p style="color: #008000"><i class="fab fa-bity"></i></p>
-                            <p style="font-size: 10px">Green</p>
+                        <div class="col-sm" onclick="setColor('Tropical Blue')">
+                            <p style="color: #CBE8F7"><i class="fab fa-bity"></i></p>
+                            <p style="font-size: 9px">Tropical Blue</p>
                         </div>
                     </div>
                 </div>
             </div>
             <div style="color: #333333; font: 12px Arial,sans-serif" class="px-3">
                 <div class="row justify-content-between">
-                    <div class="col-sm  size" id="smallBox" onclick="selectSize('small')">
+                    <div class="col-sm  size" id="smallBox" onclick="selectSize('Small')">
                         <div class="row justify-content-between size-box p-2">
                             <p class="font-weight-bold">SMALL</p>
                             <p>Length: <span id="smallLength"></span>cm</p>
                         </div>
                         <div class="row justify-content-between p-2">
-                            <p class="font-weight-bold"><i class="fas fa-pound-sign"></i><span>34</span></p>
+                            <p class="font-weight-bold"><i class="fas fa-pound-sign"></i><span id="priceSmall"></span>
+                            </p>
                             <p>height: <span id="smallLengthL"></span> - <span id="smallLengthR"></span>cm</p>
                         </div>
                     </div>
-                    <div class="col-sm ml-3  size" id="medium" onclick="selectSize('medium')">
+                    <div class="col-sm ml-3  size" id="medium" onclick="selectSize('Medium')">
                         <div class="row justify-content-between size-box p-2">
                             <p class="font-weight-bold">MEDIUM</p>
                             <p>Length: <span id="mediumLength"></span>cm</p>
                         </div>
                         <div class="row justify-content-between p-2">
-                            <p class="font-weight-bold"><i class="fas fa-pound-sign"></i><span>34</span></p>
+                            <p class="font-weight-bold"><i class="fas fa-pound-sign"></i><span id="priceMedium"></span>
+                            </p>
                             <p>height: <span id="mediumLengthL"></span> - <span id="mediumLengthR"></span>cm</p>
                         </div>
                     </div>
                 </div>
                 <div class="row justify-content-between mt-2">
-                    <div class="col-sm  size" id="large" onclick="selectSize('large')">
+                    <div class="col-sm  size" id="large" onclick="selectSize('Large')">
                         <div class="row justify-content-between size-box p-2">
                             <p class="font-weight-bold">LARGE</p>
                             <p>Length: <span id="largeLength"></span>cm</p>
                         </div>
                         <div class="row justify-content-between p-2">
-                            <p class="font-weight-bold"><i class="fas fa-pound-sign"></i><span>34</span></p>
+                            <p class="font-weight-bold"><i class="fas fa-pound-sign"></i><span id="priceLarge"></span>
+                            </p>
                             <p>height: <span id="largeLengthL"></span> - <span id="largeLengthR"></span>cm</p>
                         </div>
                     </div>
-                    <div class="col-sm ml-3  size" id="xl" onclick="selectSize('xl')">
+                    <div class="col-sm ml-3  size" id="xl" onclick="selectSize('Extra Large')">
                         <div class="row justify-content-between size-box p-2">
                             <p class="font-weight-bold">EXTRALARGE</p>
                             <p>Length: <span id="extraLength"></span></p>
                         </div>
                         <div class="row justify-content-between p-2">
-                            <p class="font-weight-bold"><i class="fas fa-pound-sign"></i><span>34</span></p>
+                            <p class="font-weight-bold"><i class="fas fa-pound-sign"></i><span id="priceXl"></span></p>
                             <p>height: <span id="extraLengthL"></span> - <span id="extraLengthR"></span>cm</p>
                         </div>
                     </div>
                 </div>
                 <div class="row justify-content-between mt-2">
-                    <div class="col-sm  size"  id="xxl" onclick="selectSize('xxl')">
+                    <div class="col-sm  size" id="xxl" onclick="selectSize('XXLarge')">
                         <div class="row justify-content-between size-box p-2">
                             <p class="font-weight-bold">XXLARGE</p>
                             <p>Length: <span id="xxLength"></span>cm</p>
                         </div>
                         <div class="row justify-content-between p-2">
-                            <p class="font-weight-bold"><i class="fas fa-pound-sign"></i><span>34</span></p>
+                            <p class="font-weight-bold"><i class="fas fa-pound-sign"></i><span id="priceXxl"></span></p>
                             <p>height: <span id="xxLengthL"></span> - <span id="xxLengthR"></span>cm</p>
                         </div>
                     </div>
-                    <div class="col-sm ml-3  size" id="sSized" onclick="selectSize('superSized')">
+                    <div class="col-sm ml-3  size" id="sSized" onclick="selectSize('Super Sized')">
                         <div class="row justify-content-between size-box p-2">
                             <p class="font-weight-bold">SUPERSIZED</p>
                             <p>Length: <span id="superSized"></span></p>
                         </div>
                         <div class="row justify-content-between p-2">
-                            <p class="font-weight-bold"><i class="fas fa-pound-sign"></i><span>34</span></p>
+                            <p class="font-weight-bold"><i class="fas fa-pound-sign"></i><span id="priceSized"></span>
+                            </p>
                             <p>height: <span id="superSizedL"></span> - <span id="superSizedR"></span>cm</p>
                         </div>
                     </div>
@@ -264,13 +274,13 @@
             </div>
             <div>
                 <h6 class="text-center mt-1">CHOOSE YOUR BACK BOARD</h6>
-                <div class="row ml-auto mr-auto" style="width: 250px">
+                <div class="row ml-auto mr-auto" style="width: 200px">
                     <div>
-                        <p><img id="blackboard" src="/images/plign.jpg" width="200" height="200"/></p>
+                        <p><img id="blackboard" src="/images/back1.png" width="150" height="150"/></p>
                         <p class="text-center" id="blackboardPrice"></p>
                     </div>
                     <div>
-                        <select style="margin-top: 98px; width: 20px" id="selectedBackBoard"
+                        <select style="margin-top: 75px; width: 20px" id="selectedBackBoard"
                                 onchange="selectBlackBord()" name="selectedBackBoard">
                             <option value="0">
                                 <div class="justify-content-end">
@@ -318,26 +328,27 @@
                         </select>
                     </div>
                 </div>
-            </div>
-            <div class="mb-4">
                 <p class="text-center">Total with selected options:<span style="font-size: 22pt; margin-left: 3px;">
                     <i class="fas fa-pound-sign"></i>
                     <span id="totalPrice"></span></span></p>
-                <button style="background-color: #35398e" onclick="addToCart()" class="btn text-white btn-block">ADD TO CART</button>
+                <button style="background-color: #35398e" onclick="addToCart()" class="btn mt-0 mb-1 text-white btn-block">
+                    ADD TO
+                    CART
+                </button>
             </div>
         </div>
     </div>
 </div>
 
-
-<!--&lt;!&ndash; JQuery &ndash;&gt;-->
-<!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>-->
-<!--&lt;!&ndash; Bootstrap tooltips &ndash;&gt;-->
-<!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>-->
-<!--&lt;!&ndash; Bootstrap core JavaScript &ndash;&gt;-->
-<!--<script type="text/javascript"-->
-<!--        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>-->
-<!--&lt;!&ndash; MDB core JavaScript &ndash;&gt;-->
-<!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>-->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+<script type="text/javascript">
+    function setBG(bg) {
+        $(".customText").css("background-image", "url(" + bg + ")");
+    }
+</script>
 </body>
 </html>
