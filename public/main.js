@@ -76,6 +76,9 @@ let sizePrices = {
     superSized: 180
 };
 
+let defaultNeon = "0 0 5px #fff, 0 0 10px #fff, 0 0 20px #98ff98, 0 0 30px #98ff98, 0 0 40px #98ff98, 0 0 55px #98ff98, 0 0 75px #98ff98";
+
+
 window.onload = function () {
     let i, tabContent;
     let displayText = document.getElementById("displayText");
@@ -91,6 +94,8 @@ window.onload = function () {
     document.getElementById('blackboardPrice').innerHTML = 'Free';
     document.getElementById('totalPrice').innerHTML = totalPrice;
     document.getElementById('waterResistantPrice').innerHTML = standardPrices.waterResistance;
+    document.getElementById('displayText').style.textShadow = defaultNeon;
+    document.getElementById('displayText').style.fontFamily = 'Dolce Vita';
 
     document.getElementById('priceSmall').innerHTML = sizePrices.small;
     document.getElementById('priceMedium').innerHTML = sizePrices.medium;

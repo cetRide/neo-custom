@@ -18,9 +18,27 @@
                 <button class="btn-sm" onclick="toggleTextShadow('on')">ON</button>
             </div>
             <p style="font-size: 70px; margin-top: 70px" class="text-white" id="displayText"></p>
+            <div class="tabs-mobile">
+                <div class="row text-white justify-content-between">
+                    <div class=" py-2 border text-center tabLink" id="defaultOpen" onclick="openTab(event, 'Text')">
+                        <i class="fa fa-font" aria-hidden="true"></i>
+                    </div>
+                    <div class="py-2 border text-center tabLink" onclick="openTab(event, 'Font')">
+                        <i class="fa fa-fonticons" aria-hidden="true"></i>
+
+                    </div>
+                    <div class="py-2 border text-center tabLink" onclick="openTab(event, 'Color')">
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                    </div>
+                    <div class="py-2 border text-center tabLink" onclick="openTab(event, 'Image')">
+                        <i class="fa fa-camera" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="col-sm card mb-2">
-            <div class="row text-white justify-content-between">
+            <div class="row text-white tabs-desktop justify-content-between">
+                <div></div>
                 <div class="col-md-3 py-2 border text-center tabLink" id="defaultOpen" onclick="openTab(event, 'Text')">
                     <p>Text</p>
                 </div>
@@ -251,20 +269,20 @@
                 <div id="Image" class="tabContent p-3">
                     <h6>Select Scene</h6>
                     <div class="row img_style mb-2">
-                        <div class="col-md-4 " style="background-image: url(/images/b5.jpeg);"
+                        <div class="col-md-4 bg" style="background-image: url(/images/b5.jpeg);"
                              onclick="setBG('/images/b8.jpeg')"></div>
-                        <div class="col-md-4" style="background-image: url(/images/b2.jpeg);"
+                        <div class="col-md-4 bg" style="background-image: url(/images/b2.jpeg);"
                              onclick="setBG('/images/b2.jpeg')"></div>
-                        <div class="col-md-4" style="background-image: url(/images/b3.jpeg);"
+                        <div class="col-md-4 bg" style="background-image: url(/images/b3.jpeg);"
                              onclick="setBG('/images/b3.jpeg')"></div>
-                        <div class="col-md-4" style="background-image: url(images/b4.jpeg);"
+                        <div class="col-md-4 bg" style="background-image: url(images/b4.jpeg);"
                              onclick="setBG('/images/b4.jpeg')"></div>
-                        <div class="col-md-4" style="background-image: url(images/b1.jpeg);"
+                        <div class="col-md-4 bg" style="background-image: url(images/b1.jpeg);"
                              onclick="setBG('/images/b1.jpeg')"></div>
-                        <div class="col-md-4" style="background-image: url(images/b6.jpeg);"
+                        <div class="col-md-4 bg" style="background-image: url(images/b6.jpeg);"
                              onclick="setBG('/images/b6.jpeg')"></div>
                     </div>
-                        <input type='file' id="imageInput" accept="image/*" onchange="readURL(event)"/>
+                    <input type='file' id="imageInput" accept="image/*" onchange="readURL(event)"/>
                 </div>
             </div>
             <div style="color: #333333; font-size: 12px" class="px-3">
@@ -461,7 +479,7 @@
     }
 </script>
 <script type="text/javascript">
-    function readURL(event){
+    function readURL(event) {
         let getImagePath = URL.createObjectURL(event.target.files[0]);
         $('.customText').css('background-image', 'url(' + getImagePath + ')');
     }
