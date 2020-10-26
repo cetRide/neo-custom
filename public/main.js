@@ -88,8 +88,6 @@ window.onload = function () {
     document.getElementById("smallBox").style.border = "3px solid #35398e";
     tabContent = document.getElementsByClassName("tabContent");
     selectSize('small');
-    localStorage.setItem('selectBackBoard', '0');
-    localStorage.setItem('text', 'Your text');
     localStorage.setItem('selectType', 'indoor');
     document.getElementById('blackboardPrice').innerHTML = 'Free';
     document.getElementById('totalPrice').innerHTML = totalPrice;
@@ -432,14 +430,17 @@ function displayTotalPrice() {
     if (usage !== 'indoor') {
         totalPrice = totalPrice + parseInt(standardPrices.waterResistance);
     }
-    let resultObject = search(back, backBoard);
-    if (resultObject.price !== 'Free') {
-        totalPrice = totalPrice + parseInt(resultObject.price);
+    if (back !== null) {
+        let resultObject = search(back, backBoard);
+        if (resultObject.price !== 'Free') {
+            totalPrice = totalPrice + parseInt(resultObject.price);
+        }
     }
     totalPrice = totalPrice + parseInt(sizePrice);
-
-    document.getElementById('totalPrice').innerHTML = totalPrice.toString();
-    localStorage.setItem('totalPrice', totalPrice.toString());
+    if (totalPrice !== null) {
+        document.getElementById('totalPrice').innerHTML = totalPrice.toString();
+        localStorage.setItem('totalPrice', totalPrice.toString());
+    }
 }
 
 function toggleTextShadow(state) {
@@ -541,7 +542,23 @@ function selectSize(size) {
 }
 
 function addToCart() {
-    window.location.href = window.location.origin + '/add-to-cart';
+
+    let text = localStorage.getItem('text');
+    let board = localStorage.getItem('selectBackBoard');
+    let pug = localStorage.getItem('electricPug');
+    if (text === null) {
+        alert('Text is missing');
+    }
+    if (board === null) {
+        alert('Select the back board');
+    }
+    if (pug === null) {
+        alert('Select the electric pug');
+    }
+    if (text !== null && board !== null && pug !== null) {
+        alert('Your customization added to cart');
+        window.location.href = window.location.origin + '/add-to-cart';
+    }
 }
 
 setInterval(function () {
