@@ -476,6 +476,9 @@ body {
 }
 
 @media only screen and (max-width: 450px) {
+    .size {
+        margin-bottom: 10px;
+    }
     .div2 {
         margin: 0;
     }
