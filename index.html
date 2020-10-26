@@ -17,7 +17,7 @@
                 <button class="btn-sm" onclick="toggleTextShadow('off')">OFF</button>
                 <button class="btn-sm" onclick="toggleTextShadow('on')">ON</button>
             </div>
-            <p style="font-size: 70px; margin-top: 70px" class="text-white" id="displayText"></p>
+            <p class="mytext text-white" id="displayText"></p>
             <div class="tabs-mobile">
                 <div class="row text-white justify-content-between">
                     <div class=" py-2 border text-center tabLink" id="defaultOpen" onclick="openTab(event, 'Text')">
@@ -59,18 +59,18 @@
                               onkeyUp="displayText(event)">Your Text</textarea>
 
                     <div class="row px-3 mb-1 alignText">
-                        <div class="col-sm border" onclick="alignText('Left')">
+                        <div class="alignBox border" onclick="alignText('Left')">
                             <h2 class="text-center"><i class="fas fa-align-left"></i></h2>
                         </div>
-                        <div class="col-sm border" onclick="alignText('Center')">
+                        <div class="alignBox border" onclick="alignText('Center')">
                             <h2 class="text-center"><i class="fas fa-align-center"></i></h2>
                         </div>
-                        <div class="col-sm border" onclick="alignText('Right')">
+                        <div class="alignBox border" onclick="alignText('Right')">
                             <h2 class="text-center"><i class="fas fa-align-right"></i></h2>
                         </div>
                     </div>
                 </div>
-                <div id="Font" class="tabContent">
+                <div id="Font" class="tabContent" style=" overflow: auto; height: 200px">
                     <h6 class="text-center my-3">CHOOSE FONT</h6>
                     <div class="row justify-content-between">
                         <div class="col-sm myFont" onclick="changeFontFamily('Alex Brush')"
@@ -190,7 +190,7 @@
                         <div class="col-sm myFont" onclick="changeFontFamily('Syne Mono')">Syne Mono</div>
                     </div>
                 </div>
-                <div id="Color" class="tabContent text-center" style="cursor: pointer">
+                <div id="Color" class="tabContent text-center" style="cursor: pointer; overflow: auto; height: 200px">
                     <h6 class="text-center my-3">CHOOSE COLOR</h6>
                     <div class="row justify-content-between">
                         <div class="col-sm" onclick="setColor('Warm White')">
@@ -269,25 +269,24 @@
                 <div id="Image" class="tabContent p-3">
                     <h6>Select Scene</h6>
                     <div class="row img_style mb-2">
-                        <div class="col-md-4 bg" style="background-image: url(/images/b5.jpeg);"
+                        <div class="sceneBox bg" style="background-image: url(/images/b5.jpeg);"
                              onclick="setBG('/images/b8.jpeg')"></div>
-                        <div class="col-md-4 bg" style="background-image: url(/images/b2.jpeg);"
+                        <div class="sceneBox bg" style="background-image: url(/images/b2.jpeg);"
                              onclick="setBG('/images/b2.jpeg')"></div>
-                        <div class="col-md-4 bg" style="background-image: url(/images/b3.jpeg);"
+                        <div class="sceneBox bg" style="background-image: url(/images/b3.jpeg);"
                              onclick="setBG('/images/b3.jpeg')"></div>
-                        <div class="col-md-4 bg" style="background-image: url(images/b4.jpeg);"
+                        <div class="sceneBox bg" style="background-image: url(images/b4.jpeg);"
                              onclick="setBG('/images/b4.jpeg')"></div>
-                        <div class="col-md-4 bg" style="background-image: url(images/b1.jpeg);"
+                        <div class="sceneBox bg" style="background-image: url(images/b1.jpeg);"
                              onclick="setBG('/images/b1.jpeg')"></div>
-                        <div class="col-md-4 bg" style="background-image: url(images/b6.jpeg);"
+                        <div class="sceneBox bg" style="background-image: url(images/b6.jpeg);"
                              onclick="setBG('/images/b6.jpeg')"></div>
                     </div>
                     <input type='file' id="imageInput" accept="image/*" onchange="readURL(event)"/>
                 </div>
             </div>
             <div style="color: #333333; font-size: 12px" class="px-3">
-                <hr>
-                <h6>Select Size</h6>
+                <h6 class="mt-2">Select Size</h6>
                 <div class="row justify-content-between">
                     <div class="col-sm  size" id="smallBox" onclick="selectSize('Small')">
                         <div class="row justify-content-between size-box px-2 py-0">

@@ -223,6 +223,22 @@ body {
     /*height: 400px;*/
 }
 
+.customText {
+    background-image: url('');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    cursor: pointer;
+    z-index: 2;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    height: 700px;
+    overflow: auto;
+}
+
+
 .alignText {
     cursor: pointer;
 }
@@ -262,15 +278,19 @@ body {
 .btn {
     border: none;
 }
+.alignBox {
+    width: 33.33%;
+}
+.sceneBox {
+    width: 33.33%;
+}
+
+.mytext {
+    font-size: 70px;
+    margin-top: 70px
+}
 
 @media only screen and (max-width: 450px) {
-    .display-container {
-        height: 250px;
-    }
-    .customText {
-        width: 100%;
-    }
-
     .div2 {
         margin: 0;
     }
@@ -278,6 +298,7 @@ body {
     .tabLink {
         width: 20%;
     }
+
     .bg {
         width: 33%;
     }
@@ -289,6 +310,26 @@ body {
     .tabs-desktop {
         display: none;
     }
+
+    .customText {
+        background-image: url('');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        cursor: pointer;
+        z-index: 2;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+        height: 500px;
+    }
+
+    .mytext {
+        font-size: 40px;
+        margin-top: 50px
+    }
+
 }
 
 .bg_style {
@@ -311,20 +352,6 @@ body {
     cursor: pointer;
 }
 
-.customText {
-    background-image: url('');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    cursor: pointer;
-    z-index: 2;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -ms-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-    height: 700px;
-}
-
 .row::after {
     content: "";
     clear: both;
@@ -337,6 +364,7 @@ body {
 }
 
 @media only screen and (min-width: 600px) {
+
     .customText {
         width: 60%;
     }

@@ -446,8 +446,7 @@ function toggleTextShadow(state) {
     if (state === 'on') {
         let colorString = localStorage.getItem('glow-color-code');
         if (colorString === null) {
-            colorString = "0 0 5px #fff, 0 0 10px #fff, 0 0 20px #FF1493, 0 0 30px #FF1493, 0 0 40px #FF1493, 0 0 55px #FF1493, 0 0 75px #FF1493";
-            document.getElementById('displayText').style.textShadow = colorString;
+            document.getElementById('displayText').style.textShadow = defaultNeon;
         } else {
             document.getElementById('displayText').style.textShadow = colorString;
         }
