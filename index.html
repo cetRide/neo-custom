@@ -31,7 +31,7 @@
                     <p>Color</p>
                 </div>
                 <div class="col-md-3 py-2 border text-center tabLink" onclick="openTab(event, 'Image')">
-                    <p>Image</p>
+                    <p>Background</p>
                 </div>
             </div>
             <div>
@@ -264,7 +264,7 @@
                         <div class="col-md-4" style="background-image: url(images/b6.jpeg);"
                              onclick="setBG('/images/b6.jpeg')"></div>
                     </div>
-                        <input type='file' id="imageInput" onchange="readURL(event)"/>
+                        <input type='file' id="imageInput" accept="image/*" onchange="readURL(event)"/>
                 </div>
             </div>
             <div style="color: #333333; font-size: 12px" class="px-3">
