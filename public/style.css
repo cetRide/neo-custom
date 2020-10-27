@@ -269,10 +269,12 @@ body {
 .size {
     cursor: pointer;
     height: 50px;
+    background-color: #E7E6E6;
 }
 
 .div2 {
     margin-left: 20px;
+    background-color: #E7E6E6;
 }
 
 .btn {
@@ -341,8 +343,47 @@ body {
     background-size: 100% 100%;
     cursor: pointer;
 }
+
 .color {
     width: 25%;
+}
+
+.color span {
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.color p {
+    font-weight: bolder;
+}
+
+/** Modal */
+.dialogBox {
+    display: none;
+    transition: opacity 0.3s;
+    position: absolute;
+    top: 25%;
+    left: 0;
+    right: 0;
+    width: 33.33%;
+    margin: 0 auto;
+    padding: 30px;
+    background: whitesmoke;
+    border-radius: 4px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+    z-index: 2;
+}
+
+.modal-close-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.modal-close-btn button {
+    background-color: #35398e;
+    color: white;
 }
 
 /* For mobile phones: */
@@ -476,9 +517,14 @@ body {
 }
 
 @media only screen and (max-width: 450px) {
+    .dialogBox {
+        width: 58.33%;
+    }
+
     .size {
         margin-bottom: 10px;
     }
+
     .div2 {
         margin: 0;
     }
@@ -523,3 +569,9 @@ body {
     }
 
 }
+
+
+
+
+
+
