@@ -81,6 +81,9 @@ let defaultNeon = "0 0 5px #fff, 0 0 10px #fff, 0 0 20px #98ff98, 0 0 30px #98ff
 
 window.onload = function () {
     let i, tabContent;
+    document.getElementById('displayText').style.color = 'white';
+    document.getElementById('onBtn').style.backgroundColor = 'white';
+    document.getElementById('offBtn').style.backgroundColor = "#4D4B4B";
     let displayText = document.getElementById("displayText");
     let textInput = document.getElementById("textInput");
     displayText.innerHTML = textInput.value;
@@ -233,7 +236,7 @@ function setColor(color) {
             break
     }
     document.getElementById('displayText').style.textShadow = color_string;
-    document.getElementById('displayText').style.color = 'white';
+    document.getElementById('displayText').style.color = textColor;
     localStorage.setItem('glow-color-code', color_string);
     localStorage.setItem('glow-color', color);
     localStorage.setItem('color-code', textColor);
@@ -282,9 +285,15 @@ function displayText(event) {
     let superSizedR = document.getElementById("superSizedR");
 
     let text = textInput.value;
+
+    if (text.length > 30) {
+        document.getElementById("textInput").disabled = true;
+        this.openModal();
+    }
     if (event.keyCode === 13 && !event.shiftKey) {
         text = text + '\n';
     }
+    text = text.substring(0, 30);
     let finalText = "";
     let newText = text.split('\n');
     let longStringCount = 0;
@@ -444,16 +453,29 @@ function displayTotalPrice() {
 }
 
 function toggleTextShadow(state) {
+    let bg = "#4D4B4B";
+    let colorString = localStorage.getItem('glow-color-code');
     if (state === 'on') {
-        let colorString = localStorage.getItem('glow-color-code');
+        document.getElementById('onBtn').style.backgroundColor = 'white';
+        document.getElementById('offBtn').style.backgroundColor = bg;
         if (colorString === null) {
             document.getElementById('displayText').style.textShadow = defaultNeon;
         } else {
+            let textColor = localStorage.getItem('color-code');
+            document.getElementById('displayText').style.color = textColor;
             document.getElementById('displayText').style.textShadow = colorString;
         }
     } else {
-        document.getElementById('displayText').style.color = 'white';
-        document.getElementById('displayText').style.textShadow = 'none';
+        document.getElementById('onBtn').style.backgroundColor = bg;
+        document.getElementById('offBtn').style.backgroundColor = 'white';
+        if (colorString === null) {
+            document.getElementById('displayText').style.color = 'white';
+            document.getElementById('displayText').style.textShadow = 'none';
+        } else {
+            let colorCode = localStorage.getItem('color-code');
+            document.getElementById('displayText').style.color = colorCode;
+            document.getElementById('displayText').style.textShadow = 'none';
+        }
     }
 }
 
@@ -564,3 +586,12 @@ function addToCart() {
 setInterval(function () {
     this.displayTotalPrice();
 }, 100);
+
+function openModal() {
+    document.getElementById('dialogBox').style.display = 'block';
+}
+
+function closeModal() {
+    document.getElementById('dialogBox').style.display = 'none';
+    document.getElementById("textInput").disabled = false;
+}

@@ -14,10 +14,10 @@
     <div class="row mt-1">
         <div class="col-md-7 display-container customText" style="background-image: url(/images/b6.jpeg)">
             <div class="row">
-                <button class="btn-sm" onclick="toggleTextShadow('off')">OFF</button>
-                <button class="btn-sm" onclick="toggleTextShadow('on')">ON</button>
+                <button class="btn-sm" id="offBtn" style="outline: none" onclick="toggleTextShadow('off')">OFF</button>
+                <button class="btn-sm" id="onBtn" style="outline: none" onclick="toggleTextShadow('on')">ON</button>
             </div>
-            <p class="mytext text-white" id="displayText"></p>
+            <p class="mytext" id="displayText"></p>
             <div class="tabs-mobile">
                 <div class="row text-white justify-content-between">
                     <div class=" py-2 border text-center tabLink" id="defaultOpen" onclick="openTab(event, 'Text')">
@@ -36,6 +36,7 @@
                 </div>
             </div>
         </div>
+        <div class="px-2"></div>
         <div class="col-sm card mb-2">
             <div class="row text-white tabs-desktop justify-content-between">
                 <div></div>
@@ -55,7 +56,7 @@
             <div>
                 <div id="Text" class="tabContent">
                     <h6 class="text-center">INPUT TEXT</h6>
-                    <textarea style="width: 100%" rows='4' name='text-input' class='textInput' id='textInput'
+                    <textarea style="width: 100%" rows='3' name='text-input' class='textInput' id='textInput'
                               onkeyUp="displayText(event)">Your Text</textarea>
 
                     <div class="row px-3 mb-1 alignText">
@@ -177,72 +178,72 @@
                     <h6 class="text-center my-3">CHOOSE COLOR</h6>
                     <div class="row justify-content-between">
                         <div class="color" onclick="setColor('Warm White')">
-                            <p style="color: #efebd8">&#9734</p>
+                            <span style="color: #efebd8">&#9734</span>
                             </p>
                             <p style="font-size: 9px">Warm White</p></div>
                         <div class="color" onclick="setColor('White')">
-                            <p style="color: lightgrey">&#9734</p>
+                            <span style="color: lightgrey">&#9734</span>
                             <p style="font-size: 9px">White</p>
                         </div>
                         <div class="color" onclick="setColor('Lemon Yellow')">
-                            <p style="color: #fff44f">&#9734</p>
+                            <span style="color: #fff44f">&#9734</span>
                             </p>
                             <p style="font-size: 9px">Lemon Yellow</p>
                         </div>
                         <div class="color" onclick="setColor('Golden Yellow')">
-                            <p style="color: #FFDF00">&#9734</p>
+                            <span style="color: #FFDF00">&#9734</span>
                             <p style="font-size: 9px">Golden Yellow</p>
                         </div>
                         <div class="color" onclick="setColor('Orange')">
-                            <p style="color: #FFA500">&#9734</p>
+                            <span style="color: #FFA500">&#9734</span>
                             <p style="font-size: 9px">Orange</p>
                         </div>
                         <div class="color" onclick="setColor('Green')">
-                            <p style="color: #008000">&#9734</p>
+                            <span style="color: #008000">&#9734</span>
                             <p style="font-size: 9px">Green</p>
                         </div>
                         <div class="color" onclick="setColor('Ice Blue')">
-                            <p style="color: #A5F2F3">&#9734</p>
+                            <span style="color: #A5F2F3">&#9734</span>
                             <p style="font-size: 9px">Ice Blue</p>
                         </div>
                         <div class="color" onclick="setColor('Electric Blue')">
-                            <p style="color: #7DF9FF">&#9734</p>
-                            <p style="font-size: 9px">Electric Blue</p>
+                            <span style="color: #7DF9FF">&#9734</p>
+                                <p style="font-size: 9px">Electric Blue</p>
                         </div>
                         <div class="color" onclick="setColor('Deep Blue')">
-                            <p style="color: #00BFFF">&#9734</p>
+                            <span style="color: #00BFFF">&#9734</span>
                             <p style="font-size: 9px">Deep Blue</p>
                         </div>
-                        <div class="color" onclick="setColor('Light Red')"><p
-                                style="color: #ffcccb">&#9734</p>
+                        <div class="color" onclick="setColor('Light Red')"><span
+                                style="color: #ffcccb">&#9734</span>
                             <p style="font-size: 9px">Light Red</p>
                         </div>
                         <div class="color" onclick="setColor('Red')">
-                            <p style="color: #FF0000">&#9734</p>
+                            <span style="color: #FF0000">&#9734</span>
                             <p style="font-size: 9px">Red</p>
                         </div>
                         <div class="color" onclick="setColor('Candy Floss')">
-                            <p style="color: #f4b8d8">&#9734</p>
+                            <span style="color: #f4b8d8">&#9734</span>
                             <p style="font-size: 9px">Candy Floss</p>
                         </div>
                         <div class="color" onclick="setColor('Deep Pink')">
-                            <p style="color: #FF1493">&#9734</p>
+                            <span style="color: #FF1493">&#9734</span>
                             <p style="font-size: 9px">Deep Pink</p>
                         </div>
                         <div class="color" onclick="setColor('Purple')">
-                            <p style="color: #800080">&#9734</p>
+                            <span style="color: #800080">&#9734</span>
                             <p style="font-size: 9px">Purple</p>
                         </div>
                         <div class="color" onclick="setColor('Mint')">
-                            <p style="color: #98ff98">&#9734</p>
+                            <span style="color: #98ff98">&#9734</span>
                             <p style="font-size: 9px">Mint</p>
                         </div>
                         <div class="color" onclick="setColor('Deep Green')">
-                            <p style="color: #056608">&#9734</p>
+                            <span style="color: #056608">&#9734</span>
                             <p style="font-size: 10px">Deep Green</p>
                         </div>
                         <div class="color" onclick="setColor('Tropical Blue')">
-                            <p style="color: #CBE8F7">&#9734</p>
+                            <span style="color: #CBE8F7">&#9734</span>
                             <p style="font-size: 9px">Tropical Blue</p>
                         </div>
                     </div>
@@ -453,7 +454,17 @@
             </div>
         </div>
     </div>
-
+    <div class="dialogBox" id="dialogBox">
+        <div>
+            <p class="text-center">
+                For Custom Neons over 30 letters, please contact us for a quote
+            </p>
+        </div>
+        <div class="modal-close-btn">
+            <button class="btn btn-sm py-2" onclick="closeModal()" title="Close">OK
+            </button>
+        </div>
+    </div>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript"
             src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
