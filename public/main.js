@@ -237,6 +237,8 @@ function setColor(color) {
     }
     document.getElementById('displayText').style.textShadow = color_string;
     document.getElementById('displayText').style.color = textColor;
+    document.getElementById('onBtn').style.backgroundColor = 'white';
+    document.getElementById('offBtn').style.backgroundColor = "#4D4B4B";
     localStorage.setItem('glow-color-code', color_string);
     localStorage.setItem('glow-color', color);
     localStorage.setItem('color-code', textColor);
