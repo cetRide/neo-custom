@@ -266,222 +266,165 @@
                     </div>
                     <input type='file' id="imageInput" accept="image/*" onchange="readURL(event)"/>
                 </div>
-                <div style="color: #333333; font-size: 12px" class="px-3">
+            </div>
+<!--            select size-->
+            <div class="mt-2">
+                <p class="mt-1" style="color: #333333; font-size: 12px">
+                    Sizes vary depending on choice of font style, and whether the sign includes text in upper &
+                    lower case. We will always confirm the exact size with you before manufacturing.
+                </p>
+                <div>
                     <h6 class="mt-2">Select Size</h6>
-                    <div class="row justify-content-between">
-                        <div class="col-sm  size" id="smallBox" onclick="selectSize('Small')">
-                            <div class="row justify-content-between size-box px-2 py-0">
-                                <p class="font-weight-bold">SMALL</p>
-                                <p>Length: <span id="smallLength"></span>cm</p>
-                            </div>
-                            <div class="row justify-content-between px-2 py-0">
-                                <p class="font-weight-bold"><i class="fas fa-pound-sign"></i><span
-                                        id="priceSmall"></span>
-                                </p>
-                                <p>height: <span id="smallLengthL"></span> - <span id="smallLengthR"></span>cm</p>
-                            </div>
-                        </div>
-                        <div class="col-sm div2 size" id="medium" onclick="selectSize('Medium')">
-                            <div class="row justify-content-between size-box px-2 py-0">
-                                <p class="font-weight-bold">MEDIUM</p>
-                                <p>Length: <span id="mediumLength"></span>cm</p>
-                            </div>
-                            <div class="row justify-content-between px-2 py-0">
-                                <p class="font-weight-bold"><i class="fas fa-pound-sign"></i><span
-                                        id="priceMedium"></span>
-                                </p>
-                                <p>height: <span id="mediumLengthL"></span> - <span id="mediumLengthR"></span>cm</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row justify-content-between mt-2">
-                        <div class="col-sm  size" id="large" onclick="selectSize('Large')">
-                            <div class="row justify-content-between size-box px-2 py-0">
-                                <p class="font-weight-bold">LARGE</p>
-                                <p>Length: <span id="largeLength"></span>cm</p>
-                            </div>
-                            <div class="row justify-content-between px-2 py-0">
-                                <p class="font-weight-bold"><i class="fas fa-pound-sign"></i><span
-                                        id="priceLarge"></span>
-                                </p>
-                                <p>height: <span id="largeLengthL"></span> - <span id="largeLengthR"></span>cm</p>
-                            </div>
-                        </div>
-                        <div class="col-sm div2  size" id="xl" onclick="selectSize('Extra Large')">
-                            <div class="row justify-content-between size-box px-2 py-0">
-                                <p class="font-weight-bold">EXTRALARGE</p>
-                                <p>Length: <span id="extraLength"></span>cm</p>
-                            </div>
-                            <div class="row justify-content-between px-2 py-0">
-                                <p class="font-weight-bold"><i class="fas fa-pound-sign"></i><span id="priceXl"></span>
-                                </p>
-                                <p>height: <span id="extraLengthL"></span> - <span id="extraLengthR"></span>cm</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row justify-content-between mt-2">
-                        <div class="col-sm  size" id="xxl" onclick="selectSize('XXLarge')">
-                            <div class="row justify-content-between size-box px-2 py-0">
-                                <p class="font-weight-bold">XXLARGE</p>
-                                <p>Length: <span id="xxLength"></span>cm</p>
-                            </div>
-                            <div class="row justify-content-between px-2 py-0">
-                                <p class="font-weight-bold"><i class="fas fa-pound-sign"></i><span id="priceXxl"></span>
-                                </p>
-                                <p>height: <span id="xxLengthL"></span> - <span id="xxLengthR"></span>cm</p>
-                            </div>
-                        </div>
-                        <div class="col-sm div2 size" id="sSized" onclick="selectSize('Super Sized')">
-                            <div class="row justify-content-between size-box px-2 py-0">
-                                <p class="font-weight-bold">SUPERSIZED</p>
-                                <p>Length: <span id="superSized"></span>cm</p>
-                            </div>
-                            <div class="row justify-content-between px-2 py-0">
-                                <p class="font-weight-bold"><i class="fas fa-pound-sign"></i><span
-                                        id="priceSized"></span>
-                                </p>
-                                <p>height: <span id="superSizedL"></span> - <span id="superSizedR"></span>cm</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <p class="mt-1" style="color: #333333; font-size: 12px">
-                        Sizes vary depending on choice of font style, and whether the sign includes text in upper &
-                        lower case. We will always confirm the exact size with you before manufacturing.
-                    </p>
-                </div>
-                <div>
-                    <div>
-                        <!-- Default checked -->
-                        <div>
-                            <input onclick="selectType('indoor')" type="checkbox" id="indoor" name="indoor" checked>
-                            <label style="color: #2b2b2b; font: 14.6667px Arial,sans-serif" for="indoor">Indoor</label>
-                        </div>
-                        <!-- Default unchecked -->
-                        <div>
-                            <input onclick="selectType('waterResistant')" type="checkbox" id="waterResistant"
-                                   name="waterResistant">
-                            <label style="color: #2b2b2b; font: 14.6667px Arial,sans-serif" for="waterResistant">Water
-                                resistant + <i
-                                        class="fas fa-pound-sign"></i><span id="waterResistantPrice"></span></label>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <p style="color: #333333; font-size: 12px">
-                        Please note: The sign will be treated with a clear seal that will splash-proof it. If the sign
-                        will
-                        be exposed to wet weather, please order the 'Clear Acrylic Box' backboard option below.
-                    </p>
-                </div>
-                <div>
-                    <label style="color: #000000; font-size: 14.9333px">Electric Pug: </label>
-                    <select class="electric-pug" id="selectedElectricPug" onchange="selectElectricPug()">
-                        <option value="United Kingdom">United Kingdom</option>
-                        <option value="European">European</option>
-                        <option value="USA/Canada">USA/Canada</option>
-                        <option value="Australia/NZ">Australia/NZ</option>
-                        <option value="Japan">Japan</option>
-                        <option value="Other">Other: Ask at checkout</option>
+                    <select id="size" style="width: 100%" onchange="selectTheSize()">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                        <option value="xlarge">Extra Large</option>
                     </select>
                 </div>
                 <div>
-                    <h6 class="text-center mt-1">CHOOSE YOUR BACK BOARD</h6>
-                    <div class="row ml-auto mr-auto" style="width: 200px">
-                        <div>
-                            <p><img id="blackboard" src="/images/back1.png" width="150" height="150"/></p>
-                            <p class="text-center" id="blackboardPrice"></p>
-                        </div>
-                        <div>
-                            <select style="margin-top: 75px; width: 20px" id="selectedBackBoard"
-                                    onchange="selectBlackBord()" name="selectedBackBoard">
-                                <option value="0">
-                                    <div class="justify-content-end">
-                                        <p>Cut Around Acrylic</p>
-                                        <p class="text-right">FREE</p>
-                                    </div>
-                                </option>
-                                <option value="1">
-                                    <div class="justify-content-end">
-                                        <p>Rectangle Acrylic</p>
-                                        <p class="text-right">FREE</p>
-                                    </div>
-                                </option>
-                                <option value="2">
-                                    <div class="justify-content-end">
-                                        <p>Cut To Letter Acrylic</p>
-                                        <p class="text-right">+82</p>
-                                    </div>
-                                </option>
-                                <option value="3">
-                                    <div class="justify-content-end">
-                                        <p>Stand Acrylic</p>
-                                        +124
-                                    </div>
-                                </option>
-                                <option value="4">
-                                    <div class="justify-content-end">
-                                        <p>Clear Acrylic Box: For hanging
-                                        </p>
-                                        <p>+284</p>
-                                    </div>
-                                </option>
-                                <option value="5">
-                                    <div class="justify-content-end">
-                                        <p>Clear Acrylic Box: For wall Mounting</p>
-                                        <p> +284</p>
-                                    </div>
-                                </option>
-                                <option value="6">
-                                    <div class="justify-content-end">
-                                        <p>Clear Acrylic Box: Free-Standing</p>
-                                        <p>+284</p>
-                                    </div>
-                                </option>
-                            </select>
-                        </div>
+                    <div class="size-box box-small" id="box-small">
+                        <p>Length: <span id="slength"></span>cm</p>
+                        <p>height: <span id="sheight-one"></span> - <span id="sheight-two"></span>cm</p>
                     </div>
-                    <p class="text-center">Total with selected options:<span style="font-size: 22pt; margin-left: 3px;">
+                    <div class="size-box box-medium" id="box-medium">
+                        <p>Length: <span id="mlength"></span>cm</p>
+                        <p>height: <span id="mheight-one"></span> - <span id="mheight-two"></span>cm</p>
+                    </div>
+                    <div class="size-box box-large" id="box-large">
+                        <p>Length: <span id="llength"></span>cm</p>
+                        <p>height: <span id="lheight-one"></span> - <span id="lheight-two"></span>cm</p>
+                    </div>
+                    <div class="size-box box-xlarge" id="box-xlarge">
+                        <p>Length: <span id="xllength"></span>cm</p>
+                        <p>height: <span id="xlheight-one"></span> - <span id="xlheight-two"></span>cm</p>
+                    </div>
+                </div>
+            </div>
+<!--            select location-->
+            <div>
+                <div class="select-component">
+                    <h6>Location: </h6>
+                    <select>
+                        <option value="indoor">Indoor</option>
+                        <option value="water-resitance">Water Resistance + &#163 32</option>
+                    </select>
+                </div>
+                <p style="color: #333333; font-size: 12px">
+                    Please note: The sign will be treated with a clear seal that will splash-proof it. If the sign
+                    will
+                    be exposed to wet weather, please order the 'Clear Acrylic Box' backboard option below.
+                </p>
+            </div>
+<!--            select electric pug-->
+            <div class="select-component">
+                <h6>Electric Pug: </h6>
+                <select>
+                    <option value="United Kingdom">United Kingdom</option>
+                    <option value="European">European</option>
+                    <option value="USA/Canada">USA/Canada</option>
+                    <option value="Australia/NZ">Australia/NZ</option>
+                    <option value="Japan">Japan</option>
+                    <option value="Other">Other: Ask at checkout</option>
+                </select>
+            </div>
+<!--            select back board-->
+            <div>
+                <h6 class="text-center mt-2">CHOOSE YOUR BACK BOARD</h6>
+                <div class="row ml-auto mr-auto" style="width: 200px">
+                    <div>
+                        <p><img id="blackboard" src="/images/back1.png" width="150" height="150"/></p>
+                        <p class="text-center" id="blackboardPrice"></p>
+                    </div>
+                    <div>
+                        <select style="margin-top: 75px; width: 20px" id="selectedBackBoard"
+                                onchange="selectBlackBord()" name="selectedBackBoard">
+                            <option value="0">
+                                <div class="justify-content-end">
+                                    <p>Cut Around Acrylic</p>
+                                    <p class="text-right">FREE</p>
+                                </div>
+                            </option>
+                            <option value="1">
+                                <div class="justify-content-end">
+                                    <p>Rectangle Acrylic</p>
+                                    <p class="text-right">FREE</p>
+                                </div>
+                            </option>
+                            <option value="2">
+                                <div class="justify-content-end">
+                                    <p>Cut To Letter Acrylic</p>
+                                    <p class="text-right">+82</p>
+                                </div>
+                            </option>
+                            <option value="3">
+                                <div class="justify-content-end">
+                                    <p>Stand Acrylic</p>
+                                    +124
+                                </div>
+                            </option>
+                            <option value="4">
+                                <div class="justify-content-end">
+                                    <p>Clear Acrylic Box: For hanging
+                                    </p>
+                                    <p>+284</p>
+                                </div>
+                            </option>
+                            <option value="5">
+                                <div class="justify-content-end">
+                                    <p>Clear Acrylic Box: For wall Mounting</p>
+                                    <p> +284</p>
+                                </div>
+                            </option>
+                            <option value="6">
+                                <div class="justify-content-end">
+                                    <p>Clear Acrylic Box: Free-Standing</p>
+                                    <p>+284</p>
+                                </div>
+                            </option>
+                        </select>
+                    </div>
+                </div>
+                <p class="text-center">Total with selected options:<span style="font-size: 22pt; margin-left: 3px;">
                     <i class="fas fa-pound-sign"></i>
                     <span id="totalPrice"></span></span></p>
-                    <button style="background-color: #35398e" onclick="addToCart()"
-                            class="btn mt-0 mb-1 text-white btn-block">
-                        ADD TO
-                        CART
-                    </button>
-                </div>
+                <button style="background-color: #35398e" onclick="addToCart()"
+                        class="btn mt-0 mb-1 text-white btn-block">
+                    ADD TO
+                    CART
+                </button>
             </div>
         </div>
     </div>
-    <div class="dialogBox" id="dialogBox">
-        <div>
-            <p class="text-center">
-                For Custom Neons over 30 letters, please contact us for a quote
-            </p>
-        </div>
-        <div class="modal-close-btn">
-            <button class="btn btn-sm py-2" onclick="closeModal()" title="Close">OK
-            </button>
-        </div>
+</div>
+<div class="dialogBox" id="dialogBox">
+    <div>
+        <p class="text-center">
+            For Custom Neons over 30 letters, please contact us for a quote
+        </p>
     </div>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script type="text/javascript"
-            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
-    <script type="text/javascript"
-            src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
-    <script type="text/javascript"
-            src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
-    <script type="text/javascript">
-        function setBG(bg) {
-            $(".customText").css("background-image", "url(" + bg + ")");
-        }
-    </script>
-    <script type="text/javascript">
-        function readURL(event) {
-            let getImagePath = URL.createObjectURL(event.target.files[0]);
-            $('.customText').css('background-image', 'url(' + getImagePath + ')');
-        }
-    </script>
+    <div class="modal-close-btn">
+        <button class="btn btn-sm py-2" onclick="closeModal()" title="Close">OK
+        </button>
+    </div>
+</div>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+<script type="text/javascript">
+    function setBG(bg) {
+        $(".customText").css("background-image", "url(" + bg + ")");
+    }
+</script>
+<script type="text/javascript">
+    function readURL(event) {
+        let getImagePath = URL.createObjectURL(event.target.files[0]);
+        $('.customText').css('background-image', 'url(' + getImagePath + ')');
+    }
+</script>
 </body>
 </html>
