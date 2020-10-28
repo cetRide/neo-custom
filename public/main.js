@@ -88,43 +88,27 @@ window.onload = function () {
     let textInput = document.getElementById("textInput");
     displayText.innerHTML = textInput.value;
     displayText.style.textAlign = 'center';
-    document.getElementById("smallBox").style.border = "3px solid #35398e";
+    document.getElementById("box-small").style.display = "block";
     tabContent = document.getElementsByClassName("tabContent");
-    selectSize('small');
-    localStorage.setItem('selectType', 'indoor');
     document.getElementById('blackboardPrice').innerHTML = 'Free';
     document.getElementById('totalPrice').innerHTML = totalPrice;
-    document.getElementById('waterResistantPrice').innerHTML = standardPrices.waterResistance;
     document.getElementById('displayText').style.textShadow = defaultNeon;
     document.getElementById('displayText').style.fontFamily = 'Dolce Vita';
 
-    document.getElementById('priceSmall').innerHTML = sizePrices.small;
-    document.getElementById('priceMedium').innerHTML = sizePrices.medium;
-    document.getElementById('priceLarge').innerHTML = sizePrices.large;
-    document.getElementById('priceXl').innerHTML = sizePrices.xlarge;
-    document.getElementById('priceXxl').innerHTML = sizePrices.xxlarge;
-    document.getElementById('priceSized').innerHTML = sizePrices.superSized;
+    document.getElementById("slength").innerHTML = small.length.toString();
+    document.getElementById("llength").innerHTML = large.length.toString();
+    document.getElementById("mlength").innerHTML = medium.length.toString();
+    document.getElementById("xllength").innerHTML = extraLarge.length.toString();
 
-    document.getElementById("smallLength").innerHTML = small.length.toString();
-    document.getElementById("largeLength").innerHTML = large.length.toString();
-    document.getElementById("mediumLength").innerHTML = medium.length.toString();
-    document.getElementById("extraLength").innerHTML = extraLarge.length.toString();
-    document.getElementById("xxLength").innerHTML = xxLarge.length.toString();
-    document.getElementById("superSized").innerHTML = superSizedLength.length.toString();
+    document.getElementById("sheight-one").innerHTML = small.heightL.toString();
+    document.getElementById("lheight-one").innerHTML = large.heightL.toString();
+    document.getElementById("mheight-one").innerHTML = medium.heightL.toString();
+    document.getElementById("xlheight-one").innerHTML = extraLarge.heightL.toString();
 
-    document.getElementById("smallLengthL").innerHTML = small.heightL.toString();
-    document.getElementById("largeLengthL").innerHTML = large.heightL.toString();
-    document.getElementById("mediumLengthL").innerHTML = medium.heightL.toString();
-    document.getElementById("extraLengthL").innerHTML = extraLarge.heightL.toString();
-    document.getElementById("xxLengthL").innerHTML = xxLarge.heightL.toString();
-    document.getElementById("superSizedL").innerHTML = superSizedLength.heightL.toString();
-
-    document.getElementById("smallLengthR").innerHTML = small.heightR.toString();
-    document.getElementById("largeLengthR").innerHTML = large.heightR.toString();
-    document.getElementById("mediumLengthR").innerHTML = medium.heightR.toString();
-    document.getElementById("extraLengthR").innerHTML = extraLarge.heightR.toString();
-    document.getElementById("xxLengthR").innerHTML = xxLarge.heightR.toString();
-    document.getElementById("superSizedR").innerHTML = superSizedLength.heightR.toString();
+    document.getElementById("sheight-two").innerHTML = small.heightR.toString();
+    document.getElementById("lheight-two").innerHTML = large.heightR.toString();
+    document.getElementById("mheight-two").innerHTML = medium.heightR.toString();
+    document.getElementById("xlheight-two").innerHTML = extraLarge.heightR.toString();
 
     localStorage.setItem('size', 'Small');
     localStorage.setItem('length', small.length);
@@ -265,26 +249,22 @@ function alignText(direction) {
 function displayText(event) {
     let textInput = document.getElementById("textInput");
     let displayText = document.getElementById("displayText");
-    let smallLength = document.getElementById("smallLength");
-    let largeLength = document.getElementById("largeLength");
-    let mediumLength = document.getElementById("mediumLength");
-    let extraLength = document.getElementById("extraLength");
-    let xxLength = document.getElementById("xxLength");
-    let superSized = document.getElementById("superSized");
 
-    let smallLengthL = document.getElementById("smallLengthL");
-    let largeLengthL = document.getElementById("largeLengthL");
-    let mediumLengthL = document.getElementById("mediumLengthL");
-    let extraLengthL = document.getElementById("extraLengthL");
-    let xxLengthL = document.getElementById("xxLengthL");
-    let superSizedL = document.getElementById("superSizedL");
+    let slength = document.getElementById("slength");
+    let mlength = document.getElementById("mlength");
+    let llength = document.getElementById("llength");
+    let xllength = document.getElementById("xllength");
 
-    let smallLengthR = document.getElementById("smallLengthR");
-    let largeLengthR = document.getElementById("largeLengthR");
-    let mediumLengthR = document.getElementById("mediumLengthR");
-    let extraLengthR = document.getElementById("extraLengthR");
-    let xxLengthR = document.getElementById("xxLengthR");
-    let superSizedR = document.getElementById("superSizedR");
+    let sheightOne = document.getElementById("sheight-one");
+    let mheightOne = document.getElementById("mheight-one");
+    let lheightOne = document.getElementById("lheight-one");
+    let xlheightOne = document.getElementById("xlheight-one");
+
+    let sheightTwo = document.getElementById("sheight-two");
+    let mheightTwo = document.getElementById("mheight-two");
+    let lheightTwo = document.getElementById("lheight-two");
+    let xlheightTwo = document.getElementById("xlheight-two");
+
 
     let text = textInput.value;
 
@@ -309,12 +289,11 @@ function displayText(event) {
         finalText += newText[i] + "<br>";
     }
     if (text.length === 1) {
-        smallLength.innerHTML = ((longStringCount * small.length) + 1).toString();
-        mediumLength.innerHTML = ((longStringCount * medium.length) + 1).toString();
-        largeLength.innerHTML = ((longStringCount * large.length) + 1).toString();
-        extraLength.innerHTML = ((longStringCount * extraLarge.length) + 1).toString();
-        xxLength.innerHTML = ((longStringCount * xxLarge.length) + 1).toString();
-        superSized.innerHTML = ((longStringCount * superSizedLength.length) + 1).toString();
+
+        slength.innerHTML = ((longStringCount * small.length) + 1).toString();
+        mlength.innerHTML = ((longStringCount * medium.length) + 1).toString();
+        llength.innerHTML = ((longStringCount * large.length) + 1).toString();
+        xllength.innerHTML = ((longStringCount * extraLarge.length) + 1).toString();
         sizeDetails.length = ((longStringCount * small.length) + 1);
         sizeDetails.mLength = ((longStringCount * medium.length) + 1);
         sizeDetails.lLength = ((longStringCount * large.length) + 1);
@@ -325,12 +304,10 @@ function displayText(event) {
 
     let heightCount = newText.length;
     if (heightCount > 0) {
-        smallLengthL.innerHTML = (heightCount * small.heightL).toString();
-        mediumLengthL.innerHTML = (heightCount * medium.heightL).toString();
-        largeLengthL.innerHTML = (heightCount * large.heightL).toString();
-        extraLengthL.innerHTML = (heightCount * extraLarge.heightL).toString();
-        xxLengthL.innerHTML = (heightCount * xxLarge.heightL).toString();
-        superSizedL.innerHTML = (heightCount * superSizedLength.heightL).toString();
+        sheightOne.innerHTML = (heightCount * small.heightL).toString();
+        mheightOne.innerHTML = (heightCount * medium.heightL).toString();
+        lheightOne.innerHTML = (heightCount * large.heightL).toString();
+        xlheightOne.innerHTML = (heightCount * extraLarge.heightL).toString();
         sizeDetails.heightOne = (heightCount * small.heightL);
         sizeDetails.mHeightOne = (heightCount * medium.heightL);
         sizeDetails.lHeightOne = (heightCount * large.heightL);
@@ -338,12 +315,10 @@ function displayText(event) {
         sizeDetails.xxlHeightOne = (heightCount * xxLarge.heightL);
         sizeDetails.superHeightOne = (heightCount * superSizedLength.heightL);
 
-        smallLengthR.innerHTML = (heightCount * small.heightR).toString();
-        mediumLengthR.innerHTML = (heightCount * medium.heightR).toString();
-        largeLengthR.innerHTML = (heightCount * large.heightR).toString();
-        extraLengthR.innerHTML = (heightCount * extraLarge.heightR).toString();
-        xxLengthR.innerHTML = (heightCount * xxLarge.heightR).toString();
-        superSizedR.innerHTML = (heightCount * superSizedLength.heightR).toString();
+        sheightTwo.innerHTML = (heightCount * small.heightR).toString();
+        mheightTwo.innerHTML = (heightCount * medium.heightR).toString();
+        lheightTwo.innerHTML = (heightCount * large.heightR).toString();
+        xlheightTwo.innerHTML = (heightCount * extraLarge.heightR).toString();
         sizeDetails.heightTwo = (heightCount * small.heightR);
         sizeDetails.mHeightTwo = (heightCount * medium.heightR);
         sizeDetails.lHeightTwo = (heightCount * large.heightR);
@@ -351,12 +326,10 @@ function displayText(event) {
         sizeDetails.xxlHeightTwo = (heightCount * xxLarge.heightR);
         sizeDetails.superHeightTwo = (heightCount * superSizedLength.heightR);
     }
-    smallLength.innerHTML = ((longStringCount * small.length) - 1).toString();
-    mediumLength.innerHTML = ((longStringCount * medium.length) - 1).toString();
-    largeLength.innerHTML = ((longStringCount * large.length) - 1).toString();
-    extraLength.innerHTML = ((longStringCount * extraLarge.length) - 1).toString();
-    xxLength.innerHTML = ((longStringCount * xxLarge.length) - 1).toString();
-    superSized.innerHTML = ((longStringCount * superSizedLength.length) - 1).toString();
+    slength.innerHTML = ((longStringCount * small.length) - 1).toString();
+    mlength.innerHTML = ((longStringCount * medium.length) - 1).toString();
+    llength.innerHTML = ((longStringCount * large.length) - 1).toString();
+    xllength.innerHTML = ((longStringCount * extraLarge.length) - 1).toString();
     sizeDetails.length = ((longStringCount * small.length) - 1);
     sizeDetails.mLength = ((longStringCount * medium.length) - 1);
     sizeDetails.lLength = ((longStringCount * large.length) - 1);
@@ -367,18 +340,6 @@ function displayText(event) {
     displayText.innerHTML = finalText;
     localStorage.setItem('text', newText);
 
-}
-
-function selectType(type) {
-    let indoor = document.getElementById("indoor");
-    let waterResistant = document.getElementById("waterResistant");
-    if (type === 'indoor') {
-        waterResistant.checked = false;
-    }
-    if (type === 'waterResistant') {
-        indoor.checked = false;
-    }
-    localStorage.setItem('selectType', type);
 }
 
 function selectElectricPug() {
@@ -481,90 +442,6 @@ function toggleTextShadow(state) {
     }
 }
 
-function selectSize(size) {
-    let length, heightL, heightR;
-    switch (size) {
-        case 'Small':
-            document.getElementById('smallBox').style.border = "3px solid #35398e";
-            document.getElementById('medium').style.border = "none";
-            document.getElementById('large').style.border = "none";
-            document.getElementById('xl').style.border = "none";
-            document.getElementById('xxl').style.border = "none";
-            document.getElementById('sSized').style.border = "none";
-            length = sizeDetails.length;
-            heightL = sizeDetails.heightOne;
-            heightR = sizeDetails.heightTwo;
-            break;
-        case 'Medium':
-            document.getElementById('medium').style.border = "3px solid #35398e";
-            document.getElementById('smallBox').style.border = "none";
-            document.getElementById('large').style.border = "none";
-            document.getElementById('xl').style.border = "none";
-            document.getElementById('xxl').style.border = "none";
-            document.getElementById('sSized').style.border = "none";
-            length = sizeDetails.mLength;
-            heightL = sizeDetails.mHeightOne;
-            heightR = sizeDetails.mHeightTwo;
-            break;
-        case 'Large':
-            document.getElementById('large').style.border = "3px solid #35398e";
-            document.getElementById('smallBox').style.border = "none";
-            document.getElementById('medium').style.border = "none";
-            document.getElementById('xl').style.border = "none";
-            document.getElementById('xxl').style.border = "none";
-            document.getElementById('sSized').style.border = "none";
-            length = sizeDetails.lLength;
-            heightL = sizeDetails.lHeightOne;
-            heightR = sizeDetails.lHeightTwo;
-            break;
-        case 'Extra Large':
-            document.getElementById('xl').style.border = "3px solid #35398e";
-            document.getElementById('smallBox').style.border = "none";
-            document.getElementById('medium').style.border = "none";
-            document.getElementById('large').style.border = "none";
-            document.getElementById('xxl').style.border = "none";
-            document.getElementById('sSized').style.border = "none";
-            length = sizeDetails.xlLength;
-            heightL = sizeDetails.xlHeightOne;
-            heightR = sizeDetails.xlHeightTwo;
-            break;
-        case 'XXLarge':
-            document.getElementById('xxl').style.border = "3px solid #35398e";
-            document.getElementById('smallBox').style.border = "none";
-            document.getElementById('medium').style.border = "none";
-            document.getElementById('large').style.border = "none";
-            document.getElementById('xl').style.border = "none";
-            document.getElementById('sSized').style.border = "none";
-            length = sizeDetails.xxlLength;
-            heightL = sizeDetails.xxlHeightOne;
-            heightR = sizeDetails.xxlHeightTwo;
-            break;
-        case 'Super Sized':
-            document.getElementById('sSized').style.border = "3px solid #35398e";
-            document.getElementById('smallBox').style.border = "none";
-            document.getElementById('medium').style.border = "none";
-            document.getElementById('large').style.border = "none";
-            document.getElementById('xl').style.border = "none";
-            document.getElementById('xxl').style.border = "none";
-            length = sizeDetails.superLength;
-            heightL = sizeDetails.superHeightOne;
-            heightR = sizeDetails.superHeightTwo;
-            break;
-        default:
-            document.getElementById('smallBox').style.border = "3px solid #35398e";
-            length = sizeDetails.length;
-            heightL = sizeDetails.heightOne;
-            heightR = sizeDetails.heightTwo;
-            break;
-
-    }
-
-    localStorage.setItem('size', size);
-    localStorage.setItem('length', length);
-    localStorage.setItem('heightOne', heightL);
-    localStorage.setItem('heightTwo', heightR);
-}
-
 function addToCart() {
 
     let text = localStorage.getItem('text');
@@ -596,4 +473,37 @@ function openModal() {
 function closeModal() {
     document.getElementById('dialogBox').style.display = 'none';
     document.getElementById("textInput").disabled = false;
+}
+
+function selectTheSize() {
+    let size = document.getElementById("size").value;
+    console.log(size);
+    switch (size) {
+        case 'small' :
+            document.getElementById('box-small').style.display = 'block';
+            document.getElementById('box-medium').style.display = 'none';
+            document.getElementById('box-large').style.display = 'none';
+            document.getElementById('box-xlarge').style.display = 'none';
+            break;
+        case 'medium' :
+            document.getElementById('box-medium').style.display = 'block';
+            document.getElementById('box-small').style.display = 'none';
+            document.getElementById('box-large').style.display = 'none';
+            document.getElementById('box-xlarge').style.display = 'none';
+            break;
+        case 'large' :
+            document.getElementById('box-large').style.display = 'block';
+            document.getElementById('box-xlarge').style.display = 'none';
+            document.getElementById('box-medium').style.display = 'none';
+            document.getElementById('box-small').style.display = 'none';
+            break;
+        case 'xlarge' :
+            document.getElementById('box-xlarge').style.display = 'block';
+            document.getElementById('box-large').style.display = 'none';
+            document.getElementById('box-medium').style.display = 'none';
+            document.getElementById('box-small').style.display = 'none';
+            break;
+        default:
+            document.getElementById('box-small').style.display = 'block';
+    }
 }

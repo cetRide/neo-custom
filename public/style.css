@@ -212,6 +212,17 @@ body {
     border-top: none;
 }
 
+.tabContent textarea {
+    width: 100%;
+    border-radius: 20px;
+    padding: 10px;
+    outline: none;
+}
+
+.tabContent textarea:hover {
+    border: 1px solid #35398e;
+}
+
 .tabLink {
     cursor: pointer;
     background-color: #35398e;
@@ -247,16 +258,6 @@ body {
 .alignText {
     cursor: pointer;
 }
-
-.electric-pug {
-    border-width: 1px;
-    box-shadow: none;
-    text-shadow: none;
-    padding: 2px 5px;
-    margin-left: 50px;
-    border-color: #f3f3f3;
-}
-
 .h6 {
     margin-bottom: 10px;
     margin-top: 10px;
@@ -268,7 +269,6 @@ body {
 
 .size-box {
     background-color: #E7E6E6;
-    height: 25px;
 }
 
 .size {
@@ -573,6 +573,54 @@ body {
         width: 33.33%;
     }
 
+}
+
+.box-small {
+    margin-top: 10px;
+    display: none;
+    border-radius: 20px;
+    padding: 0 0 0 10px;
+    height: 70px;
+}
+.box-medium {
+    margin-top: 10px;
+    display: none;
+    border-radius: 20px;
+    padding: 0 0 0 10px;
+}
+.box-large {
+    margin-top: 10px;
+    display: none;
+    border-radius: 20px;
+    padding: 0 0 0 10px;
+}
+.box-xlarge {
+    margin-top: 10px;
+    display: none;
+    border-radius: 20px;
+    padding: 0 0 0 10px;
+}
+
+#size {
+    width: 100%;
+    border-radius: 20px;
+    padding: 10px;
+    outline: none;
+}
+#size:hover {
+    border: 1px solid #35398e;
+}
+.select-component h6 {
+    font-size: 14.9333px;
+}
+.select-component select {
+    width: 100%;
+    border-radius: 20px;
+    padding: 10px;
+    outline: none;
+}
+.select-component select:hover {
+    border: 1px solid #35398e;
 }
 
 
