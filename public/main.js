@@ -2,6 +2,28 @@ let standardPrices = {
     waterResistance: 32
 };
 let totalPrice = 0;
+// xxx
+let smallSize = {
+    length: 9,
+    heightL: 7,
+    heightR: 35
+};
+let mediumSize  = {
+    length: 11,
+    heightL: 9,
+    heightR: 45
+};
+let largeSize  = {
+    length: 14,
+    heightL: 12,
+    heightR: 56
+};
+let extraLargeSize  = {
+    length: 17,
+    heightL: 14,
+    heightR: 68
+};
+// xxxx
 let sizeDetails = {
     length: 9,
     heightOne: 7,
@@ -138,6 +160,7 @@ function openTab(evt, actionName) {
 }
 
 function changeFontFamily(font) {
+    document.getElementById('select-font').value = font;
     let displayText = document.getElementById('displayText');
     displayText.style.fontFamily = font, 'cursive';
     localStorage.setItem('font', font);
@@ -219,6 +242,7 @@ function setColor(color) {
             color_string = "0 1px 0 #e73dcd, 0 2px 0 #d22fba, 0 3px 0 #c42aad, 0 4px 0 #b5219f, 0 0 5px rgba(0,0,0,.23), 0 1px 3px rgba(0,0,0,.43), 1px 4px 6px rgba(0,0,0,.4), 0 5px 10px rgba(0,0,0,.38), 3px 7px 12px rgba(0,0,0,.25)";
             break
     }
+    document.getElementById('select-color').value = color;
     document.getElementById('displayText').style.textShadow = color_string;
     document.getElementById('displayText').style.color = textColor;
     document.getElementById('onBtn').style.backgroundColor = 'white';
@@ -300,6 +324,10 @@ function displayText(event) {
         sizeDetails.xLength = ((longStringCount * extraLarge.length) + 1);
         sizeDetails.xxlLength = ((longStringCount * xxLarge.length) + 1);
         sizeDetails.superLength = ((longStringCount * superSizedLength.length) + 1);
+        smallSize.length = ((longStringCount * small.length) + 1);
+        mediumSize.length = ((longStringCount * medium.length) + 1);
+        largeSize.length = ((longStringCount * large.length) + 1);
+        extraLargeSize.length = ((longStringCount * extraLarge.length) + 1);
     }
 
     let heightCount = newText.length;
@@ -312,8 +340,11 @@ function displayText(event) {
         sizeDetails.mHeightOne = (heightCount * medium.heightL);
         sizeDetails.lHeightOne = (heightCount * large.heightL);
         sizeDetails.xlHeightOne = (heightCount * extraLarge.heightL);
-        sizeDetails.xxlHeightOne = (heightCount * xxLarge.heightL);
-        sizeDetails.superHeightOne = (heightCount * superSizedLength.heightL);
+
+        smallSize.heightL = (heightCount * small.heightL);
+        mediumSize.heightL = (heightCount * medium.heightL);
+        largeSize.heightL = (heightCount * large.heightL);
+        extraLarge.heightL = (heightCount * extraLarge.heightL);
 
         sheightTwo.innerHTML = (heightCount * small.heightR).toString();
         mheightTwo.innerHTML = (heightCount * medium.heightR).toString();
@@ -325,6 +356,12 @@ function displayText(event) {
         sizeDetails.xlHeightTwo = (heightCount * extraLarge.heightR);
         sizeDetails.xxlHeightTwo = (heightCount * xxLarge.heightR);
         sizeDetails.superHeightTwo = (heightCount * superSizedLength.heightR);
+
+        smallSize.heightR = (heightCount * small.heightR);
+        mediumSize.heightR = (heightCount * medium.heightR);
+        largeSize.heightR = (heightCount * large.heightL);
+        extraLarge.heightR = (heightCount * extraLarge.heightR);
+
     }
     slength.innerHTML = ((longStringCount * small.length) - 1).toString();
     mlength.innerHTML = ((longStringCount * medium.length) - 1).toString();
@@ -334,8 +371,11 @@ function displayText(event) {
     sizeDetails.mLength = ((longStringCount * medium.length) - 1);
     sizeDetails.lLength = ((longStringCount * large.length) - 1);
     sizeDetails.xLength = ((longStringCount * extraLarge.length) - 1);
-    sizeDetails.xxlLength = ((longStringCount * xxLarge.length) - 1);
-    sizeDetails.superLength = ((longStringCount * superSizedLength.length) - 1);
+
+    smallSize.length = ((longStringCount * small.length) - 1);
+    mediumSize.length = ((longStringCount * medium.length) - 1);
+    largeSize.length = ((longStringCount * large.length) - 1);
+    extraLargeSize.length = ((longStringCount * extraLarge.length) - 1);
 
     displayText.innerHTML = finalText;
     localStorage.setItem('text', newText);
@@ -477,31 +517,42 @@ function closeModal() {
 
 function selectTheSize() {
     let size = document.getElementById("size").value;
-    console.log(size);
     switch (size) {
         case 'small' :
             document.getElementById('box-small').style.display = 'block';
             document.getElementById('box-medium').style.display = 'none';
             document.getElementById('box-large').style.display = 'none';
             document.getElementById('box-xlarge').style.display = 'none';
+            document.getElementById('select-length').value = smallSize.length;
+            document.getElementById('select-heightOne').value = smallSize.heightL;
+            document.getElementById('select-heightTwo').value = smallSize.heightR;
             break;
         case 'medium' :
             document.getElementById('box-medium').style.display = 'block';
             document.getElementById('box-small').style.display = 'none';
             document.getElementById('box-large').style.display = 'none';
             document.getElementById('box-xlarge').style.display = 'none';
+            document.getElementById('select-length').value = mediumSize.length;
+            document.getElementById('select-heightOne').value = mediumSize.heightL;
+            document.getElementById('select-heightTwo').value = mediumSize.heightR;
             break;
         case 'large' :
             document.getElementById('box-large').style.display = 'block';
             document.getElementById('box-xlarge').style.display = 'none';
             document.getElementById('box-medium').style.display = 'none';
             document.getElementById('box-small').style.display = 'none';
+            document.getElementById('select-length').value = largeSize.length;
+            document.getElementById('select-heightOne').value = largeSize.heightL;
+            document.getElementById('select-heightTwo').value = largeSize.heightR;
             break;
         case 'xlarge' :
             document.getElementById('box-xlarge').style.display = 'block';
             document.getElementById('box-large').style.display = 'none';
             document.getElementById('box-medium').style.display = 'none';
             document.getElementById('box-small').style.display = 'none';
+            document.getElementById('select-length').value = extraLargeSize.length;
+            document.getElementById('select-heightOne').value = extraLargeSize.heightL;
+            document.getElementById('select-heightTwo').value = extraLargeSize.heightR;
             break;
         default:
             document.getElementById('box-small').style.display = 'block';
