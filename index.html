@@ -172,6 +172,7 @@
                         </div>
                         <div class="myFont" onclick="changeFontFamily('Syne Mono')">Syne Mono</div>
                     </div>
+                    <input type="hidden" id="select-font" name="font">
                 </div>
                 <div id="Color" class="tabContent text-center"
                      style="cursor: pointer; overflow: auto; height: 200px">
@@ -246,6 +247,7 @@
                             <span style="color: #CBE8F7">&#9734</span>
                             <p style="font-size: 9px">Tropical Blue</p>
                         </div>
+                        <input type="hidden" id="select-color" name="color">
                     </div>
                 </div>
                 <div id="Image" class="tabContent p-3">
@@ -265,9 +267,10 @@
                              onclick="setBG('/images/b6.jpeg')"></div>
                     </div>
                     <input type='file' id="imageInput" accept="image/*" onchange="readURL(event)"/>
+                    <input type="hidden" id="select-bg" name="background">
                 </div>
             </div>
-<!--            select size-->
+            <!--            select size-->
             <div class="mt-2">
                 <p class="mt-1" style="color: #333333; font-size: 12px">
                     Sizes vary depending on choice of font style, and whether the sign includes text in upper &
@@ -300,8 +303,13 @@
                         <p>height: <span id="xlheight-one"></span> - <span id="xlheight-two"></span>cm</p>
                     </div>
                 </div>
+                <div>
+                    <input type="hidden" id="select-length" name="length">
+                    <input type="hidden" id="select-heightOne" name="heightOne">
+                    <input type="hidden" id="select-heightTwo" name="heightTwo">
+                </div>
             </div>
-<!--            select location-->
+            <!--            select location-->
             <div>
                 <div class="select-component">
                     <h6>Location: </h6>
@@ -316,7 +324,7 @@
                     be exposed to wet weather, please order the 'Clear Acrylic Box' backboard option below.
                 </p>
             </div>
-<!--            select electric pug-->
+            <!--            select electric pug-->
             <div class="select-component">
                 <h6>Electric Pug: </h6>
                 <select>
@@ -328,7 +336,7 @@
                     <option value="Other">Other: Ask at checkout</option>
                 </select>
             </div>
-<!--            select back board-->
+            <!--            select back board-->
             <div>
                 <h6 class="text-center mt-2">CHOOSE YOUR BACK BOARD</h6>
                 <div class="row ml-auto mr-auto" style="width: 200px">
@@ -417,6 +425,7 @@
         src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
 <script type="text/javascript">
     function setBG(bg) {
+        document.getElementById('select-bg').value = bg;
         $(".customText").css("background-image", "url(" + bg + ")");
     }
 </script>
