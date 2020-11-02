@@ -12,7 +12,8 @@
 <body>
 <div class="container">
     <div class="row mt-1">
-        <div class="col-md-7 display-container customText" style="background-image: url(/images/b6.jpeg)">
+        <div class="col-md-7 display-container customText" id="draggableArea"
+             style="background-image: url(/images/b6.jpeg)">
             <div class="row">
                 <button class="btn-sm" id="offBtn" style="outline: none" onclick="toggleTextShadow('off')">OFF</button>
                 <button class="btn-sm" id="onBtn" style="outline: none" onclick="toggleTextShadow('on')">ON</button>
@@ -180,7 +181,6 @@
                     <div class="row justify-content-between">
                         <div class="color" onclick="setColor('Warm White')">
                             <span style="color: #efebd8">&#9734</span>
-                            </p>
                             <p style="font-size: 9px">Warm White</p></div>
                         <div class="color" onclick="setColor('White')">
                             <span style="color: lightgrey">&#9734</span>
@@ -188,7 +188,6 @@
                         </div>
                         <div class="color" onclick="setColor('Lemon Yellow')">
                             <span style="color: #fff44f">&#9734</span>
-                            </p>
                             <p style="font-size: 9px">Lemon Yellow</p>
                         </div>
                         <div class="color" onclick="setColor('Golden Yellow')">
@@ -210,6 +209,7 @@
                         <div class="color" onclick="setColor('Electric Blue')">
                             <span style="color: #7DF9FF">&#9734</p>
                                 <p style="font-size: 9px">Electric Blue</p>
+                            </span>
                         </div>
                         <div class="color" onclick="setColor('Deep Blue')">
                             <span style="color: #00BFFF">&#9734</span>
@@ -278,7 +278,7 @@
                 </p>
                 <div>
                     <h6 class="mt-2">Select Size</h6>
-                    <select id="size" style="width: 100%" onchange="selectTheSize()">
+                    <select class="size" style="width: 100%" onchange="selectTheSize()">
                         <option value="small">Small</option>
                         <option value="medium">Medium</option>
                         <option value="large">Large</option>
@@ -417,6 +417,7 @@
     </div>
 </div>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js" ></script>
 <script type="text/javascript"
         src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
 <script type="text/javascript"
@@ -434,6 +435,11 @@
         let getImagePath = URL.createObjectURL(event.target.files[0]);
         $('.customText').css('background-image', 'url(' + getImagePath + ')');
     }
+</script>
+<script>
+    $("#displayText").draggable({
+        containment: "#draggableArea"
+    });
 </script>
 </body>
 </html>

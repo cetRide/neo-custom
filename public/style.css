@@ -254,6 +254,11 @@ body {
     overflow: auto;
 }
 
+#draggableArea .mytext {
+    cursor: pointer;
+    display: inline-block;
+    clear: both;
+}
 
 .alignText {
     cursor: pointer;
@@ -601,13 +606,13 @@ body {
     padding: 0 0 0 10px;
 }
 
-#size {
+.size {
     width: 100%;
     border-radius: 20px;
     padding: 10px;
     outline: none;
 }
-#size:hover {
+.size:hover {
     border: 1px solid #35398e;
 }
 .select-component h6 {

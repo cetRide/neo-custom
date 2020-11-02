@@ -8,17 +8,17 @@ let smallSize = {
     heightL: 7,
     heightR: 35
 };
-let mediumSize  = {
+let mediumSize = {
     length: 11,
     heightL: 9,
     heightR: 45
 };
-let largeSize  = {
+let largeSize = {
     length: 14,
     heightL: 12,
     heightR: 56
 };
-let extraLargeSize  = {
+let extraLargeSize = {
     length: 17,
     heightL: 14,
     heightR: 68
@@ -113,7 +113,6 @@ window.onload = function () {
     document.getElementById("box-small").style.display = "block";
     tabContent = document.getElementsByClassName("tabContent");
     document.getElementById('blackboardPrice').innerHTML = 'Free';
-    document.getElementById('totalPrice').innerHTML = totalPrice;
     document.getElementById('displayText').style.textShadow = defaultNeon;
     document.getElementById('displayText').style.fontFamily = 'Dolce Vita';
 
@@ -131,11 +130,6 @@ window.onload = function () {
     document.getElementById("lheight-two").innerHTML = large.heightR.toString();
     document.getElementById("mheight-two").innerHTML = medium.heightR.toString();
     document.getElementById("xlheight-two").innerHTML = extraLarge.heightR.toString();
-
-    localStorage.setItem('size', 'Small');
-    localStorage.setItem('length', small.length);
-    localStorage.setItem('heightOne', small.heightL);
-    localStorage.setItem('heightTwo', small.heightR);
     for (i = 0; i < tabContent.length; i++) {
         if (i === 0) {
             tabContent[i].style.display = "block";
@@ -163,7 +157,6 @@ function changeFontFamily(font) {
     document.getElementById('select-font').value = font;
     let displayText = document.getElementById('displayText');
     displayText.style.fontFamily = font, 'cursive';
-    localStorage.setItem('font', font);
 }
 
 function setColor(color) {
@@ -409,52 +402,6 @@ function selectBlackBord() {
     localStorage.setItem('selectBackBoard', selectedBackBoard);
 }
 
-function displayTotalPrice() {
-    let totalPrice = 0;
-    let sizePrice = sizePrices.small;
-    let size = localStorage.getItem('size');
-    switch (size) {
-        case 'Small':
-            sizePrice = sizePrices.small;
-            break;
-        case 'Medium':
-            sizePrice = sizePrices.medium;
-            break;
-        case 'Large':
-            sizePrice = sizePrices.large;
-            break;
-        case 'Extra Large':
-            sizePrice = sizePrices.xlarge;
-            break;
-        case 'XXLarge':
-            sizePrice = sizePrices.xxlarge;
-            break;
-        case 'Super Sized':
-            sizePrice = sizePrices.superSized;
-            break;
-        default:
-            sizePrice = sizePrices.small;
-            break;
-
-    }
-    let usage = localStorage.getItem('selectType');
-    let back = localStorage.getItem('selectBackBoard');
-    if (usage !== 'indoor') {
-        totalPrice = totalPrice + parseInt(standardPrices.waterResistance);
-    }
-    if (back !== null) {
-        let resultObject = search(back, backBoard);
-        if (resultObject.price !== 'Free') {
-            totalPrice = totalPrice + parseInt(resultObject.price);
-        }
-    }
-    totalPrice = totalPrice + parseInt(sizePrice);
-    if (totalPrice !== null) {
-        document.getElementById('totalPrice').innerHTML = totalPrice.toString();
-        localStorage.setItem('totalPrice', totalPrice.toString());
-    }
-}
-
 function toggleTextShadow(state) {
     let bg = "#4D4B4B";
     let colorString = localStorage.getItem('glow-color-code');
@@ -502,10 +449,6 @@ function addToCart() {
     }
 }
 
-setInterval(function () {
-    this.displayTotalPrice();
-}, 100);
-
 function openModal() {
     document.getElementById('dialogBox').style.display = 'block';
 }
@@ -516,7 +459,11 @@ function closeModal() {
 }
 
 function selectTheSize() {
-    let size = document.getElementById("size").value;
+    let size = 'small';
+    let elements = document.getElementsByClassName("size");
+    for (let i = 0, length = elements.length; i < length; i++) {
+        size = elements[i].value;
+    }
     switch (size) {
         case 'small' :
             document.getElementById('box-small').style.display = 'block';
