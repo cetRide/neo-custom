@@ -29,14 +29,14 @@
             </div>
             <div class="tabs-mobile">
                 <div class="row text-white justify-content-between">
-                    <div class=" py-2 text-center tabLink" id="defaultOpen" onclick="openTab(event, 'Text')">
+                    <div class=" py-2 text-center tabLink" id="textTab" onclick="openTab(event, 'Text')">
                         <i class="fa fa-font" aria-hidden="true"></i>
                     </div>
                     <div class="py-2 text-center tabLink" onclick="openTab(event, 'Font')">
                         <i class="fa fa-fonticons" aria-hidden="true"></i>
 
                     </div>
-                    <div class="py-2 text-center tabLink" onclick="openTab(event, 'Color')">
+                    <div class="py-2 text-center tabLink"  onclick="openTab(event, 'Color')">
                         <i class="fa fa-star-o" aria-hidden="true"></i>
                     </div>
                     <div class="py-2 text-center tabLink" onclick="openTab(event, 'Image')">
@@ -52,13 +52,13 @@
                 <div class="col-md-3 py-2 text-center tabLink" id="defaultOpen" onclick="openTab(event, 'Text')">
                     <p>Text</p>
                 </div>
-                <div class="col-md-3 py-2 text-center tabLink" onclick="openTab(event, 'Font')">
+                <div class="col-md-3 py-2 text-center tabLink" id="fontTab" onclick="openTab(event, 'Font')">
                     <p>Font</p>
                 </div>
-                <div class="col-md-3 py-2 text-center tabLink" onclick="openTab(event, 'Color')">
+                <div class="col-md-3 py-2 text-center tabLink" id="colorTab"  onclick="openTab(event, 'Color')">
                     <p>Color</p>
                 </div>
-                <div class="col-md-3 py-2 text-center tabLink" onclick="openTab(event, 'Image')">
+                <div class="col-md-3 py-2 text-center tabLink" id="bgTab" onclick="openTab(event, 'Image')">
                     <p>Background</p>
                 </div>
             </div>
@@ -80,7 +80,7 @@
                     <div class="row button-group px-4">
                         <div class="box-container" id="line1">
                             <div class="text-center box-line" id="box1" onclick="changeTextBox('text1')">
-                                <p>Line 1
+                                <p>Text 1
                             </div>
                             <div class="close-div" id="firstLine" onclick="closeInput('text1')">
                                 <span class="close-btn">X</span>
@@ -88,7 +88,7 @@
                         </div>
                         <div class="box-container" id="line2">
                             <div class="text-center box-line" id="box2" onclick="changeTextBox('text2')">
-                                <p>Line 2
+                                <p>Text 2
                             </div>
                             <div class="close-div" id="secondLine" onclick="closeInput('text2')">
                                 <span class="close-btn">X</span>
@@ -96,7 +96,7 @@
                         </div>
                         <div class="box-container" id="line3">
                             <div class="text-center box-line" id="box3" onclick="changeTextBox('text3')">
-                                <p>Line 3
+                                <p>Text 3
                             </div>
                             <div class="close-div" id="thirdLine" onclick="closeInput('text3')">
                                 <span class="close-btn">X</span>
@@ -112,13 +112,13 @@
 
                     <div class="row button-group">
                         <div class="text-center box-line toggleBtn" id="togglefont1" onclick="toggleFonts('line1')">
-                            <p>Line 1
+                            <p>Text 1
                         </div>
                         <div class="text-center box-line toggleBtn" id="togglefont2" onclick="toggleFonts('line2')">
-                            <p>Line 2
+                            <p>Text 2
                         </div>
                         <div class="text-center box-line toggleBtn" id="togglefont3" onclick="toggleFonts('line3')">
-                            <p>Line 3
+                            <p>Text 3
                         </div>
                         <div>
                             <input type="hidden" id="toggleFonts" value="line1">
@@ -229,13 +229,13 @@
                     <h6 class="text-center my-3">CHOOSE COLOUR</h6>
                     <div class="row button-group">
                         <div class="text-center box-line toggleBtn" id="toggle1" onclick="toggleColors('line1')">
-                            <p>Line 1
+                            <p>Text 1
                         </div>
                         <div class="text-center box-line toggleBtn" id="toggle2" onclick="toggleColors('line2')">
-                            <p>Line 2
+                            <p>Text 2
                         </div>
                         <div class="text-center box-line toggleBtn" id="toggle3" onclick="toggleColors('line3')">
-                            <p>Line 3
+                            <p>Text 3
                         </div>
                         <div>
                             <input type="hidden" id="toggleColors" value="line1">
@@ -490,6 +490,11 @@
 <script type="text/javascript"
         src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
 <script type="text/javascript">
+    $(document).ready(function(){
+        $('#defaultOpen').addClass('active');
+        $('#textTab').addClass('active');
+
+    });
     function setBG(bg) {
         document.getElementById('select-bg').value = bg;
         $(".customText").css("background-image", "url(" + bg + ")");
@@ -502,8 +507,11 @@
     }
 </script>
 <script>
-    $("#displayText").draggable({
-        containment: "#draggableArea"
+    $("#line-one").draggable({
+    });
+    $("#line-two").draggable({
+    });
+    $("#line-three").draggable({
     });
 </script>
 </body>

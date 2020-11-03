@@ -1,8 +1,4 @@
-let standardPrices = {
-    waterResistance: 32
-};
-let totalPrice = 0;
-// xxx
+
 let smallSize = {
     length: 9,
     heightL: 7,
@@ -24,31 +20,6 @@ let extraLargeSize = {
     heightR: 68
 };
 // xxxx
-let sizeDetails = {
-    length: 9,
-    heightOne: 7,
-    heightTwo: 35,
-
-    mLength: 11,
-    mHeightOne: 9,
-    mHeightTwo: 45,
-
-    lLength: 14,
-    lHeightOne: 12,
-    lHeightTwo: 56,
-
-    xlLength: 17,
-    HeightOne: 14,
-    HeightTwo: 68,
-
-    xxlLength: 23,
-    xxlHeightOne: 18,
-    xxlHeightTwo: 86,
-
-    superLength: 31,
-    superHeightOne: 22,
-    superHeightTwo: 108
-};
 let small = {
     length: 9,
     heightL: 7,
@@ -69,16 +40,6 @@ let extraLarge = {
     heightL: 14,
     heightR: 68
 };
-let xxLarge = {
-    length: 23,
-    heightL: 18,
-    heightR: 86
-};
-let superSizedLength = {
-    length: 31,
-    heightL: 22,
-    heightR: 108
-};
 let backBoard = [
     {id: "0", url: '/images/back1.png', name: 'Cut Around Acrylic', price: 'Free'},
     {id: "1", url: '/images/back2.png', name: 'Rectangle Acrylic', price: 'Free'},
@@ -92,17 +53,20 @@ let backBoard = [
 let lines = 1;
 
 let defaultNeon = "0 0 5px #fff, 0 0 10px #fff, 0 0 20px #98ff98, 0 0 30px #98ff98, 0 0 40px #98ff98, 0 0 55px #98ff98, 0 0 75px #98ff98";
-
+let defaultColor = '#98ff98';
 
 window.onload = function () {
     let i, tabContent;
-    let defaultColor = '#98ff98';
     lines = 1;
     if (lines === 1) {
         document.getElementById('line1').style.display = 'block';
         document.getElementById('box1').classList.add('activeBtn');
         document.getElementById('text1').classList.add('displayInput');
     }
+    document.getElementById('line-one').style.textAlign = 'center';
+    document.getElementById('line-two').style.textAlign = 'center';
+    document.getElementById('line-three').style.textAlign = 'center';
+
     document.getElementById('line-one').style.textShadow = defaultNeon;
     document.getElementById('line-two').style.textShadow = defaultNeon;
     document.getElementById('line-three').style.color = defaultColor;
@@ -301,7 +265,7 @@ function toggleTextShadow(state) {
     if (state === 'on') {
         document.getElementById('onBtn').style.backgroundColor = 'white';
         document.getElementById('offBtn').style.backgroundColor = bg;
-        if (colorString === null) {
+        if (colorString !== null) {
             let textColor = localStorage.getItem('color-code');
             document.getElementById('line-one').style.color = textColor;
             document.getElementById('line-one').style.textShadow = colorString;
@@ -309,7 +273,7 @@ function toggleTextShadow(state) {
             document.getElementById('line-one').style.textShadow = defaultNeon;
         }
         if (colorString1 !== null) {
-            let textColor1 = localStorage.getItem('color-code2');
+            let textColor1 = localStorage.getItem('color-cod2');
             document.getElementById('line-two').style.color = textColor1;
             document.getElementById('line-two').style.textShadow = colorString1;
         } else {
@@ -328,20 +292,18 @@ function toggleTextShadow(state) {
         document.getElementById('onBtn').style.backgroundColor = bg;
         document.getElementById('offBtn').style.backgroundColor = 'white';
 
-        if (colorString === null) {
+        if (colorString !== null) {
             let colorCode = localStorage.getItem('color-code');
             document.getElementById('line-one').style.color = colorCode;
             document.getElementById('line-one').style.textShadow = 'none';
-            document.getElementById('line-one').style.textShadow = defaultNeon;
         } else {
             document.getElementById('line-one').style.color = defaultColor;
             document.getElementById('line-one').style.textShadow = 'none';
         }
         if (colorString1 !== null) {
-            let colorCode2 = localStorage.getItem('color-code3');
+            let colorCode2 = localStorage.getItem('color-cod2');
             document.getElementById('line-two').style.color = colorCode2;
             document.getElementById('line-two').style.textShadow = 'none';
-            document.getElementById('line-two').style.textShadow = defaultNeon;
         } else {
             document.getElementById('line-two').style.color = defaultColor;
             document.getElementById('line-two').style.textShadow = 'none';
@@ -530,8 +492,8 @@ function displayLine1(event) {
 }
 
 function displayLine2(event) {
-    document.getElementById('line-two').innerHTML = document.getElementById('text2').value;
-
+    let text2 = document.getElementById('line-two');
+    text2.innerHTML = document.getElementById('text2').value;
 }
 
 function displayLine3(event) {

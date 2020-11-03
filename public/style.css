@@ -206,7 +206,9 @@ body {
 [class*="col-"] {
     float: left;
 }
-
+.bgColor {
+    background-color: #f5ba40;
+}
 .tabContent {
     display: none;
     border-top: none;
@@ -231,7 +233,8 @@ body {
 }
 
 .tabLink.active {
-    border-bottom: 5px solid #98ff98;
+    /*border-bottom: 5px solid #98ff98;*/
+    background-color: #f5ba40;
 }
 
 .display-container {
@@ -280,10 +283,6 @@ body {
     display: none;
 }
 
-.bgColor {
-    background-color: #f5ba40;
-    border: none;
-}
 
 .box-line {
     border-radius: 20px;
@@ -343,11 +342,11 @@ body {
     overflow: auto;
 }
 
-#draggableArea .mytext {
-    cursor: pointer;
-    display: inline-block;
-    clear: both;
-}
+/*#draggableArea .mytext {*/
+/*    cursor: pointer;*/
+/*    clear: both;*/
+/*    display: inline-block;*/
+/*}*/
 
 .alignText {
     cursor: pointer;
