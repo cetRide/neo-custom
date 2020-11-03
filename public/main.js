@@ -89,32 +89,33 @@ let backBoard = [
     {id: "6", url: '/images/back7.png', name: 'Clear Acrylic Box: Free-Standing', price: '284'},
 ];
 
-let sizePrices = {
-    small: 34,
-    medium: 63,
-    large: 86,
-    xlarge: 107,
-    xxlarge: 128,
-    superSized: 180
-};
+let lines = 1;
 
 let defaultNeon = "0 0 5px #fff, 0 0 10px #fff, 0 0 20px #98ff98, 0 0 30px #98ff98, 0 0 40px #98ff98, 0 0 55px #98ff98, 0 0 75px #98ff98";
 
 
 window.onload = function () {
     let i, tabContent;
-    document.getElementById('displayText').style.color = 'white';
+    let defaultColor = '#98ff98';
+    lines = 1;
+    if (lines === 1) {
+        document.getElementById('line1').style.display = 'block';
+        document.getElementById('box1').classList.add('activeBtn');
+        document.getElementById('text1').classList.add('displayInput');
+    }
+    document.getElementById('line-one').style.textShadow = defaultNeon;
+    document.getElementById('line-two').style.textShadow = defaultNeon;
+    document.getElementById('line-three').style.color = defaultColor;
+    document.getElementById('line-two').style.color = defaultColor;
+    document.getElementById('line-one').style.color = defaultColor;
+    document.getElementById('line-three').style.textShadow = defaultNeon;
+    document.getElementById('toggle1').classList.add('bgColor');
+    document.getElementById('togglefont1').classList.add('bgColor');
     document.getElementById('onBtn').style.backgroundColor = 'white';
     document.getElementById('offBtn').style.backgroundColor = "#4D4B4B";
-    let displayText = document.getElementById("displayText");
-    let textInput = document.getElementById("textInput");
-    displayText.innerHTML = textInput.value;
-    displayText.style.textAlign = 'center';
     document.getElementById("box-small").style.display = "block";
     tabContent = document.getElementsByClassName("tabContent");
     document.getElementById('blackboardPrice').innerHTML = 'Free';
-    document.getElementById('displayText').style.textShadow = defaultNeon;
-    document.getElementById('displayText').style.fontFamily = 'Dolce Vita';
 
     document.getElementById("slength").innerHTML = small.length.toString();
     document.getElementById("llength").innerHTML = large.length.toString();
@@ -155,8 +156,15 @@ function openTab(evt, actionName) {
 
 function changeFontFamily(font) {
     document.getElementById('select-font').value = font;
-    let displayText = document.getElementById('displayText');
-    displayText.style.fontFamily = font, 'cursive';
+
+    let selectedLine = document.getElementById('toggleFonts').value;
+    if (selectedLine === 'line1') {
+        document.getElementById('line-one').style.fontFamily = font, 'cursive';
+    } else if (selectedLine === 'line2') {
+        document.getElementById('line-two').style.fontFamily = font, 'cursive';
+    } else if (selectedLine === 'line3') {
+        document.getElementById('line-three').style.fontFamily = font, 'cursive';
+    }
 }
 
 function setColor(color) {
@@ -235,149 +243,32 @@ function setColor(color) {
             color_string = "0 1px 0 #e73dcd, 0 2px 0 #d22fba, 0 3px 0 #c42aad, 0 4px 0 #b5219f, 0 0 5px rgba(0,0,0,.23), 0 1px 3px rgba(0,0,0,.43), 1px 4px 6px rgba(0,0,0,.4), 0 5px 10px rgba(0,0,0,.38), 3px 7px 12px rgba(0,0,0,.25)";
             break
     }
-    document.getElementById('select-color').value = color;
-    document.getElementById('displayText').style.textShadow = color_string;
-    document.getElementById('displayText').style.color = textColor;
-    document.getElementById('onBtn').style.backgroundColor = 'white';
-    document.getElementById('offBtn').style.backgroundColor = "#4D4B4B";
-    localStorage.setItem('glow-color-code', color_string);
-    localStorage.setItem('glow-color', color);
-    localStorage.setItem('color-code', textColor);
-}
 
-function alignText(direction) {
-    switch (direction) {
-        case 'Left':
-            document.getElementById('displayText').style.textAlign = 'left';
-            break;
-        case 'Center':
-            document.getElementById('displayText').style.textAlign = 'center';
-            break;
-        case 'Right':
-            document.getElementById('displayText').style.textAlign = 'right';
-            break;
-        default:
-            document.getElementById('displayText').style.textAlign = 'center';
-            break;
-    }
-    localStorage.setItem('alignText', direction);
-}
+    let selectedLine = document.getElementById('toggleColors').value;
+    if (selectedLine === 'line1') {
+        document.getElementById('line-one').style.textShadow = color_string;
+        document.getElementById('line-one').style.color = textColor;
+        document.getElementById('select-color').value = color;
+        localStorage.setItem('glow-color-code', color_string);
+        localStorage.setItem('glow-color', color);
+        localStorage.setItem('color-code', textColor);
+    } else if (selectedLine === 'line2') {
+        document.getElementById('line-two').style.textShadow = color_string;
+        document.getElementById('line-two').style.color = textColor;
+        document.getElementById('select-color-line2').value = color;
+        localStorage.setItem('glow-color-code2', color_string);
+        localStorage.setItem('glow-color2', color);
+        localStorage.setItem('color-cod2', textColor);
 
-function displayText(event) {
-    let textInput = document.getElementById("textInput");
-    let displayText = document.getElementById("displayText");
-
-    let slength = document.getElementById("slength");
-    let mlength = document.getElementById("mlength");
-    let llength = document.getElementById("llength");
-    let xllength = document.getElementById("xllength");
-
-    let sheightOne = document.getElementById("sheight-one");
-    let mheightOne = document.getElementById("mheight-one");
-    let lheightOne = document.getElementById("lheight-one");
-    let xlheightOne = document.getElementById("xlheight-one");
-
-    let sheightTwo = document.getElementById("sheight-two");
-    let mheightTwo = document.getElementById("mheight-two");
-    let lheightTwo = document.getElementById("lheight-two");
-    let xlheightTwo = document.getElementById("xlheight-two");
-
-
-    let text = textInput.value;
-
-    if (text.length > 30) {
-        document.getElementById("textInput").disabled = true;
-        this.openModal();
-    }
-    if (event.keyCode === 13 && !event.shiftKey) {
-        text = text + '\n';
-    }
-    text = text.substring(0, 30);
-    let finalText = "";
-    let newText = text.split('\n');
-    let longStringCount = 0;
-    for (let i = 0; i < newText.length; i++) {
-        if (newText[i] === "") {
-            newText.splice(i, 1);
-        }
-        if (newText[i].length > longStringCount) {
-            longStringCount = newText[i].length;
-        }
-        finalText += newText[i] + "<br>";
-    }
-    if (text.length === 1) {
-
-        slength.innerHTML = ((longStringCount * small.length) + 1).toString();
-        mlength.innerHTML = ((longStringCount * medium.length) + 1).toString();
-        llength.innerHTML = ((longStringCount * large.length) + 1).toString();
-        xllength.innerHTML = ((longStringCount * extraLarge.length) + 1).toString();
-        sizeDetails.length = ((longStringCount * small.length) + 1);
-        sizeDetails.mLength = ((longStringCount * medium.length) + 1);
-        sizeDetails.lLength = ((longStringCount * large.length) + 1);
-        sizeDetails.xLength = ((longStringCount * extraLarge.length) + 1);
-        sizeDetails.xxlLength = ((longStringCount * xxLarge.length) + 1);
-        sizeDetails.superLength = ((longStringCount * superSizedLength.length) + 1);
-        smallSize.length = ((longStringCount * small.length) + 1);
-        mediumSize.length = ((longStringCount * medium.length) + 1);
-        largeSize.length = ((longStringCount * large.length) + 1);
-        extraLargeSize.length = ((longStringCount * extraLarge.length) + 1);
+    } else if (selectedLine === 'line3') {
+        document.getElementById('line-three').style.textShadow = color_string;
+        document.getElementById('line-three').style.color = textColor;
+        document.getElementById('select-color-line3').value = color;
+        localStorage.setItem('glow-color-code3', color_string);
+        localStorage.setItem('glow-color3', color);
+        localStorage.setItem('color-code3', textColor);
     }
 
-    let heightCount = newText.length;
-    if (heightCount > 0) {
-        sheightOne.innerHTML = (heightCount * small.heightL).toString();
-        mheightOne.innerHTML = (heightCount * medium.heightL).toString();
-        lheightOne.innerHTML = (heightCount * large.heightL).toString();
-        xlheightOne.innerHTML = (heightCount * extraLarge.heightL).toString();
-        sizeDetails.heightOne = (heightCount * small.heightL);
-        sizeDetails.mHeightOne = (heightCount * medium.heightL);
-        sizeDetails.lHeightOne = (heightCount * large.heightL);
-        sizeDetails.xlHeightOne = (heightCount * extraLarge.heightL);
-
-        smallSize.heightL = (heightCount * small.heightL);
-        mediumSize.heightL = (heightCount * medium.heightL);
-        largeSize.heightL = (heightCount * large.heightL);
-        extraLarge.heightL = (heightCount * extraLarge.heightL);
-
-        sheightTwo.innerHTML = (heightCount * small.heightR).toString();
-        mheightTwo.innerHTML = (heightCount * medium.heightR).toString();
-        lheightTwo.innerHTML = (heightCount * large.heightR).toString();
-        xlheightTwo.innerHTML = (heightCount * extraLarge.heightR).toString();
-        sizeDetails.heightTwo = (heightCount * small.heightR);
-        sizeDetails.mHeightTwo = (heightCount * medium.heightR);
-        sizeDetails.lHeightTwo = (heightCount * large.heightR);
-        sizeDetails.xlHeightTwo = (heightCount * extraLarge.heightR);
-        sizeDetails.xxlHeightTwo = (heightCount * xxLarge.heightR);
-        sizeDetails.superHeightTwo = (heightCount * superSizedLength.heightR);
-
-        smallSize.heightR = (heightCount * small.heightR);
-        mediumSize.heightR = (heightCount * medium.heightR);
-        largeSize.heightR = (heightCount * large.heightL);
-        extraLarge.heightR = (heightCount * extraLarge.heightR);
-
-    }
-    slength.innerHTML = ((longStringCount * small.length) - 1).toString();
-    mlength.innerHTML = ((longStringCount * medium.length) - 1).toString();
-    llength.innerHTML = ((longStringCount * large.length) - 1).toString();
-    xllength.innerHTML = ((longStringCount * extraLarge.length) - 1).toString();
-    sizeDetails.length = ((longStringCount * small.length) - 1);
-    sizeDetails.mLength = ((longStringCount * medium.length) - 1);
-    sizeDetails.lLength = ((longStringCount * large.length) - 1);
-    sizeDetails.xLength = ((longStringCount * extraLarge.length) - 1);
-
-    smallSize.length = ((longStringCount * small.length) - 1);
-    mediumSize.length = ((longStringCount * medium.length) - 1);
-    largeSize.length = ((longStringCount * large.length) - 1);
-    extraLargeSize.length = ((longStringCount * extraLarge.length) - 1);
-
-    displayText.innerHTML = finalText;
-    localStorage.setItem('text', newText);
-
-}
-
-function selectElectricPug() {
-    let electricPug = document.getElementById("selectedElectricPug").value;
-    localStorage.setItem('electricPug', electricPug);
 }
 
 function search(nameKey, myArray) {
@@ -388,7 +279,6 @@ function search(nameKey, myArray) {
     }
 }
 
-//select the blackboard
 function selectBlackBord() {
     let selectedBackBoard = document.getElementById("selectedBackBoard").value;
     let resultObject = search(selectedBackBoard, backBoard);
@@ -405,26 +295,65 @@ function selectBlackBord() {
 function toggleTextShadow(state) {
     let bg = "#4D4B4B";
     let colorString = localStorage.getItem('glow-color-code');
+    let colorString1 = localStorage.getItem('glow-color-code2');
+    let colorString2 = localStorage.getItem('glow-color-code3');
+
     if (state === 'on') {
         document.getElementById('onBtn').style.backgroundColor = 'white';
         document.getElementById('offBtn').style.backgroundColor = bg;
         if (colorString === null) {
-            document.getElementById('displayText').style.textShadow = defaultNeon;
-        } else {
             let textColor = localStorage.getItem('color-code');
-            document.getElementById('displayText').style.color = textColor;
-            document.getElementById('displayText').style.textShadow = colorString;
+            document.getElementById('line-one').style.color = textColor;
+            document.getElementById('line-one').style.textShadow = colorString;
+        } else {
+            document.getElementById('line-one').style.textShadow = defaultNeon;
         }
+        if (colorString1 !== null) {
+            let textColor1 = localStorage.getItem('color-code2');
+            document.getElementById('line-two').style.color = textColor1;
+            document.getElementById('line-two').style.textShadow = colorString1;
+        } else {
+            document.getElementById('line-two').style.textShadow = defaultNeon;
+        }
+
+        if (colorString2 !== null) {
+            let textColor2 = localStorage.getItem('color-code3');
+            document.getElementById('line-three').style.color = textColor2;
+            document.getElementById('line-three').style.textShadow = colorString2;
+        } else {
+            document.getElementById('line-three').style.textShadow = defaultNeon;
+        }
+
     } else {
         document.getElementById('onBtn').style.backgroundColor = bg;
         document.getElementById('offBtn').style.backgroundColor = 'white';
+
         if (colorString === null) {
-            document.getElementById('displayText').style.color = 'white';
-            document.getElementById('displayText').style.textShadow = 'none';
-        } else {
             let colorCode = localStorage.getItem('color-code');
-            document.getElementById('displayText').style.color = colorCode;
-            document.getElementById('displayText').style.textShadow = 'none';
+            document.getElementById('line-one').style.color = colorCode;
+            document.getElementById('line-one').style.textShadow = 'none';
+            document.getElementById('line-one').style.textShadow = defaultNeon;
+        } else {
+            document.getElementById('line-one').style.color = defaultColor;
+            document.getElementById('line-one').style.textShadow = 'none';
+        }
+        if (colorString1 !== null) {
+            let colorCode2 = localStorage.getItem('color-code3');
+            document.getElementById('line-two').style.color = colorCode2;
+            document.getElementById('line-two').style.textShadow = 'none';
+            document.getElementById('line-two').style.textShadow = defaultNeon;
+        } else {
+            document.getElementById('line-two').style.color = defaultColor;
+            document.getElementById('line-two').style.textShadow = 'none';
+        }
+
+        if (colorString2 !== null) {
+            let colorCode3 = localStorage.getItem('color-code3');
+            document.getElementById('line-three').style.color = colorCode3;
+            document.getElementById('line-three').style.textShadow = 'none';
+        } else {
+            document.getElementById('line-three').style.color = defaultColor;
+            document.getElementById('line-three').style.textShadow = 'none';
         }
     }
 }
@@ -504,4 +433,264 @@ function selectTheSize() {
         default:
             document.getElementById('box-small').style.display = 'block';
     }
+
 }
+
+function displayLinesButton() {
+    if (lines === 1) {
+        document.getElementById('line1').style.display = 'block';
+    } else if (lines === 2) {
+        document.getElementById('line2').style.display = 'block';
+    } else if (lines === 3) {
+        document.getElementById('line3').style.display = 'block';
+    }
+}
+
+function addLine() {
+    lines = lines + 1;
+    if (lines === 2) {
+        document.getElementById('box2').classList.add('activeBtn');
+        document.getElementById('box3').classList.remove('activeBtn');
+        document.getElementById('box1').classList.remove('activeBtn');
+        document.getElementById('text1').classList.remove('displayInput');
+        document.getElementById('text3').classList.remove('displayInput');
+        document.getElementById('text2').classList.add('displayInput');
+
+    } else if (lines === 3) {
+        document.getElementById('box3').classList.add('activeBtn');
+        document.getElementById('box2').classList.remove('activeBtn');
+        document.getElementById('box1').classList.remove('activeBtn');
+
+        document.getElementById('text1').classList.remove('displayInput');
+        document.getElementById('text2').classList.remove('displayInput');
+        document.getElementById('text3').classList.add('displayInput');
+    }
+}
+
+function changeTextBox(textBox) {
+    if (textBox === 'text1') {
+        document.getElementById('text2').classList.remove('displayInput');
+        document.getElementById('text3').classList.remove('displayInput');
+        document.getElementById('text1').classList.add('displayInput');
+
+        document.getElementById('box1').classList.add('activeBtn');
+        document.getElementById('box3').classList.remove('activeBtn');
+        document.getElementById('box2').classList.remove('activeBtn');
+
+    } else if (textBox === 'text2') {
+        document.getElementById('box2').classList.add('activeBtn');
+        document.getElementById('box3').classList.remove('activeBtn');
+        document.getElementById('box1').classList.remove('activeBtn');
+        document.getElementById('text1').classList.remove('displayInput');
+        document.getElementById('text3').classList.remove('displayInput');
+        document.getElementById('text2').classList.add('displayInput');
+
+    } else if (textBox === 'text3') {
+        document.getElementById('box3').classList.add('activeBtn');
+        document.getElementById('box2').classList.remove('activeBtn');
+        document.getElementById('box1').classList.remove('activeBtn');
+
+        document.getElementById('text1').classList.remove('displayInput');
+        document.getElementById('text2').classList.remove('displayInput');
+        document.getElementById('text3').classList.add('displayInput');
+    }
+}
+
+function closeInput(box) {
+    let text2 = document.getElementById('text2');
+    let text3 = document.getElementById('text3');
+    let text1 = document.getElementById('text1');
+    let line2 = document.getElementById('line2');
+    let line3 = document.getElementById('line3');
+    let box1 = document.getElementById('box1');
+    let box2 = document.getElementById('box2');
+
+    if (box === 'text2') {
+        line2.style.display = 'none';
+        text2.classList.remove('displayInput');
+        text2.value = "";
+        text1.classList.add('displayInput');
+        box1.classList.add('activeBtn');
+        document.getElementById('line-two').innerHTML = "";
+    } else {
+        line3.style.display = 'none';
+        text3.classList.remove('displayInput');
+        text1.classList.remove('displayInput');
+        text2.classList.add('displayInput');
+        box2.classList.add('activeBtn');
+        box1.classList.remove('activeBtn');
+        text3.value = "";
+        document.getElementById('line-three').innerHTML = "";
+    }
+    lines = lines - 1;
+}
+
+function displayLine1(event) {
+    document.getElementById('line-one').innerHTML = document.getElementById('text1').value;
+}
+
+function displayLine2(event) {
+    document.getElementById('line-two').innerHTML = document.getElementById('text2').value;
+
+}
+
+function displayLine3(event) {
+    document.getElementById('line-three').innerHTML = document.getElementById('text3').value;
+
+}
+
+function calculateHeight() {
+
+    let sheightOne = document.getElementById("sheight-one");
+    let mheightOne = document.getElementById("mheight-one");
+    let lheightOne = document.getElementById("lheight-one");
+    let xlheightOne = document.getElementById("xlheight-one");
+
+    let sheightTwo = document.getElementById("sheight-two");
+    let mheightTwo = document.getElementById("mheight-two");
+    let lheightTwo = document.getElementById("lheight-two");
+    let xlheightTwo = document.getElementById("xlheight-two");
+
+    sheightOne.innerHTML = (lines * small.heightL).toString();
+    mheightOne.innerHTML = (lines * medium.heightL).toString();
+    lheightOne.innerHTML = (lines * large.heightL).toString();
+    xlheightOne.innerHTML = (lines * extraLarge.heightL).toString();
+
+    sheightTwo.innerHTML = (lines * small.heightR).toString();
+    mheightTwo.innerHTML = (lines * medium.heightR).toString();
+    lheightTwo.innerHTML = (lines * large.heightR).toString();
+    xlheightTwo.innerHTML = (lines * extraLarge.heightR).toString();
+}
+
+function calculateLength() {
+    let slength = document.getElementById("slength");
+    let mlength = document.getElementById("mlength");
+    let llength = document.getElementById("llength");
+    let xllength = document.getElementById("xllength");
+
+    let text2 = document.getElementById('text2').value;
+    let text3 = document.getElementById('text3').value;
+    let text1 = document.getElementById('text1').value;
+    let longStringCount = 0;
+    let data = [text1, text2, text3];
+    for (let i = 0; i < 3; i++) {
+        if (data[i].length > longStringCount) {
+            longStringCount = data[i].length;
+        }
+    }
+
+    slength.innerHTML = ((longStringCount * small.length) - 1).toString();
+    mlength.innerHTML = ((longStringCount * medium.length) - 1).toString();
+    llength.innerHTML = ((longStringCount * large.length) - 1).toString();
+    xllength.innerHTML = ((longStringCount * extraLarge.length) - 1).toString();
+}
+
+function displayToggleButtons() {
+    let toggle1 = document.getElementById('toggle1');
+    let toggle2 = document.getElementById('toggle2');
+    let toggle3 = document.getElementById('toggle3');
+    let togglefont1 = document.getElementById('togglefont1');
+    let togglefont2 = document.getElementById('togglefont2');
+    let togglefont3 = document.getElementById('togglefont3');
+    if (lines === 3) {
+        toggle1.style.display = 'block';
+        toggle2.style.display = 'block';
+        toggle3.style.display = 'block';
+
+        togglefont1.style.display = 'block';
+        togglefont2.style.display = 'block';
+        togglefont3.style.display = 'block';
+    } else if (lines === 2) {
+        toggle1.style.display = 'block';
+        toggle2.style.display = 'block';
+        toggle3.style.display = 'none';
+
+        togglefont1.style.display = 'block';
+        togglefont2.style.display = 'block';
+        togglefont3.style.display = 'none';
+    } else {
+        toggle1.style.display = 'block';
+        toggle2.style.display = 'none';
+        toggle3.style.display = 'none';
+
+        togglefont1.style.display = 'block';
+        togglefont2.style.display = 'none';
+        togglefont3.style.display = 'none';
+    }
+}
+
+function toggleColors(line) {
+    document.getElementById('toggleColors').value = line;
+    document.getElementById('toggleColors').classList.add('bgColor');
+    switch (line) {
+        case 'line1':
+            document.getElementById('toggle1').classList.add('bgColor');
+            document.getElementById('toggle3').classList.remove('bgColor');
+            document.getElementById('toggle2').classList.remove('bgColor');
+            break;
+        case 'line2':
+            document.getElementById('toggle2').classList.add('bgColor');
+            document.getElementById('toggle1').classList.remove('bgColor');
+            document.getElementById('toggle3').classList.remove('bgColor');
+            break;
+        case 'line3':
+            document.getElementById('toggle3').classList.add('bgColor');
+            document.getElementById('toggle1').classList.remove('bgColor');
+            document.getElementById('toggle2').classList.remove('bgColor');
+            break;
+        default:
+            document.getElementById('toggle1').classList.add('bgColor');
+            document.getElementById('toggle3').classList.remove('bgColor');
+            document.getElementById('toggle2').classList.remove('bgColor');
+            break;
+
+    }
+}
+
+function toggleFonts(line) {
+    document.getElementById('toggleFonts').value = line;
+    document.getElementById('toggleFonts').classList.add('bgColor');
+    switch (line) {
+        case 'line1':
+            document.getElementById('togglefont1').classList.add('bgColor');
+            document.getElementById('togglefont2').classList.remove('bgColor');
+            document.getElementById('togglefont3').classList.remove('bgColor');
+            break;
+        case 'line2':
+            document.getElementById('togglefont2').classList.add('bgColor');
+            document.getElementById('togglefont3').classList.remove('bgColor');
+            document.getElementById('togglefont1').classList.remove('bgColor');
+            break;
+        case 'line3':
+            document.getElementById('togglefont3').classList.add('bgColor');
+            document.getElementById('togglefont2').classList.remove('bgColor');
+            document.getElementById('togglefont1').classList.remove('bgColor');
+            break;
+        default:
+            document.getElementById('togglefont1').classList.add('bgColor');
+            document.getElementById('togglefont2').classList.remove('bgColor');
+            document.getElementById('togglefont3').classList.remove('bgColor');
+            break;
+
+    }
+}
+
+setInterval(function () {
+    this.displayLinesButton();
+    this.calculateHeight();
+    this.calculateLength();
+    this.displayToggleButtons();
+    if (lines === 3) {
+        document.getElementById('addLine').style.display = 'none';
+        document.getElementById('secondLine').style.display = 'none';
+        document.getElementById('firstLine').style.display = 'none';
+        document.getElementById('thirdLine').style.display = 'block';
+    } else if (lines === 2) {
+        document.getElementById('addLine').style.display = 'block';
+        document.getElementById('secondLine').style.display = 'block';
+        document.getElementById('firstLine').style.display = 'none';
+    } else {
+        document.getElementById('addLine').style.display = 'block';
+        document.getElementById('firstLine').style.display = 'none';
+    }
+}, 100);
