@@ -1,0 +1,341 @@
+
+<style>
+    @media (min-width: 992px){
+        .col-md-8-5 {
+            width: 64%;
+        }
+        .col-md-3-5 {
+            width: 36%;
+        }
+    }
+    /* The container */
+    .custom-checkbox .custom-control-label {
+      display: block;
+      position: relative;
+      padding-left: 35px;
+      margin-bottom: 12px;
+      cursor: pointer;
+      font-size: 16px;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      text-align: left;
+  }
+
+  /* Hide the browser's default checkbox */
+  .custom-checkbox .custom-control-label input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 0;
+      width: 0;
+  }
+  .custom-control.custom-radio{
+    margin-bottom: 5px;
+}
+/* Create a custom checkbox */
+.custom-checkbox .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  border-radius: 15px;
+  background-color: #fff;
+  border: 2px solid gray;
+}
+
+.custom-radio label {
+ border: 2px solid #f5f5f5;
+ background: #f5f5f5;
+ border-radius: 15px;
+ width: 100%;
+ text-align: center;
+ padding: 10px;
+ color: #000;
+ font-family: 'Brandon_reg';
+ font-size: 14.4px;
+ -webkit-transition: all 0.5s ease;
+ -moz-transition: all 0.5s ease;
+ -ms-transition: all 0.5s ease;
+ -o-transition: all 0.5s ease;
+ transition: all 0.5s ease;
+ cursor: pointer;
+ height: 66px;
+ display: flex;
+ align-items: center;
+ flex-direction: column;
+ justify-content: center;
+}
+.main_radio .col-xs-6{
+    padding: 0 5px;
+}
+.custom-radio.selected label, .custom-radio:hover label {
+    box-shadow: unset;
+    border-color: transparent;
+    border-radius: 15px;
+    border: 2px solid #F55aff;
+    background: #fff;
+}
+.custom-radio input{
+    position: absolute;
+    opacity: 0;
+}
+span.radio_span {
+    display: inline-block;
+    margin: 10px 0 0;
+    font-family: 'Brandon_reg';
+    color: #010101;
+}
+/* On mouse-over, add a grey background color */
+.custom-checkbox .custom-control-label:hover input ~ .checkmark {
+    background-color: #fff;
+    border: 2px solid gray;
+}
+
+/* When the checkbox is checked, add a blue background */
+.custom-checkbox .custom-control-label input:checked ~ .checkmark {
+  background-color: #4bc3c9;
+  border-color: #4bc3c9;
+}
+.custom-checkbox .custom-control-label input[type=checkbox]:checked + label{
+    background-color: #4bc3c9;
+} 
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.custom-checkbox .custom-control-label:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.custom-checkbox .custom-control-label input:checked ~ .checkmark:after {
+  display: block;
+}
+.form-group.main_radio {
+    padding: 0 5px;
+}
+/* Style the checkmark/indicator */
+.custom-checkbox .custom-control-label .checkmark:after {
+  left: 6px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  content: "";
+  position: absolute;
+}
+.color_desc {
+   width: 100%;
+   background-color: #f5f5f5;
+   color: #000;
+   -webkit-border-bottom-right-radius: 10px;
+   -webkit-border-bottom-left-radius: 10px;
+   -moz-border-radius-bottomright: 10px;
+   -moz-border-radius-bottomleft: 10px;
+   border-bottom-right-radius: 10px;
+   border-bottom-left-radius: 10px;
+
+}
+ 
+.cdesc {
+  padding:0px 5px 0px 5px;
+}
+.demo_on_off.offswitch {
+    background: url(../images/off_new.png) no-repeat;
+    height: 34px;
+    background-size: auto 100%;
+    width: 74px;
+}
+.demo_on_off.onswitch {
+    background: url(../images/on_new.png) no-repeat;
+    height: 34px;
+    background-size: auto 100%;
+    width: 74px;
+}
+.demo_on_off{
+   top: 15px;
+   left: 15px;
+}
+
+    .make_style_form div.size-box {
+        margin: 5px;
+        padding: 5px;
+        border: 0px;
+        /*border: 2px solid #e7e6e6;*/
+        border: 2px solid #f5f5f5;
+        background: #f5f5f5;
+        border-radius: 15px;
+        font-size:1.1rem !important;
+    }
+    .make_style_form div.size-box strong , .make_style_form div.size-box .s_size2 div{
+       font-size:0.9rem !important;
+   }
+   #input_text::-webkit-input-placeholder {
+      text-align: center;
+      padding-top: 1%;
+  }
+  textarea#input_text {
+    text-align: center;
+    padding-top: 6%;
+    background: #f5f5f5;
+    border-radius: 15px;
+}
+.option-label{
+    text-transform: uppercase !important;
+    font-family: 'Brandon_reg';
+    font-size: 15pt !important;
+}
+.make_style_form div.size-box.active,.make_style_form div.size-box:hover {
+    box-shadow: unset;
+    border-color: transparent;
+    border-radius: 15px;
+    border: 2px solid #F55aff;
+    background: #fff;
+}
+ 
+.make_style_form .size-box .s_price div:nth-child(2) ,.make_style_form .s_size2 div:nth-child(2),.make_style_form .s_size div:nth-child(2){
+    /*background: #e7e6e6;*/
+    background: #f5f5f5;
+}
+.make_style_form div.size-box.active .s_price div:nth-child(2) ,.make_style_form div.size-box.active .s_size2 div:nth-child(2),.make_style_form div.size-box.active .s_size div:nth-child(2),
+.make_style_form div.size-box:hover .s_price div:nth-child(2) ,.make_style_form div.size-box:hover .s_size2 div:nth-child(2),.make_style_form div.size-box:hover .s_size div:nth-child(2),
+.make_style_form div.size-box.active strong ,.make_style_form div.size-box.active .s_size2 div,.make_style_form div.size-box.active .s_size div,
+.make_style_form div.size-box:hover strong ,.make_style_form div.size-box:hover .s_size2 div,.make_style_form div.size-box:hover .s_size div{
+    background: #fff;
+}
+.make_style_form .size-box .s_price div:nth-child(2) {
+    color: #000;
+    font-family: 'Brandon_reg';
+    font-size: 19px;
+    padding-left: 0px;
+}
+.dropdown-design ,.dropdown-toggle-design{
+    background: #f5f5f5;
+    padding: 10px 0;
+    border-radius: 15px;
+    margin: 10px;
+    font-family: 'Brandon_reg';
+}
+.dropdown-toggle-design li:nth-child(1) a{
+    color: #F55aff;
+}
+.dropdown-design .btn-default{
+    background: #f5f5f5;
+    border: 0px;
+}
+.dropdown-toggle-design {
+    margin: 10px 0px;
+}
+.total-section {
+    background: #f5f5f5;
+    font-family: 'Brandon_bld';
+    padding: 15px;
+    border-radius: 15px;
+    text-align: left;
+}
+.total_sel_price{
+    float: right;
+}
+button#add_to_cart {
+    padding: 15px;
+    border-radius: 15px;
+    font-family: 'Brandon_bld';
+    font-size: 140%;
+}
+.get-quote-btn{
+    color: #5d5d5d !important;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+/* 1-10-20 */
+strong, .strong{
+    background: #f5f5f5;
+    text-transform: capitalize;
+    padding-left: 0px;
+}
+.s_size2 div, .s_size div {
+    background: #f5f5f5;
+}
+.plug_style label{
+    text-transform: uppercase;
+    font-family: 'Brandon_reg';
+
+
+}
+.form-group.plug_style{
+    margin-left: 10px;
+}
+.plug_style h4{
+    font-family: 'Brandon_reg';
+    color: #333333e8;
+}
+.demo_text{
+    border-radius: 11px;
+}
+.form-group.plug_style .btn-default{
+   border: 0;
+   background: #f5f5f5;
+}
+.form-group.plug_style i{
+   border: 0;
+}
+@media screen and (min-width: 992px){
+  .demo_text {
+     padding-top: 90%;
+     background-position: top center;
+  }
+}
+@media screen and (max-width: 991px){
+    
+    body {
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+    }
+    .custom {
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+    }   
+        
+  .bg_style li {
+     height: 65px;
+     background-size: cover;
+  }
+}
+@media screen and (max-width: 767px){
+
+    body {
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+    }
+    .custom {
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+    }       
+    
+  .demo_text {
+    padding-top: 92%;
+    background-position: top center;
+  }
+  .col-xs-12.top-logo {
+    float: none;
+  }
+  .color_desc {
+    background-color:#fff !important;   
+  }
+}
+@media handheld, screen and (min-width: 768px) and (max-width: 991px){
+  .col-xs-12.top-logo {
+      float: none;
+  }
+  .demo_text {
+    background-position: top center;
+  }
+}
+</style>

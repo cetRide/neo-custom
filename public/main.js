@@ -1,4 +1,3 @@
-
 let smallSize = {
     length: 9,
     heightL: 7,
@@ -57,44 +56,16 @@ let defaultColor = '#98ff98';
 
 window.onload = function () {
     let i, tabContent;
-    lines = 1;
-    if (lines === 1) {
-        document.getElementById('line1').style.display = 'block';
-        document.getElementById('box1').classList.add('activeBtn');
-        document.getElementById('text1').classList.add('displayInput');
-    }
-    document.getElementById('line-one').style.textAlign = 'center';
-    document.getElementById('line-two').style.textAlign = 'center';
-    document.getElementById('line-three').style.textAlign = 'center';
-
-    document.getElementById('line-one').style.textShadow = defaultNeon;
-    document.getElementById('line-two').style.textShadow = defaultNeon;
-    document.getElementById('line-three').style.color = defaultColor;
-    document.getElementById('line-two').style.color = defaultColor;
-    document.getElementById('line-one').style.color = defaultColor;
-    document.getElementById('line-three').style.textShadow = defaultNeon;
-    document.getElementById('toggle1').classList.add('bgColor');
-    document.getElementById('togglefont1').classList.add('bgColor');
-    document.getElementById('onBtn').style.backgroundColor = 'white';
-    document.getElementById('offBtn').style.backgroundColor = "#4D4B4B";
-    document.getElementById("box-small").style.display = "block";
     tabContent = document.getElementsByClassName("tabContent");
-    document.getElementById('blackboardPrice').innerHTML = 'Free';
-
-    document.getElementById("slength").innerHTML = small.length.toString();
-    document.getElementById("llength").innerHTML = large.length.toString();
-    document.getElementById("mlength").innerHTML = medium.length.toString();
-    document.getElementById("xllength").innerHTML = extraLarge.length.toString();
-
-    document.getElementById("sheight-one").innerHTML = small.heightL.toString();
-    document.getElementById("lheight-one").innerHTML = large.heightL.toString();
-    document.getElementById("mheight-one").innerHTML = medium.heightL.toString();
-    document.getElementById("xlheight-one").innerHTML = extraLarge.heightL.toString();
-
-    document.getElementById("sheight-two").innerHTML = small.heightR.toString();
-    document.getElementById("lheight-two").innerHTML = large.heightR.toString();
-    document.getElementById("mheight-two").innerHTML = medium.heightR.toString();
-    document.getElementById("xlheight-two").innerHTML = extraLarge.heightR.toString();
+    let displayText = document.getElementById("displayText");
+    let displayTextMobile = document.getElementById("displayTextMobile");
+    let textInput = document.getElementById("textInput");
+    document.getElementById('displayText').style.fontFamily = 'Hamillton';
+    document.getElementById('displayText').style.color = 'white';
+    document.getElementById('displayTextMobile').style.fontFamily = 'Hamillton';
+    document.getElementById('displayTextMobile').style.color = 'white';
+    displayText.innerHTML = textInput.value;
+    displayTextMobile.innerHTML = textInput.value;
     for (i = 0; i < tabContent.length; i++) {
         if (i === 0) {
             tabContent[i].style.display = "block";
@@ -119,29 +90,37 @@ function openTab(evt, actionName) {
 }
 
 function changeFontFamily(font) {
-    document.getElementById('select-font').value = font;
+    // document.getElementById('select-font').value = font;
+    let displayText = document.getElementById('displayText');
+    displayText.style.fontFamily = font, 'cursive';
 
-    let selectedLine = document.getElementById('toggleFonts').value;
-    if (selectedLine === 'line1') {
-        document.getElementById('line-one').style.fontFamily = font, 'cursive';
-    } else if (selectedLine === 'line2') {
-        document.getElementById('line-two').style.fontFamily = font, 'cursive';
-    } else if (selectedLine === 'line3') {
-        document.getElementById('line-three').style.fontFamily = font, 'cursive';
-    }
+    let displayTextMobile = document.getElementById('displayTextMobile');
+    displayTextMobile.style.fontFamily = font, 'cursive';
 }
+
 
 function setColor(color) {
     let textColor, color_string;
-
     switch (color) {
+        case 'Yellow':
+            textColor = "#FFFF00";
+            color_string = "0 0 5px #fff, 0 0 10px #fff, 0 0 20px #FFFF00, 0 0 30px #FFFF00, 0 0 40px #FFFF00, 0 0 55px #FFFF00, 0 0 75px #FFFF00";
+            break;
+        case 'Girl Pink':
+            textColor = "#f8b9d4";
+            color_string = "0 0 5px #fff, 0 0 10px #fff, 0 0 20px #f8b9d4, 0 0 30px #f8b9d4, 0 0 40px #f8b9d4, 0 0 55px #f8b9d4, 0 0 75px #f8b9d4";
+            break;
+        case 'Pink':
+            textColor = "#FFC0CB";
+            color_string = "0 0 5px #fff, 0 0 10px #fff, 0 0 20px #FFC0CB, 0 0 30px #FFC0CB, 0 0 40px #FFC0CB, 0 0 55px #FFC0CB, 0 0 75px #FFC0CB";
+            break;
         case 'Lemon Yellow':
             textColor = "#fff44f";
             color_string = "0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff44f, 0 0 30px #fff44f, 0 0 40px #fff44f, 0 0 55px #fff44f, 0 0 75px #fff44f";
             break;
-        case 'Mint':
-            textColor = "#98ff98";
-            color_string = "0 0 5px #fff, 0 0 10px #fff, 0 0 20px #98ff98, 0 0 30px #98ff98, 0 0 40px #98ff98, 0 0 55px #98ff98, 0 0 75px #98ff98";
+        case 'Blue Green':
+            textColor = "#0d98ba";
+            color_string = "0 0 5px #fff, 0 0 10px #fff, 0 0 20px #0d98ba, 0 0 30px #0d98ba, 0 0 40px #0d98ba, 0 0 55px #0d98ba, 0 0 75px #0d98ba";
             break;
         case 'Golden Yellow':
             textColor = "#FFDF00";
@@ -175,14 +154,6 @@ function setColor(color) {
             textColor = "#FF1493";
             color_string = "0 0 5px #fff, 0 0 10px #fff, 0 0 20px #FF1493, 0 0 30px #FF1493, 0 0 40px #FF1493, 0 0 55px #FF1493, 0 0 75px #FF1493";
             break;
-        case 'Warm White':
-            textColor = "#efebd8";
-            color_string = "0 0 5px #fff, 0 0 10px #fff, 0 0 20px #efebd8, 0 0 30px #efebd8, 0 0 40px #efebd8, 0 0 55px #efebd8, 0 0 75px #efebd8";
-            break;
-        case 'White':
-            textColor = "#ffffff";
-            color_string = "0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ffffff, 0 0 30px #ffffff, 0 0 40px #ffffff, 0 0 55px #ffffff, 0 0 75px #ffffff";
-            break;
         case 'Light Red':
             textColor = "#ffcccb";
             color_string = "0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ffcccb, 0 0 30px #ffcccb, 0 0 40px #ffcccb, 0 0 55px #ffcccb, 0 0 75px #ffcccb";
@@ -203,35 +174,72 @@ function setColor(color) {
             textColor = "#008000";
             color_string = "0 0 5px #fff, 0 0 10px #fff, 0 0 20px #008000, 0 0 30px #008000, 0 0 40px #008000, 0 0 55px #008000, 0 0 75px #008000";
             break;
+        case 'Warm White':
+            textColor = "#FFFFFF";
+            color_string = "0 0 5px #fff, 0 0 10px #fff, 0 0 20px #efebd8, 0 0 30px #efebd8, 0 0 40px #efebd8, 0 0 55px #efebd8, 0 0 75px #efebd8";
+            break;
+        case 'White':
+            textColor = "#ffffff";
+            color_string = "0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ffffff, 0 0 30px #ffffff, 0 0 40px #ffffff, 0 0 55px #ffffff, 0 0 75px #ffffff";
+            break;
+        case 'White Yellow':
+            textColor = "#FFFFFF";
+            color_string = "0 0 5px #fff, 0 0 10px #fff, 0 0 20px #c, 0 0 30px #FFFFE0, 0 0 40px #FFFFE0, 0 0 55px #FFFFE0, 0 0 75px #FFFFE0";
+            break;
+        case 'White Orange':
+            textColor = "#FFFFFF";
+            color_string = "0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ffe4b2, 0 0 30px #ffe4b2, 0 0 40px #ffe4b2, 0 0 55px #ffe4b2, 0 0 75px #ffe4b2";
+            break;
+        case 'White Pink':
+            textColor = "#FFFFFF";
+            color_string = "0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ffecef, 0 0 30px #ffecef, 0 0 40px #ffecef, 0 0 55px #ffecef, 0 0 75px #ffecef";
+            break;
+        case 'White Girl Pink':
+            textColor = "#FFFFFF";
+            color_string = "0 0 5px #fff, 0 0 10px #fff, 0 0 20px #e2b8c5, 0 0 30px #e2b8c5, 0 0 40px #e2b8c5, 0 0 55px #e2b8c5, 0 0 75px #e2b8c5";
+            break;
+        case 'White Purple':
+            textColor = "#FFFFFF";
+            color_string = "0 0 5px #fff, 0 0 10px #fff, 0 0 20px #e7e0f9, 0 0 30px #e7e0f9, 0 0 40px #e7e0f9, 0 0 55px #e7e0f9, 0 0 75px #e7e0f9";
+            break;
+        case 'White Red':
+            textColor = "#FFFFFF";
+            color_string = "0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff6666, 0 0 30px #ff6666, 0 0 40px #ff6666, 0 0 55px #ff6666, 0 0 75px #ff6666";
+            break;
+        case 'White Green':
+            textColor = "#FFFFFF";
+            color_string = "0 0 5px #fff, 0 0 10px #fff, 0 0 20px #b2d8b2, 0 0 30px #b2d8b2, 0 0 40px #b2d8b2, 0 0 55px #b2d8b2, 0 0 75px #b2d8b2";
+            break;
+        case 'White Ice Blue':
+            textColor = "#FFFFFF";
+            color_string = "0 0 5px #fff, 0 0 10px #a9c7df, 0 0 20px #a9c7df, 0 0 30px #a9c7df, 0 0 40px #a9c7df, 0 0 55px #a9c7df, 0 0 75px #a9c7df";
+            break;
+        case 'White Blue':
+            textColor = "#FFFFFF";
+            color_string = "0 0 5px #fff, 0 0 10px #fff, 0 0 20px #dff0f9, 0 0 30px #dff0f9, 0 0 40px #dff0f9, 0 0 55px #dff0f9, 0 0 75px #dff0f9";
+            break;
         default:
             color_string = "0 1px 0 #e73dcd, 0 2px 0 #d22fba, 0 3px 0 #c42aad, 0 4px 0 #b5219f, 0 0 5px rgba(0,0,0,.23), 0 1px 3px rgba(0,0,0,.43), 1px 4px 6px rgba(0,0,0,.4), 0 5px 10px rgba(0,0,0,.38), 3px 7px 12px rgba(0,0,0,.25)";
             break
     }
+    // document.getElementById('select-color').value = color;
+    let check = document.getElementById('inputs');
+    if (check.checked === true) {
+        document.getElementById('displayText').style.textShadow = color_string;
+        document.getElementById('displayText').style.color = textColor;
+        document.getElementById('displayTextMobile').style.textShadow = color_string;
+        document.getElementById('displayTextMobile').style.color = textColor;
 
-    let selectedLine = document.getElementById('toggleColors').value;
-    if (selectedLine === 'line1') {
-        document.getElementById('line-one').style.textShadow = color_string;
-        document.getElementById('line-one').style.color = textColor;
-        document.getElementById('select-color').value = color;
-        localStorage.setItem('glow-color-code', color_string);
-        localStorage.setItem('glow-color', color);
-        localStorage.setItem('color-code', textColor);
-    } else if (selectedLine === 'line2') {
-        document.getElementById('line-two').style.textShadow = color_string;
-        document.getElementById('line-two').style.color = textColor;
-        document.getElementById('select-color-line2').value = color;
-        localStorage.setItem('glow-color-code2', color_string);
-        localStorage.setItem('glow-color2', color);
-        localStorage.setItem('color-cod2', textColor);
+    } else {
+        document.getElementById('displayText').style.textShadow = 'none';
+        document.getElementById('displayText').style.color = textColor;
 
-    } else if (selectedLine === 'line3') {
-        document.getElementById('line-three').style.textShadow = color_string;
-        document.getElementById('line-three').style.color = textColor;
-        document.getElementById('select-color-line3').value = color;
-        localStorage.setItem('glow-color-code3', color_string);
-        localStorage.setItem('glow-color3', color);
-        localStorage.setItem('color-code3', textColor);
+        document.getElementById('displayTextMobile').style.textShadow = 'none';
+        document.getElementById('displayTextMobile').style.color = textColor;
     }
+    localStorage.setItem('glow-color-code', color_string);
+    localStorage.setItem('glow-color', color);
+    localStorage.setItem('color-code', textColor);
 
 }
 
@@ -257,66 +265,40 @@ function selectBlackBord() {
 }
 
 function toggleTextShadow(state) {
-    let bg = "#4D4B4B";
-    let colorString = localStorage.getItem('glow-color-code');
-    let colorString1 = localStorage.getItem('glow-color-code2');
-    let colorString2 = localStorage.getItem('glow-color-code3');
 
+    let colorString = localStorage.getItem('glow-color-code');
     if (state === 'on') {
-        document.getElementById('onBtn').style.backgroundColor = 'white';
-        document.getElementById('offBtn').style.backgroundColor = bg;
         if (colorString !== null) {
             let textColor = localStorage.getItem('color-code');
-            document.getElementById('line-one').style.color = textColor;
-            document.getElementById('line-one').style.textShadow = colorString;
+            document.getElementById('displayText').style.color = textColor;
+            document.getElementById('displayText').style.textShadow = colorString;
+            document.getElementById('displayTextMobile').style.color = textColor;
+            document.getElementById('displayTextMobile').style.textShadow = colorString;
         } else {
             document.getElementById('line-one').style.textShadow = defaultNeon;
         }
-        if (colorString1 !== null) {
-            let textColor1 = localStorage.getItem('color-cod2');
-            document.getElementById('line-two').style.color = textColor1;
-            document.getElementById('line-two').style.textShadow = colorString1;
-        } else {
-            document.getElementById('line-two').style.textShadow = defaultNeon;
-        }
-
-        if (colorString2 !== null) {
-            let textColor2 = localStorage.getItem('color-code3');
-            document.getElementById('line-three').style.color = textColor2;
-            document.getElementById('line-three').style.textShadow = colorString2;
-        } else {
-            document.getElementById('line-three').style.textShadow = defaultNeon;
-        }
-
     } else {
-        document.getElementById('onBtn').style.backgroundColor = bg;
-        document.getElementById('offBtn').style.backgroundColor = 'white';
-
         if (colorString !== null) {
             let colorCode = localStorage.getItem('color-code');
-            document.getElementById('line-one').style.color = colorCode;
-            document.getElementById('line-one').style.textShadow = 'none';
+            document.getElementById('displayText').style.color = colorCode;
+            document.getElementById('displayText').style.textShadow = 'none';
+            document.getElementById('displayTextMobile').style.color = colorCode;
+            document.getElementById('displayTextMobile').style.textShadow = 'none';
         } else {
-            document.getElementById('line-one').style.color = defaultColor;
-            document.getElementById('line-one').style.textShadow = 'none';
-        }
-        if (colorString1 !== null) {
-            let colorCode2 = localStorage.getItem('color-cod2');
-            document.getElementById('line-two').style.color = colorCode2;
-            document.getElementById('line-two').style.textShadow = 'none';
-        } else {
-            document.getElementById('line-two').style.color = defaultColor;
-            document.getElementById('line-two').style.textShadow = 'none';
+            document.getElementById('displayText').style.color = defaultColor;
+            document.getElementById('displayText').style.textShadow = 'none';
+            document.getElementById('displayTextMobile').style.color = defaultColor;
+            document.getElementById('displayTextMobile').style.textShadow = 'none';
         }
 
-        if (colorString2 !== null) {
-            let colorCode3 = localStorage.getItem('color-code3');
-            document.getElementById('line-three').style.color = colorCode3;
-            document.getElementById('line-three').style.textShadow = 'none';
-        } else {
-            document.getElementById('line-three').style.color = defaultColor;
-            document.getElementById('line-three').style.textShadow = 'none';
-        }
+    }
+}
+
+function handleChange(checkbox) {
+    if (checkbox.checked === true) {
+        this.toggleTextShadow('on')
+    } else {
+        this.toggleTextShadow('off')
     }
 }
 
@@ -398,16 +380,6 @@ function selectTheSize() {
 
 }
 
-function displayLinesButton() {
-    if (lines === 1) {
-        document.getElementById('line1').style.display = 'block';
-    } else if (lines === 2) {
-        document.getElementById('line2').style.display = 'block';
-    } else if (lines === 3) {
-        document.getElementById('line3').style.display = 'block';
-    }
-}
-
 function addLine() {
     lines = lines + 1;
     if (lines === 2) {
@@ -427,124 +399,6 @@ function addLine() {
         document.getElementById('text2').classList.remove('displayInput');
         document.getElementById('text3').classList.add('displayInput');
     }
-}
-
-function changeTextBox(textBox) {
-    if (textBox === 'text1') {
-        document.getElementById('text2').classList.remove('displayInput');
-        document.getElementById('text3').classList.remove('displayInput');
-        document.getElementById('text1').classList.add('displayInput');
-
-        document.getElementById('box1').classList.add('activeBtn');
-        document.getElementById('box3').classList.remove('activeBtn');
-        document.getElementById('box2').classList.remove('activeBtn');
-
-    } else if (textBox === 'text2') {
-        document.getElementById('box2').classList.add('activeBtn');
-        document.getElementById('box3').classList.remove('activeBtn');
-        document.getElementById('box1').classList.remove('activeBtn');
-        document.getElementById('text1').classList.remove('displayInput');
-        document.getElementById('text3').classList.remove('displayInput');
-        document.getElementById('text2').classList.add('displayInput');
-
-    } else if (textBox === 'text3') {
-        document.getElementById('box3').classList.add('activeBtn');
-        document.getElementById('box2').classList.remove('activeBtn');
-        document.getElementById('box1').classList.remove('activeBtn');
-
-        document.getElementById('text1').classList.remove('displayInput');
-        document.getElementById('text2').classList.remove('displayInput');
-        document.getElementById('text3').classList.add('displayInput');
-    }
-}
-
-function closeInput(box) {
-    let text2 = document.getElementById('text2');
-    let text3 = document.getElementById('text3');
-    let text1 = document.getElementById('text1');
-    let line2 = document.getElementById('line2');
-    let line3 = document.getElementById('line3');
-    let box1 = document.getElementById('box1');
-    let box2 = document.getElementById('box2');
-
-    if (box === 'text2') {
-        line2.style.display = 'none';
-        text2.classList.remove('displayInput');
-        text2.value = "";
-        text1.classList.add('displayInput');
-        box1.classList.add('activeBtn');
-        document.getElementById('line-two').innerHTML = "";
-    } else {
-        line3.style.display = 'none';
-        text3.classList.remove('displayInput');
-        text1.classList.remove('displayInput');
-        text2.classList.add('displayInput');
-        box2.classList.add('activeBtn');
-        box1.classList.remove('activeBtn');
-        text3.value = "";
-        document.getElementById('line-three').innerHTML = "";
-    }
-    lines = lines - 1;
-}
-
-function displayLine1(event) {
-    document.getElementById('line-one').innerHTML = document.getElementById('text1').value;
-}
-
-function displayLine2(event) {
-    let text2 = document.getElementById('line-two');
-    text2.innerHTML = document.getElementById('text2').value;
-}
-
-function displayLine3(event) {
-    document.getElementById('line-three').innerHTML = document.getElementById('text3').value;
-
-}
-
-function calculateHeight() {
-
-    let sheightOne = document.getElementById("sheight-one");
-    let mheightOne = document.getElementById("mheight-one");
-    let lheightOne = document.getElementById("lheight-one");
-    let xlheightOne = document.getElementById("xlheight-one");
-
-    let sheightTwo = document.getElementById("sheight-two");
-    let mheightTwo = document.getElementById("mheight-two");
-    let lheightTwo = document.getElementById("lheight-two");
-    let xlheightTwo = document.getElementById("xlheight-two");
-
-    sheightOne.innerHTML = (lines * small.heightL).toString();
-    mheightOne.innerHTML = (lines * medium.heightL).toString();
-    lheightOne.innerHTML = (lines * large.heightL).toString();
-    xlheightOne.innerHTML = (lines * extraLarge.heightL).toString();
-
-    sheightTwo.innerHTML = (lines * small.heightR).toString();
-    mheightTwo.innerHTML = (lines * medium.heightR).toString();
-    lheightTwo.innerHTML = (lines * large.heightR).toString();
-    xlheightTwo.innerHTML = (lines * extraLarge.heightR).toString();
-}
-
-function calculateLength() {
-    let slength = document.getElementById("slength");
-    let mlength = document.getElementById("mlength");
-    let llength = document.getElementById("llength");
-    let xllength = document.getElementById("xllength");
-
-    let text2 = document.getElementById('text2').value;
-    let text3 = document.getElementById('text3').value;
-    let text1 = document.getElementById('text1').value;
-    let longStringCount = 0;
-    let data = [text1, text2, text3];
-    for (let i = 0; i < 3; i++) {
-        if (data[i].length > longStringCount) {
-            longStringCount = data[i].length;
-        }
-    }
-
-    slength.innerHTML = ((longStringCount * small.length) - 1).toString();
-    mlength.innerHTML = ((longStringCount * medium.length) - 1).toString();
-    llength.innerHTML = ((longStringCount * large.length) - 1).toString();
-    xllength.innerHTML = ((longStringCount * extraLarge.length) - 1).toString();
 }
 
 function displayToggleButtons() {
@@ -637,22 +491,83 @@ function toggleFonts(line) {
     }
 }
 
-setInterval(function () {
-    this.displayLinesButton();
-    this.calculateHeight();
-    this.calculateLength();
-    this.displayToggleButtons();
-    if (lines === 3) {
-        document.getElementById('addLine').style.display = 'none';
-        document.getElementById('secondLine').style.display = 'none';
-        document.getElementById('firstLine').style.display = 'none';
-        document.getElementById('thirdLine').style.display = 'block';
-    } else if (lines === 2) {
-        document.getElementById('addLine').style.display = 'block';
-        document.getElementById('secondLine').style.display = 'block';
-        document.getElementById('firstLine').style.display = 'none';
-    } else {
-        document.getElementById('addLine').style.display = 'block';
-        document.getElementById('firstLine').style.display = 'none';
+function displayText(event) {
+    let textInput = document.getElementById("textInput");
+    let displayText = document.getElementById("displayText");
+    let displayTextMobile = document.getElementById("displayTextMobile");
+
+    let text = textInput.value;
+    if (text.length > 30) {
+        document.getElementById("textInput").disabled = true;
+        this.openModal();
     }
+    if (event.keyCode === 13 && !event.shiftKey) {
+        text = text + '\n';
+    }
+    text = text.substring(0, 30);
+    let finalText = "";
+    let newText = text.split('\n');
+    localStorage.setItem('user-text', text);
+    let longStringCount = 0;
+    for (let i = 0; i < newText.length; i++) {
+        if (newText[i] === "") {
+            newText.splice(i, 1);
+        }
+        if (newText[i].length > longStringCount) {
+            longStringCount = newText[i].length;
+        }
+        finalText += newText[i] + "<br>";
+    }
+    displayText.innerHTML = finalText;
+    displayTextMobile.innerHTML = finalText;
+
+
+}
+
+function toggleAlignment() {
+    let text = localStorage.getItem('user-text');
+    if (text !== null) {
+        if (text.split('\n').length > 0) {
+            document.getElementById('alignText').style.display = 'inline-block';
+        } else {
+            document.getElementById('alignText').style.display = 'none';
+        }
+    } else {
+        document.getElementById('alignText').style.display = 'none';
+    }
+}
+
+function alignText(direction) {
+    switch (direction) {
+        case 'Left':
+            document.getElementById('displayText').style.textAlign = 'left';
+            document.getElementById('displayTextMobile').style.textAlign = 'left';
+            break;
+        case 'Center':
+            document.getElementById('displayText').style.textAlign = 'center';
+            document.getElementById('displayTextMobile').style.textAlign = 'center';
+            break;
+        case 'Right':
+            document.getElementById('displayText').style.textAlign = 'right';
+            document.getElementById('displayTextMobile').style.textAlign = 'right';
+            break;
+        default:
+            document.getElementById('displayText').style.textAlign = 'center';
+            document.getElementById('displayTextMobile').style.textAlign = 'center';
+            break;
+    }
+}
+
+function openQuote() {
+    document.getElementById('send-quote').style.display = 'block';
+    document.getElementById('upload').style.display = 'none';
+}
+
+function openUpload() {
+    document.getElementById('upload').style.display = 'block';
+    document.getElementById('send-quote').style.display = 'none'
+}
+
+setInterval(function () {
+    // this.toggleAlignment();
 }, 100);
