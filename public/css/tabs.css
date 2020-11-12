@@ -1,0 +1,106 @@
+/*tabnew*/
+            .nav-tabs li a {
+                border: 0 !important;
+            }
+            .nav-tabs.custom_tab{
+                border: 1px solid #4bc3c9;
+            }
+            .nav-tabs.custom_tab{
+                background: none;
+            }
+            .nav-tabs.custom_tab li{
+                border-right: 0;
+            }
+            .nav-tabs.custom_tab > li > a:before {
+                content: " ";
+                display: block;
+                width: 0;
+                height: 0;
+                border-top: 20px solid transparent;
+                border-bottom: 20px solid transparent;
+                border-left: 10px solid #4bc3c9;
+                position: absolute;
+                top: 50%;
+                margin-top: -20px;
+                margin-left: 1px;
+                left: 100%;
+                z-index: 1;
+            }
+            .nav-tabs.custom_tab > li > a:after {
+             content: " ";
+             display: block;
+             width: 0;
+             height: 0;
+             border-top: 20px solid transparent;
+             border-bottom: 20px solid transparent;
+             border-left: 10px solid #ffffff;
+             position: absolute;
+             top: 50%;
+             margin-top: -20px;
+             left: 100%;
+             z-index: 2;
+         }
+         .nav-tabs.custom_tab li a {
+            color: #4bc3c9;
+            text-shadow: none;
+        }
+        .nav-tabs.custom_tab > li.active > a, .nav-wizard > li.active > a:hover, .nav-tabs.custom_tab > li.active > a:focus {
+            color: #ffffff;
+            background: #4bc3c9 !important;
+        }
+        .nav-tabs.custom_tab>li.active>a, .nav-tabs.custom_tab>li.active>a:focus, .nav-tabs.custom_tab>li.active>a:hover{
+           background-color: #4bc3c9;
+       }
+       .nav-tabs.custom_tab > li:not(:last-child) > a {
+        margin-right: 0;
+    }
+    .nav-tabs.custom_tab > li.active:not(:last-child) > a:after{
+        border-left: 10px solid #4bc3c9;
+    }
+    .nav-tabs.custom_tab > li:last-child.active > a:before, 
+    .nav-tabs.custom_tab > li:last-child > a:after, .nav-tabs.custom_tab > li:last-child > a:before{
+       display: none;
+   }
+   .nav-tabs.custom_tab > li:last-child.active > a:after{
+     width: 1px;
+     right: -1px;
+     background: #4bc3c9;
+     content: "";
+     display: inline-block;
+     border: 0;
+     height: 100%;
+     left: inherit;
+ }
+ /*tabnewend*/
+ 
+ 
+ /*styling the form*/
+.two_btn {
+    margin-bottom: 0;
+    padding: 30px 0;
+}
+.two_btn .btn{
+   display: inline-block;
+   text-decoration: none;
+   text-align: center;
+   transition: all 0.5s;
+   background-color: #f4f4f4;
+   width: 100%;
+   letter-spacing: 0;
+   margin: auto;
+   padding: 15px;
+   border-radius: 15px;
+   font-family: 'Brandon_reg';
+   font-size: 20px;
+   outline: none !important;
+   text-transform: none;
+}
+
+#quoteform {
+    margin: 0;
+    padding: 10px 30px;
+}
+#quoteform .for_more{
+   font-size: 20px;
+   text-transform: uppercase;
+}

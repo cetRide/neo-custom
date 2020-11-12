@@ -1,130 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Neon - app</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link href="/style.css" rel="stylesheet">
+    <!-- Basic Page Needs -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Make Your Own Neon Sign - Bespoke Neon Signs Handmade in LED Flex</title>
+    <meta name="description"
+          content="Design your own energy efficient, lightweight LED neon sign or ask us for a free mockup of your idea. Huge range of fonts & colours. Price beat guarantee.">
+    <meta name="keywords" content="Neon">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <!-- CSS -->
+    <link href="/main.css" rel="stylesheet">
+    <!--    <link href="css/tabs.css" rel="stylesheet">-->
+    <!--    <link href="css/style.css" rel="stylesheet">-->
     <script type="text/javascript" src="/main.js"></script>
-    <script src="https://kit.fontawesome.com/fb9b454d4f.js" crossorigin="anonymous"></script>
+    <!-- Javascript  -->
+
+    <script src="js/jquery-3.2.1.min.js"></script> <!-- Jquery Library Call -->
+    <script src="js/jquery-ui.min.js"></script> <!-- Jquery Library Call -->
+    <script src="js/jquery.ui.touch-punch.min.js"></script> <!-- Jquery Library Call -->
+    <script src="js/bootstrap.min.js"></script> <!-- UI -->
+    <script src="js/platform.js"></script>
+    <script src="js/html2canvas.min.js"></script>
+    <script type="text/javascript" src="js/lightbox.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <!-- Added to support Internet Explorer -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.4/bluebird.min.js"></script>
+    <!-- Facebook Pixel Code -->
+
 </head>
 <body>
-<div class="container">
-    <div class="row mt-1">
-        <div class="col-md-7 display-container customText" id="draggableArea"
-             style="background-image: url(/images/b6.jpeg)">
-            <div class="row">
-                <button class="btn-sm" id="offBtn" style="outline: none" onclick="toggleTextShadow('off')">OFF</button>
-                <button class="btn-sm" id="onBtn" style="outline: none" onclick="toggleTextShadow('on')">ON</button>
-            </div>
-            <div>
-                <p class="mytext" id="line-one"></p>
-            </div>
-            <div>
-                <p class="mytext" id="line-two"></p>
-            </div>
-            <div>
-                <p class="mytext" id="line-three"></p>
-            </div>
-            <div class="tabs-mobile">
-                <div class="row text-white justify-content-between">
-                    <div class=" py-2 text-center tabLink" id="textTab" onclick="openTab(event, 'Text')">
-                        <i class="fa fa-font" aria-hidden="true"></i>
-                    </div>
-                    <div class="py-2 text-center tabLink" onclick="openTab(event, 'Font')">
-                        <i class="fa fa-fonticons" aria-hidden="true"></i>
-
-                    </div>
-                    <div class="py-2 text-center tabLink"  onclick="openTab(event, 'Color')">
-                        <i class="fa fa-star-o" aria-hidden="true"></i>
-                    </div>
-                    <div class="py-2 text-center tabLink" onclick="openTab(event, 'Image')">
-                        <i class="fa fa-camera" aria-hidden="true"></i>
-                    </div>
-                </div>
-            </div>
+<div>
+    <div class="text-center" style="background:white;">
+        <div class="desktopOnly mt-3">
+            <h2 style="font-family: Hamillton; font-size: 80px">Create Your Own</h2>
+            <h3>YOUR OWN CREATION, HAND MADE FROM LIGHT</h3>
         </div>
-        <div class="px-2"></div>
-        <div class="col-sm card mb-2">
-            <div class="row text-white tabs-desktop justify-content-between">
-                <div></div>
-                <div class="col-md-3 py-2 text-center tabLink" id="defaultOpen" onclick="openTab(event, 'Text')">
-                    <p>Text</p>
+        <div class="mobileOnly mt-3">
+            <h2 style="font-family: Hamillton;font-size: 64px;">Create Your Own</h3>
+                <h3 style="font-size: 18px; letter-spacing:3px;">DESIGN YOUR LED NEON SIGN</h2>
+        </div>
+    </div>
+    <div class="container" style="font-family: Brandon_light">
+        <div class="row">
+            <div class="col-sm custom-box card">
+                <div class="row">
+                    <div class="tab active text-center" onclick="openTab(event, 'Text')">
+                        Text
+                    </div>
+                    <div class="tab1 text-center" onclick="openTab(event, 'Font')">
+                        Font
+                    </div>
+                    <div class="tab2 text-center" onclick="openTab(event, 'Color')">
+                        Color
+                    </div>
                 </div>
-                <div class="col-md-3 py-2 text-center tabLink" id="fontTab" onclick="openTab(event, 'Font')">
-                    <p>Font</p>
-                </div>
-                <div class="col-md-3 py-2 text-center tabLink" id="colorTab"  onclick="openTab(event, 'Color')">
-                    <p>Color</p>
-                </div>
-                <div class="col-md-3 py-2 text-center tabLink" id="bgTab" onclick="openTab(event, 'Image')">
-                    <p>Background</p>
-                </div>
-            </div>
-            <div>
-                <div id="Text" class="tabContent">
-                    <h6 class="text-center">INPUT TEXT</h6>
-                    <div>
-                        <input type="text" class="textInput" name="line-1" id="text1" value=""
-                               placeholder="Enter line one"
-                               onkeyUp="displayLine1(event)">
-                        <input type="text" class="textInput" name="line-2" id="text2" value=""
-                               placeholder="Enter line two"
-                               onkeyUp="displayLine2(event)">
-                        <input type="text" class="textInput" name="line-3" id="text3" value=""
-                               placeholder="Enter line three"
-                               onkeyUp="displayLine3(event)">
+                <!--text box-->
+                <div id="Text" class="tabContent line-item-property__field">
+                    <textarea style="width: 100%" rows='3' required name="properties[Custom text]"
+                              class='mt-2 textInput'
+                              id='textInput'
+                              onkeyUp="displayText(event)">Your Text</textarea>
+                    <div class="row alignText" id="alignText">
+                        <div class="alignBox" style="width: 33.33%; font-size: 25px" onclick="alignText('Left')">
+                            <p class="text-center mt-1"><i class="fas fa-align-left"></i></p>
+                        </div>
+                        <div class="alignBox" style="width: 33.33%; font-size: 25px" onclick="alignText('Center')">
+                            <p class="text-center mt-1"><i class="fas fa-align-center"></i></p>
+                        </div>
+                        <div class="alignBox" style="width: 33.33%; font-size: 25px" onclick="alignText('Right')">
+                            <p class="text-center mt-1"><i class="fas fa-align-right"></i></p>
+                        </div>
                     </div>
 
-                    <div class="row button-group px-4">
-                        <div class="box-container" id="line1">
-                            <div class="text-center box-line" id="box1" onclick="changeTextBox('text1')">
-                                <p>Text 1
-                            </div>
-                            <div class="close-div" id="firstLine" onclick="closeInput('text1')">
-                                <span class="close-btn">X</span>
-                            </div>
-                        </div>
-                        <div class="box-container" id="line2">
-                            <div class="text-center box-line" id="box2" onclick="changeTextBox('text2')">
-                                <p>Text 2
-                            </div>
-                            <div class="close-div" id="secondLine" onclick="closeInput('text2')">
-                                <span class="close-btn">X</span>
-                            </div>
-                        </div>
-                        <div class="box-container" id="line3">
-                            <div class="text-center box-line" id="box3" onclick="changeTextBox('text3')">
-                                <p>Text 3
-                            </div>
-                            <div class="close-div" id="thirdLine" onclick="closeInput('text3')">
-                                <span class="close-btn">X</span>
-                            </div>
-                        </div>
-                        <div class="addLine text-center" id="addLine" onclick="addLine()">
-                            <p>Add Line +</p>
-                        </div>
-                    </div>
                 </div>
-                <div id="Font" class="tabContent">
+                <!-- font box-->
+                <div id="Font" class="tabContent text-center">
                     <h6 class="text-center my-3">CHOOSE FONT</h6>
-
-                    <div class="row button-group">
-                        <div class="text-center box-line toggleBtn" id="togglefont1" onclick="toggleFonts('line1')">
-                            <p>Text 1
-                        </div>
-                        <div class="text-center box-line toggleBtn" id="togglefont2" onclick="toggleFonts('line2')">
-                            <p>Text 2
-                        </div>
-                        <div class="text-center box-line toggleBtn" id="togglefont3" onclick="toggleFonts('line3')">
-                            <p>Text 3
-                        </div>
-                        <div>
-                            <input type="hidden" id="toggleFonts" value="line1">
-                        </div>
-                    </div>
-                    <div class="row justify-content-between" style="cursor: pointer; overflow: auto; height: 200px">
+                    <div class="row justify-content-between" style=" overflow: auto; height: 175px">
                         <div class="myFont" onclick="changeFontFamily('Alex Brush')"
                              style="font-family: Alex Brush">Alexa
                         </div>
@@ -135,8 +89,12 @@
                              style="font-family: Gruenewald">
                             Gruenewald
                         </div>
+
                         <div class="myFont" onclick="changeFontFamily('Andasia Regular')"
                              style="font-family: Andasia Regular">Bayshore
+                        </div>
+                        <div class="myFont" onclick="changeFontFamily('Hamillton')"
+                             style="font-family: Hamillton">Hamillton
                         </div>
                         <div class="myFont" style="font-family: Real Kindly Demo"
                              onclick="changeFontFamily('Real Kindly Demo')">WildSpirit
@@ -152,9 +110,7 @@
                              style="font-family: Paper Daisy">
                             Paper Daisy
                         </div>
-                        <div class="myFont" onclick="changeFontFamily('RM Typerighter medium')"
-                             style="font-family: RM Typerighter medium">Typewriter
-                        </div>
+
                         <div class="myFont" onclick="changeFontFamily('Lovelo')" style="font-family: Lovelo">
                             Lovelo
                         </div>
@@ -168,21 +124,7 @@
                         <div class="myFont" onclick="changeFontFamily('Pi in the SciFi')"
                              style="font-family: Pi in the SciFi">SCIFI
                         </div>
-                        <div class="myFont" onclick="changeFontFamily('Londrina Outliner')"
-                             style="font-family: Londrina Outline">OUTLINE
-                        </div>
-                        <div class="myFont" onclick="changeFontFamily('Roboto')" style="font-family: Roboto">
-                            Roboto
-                        </div>
-                        <div class="myFont" onclick="changeFontFamily('Dolce Vita')"
-                             style="font-family: Dolce Vita">Dolce Vita
-                        </div>
-                        <div class="col-sm myFont" style="font-family: Decker" onclick="changeFontFamily('Decker')">
-                            AvantGarde
-                        </div>
-                        <div class="myFont" style="font-family: Bauhaus Regular"
-                             onclick="changeFontFamily('Bauhaus Regular')">Bauhaus
-                        </div>
+
                         <div class="myFont" onclick="changeFontFamily('Nixie One')"
                              style="font-family: Nixie One">Nixie
                             One
@@ -198,10 +140,7 @@
                              onclick="changeFontFamily('Sophistica')">
                             NorthWell
                         </div>
-                        <div class="myFont" style="font-family: Hamillton"
-                             onclick="changeFontFamily('Hamillton')">
-                            Hamillton
-                        </div>
+
                         <div class="myFont" style="font-family: Lettia" onclick="changeFontFamily('Lettia')">
                             Hesterica
                         </div>
@@ -223,39 +162,30 @@
                         </div>
                         <div class="myFont" onclick="changeFontFamily('Syne Mono')">Syne Mono</div>
                     </div>
-                    <input type="hidden" id="select-font" name="font">
+                    <p class="line-item-property__field">
+                        <label for="select-font"></label>
+                        <input type="hidden" id="select-font" name="properties[font]" value="Andasia Regular">
+                    </p>
                 </div>
+                <!-- color box-->
                 <div id="Color" class="tabContent text-center">
                     <h6 class="text-center my-3">CHOOSE COLOUR</h6>
-                    <div class="row button-group">
-                        <div class="text-center box-line toggleBtn" id="toggle1" onclick="toggleColors('line1')">
-                            <p>Text 1
-                        </div>
-                        <div class="text-center box-line toggleBtn" id="toggle2" onclick="toggleColors('line2')">
-                            <p>Text 2
-                        </div>
-                        <div class="text-center box-line toggleBtn" id="toggle3" onclick="toggleColors('line3')">
-                            <p>Text 3
-                        </div>
-                        <div>
-                            <input type="hidden" id="toggleColors" value="line1">
-                        </div>
-                    </div>
-                    <div class="row justify-content-between" style="cursor: pointer; overflow: auto; height: 200px">
-                        <div class="color" onclick="setColor('Warm White')">
-                            <span style="color: #efebd8">&#9734</span>
-                            <p style="font-size: 9px">Warm White</p></div>
-                        <div class="color" onclick="setColor('White')">
-                            <span style="color: lightgrey">&#9734</span>
-                            <p style="font-size: 9px">White</p>
-                        </div>
+                    <div class="row justify-content-between" style="cursor: pointer; overflow: auto; height: 175px">
                         <div class="color" onclick="setColor('Lemon Yellow')">
                             <span style="color: #fff44f">&#9734</span>
                             <p style="font-size: 9px">Lemon Yellow</p>
                         </div>
-                        <div class="color" onclick="setColor('Golden Yellow')">
-                            <span style="color: #FFDF00">&#9734</span>
-                            <p style="font-size: 9px">Golden Yellow</p>
+                        <div class="color" onclick="setColor('Yellow')">
+                            <span style="color: #FFFF00">&#9734</span>
+                            <p style="font-size: 9px">Yellow</p>
+                        </div>
+                        <div class="color" onclick="setColor('Girl Pink')">
+                            <span style="color: #f8b9d4">&#9734</span>
+                            <p style="font-size: 9px">Girl Pink</p>
+                        </div>
+                        <div class="color" onclick="setColor('Pink')">
+                            <span style="color: #FFC0CB">&#9734</span>
+                            <p style="font-size: 9px">Pink</p>
                         </div>
                         <div class="color" onclick="setColor('Orange')">
                             <span style="color: #FFA500">&#9734</span>
@@ -269,26 +199,14 @@
                             <span style="color: #A5F2F3">&#9734</span>
                             <p style="font-size: 9px">Ice Blue</p>
                         </div>
-                        <div class="color" onclick="setColor('Electric Blue')">
-                            <span style="color: #7DF9FF">&#9734</p>
-                                <p style="font-size: 9px">Electric Blue</p>
-                            </span>
-                        </div>
-                        <div class="color" onclick="setColor('Deep Blue')">
-                            <span style="color: #00BFFF">&#9734</span>
-                            <p style="font-size: 9px">Deep Blue</p>
-                        </div>
-                        <div class="color" onclick="setColor('Light Red')"><span
-                                style="color: #ffcccb">&#9734</span>
-                            <p style="font-size: 9px">Light Red</p>
-                        </div>
+
                         <div class="color" onclick="setColor('Red')">
                             <span style="color: #FF0000">&#9734</span>
                             <p style="font-size: 9px">Red</p>
                         </div>
-                        <div class="color" onclick="setColor('Candy Floss')">
-                            <span style="color: #f4b8d8">&#9734</span>
-                            <p style="font-size: 9px">Candy Floss</p>
+                        <div class="color" onclick="setColor('Blue Green')">
+                            <span style="color: #0d98ba">&#9734</span>
+                            <p style="font-size: 9px">Blue Green</p>
                         </div>
                         <div class="color" onclick="setColor('Deep Pink')">
                             <span style="color: #FF1493">&#9734</span>
@@ -298,221 +216,520 @@
                             <span style="color: #800080">&#9734</span>
                             <p style="font-size: 9px">Purple</p>
                         </div>
-                        <div class="color" onclick="setColor('Mint')">
-                            <span style="color: #98ff98">&#9734</span>
-                            <p style="font-size: 9px">Mint</p>
+                        <div class="color" onclick="setColor('Warm White')">
+                            <span style="color: #efebd8">&#9734</span>
+                            <p style="font-size: 9px">Warm White</p></div>
+                        <div class="color" onclick="setColor('White')">
+                            <span style="color: lightgrey">&#9734</span>
+                            <p style="font-size: 9px">White</p>
                         </div>
-                        <div class="color" onclick="setColor('Deep Green')">
-                            <span style="color: #056608">&#9734</span>
-                            <p style="font-size: 10px">Deep Green</p>
+                        <div class="color" onclick="setColor('White Yellow')">
+                            <span style="color: #FFFFE0">&#9734</span>
+                            <p style="font-size: 9px">White Yellow</p>
                         </div>
-                        <div class="color" onclick="setColor('Tropical Blue')">
-                            <span style="color: #CBE8F7">&#9734</span>
-                            <p style="font-size: 9px">Tropical Blue</p>
+                        <div class="color" onclick="setColor('White Orange')">
+                            <span style="color: #ffe4b2">&#9734</span>
+                            <p style="font-size: 9px">White Orange</p>
                         </div>
-                        <input type="hidden" id="select-color" name="color">
-                        <input type="hidden" id="select-color-line2" name="color">
-                        <input type="hidden" id="select-color-line3" name="color">
+                        <div class="color" onclick="setColor('White Purple')">
+                            <span style="color: #e7e0f9">&#9734</span>
+                            <p style="font-size: 9px">White Purple</p>
+                        </div>
+                        <div class="color" onclick="setColor('Light Red')"><span
+                                style="color: #ffcccb">&#9734</span>
+                            <p style="font-size: 9px">White Red</p>
+                        </div>
+                        <div class="color" onclick="setColor('White Pink')">
+                            <span style="color: #ffecef">&#9734</span>
+                            <p style="font-size: 9px">White Pink</p>
+                        </div>
+                        <div class="color" onclick="setColor('White Girl Pink')">
+                            <span style="color: #e2b8c5">&#9734</span>
+                            <p style="font-size: 9px">White Girl Pink</p>
+                        </div>
+                        <div class="color" onclick="setColor('White Green')">
+                            <span style="color: #b2d8b2">&#9734</span>
+                            <p style="font-size: 9px">White Green</p>
+                        </div>
+                        <div class="color" onclick="setColor('White Ice Blue')">
+                            <span style="color: #a9c7df">&#9734</span>
+                            <p style="font-size: 9px">White Ice Blue</p>
+                        </div>
+                        <div class="color" onclick="setColor('White Blue')">
+                            <span style="color: #dff0f9">&#9734</span>
+                            <p style="font-size: 9px">White Blue</p>
+                        </div>
+                        <p class="line-item-property__field">
+                            <label for="select-color"></label>
+                            <input type="hidden" id="select-color" name="properties[color]" value="Mint">
+                        </p>
                     </div>
                 </div>
-                <div id="Image" class="tabContent p-3">
-                    <h6>Select Scene</h6>
-                    <div class="row img_style mb-2">
-                        <div class="sceneBox bg" style="background-image: url(/images/b5.jpeg);"
-                             onclick="setBG('/images/b8.jpeg')"></div>
-                        <div class="sceneBox bg" style="background-image: url(/images/b2.jpeg);"
-                             onclick="setBG('/images/b2.jpeg')"></div>
-                        <div class="sceneBox bg" style="background-image: url(/images/b3.jpeg);"
-                             onclick="setBG('/images/b3.jpeg')"></div>
-                        <div class="sceneBox bg" style="background-image: url(images/b4.jpeg);"
-                             onclick="setBG('/images/b4.jpeg')"></div>
-                        <div class="sceneBox bg" style="background-image: url(images/b1.jpeg);"
-                             onclick="setBG('/images/b1.jpeg')"></div>
-                        <div class="sceneBox bg" style="background-image: url(images/b6.jpeg);"
-                             onclick="setBG('/images/b6.jpeg')"></div>
-                    </div>
-                    <input type='file' id="imageInput" accept="image/*" onchange="readURL(event)"/>
-                    <input type="hidden" id="select-bg" name="background">
-                </div>
-            </div>
-            <!--            select size-->
-            <div class="mt-2">
-                <p class="mt-1" style="color: #333333; font-size: 12px">
-                    Sizes vary depending on choice of font style, and whether the sign includes text in upper &
-                    lower case. We will always confirm the exact size with you before manufacturing.
-                </p>
-                <div>
-                    <h6 class="mt-2">Select Size</h6>
-                    <select class="size" style="width: 100%" onchange="selectTheSize()">
-                        <option value="small">Small</option>
-                        <option value="medium">Medium</option>
-                        <option value="large">Large</option>
-                        <option value="xlarge">Extra Large</option>
-                    </select>
-                </div>
-                <div>
-                    <div class="size-box box-small" id="box-small">
-                        <p>Length: <span id="slength"></span>cm</p>
-                        <p>height: <span id="sheight-one"></span> - <span id="sheight-two"></span>cm</p>
-                    </div>
-                    <div class="size-box box-medium" id="box-medium">
-                        <p>Length: <span id="mlength"></span>cm</p>
-                        <p>height: <span id="mheight-one"></span> - <span id="mheight-two"></span>cm</p>
-                    </div>
-                    <div class="size-box box-large" id="box-large">
-                        <p>Length: <span id="llength"></span>cm</p>
-                        <p>height: <span id="lheight-one"></span> - <span id="lheight-two"></span>cm</p>
-                    </div>
-                    <div class="size-box box-xlarge" id="box-xlarge">
-                        <p>Length: <span id="xllength"></span>cm</p>
-                        <p>height: <span id="xlheight-one"></span> - <span id="xlheight-two"></span>cm</p>
-                    </div>
-                </div>
-                <div>
-                    <input type="hidden" id="select-length" name="length">
-                    <input type="hidden" id="select-heightOne" name="heightOne">
-                    <input type="hidden" id="select-heightTwo" name="heightTwo">
-                </div>
-            </div>
-            <!--            select location-->
-            <div>
-                <div class="select-component">
-                    <h6>Location: </h6>
-                    <select>
-                        <option value="indoor">Indoor</option>
-                        <option value="water-resitance">Water Resistance + &#163 32</option>
-                    </select>
-                </div>
-                <p style="color: #333333; font-size: 12px">
-                    Please note: The sign will be treated with a clear seal that will splash-proof it. If the sign
-                    will
-                    be exposed to wet weather, please order the 'Clear Acrylic Box' backboard option below.
-                </p>
-            </div>
-            <!--            select electric pug-->
-            <div class="select-component">
-                <h6>Electric Pug: </h6>
-                <select>
-                    <option value="United Kingdom">United Kingdom</option>
-                    <option value="European">European</option>
-                    <option value="USA/Canada">USA/Canada</option>
-                    <option value="Australia/NZ">Australia/NZ</option>
-                    <option value="Japan">Japan</option>
-                    <option value="Other">Other: Ask at checkout</option>
-                </select>
-            </div>
-            <!--            select back board-->
-            <div>
-                <h6 class="text-center mt-2">CHOOSE YOUR BACK BOARD</h6>
-                <div class="row ml-auto mr-auto" style="width: 200px">
-                    <div>
-                        <p><img id="blackboard" src="/images/back1.png" width="150" height="150"/></p>
-                        <p class="text-center" id="blackboardPrice"></p>
+                <!--text area for mobile-->
+                <div class="mobileOnly mb-2 text-box">
+                    <div class="mobile-bg" style="height:300px" id="draggableAreaMobile">
+                        <div>
+                            <label class="switch">
+                                <input class="inputCheck"id="inputs" type="checkbox" onchange='handleChange(this);' checked>
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                        <div style="text-align:center">
+                            <div id="draggableMobile" style="display:inline-block">
+                                <p class="mobileText" id="displayTextMobile"></p>
+                            </div>
+                        </div>
                     </div>
                     <div>
-                        <select style="margin-top: 75px; width: 20px" id="selectedBackBoard"
-                                onchange="selectBlackBord()" name="selectedBackBoard">
-                            <option value="0">
-                                <div class="justify-content-end">
-                                    <p>Cut Around Acrylic</p>
-                                    <p class="text-right">FREE</p>
-                                </div>
-                            </option>
-                            <option value="1">
-                                <div class="justify-content-end">
-                                    <p>Rectangle Acrylic</p>
-                                    <p class="text-right">FREE</p>
-                                </div>
-                            </option>
-                            <option value="2">
-                                <div class="justify-content-end">
-                                    <p>Cut To Letter Acrylic</p>
-                                    <p class="text-right">+82</p>
-                                </div>
-                            </option>
-                            <option value="3">
-                                <div class="justify-content-end">
-                                    <p>Stand Acrylic</p>
-                                    +124
-                                </div>
-                            </option>
-                            <option value="4">
-                                <div class="justify-content-end">
-                                    <p>Clear Acrylic Box: For hanging
-                                    </p>
-                                    <p>+284</p>
-                                </div>
-                            </option>
-                            <option value="5">
-                                <div class="justify-content-end">
-                                    <p>Clear Acrylic Box: For wall Mounting</p>
-                                    <p> +284</p>
-                                </div>
-                            </option>
-                            <option value="6">
-                                <div class="justify-content-end">
-                                    <p>Clear Acrylic Box: Free-Standing</p>
-                                    <p>+284</p>
-                                </div>
-                            </option>
-                        </select>
+                        <!-- Carousel -->
+                        <link type="text/css" rel="stylesheet" href="css/magicscroll.css"/>
+                        <script type="text/javascript" src="js/magicscroll.js"></script>
+                        <div class="MagicScroll" data-options="height: 100;  mode: cover-flow; draggable: true;"
+                             style="width:100%; float:left">
+                            <a onclick="setMobileBG('images/background/background1.jpg');"><img
+                                    srcset="images/background/background1.jpg"
+                                    src="images/background/background1.jpg" width="100px" height="80px"/></a>
+                            <a onclick="setMobileBG('images/background/background2.jpg');"><img
+                                    srcset="images/background/background2.jpg"
+                                    src="images/background/background2.jpg" width="100px" height="80px"/></a>
+                            <a onclick="setMobileBG('images/background/background3.jpg');"><img
+                                    srcset="images/background/background3.jpg"
+                                    src="images/background/background3.jpg" width="100px" height="80px"/></a>
+                            <a onclick="setMobileBG('images/background/background4.jpg');"><img
+                                    srcset="images/background/background4.jpg"
+                                    src="images/background/background4.jpg" width="100px" height="80px"/></a>
+                            <a onclick="setMobileBG('images/background/background5.jpg');"><img
+                                    srcset="images/background/background5.jpg"
+                                    src="images/background/background5.jpg" width="100px" height="80px"/></a>
+                            <a onclick="setMobileBG('images/background/background6.jpg');"><img
+                                    srcset="images/background/background6.jpg"
+                                    src="images/background/background6.jpg" width="100px" height="80px"/></a>
+                            <a onclick="setMobileBG('images/background/background7.jpg');"><img
+                                    srcset="images/background/background7.jpg"
+                                    src="images/background/background7.jpg" width="100px" height="80px"/></a>
+                            <a onclick="setMobileBG('images/background/background8.jpg');"><img
+                                    srcset="images/background/background8.jpg"
+                                    src="images/background/background8.jpg" width="100px" height="80px"/></a>
+                            <a onclick="setMobileBG('images/background/background1.jpg');"><img
+                                    srcset="images/background/background1.jpg"
+                                    src="images/background/background1.jpg" width="100px" height="80px"/></a>
+                            <a onclick="setMobileBG('images/background/background2.jpg');"><img
+                                    srcset="images/background/background2.jpg"
+                                    src="images/background/background2.jpg" width="100px" height="80px"/></a>
+                            <a onclick="setMobileBG('images/background/background3.jpg');"><img
+                                    srcset="images/background/background3.jpg"
+                                    src="images/background/background3.jpg" width="100px" height="80px"/></a>
+                            <a onclick="setMobileBG('images/background/background4.jpg');"><img
+                                    srcset="images/background/background4.jpg"
+                                    src="images/background/background4.jpg" width="100px" height="80px"/></a>
+                            <a onclick="setMobileBG('images/background/background5.jpg');"><img
+                                    srcset="images/background/background5.jpg"
+                                    src="images/background/background5.jpg" width="100px" height="80px"/></a>
+                            <a onclick="setMobileBG('images/background/background6.jpg');"><img
+                                    srcset="images/background/background6.jpg"
+                                    src="images/background/background6.jpg" width="100px" height="80px"/></a>
+                            <a onclick="setMobileBG('images/background/background7.jpg');"><img
+                                    srcset="images/background/background7.jpg"
+                                    src="images/background/background7.jpg" width="100px" height="80px"/></a>
+                            <a onclick="setMobileBG('images/background/background8.jpg');"><img
+                                    srcset="images/background/background8.jpg"
+                                    src="images/background/background8.jpg" width="100px" height="80px"/></a>
+                        </div>
+                        <!-- End Carousel -->
                     </div>
                 </div>
-                <p class="text-center">Total with selected options:<span style="font-size: 22pt; margin-left: 3px;">
-                    <i class="fas fa-pound-sign"></i>
-                    <span id="totalPrice"></span></span></p>
-                <button style="background-color: #35398e" onclick="addToCart()"
-                        class="btn mt-0 mb-1 text-white btn-block">
-                    ADD TO
-                    CART
-                </button>
+                <!--                sizes box-->
+                <div class="p-0">
+                    <h>SELECT YOUR OPTIONS</h>
+                    <!--                    row1-->
+                    <div class="row justify-content-end">
+                        <div class="p-2" style="width: 50%;">
+                            <div class="active box-size px-2">
+                                <p style="text-align:left;">
+                                    <strong>SMALL</strong>
+                                    <span style="float:right;">
+                                    Length: 9cm
+                                    </span>
+                                </p>
+                                <p style="text-align:left;">
+                                    <strong>&pound;300</strong>
+                                    <span style="float:right;">
+                                   Height: 80-120cm
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="p-2" style="width: 50%">
+                            <div class="box-size px-2">
+                                <p style="text-align:left;">
+                                    <strong>SMALL</strong>
+                                    <span style="float:right;">
+                                    Length: 9cm
+                                    </span>
+                                </p>
+                                <p style="text-align:left;">
+                                    <strong>&pound;300</strong>
+                                    <span style="float:right;">
+                                   Height: 80-120cm
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--                    row2-->
+                    <div class="row justify-content-end">
+                        <div class="p-2" style="width: 50%">
+                            <div class="box-size px-2">
+                                <p style="text-align:left;">
+                                    <strong>SMALL</strong>
+                                    <span style="float:right;">
+                                    Length: 9cm
+                                    </span>
+                                </p>
+                                <p style="text-align:left;">
+                                    <strong>&pound;300</strong>
+                                    <span style="float:right;">
+                                   Height: 80-120cm
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="p-2" style="width: 50%">
+                            <div class="box-size px-2">
+                                <p style="text-align:left;">
+                                    <strong>SMALL</strong>
+                                    <span style="float:right;">
+                                    Length: 9cm
+                                    </span>
+                                </p>
+                                <p style="text-align:left;">
+                                    <strong>&pound;300</strong>
+                                    <span style="float:right;">
+                                   Height: 80-120cm
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--                    row3-->
+                    <div class="row justify-content-end">
+                        <div class="p-2" style="width: 50%">
+                            <div class="box-size px-2">
+                                <p style="text-align:left;">
+                                    <strong>SMALL</strong>
+                                    <span style="float:right;">
+                                    Length: 9cm
+                                    </span>
+                                </p>
+                                <p style="text-align:left;">
+                                    <strong>&pound;300</strong>
+                                    <span style="float:right;">
+                                   Height: 80-120cm
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="p-2" style="width: 50%">
+                            <div class="box-size px-2">
+                                <p style="text-align:left;">
+                                    <strong>SMALL</strong>
+                                    <span style="float:right;">
+                                    Length: 9cm
+                                    </span>
+                                </p>
+                                <p style="text-align:left;">
+                                    <strong>&pound;300</strong>
+                                    <span style="float:right;">
+                                   Height: 80-120cm
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <label class="size_note">*The Height shown is a range. Sizes vary depending on choice of font
+                        style, and whether the text includes upper & lower case. </label>
+                </div>
+                <!-- location-->
+                <div>
+                    <select name="location" id="location" multiple>
+                        <option value="1">Indoor</option>
+                        <option value="2">Water Resistant</option>
+                    </select>
+                    <label class="size_note">*Please note: The sign will be treated with a clear seal that will
+                        splash-proof it. If
+                        the sign will be exposed to wet weather, please order the 'Clear Acrylic Box' backboard option
+                        below.</label>
+                </div>
+                <!-- pug-->
+                <div class="row px-3">
+                    <div class="text-center" style="width: 30%; height: 30px; line-height: 30px">
+                        <p style="font-size: 15px; font-weight: bolder">ELECTRICAL PUG:</p>
+                    </div>
+                    <select name="pug" id="pug">
+                        <option value="United Kingdom">United Kingdom</option>
+                        <option value="European">European</option>
+                        <option value="USA/Canada">USA/Canada</option>
+                        <option value="Australia/NZ">Australia/NZ</option>
+                        <option value="Japan">Japan</option>
+                        <option value="Other">Other: Ask at checkout</option>
+                    </select>
+                </div>
+                <!--backboard-->
+                <div class="p-3">
+                    <h6 class="text-center mt-1">SELECT YOUR BACK BOARD:</h6>
+                    <div class="backboard">
+                        <div style="width: 192.89px" class="row ml-auto mr-auto">
+                            <div class="backboard-image-box">
+                                <p><img id="blackboard" src="/images/back1.png" width="172.89" height="100"/></p>
+                                <p class="text-center" id="blackboardPrice"></p>
+                            </div>
+                            <div class="select-board">
+                                <select style="margin-top: 42.5px; width: 20px" id="selectedBackBoard"
+                                        onchange="selectBlackBord()" name="selectedBackBoard">
+                                    <option value="0">
+                                        <div class="justify-content-end">
+                                            <p>Cut Around Acrylic</p>
+                                            <p class="text-right">FREE</p>
+                                        </div>
+                                    </option>
+                                    <option value="1">
+                                        <div class="justify-content-end">
+                                            <p>Rectangle Acrylic</p>
+                                            <p class="text-right">FREE</p>
+                                        </div>
+                                    </option>
+                                    <option value="2">
+                                        <div class="justify-content-end">
+                                            <p>Cut To Letter Acrylic</p>
+                                            <p class="text-right">+82</p>
+                                        </div>
+                                    </option>
+                                    <option value="3">
+                                        <div class="justify-content-end">
+                                            <p>Stand Acrylic</p>
+                                            +124
+                                        </div>
+                                    </option>
+                                    <option value="4">
+                                        <div class="justify-content-end">
+                                            <p>Clear Acrylic Box: For hanging
+                                            </p>
+                                            <p>+284</p>
+                                        </div>
+                                    </option>
+                                    <option value="5">
+                                        <div class="justify-content-end">
+                                            <p>Clear Acrylic Box: For wall Mounting</p>
+                                            <p> +284</p>
+                                        </div>
+                                    </option>
+                                    <option value="6">
+                                        <div class="justify-content-end">
+                                            <p>Clear Acrylic Box: Free-Standing</p>
+                                            <p>+284</p>
+                                        </div>
+                                    </option>
+                            </div>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--special offer and other additionals-->
+            <div>
+                <label class="contain">Special offer: <a href="/buyremotedimmer/"
+                                                         style="text-decoration:underline">Remote
+                    and Dimmer</a> Free
+                    <input class="inputs" type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="contain"><a href="/wall-mounting-kit/" style="text-decoration:underline">Wall
+                    Mounting</a>
+                    Kit &pound;12
+                    <input class="inputs" type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="contain"><a href="/sign-hanging-kit/"
+                                          style="text-decoration:underline">Sign
+                    Hanging</a> Kit &pound;12
+                    <input class="inputs" type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+            <!-- price box-->
+            <div class="price-box px-3">
+                <p style="text-align:left;">
+                    <strong>Total with selected options:</strong>
+                    <span style="float:right;">
+                                    &pound;300
+                                    </span>
+                </p>
+            </div>
+            <!--checkout-button-->
+            <div class="mt-3 btn checkout-btn btn-block">
+                ADD TO CART
+            </div>
+        </div>
+        <div class="px-2"></div>
+        <!--  text area for dessktop-->
+        <div class="col-md-7">
+            <div class="text-box desktopOnly" style="position: relative">
+                <div class="desk" style="height: 550px;" id="draggableArea">
+                    <div>
+                        <label class="switch">
+                            <input class="inputCheck"id="inputs" type="checkbox" onchange='handleChange(this);' checked>
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                    <div style="text-align:center">
+                        <div id="draggable" style="display:inline-block">
+                            <p class="mytext" id="displayText"></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Carousel -->
+                <div>
+                    <link type="text/css" rel="stylesheet" href="css/magicscroll.css"/>
+                    <script type="text/javascript" src="js/magicscroll.js"></script>
+                    <div class="MagicScroll" data-options="height: 146;  mode: carousel; draggable: true;"
+                         style="width:100%; float:left">
+                        <a onclick="setDesktopBG('images/background/background1.jpg');"><img
+                                srcset="images/background/background1.jpg" src="images/background/background1.jpg"
+                                width="100px" height="80px"/></a>
+                        <a onclick="setDesktopBG('images/background/background2.jpg');"><img
+                                srcset="images/background/background2.jpg" src="images/background/background2.jpg"
+                                width="100px" height="80px"/></a>
+                        <a onclick="setDesktopBG('images/background/background3.jpg');"><img
+                                srcset="images/background/background3.jpg" src="images/background/background3.jpg"
+                                width="100px" height="80px"/></a>
+                        <a onclick="setDesktopBG('images/background/background4.jpg');"><img
+                                srcset="images/background/background4.jpg" src="images/background/background4.jpg"
+                                width="100px" height="80px"/></a>
+                        <a onclick="setDesktopBG('images/background/background5.jpg');"><img
+                                srcset="images/background/background5.jpg" src="images/background/background5.jpg"
+                                width="100px" height="80px"/></a>
+                        <a onclick="setDesktopBG('images/background/background6.jpg');"><img
+                                srcset="images/background/background6.jpg" src="images/background/background6.jpg"
+                                width="100px" height="80px"/></a>
+                        <a onclick="setDesktopBG('images/background/background7.jpg');"><img
+                                srcset="images/background/background7.jpg" src="images/background/background7.jpg"
+                                width="100px" height="80px"/></a>
+                        <a onclick="setDesktopBG('images/background/background8.jpg');"><img
+                                srcset="images/background/background8.jpg" src="images/background/background8.jpg"
+                                width="100px" height="80px"/></a>
+                        <a onclick="setDesktopBG('images/background/background1.jpg');"><img
+                                srcset="images/background/background1.jpg" src="images/background/background1.jpg"
+                                width="100px" height="80px"/></a>
+                        <a onclick="setDesktopBG('images/background/background2.jpg');"><img
+                                srcset="images/background/background2.jpg" src="images/background/background2.jpg"
+                                width="100px" height="80px"/></a>
+                        <a onclick="setDesktopBG('images/background/background3.jpg');"><img
+                                srcset="images/background/background3.jpg" src="images/background/background3.jpg"
+                                width="100px" height="80px"/></a>
+                        <a onclick="setDesktopBG('images/background/background4.jpg');"><img
+                                srcset="images/background/background4.jpg" src="images/background/background4.jpg"
+                                width="100px" height="80px"/></a>
+                        <a onclick="setDesktopBG('images/background/background5.jpg');"><img
+                                srcset="images/background/background5.jpg" src="images/background/background5.jpg"
+                                width="100px" height="80px"/></a>
+                        <a onclick="setDesktopBG('images/background/background6.jpg');"><img
+                                srcset="images/background/background6.jpg" src="images/background/background6.jpg"
+                                width="100px" height="80px"/></a>
+                        <a onclick="setDesktopBG('images/background/background7.jpg');"><img
+                                srcset="images/background/background7.jpg" src="images/background/background7.jpg"
+                                width="100px" height="80px"/></a>
+                        <a onclick="setDesktopBG('images/background/background8.jpg');"><img
+                                srcset="images/background/background8.jpg" src="images/background/background8.jpg"
+                                width="100px" height="80px"/></a>
+                    </div>
+                </div>
+                <!-- End Carousel -->
+            </div>
+            <div class="desc mt-2">
+                Digital mockup only; colours may appear differently in real life. See <u><a
+                    href="images/photos/goldenyellow.jpg" data-lightbox="goldenyellow"></a></u> signs.
+            </div>
+            <div class="row p-3 justify-content-between">
+                <div class="info-box" onclick="openQuote()">
+                    I need Help - Get Quote
+                </div>
+                <div class="info-box" onclick="openUpload()">
+                    Upload an image or Logo
+                </div>
+            </div>
+            <div class="quote" id="send-quote">
+                <p>Simply enter your text, font and colour choices into the design tool above to get an instant
+                    quote for most signs. For more complex designs and special requests, please use this form
+                    and our friendly team will be happy to help.</p>
+                <form>
+                    <div class="forms mb-2">
+                        <label for="yourname">Your Name *</label><br>
+                        <input type="text" name="yourname" id="yourname" class="form-control">
+                        <label for="youremail">Your Email *</label><br>
+                        <input type="text" name="youremail" id="youremail" class="form-control">
+                        <label for="yourphone">Your Phone *</label><br>
+                        <input type="text" name="yourphone" id="yourphone" class="form-control">
+                    </div>
+                    <div>
+                        <label for="">Indoor / Outdoor Sign*</label><br>
+                        <label class="radio-inline">
+                            <input type="radio" name="editList" value="always"/>Indoor
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="editList" value="never"/>Water Resistant
+                        </label>
+                    </div>
+                    <div class="clearfix"></div>
+                    <label for="yourcomment"> What can we help you with? *</label><br>
+                    <textarea cols="" rows="3" name="yourcomment" id="yourcomment" class="form-control"></textarea>
+                    <div class="text-center sub-form">
+                        SEND FORM
+                    </div>
+                </form>
+            </div>
+            <div class="upload" id="upload">
+                <h3>Upload Background Image</h3>
+                <input type='file' id="imageInput" accept="image/*" onchange="readURL(event)"/>
+                <input type="hidden" id="select-bg" name="background">
             </div>
         </div>
     </div>
 </div>
-<div class="dialogBox" id="dialogBox">
-    <div>
-        <p class="text-center">
-            For Custom Neons over 30 letters, please contact us for a quote
-        </p>
-    </div>
-    <div class="modal-close-btn">
-        <button class="btn btn-sm py-2" onclick="closeModal()" title="Close">OK
-        </button>
-    </div>
-</div>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
-<script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
-<script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
-<script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
-<script type="text/javascript">
-    $(document).ready(function(){
-        $('#defaultOpen').addClass('active');
-        $('#textTab').addClass('active');
-
-    });
-    function setBG(bg) {
-        document.getElementById('select-bg').value = bg;
-        $(".customText").css("background-image", "url(" + bg + ")");
-    }
-</script>
-<script type="text/javascript">
-    function readURL(event) {
-        let getImagePath = URL.createObjectURL(event.target.files[0]);
-        $('.customText').css('background-image', 'url(' + getImagePath + ')');
-    }
-</script>
 <script>
-    $("#line-one").draggable({
+    function setDesktopBG(bg) {
+        // document.getElementById('select-bg').value = bg;
+        let isMobile = window.matchMedia("only screen and (max-width: 450px)").matches;
+        if (isMobile) {
+            $(".mobile-bg").css("background-image", "url(" + bg + ")");
+        } else {
+            $(".desk").css("background-image", "url(" + bg + ")");
+        }
+    }
+
+    function readURL(event) {
+        let isMobile = window.matchMedia("only screen and (max-width: 450px)").matches;
+        let getImagePath = URL.createObjectURL(event.target.files[0]);
+        if (isMobile) {
+            $('.mobile').css('background-image', 'url(' + getImagePath + ')');
+        } else {
+            $('.desk').css('background-image', 'url(' + getImagePath + ')');
+        }
+    }
+
+    function setMobileBG(bg) {
+        // document.getElementById('select-bg').value = bg;
+        $(".mobileOnly").css("background-image", "url(" + bg + ")");
+    }
+</script>
+<script type='text/javascript'>
+    $("#draggable").draggable({
+        containment: '#draggableArea',
     });
-    $("#line-two").draggable({
+
+    $("#draggableMobile").draggable({
+        containment: '#draggableAreaMobile',
     });
-    $("#line-three").draggable({
-    });
+
 </script>
 </body>
 </html>
