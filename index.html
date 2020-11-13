@@ -49,7 +49,7 @@
         <div class="row">
             <div class="col-sm custom-box card">
                 <div class="row">
-                    <div class="tab active text-center" onclick="openTab(event, 'Text')">
+                    <div class="tab text-center" onclick="openTab(event, 'Text')">
                         Text
                     </div>
                     <div class="tab1 text-center" onclick="openTab(event, 'Font')">
@@ -66,13 +66,13 @@
                               id='textInput'
                               onkeyUp="displayText(event)">Your Text</textarea>
                     <div class="row alignText" id="alignText">
-                        <div class="alignBox" style="width: 33.33%; font-size: 25px" onclick="alignText('Left')">
+                        <div class="alignBox" id="left" style="width: 33.33%; font-size: 25px" onclick="alignText('Left')">
                             <p class="text-center mt-1"><i class="fas fa-align-left"></i></p>
                         </div>
-                        <div class="alignBox" style="width: 33.33%; font-size: 25px" onclick="alignText('Center')">
+                        <div class="alignBox activate-align" id="center" style="width: 33.33%; font-size: 25px" onclick="alignText('Center')">
                             <p class="text-center mt-1"><i class="fas fa-align-center"></i></p>
                         </div>
-                        <div class="alignBox" style="width: 33.33%; font-size: 25px" onclick="alignText('Right')">
+                        <div class="alignBox" id="right" style="width: 33.33%; font-size: 25px" onclick="alignText('Right')">
                             <p class="text-center mt-1"><i class="fas fa-align-right"></i></p>
                         </div>
                     </div>
@@ -348,7 +348,7 @@
                     <!--                    row1-->
                     <div class="row justify-content-end">
                         <div class="p-2" style="width: 50%;">
-                            <div class="active box-size px-2">
+                            <div class="active box-size px-2" id="small" onclick="selectSize('small')">
                                 <p style="text-align:left;">
                                     <strong style="font-size: 11px; font-weight: bolder;">SMALL</strong>
                                     <span style="float:right;">
@@ -356,7 +356,8 @@
                                     </span>
                                 </p>
                                 <p style="text-align:left;">
-                                    <strong style="font-size: 11px; font-weight: bolder;">&pound;<span id="small-size"></span></strong>
+                                    <strong style="font-size: 11px; font-weight: bolder;">&pound;<span
+                                            id="small-size"></span></strong>
                                     <span style="float:right;">
                                    Height: <span id="sheight-one"></span> - <span id="sheight-two"></span>cm
                                     </span>
@@ -364,7 +365,7 @@
                             </div>
                         </div>
                         <div class="p-2" style="width: 50%">
-                            <div class="box-size px-2">
+                            <div class="box-size px-2" id="medium" onclick="selectSize('medium')">
                                 <p style="text-align:left;">
                                     <strong style="font-size: 11px; font-weight: bolder;">MEDIUM</strong>
                                     <span style="float:right;">
@@ -372,7 +373,8 @@
                                     </span>
                                 </p>
                                 <p style="text-align:left;">
-                                    <strong style="font-size: 11px; font-weight: bolder;">&pound;<span id="medium-size"></span></strong>
+                                    <strong style="font-size: 11px; font-weight: bolder;">&pound;<span
+                                            id="medium-size"></span></strong>
                                     <span style="float:right;">
                                    Height: <span id="mheight-one"></span> - <span id="mheight-two"></span>cm
                                     </span>
@@ -383,7 +385,7 @@
                     <!--                    row2-->
                     <div class="row justify-content-end">
                         <div class="p-2" style="width: 50%">
-                            <div class="box-size px-2">
+                            <div class="box-size px-2" id="large" onclick="selectSize('large')">
                                 <p style="text-align:left;">
                                     <strong style="font-size: 11px; font-weight: bolder;">LARGE</strong>
                                     <span style="float:right;">
@@ -391,7 +393,8 @@
                                     </span>
                                 </p>
                                 <p style="text-align:left;">
-                                    <strong style="font-size: 11px; font-weight: bolder;">&pound;<span id="large-size"></span></strong>
+                                    <strong style="font-size: 11px; font-weight: bolder;">&pound;<span
+                                            id="large-size"></span></strong>
                                     <span style="float:right;">
                                    Height: <span id="lheight-one"></span> - <span id="lheight-two"></span>cm
                                     </span>
@@ -399,7 +402,7 @@
                             </div>
                         </div>
                         <div class="p-2" style="width: 50%">
-                            <div class="box-size px-2">
+                            <div class="box-size px-2" id="xlarge" onclick="selectSize('xlarge')">
                                 <p style="text-align:left;">
                                     <strong style="font-size: 11px; font-weight: bolder;">XLARGE</strong>
                                     <span style="float:right;">
@@ -407,7 +410,8 @@
                                     </span>
                                 </p>
                                 <p style="text-align:left;">
-                                    <strong style="font-size: 11px; font-weight: bolder;">&pound;<span id="xlarge-size"></span></strong>
+                                    <strong style="font-size: 11px; font-weight: bolder;">&pound;<span
+                                            id="xlarge-size"></span></strong>
                                     <span style="float:right;">
                                    Height: <span id="xlheight-one"></span> - <span id="xlheight-two"></span>cm
                                     </span>
@@ -420,11 +424,11 @@
                 </div>
                 <!-- location-->
                 <div>
-                    <div class="row px-3 justify-content-between">
-                        <div class="location">
+                    <div class="row px-3 justify-content-between" id="location">
+                        <div class="location" id="indoor" onclick="selectLocation('indoor')">
                             Indoor
                         </div>
-                        <div class="location">
+                        <div class="location" id="waterResistant" onclick="selectLocation('waterResistant')">
                             Water Resistant
                         </div>
                     </div>
@@ -433,10 +437,9 @@
                         the sign will be exposed to wet weather, please order the 'Clear Acrylic Box' backboard option
                         below.</label>
                 </div>
-
                 <!-- pug-->
-                <div class="row px-3">
-                    <div class="text-center" style="width: 30%; height: 30px; line-height: 30px">
+                <div class="row mb-2 px-3">
+                    <div class="" style="width: 30%; min-height: 30px; line-height: 30px">
                         <p style="font-size: 15px; font-weight: bolder">ELECTRICAL PUG:</p>
                     </div>
                     <select name="pug" id="pug">
@@ -446,17 +449,6 @@
                         <option value="Australia/NZ">Australia/NZ</option>
                         <option value="Japan">Japan</option>
                         <option value="Other">Other: Ask at checkout</option>
-                    </select>
-                </div>
-<!--            colors-->
-                <div class="row mt-2 px-3">
-                    <div class="" style="width: 30%; height: 30px; line-height: 30px">
-                        <p style="font-size: 15px; font-weight: bolder">SELECT COLOUR:</p>
-                    </div>
-                    <select name="pug" id="select-col">
-                        <option value="Single Colour">Single Colour</option>
-                        <option value="Dimmer Remote">Dimmer Remote</option>
-                        <option value="Multicolour Remote">Multicolour Remote</option>
                     </select>
                 </div>
                 <!--backboard-->
@@ -489,31 +481,6 @@
                                             <p class="text-right">+82</p>
                                         </div>
                                     </option>
-                                    <option value="3">
-                                        <div class="justify-content-end">
-                                            <p>Stand Acrylic</p>
-                                            +124
-                                        </div>
-                                    </option>
-                                    <option value="4">
-                                        <div class="justify-content-end">
-                                            <p>Clear Acrylic Box: For hanging
-                                            </p>
-                                            <p>+284</p>
-                                        </div>
-                                    </option>
-                                    <option value="5">
-                                        <div class="justify-content-end">
-                                            <p>Clear Acrylic Box: For wall Mounting</p>
-                                            <p> +284</p>
-                                        </div>
-                                    </option>
-                                    <option value="6">
-                                        <div class="justify-content-end">
-                                            <p>Clear Acrylic Box: Free-Standing</p>
-                                            <p>+284</p>
-                                        </div>
-                                    </option>
                             </div>
                             </select>
                         </div>
@@ -522,21 +489,15 @@
             </div>
             <!--special offer and other additionals-->
             <div>
-                <label class="contain">Special offer: <a href="/buyremotedimmer/"
-                                                         style="text-decoration:underline">Remote
-                    and Dimmer</a> Free
+                <label class="contain">Single Colour
                     <input class="inputs" type="checkbox" checked="checked">
                     <span class="checkmark"></span>
                 </label>
-                <label class="contain"><a href="/wall-mounting-kit/" style="text-decoration:underline">Wall
-                    Mounting</a>
-                    Kit &pound;12
+                <label class="contain">Dimmer Remote
                     <input class="inputs" type="checkbox">
                     <span class="checkmark"></span>
                 </label>
-                <label class="contain"><a href="/sign-hanging-kit/"
-                                          style="text-decoration:underline">Sign
-                    Hanging</a> Kit &pound;12
+                <label class="contain">Multicolour Remote
                     <input class="inputs" type="checkbox">
                     <span class="checkmark"></span>
                 </label>

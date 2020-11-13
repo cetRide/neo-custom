@@ -83,6 +83,8 @@ window.onload = function () {
     document.getElementById('displayText').style.color = 'white';
     document.getElementById('displayTextMobile').style.fontFamily = 'Hamillton';
     document.getElementById('displayTextMobile').style.color = 'white';
+    document.getElementById('displayText').style.textShadow = defaultNeon;
+    document.getElementById('displayTextMobile').style.textShadow = defaultNeon;
     displayText.innerHTML = textInput.value;
     displayTextMobile.innerHTML = textInput.value;
     for (i = 0; i < tabContent.length; i++) {
@@ -512,10 +514,10 @@ function displayText(event) {
     let lheightTwo = document.getElementById("lheight-two");
     let xlheightTwo = document.getElementById("xlheight-two");
     let text = textInput.value;
-    smallPrices.innerHTML = (smallPrice + ((text.length-1) * 12)).toString();
-    mediumPrices.innerHTML = (mediumPrice + ((text.length-1) * 12)).toString();
-    largePrices.innerHTML = (largePrice + ((text.length-1) * 12)).toString();
-    xlargePrices.innerHTML = (xlargePrice + ((text.length-1) * 12)).toString();
+    smallPrices.innerHTML = (smallPrice + ((text.length - 1) * 12)).toString();
+    mediumPrices.innerHTML = (mediumPrice + ((text.length - 1) * 12)).toString();
+    largePrices.innerHTML = (largePrice + ((text.length - 1) * 12)).toString();
+    xlargePrices.innerHTML = (xlargePrice + ((text.length - 1) * 12)).toString();
     if (text.length > 30) {
         document.getElementById("textInput").disabled = true;
         this.openModal();
@@ -616,18 +618,30 @@ function toggleAlignment() {
 }
 
 function alignText(direction) {
+    let left = document.getElementById('left');
+    let center = document.getElementById('center');
+    let right = document.getElementById('right');
     switch (direction) {
         case 'Left':
             document.getElementById('displayText').style.textAlign = 'left';
             document.getElementById('displayTextMobile').style.textAlign = 'left';
+            left.classList.add('activate-align');
+            center.classList.remove('activate-align');
+            right.classList.remove('activate-align');
             break;
         case 'Center':
             document.getElementById('displayText').style.textAlign = 'center';
             document.getElementById('displayTextMobile').style.textAlign = 'center';
+            center.classList.add('activate-align');
+            right.classList.remove('activate-align');
+            left.classList.remove('activate-align');
             break;
         case 'Right':
             document.getElementById('displayText').style.textAlign = 'right';
             document.getElementById('displayTextMobile').style.textAlign = 'right';
+            right.classList.add('activate-align');
+            center.classList.remove('activate-align');
+            left.classList.remove('activate-align');
             break;
         default:
             document.getElementById('displayText').style.textAlign = 'center';
@@ -644,6 +658,52 @@ function openQuote() {
 function openUpload() {
     document.getElementById('upload').style.display = 'block';
     document.getElementById('send-quote').style.display = 'none'
+}
+
+function selectLocation(location) {
+    let indoor = document.getElementById("indoor");
+    let waterResistant = document.getElementById("waterResistant");
+    if (location === 'waterResistant') {
+        waterResistant.classList.add('active');
+        indoor.classList.remove('active');
+    } else {
+        waterResistant.classList.remove('active');
+        indoor.classList.add('active');
+    }
+}
+
+function selectSize(size) {
+    let small = document.getElementById('small');
+    let medium = document.getElementById('medium');
+    let large = document.getElementById('large');
+    let xlarge = document.getElementById('xlarge');
+
+    switch (size) {
+        case 'small':
+            small.classList.add('active');
+            large.classList.remove('active');
+            medium.classList.remove('active');
+            xlarge.classList.remove('active');
+            break;
+        case 'medium':
+            medium.classList.add('active');
+            large.classList.remove('active');
+            xlarge.classList.remove('active');
+            small.classList.remove('active');
+            break;
+        case 'large':
+            large.classList.add('active');
+            xlarge.classList.remove('active');
+            medium.classList.remove('active');
+            small.classList.remove('active');
+            break;
+        case 'xlarge':
+            xlarge.classList.add('active');
+            medium.classList.remove('active');
+            large.classList.remove('active');
+            small.classList.remove('active');
+            break;
+    }
 }
 
 setInterval(function () {
