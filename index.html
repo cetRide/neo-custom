@@ -12,8 +12,11 @@
           content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
     <!-- CSS -->
     <link href="/main.css" rel="stylesheet">
-    <!--    <link href="css/tabs.css" rel="stylesheet">-->
-    <!--    <link href="css/style.css" rel="stylesheet">-->
+    <!--        <link href="css/style.css" rel="stylesheet">-->
+    <!--    <link href="css/custom.css" rel="stylesheet" type="text/css">-->
+    <!--    <link href="css/custompage.css" rel="stylesheet" type="text/css">-->
+    <!--    <link href="css/neons.css" rel="stylesheet" type="text/css">-->
+    <!--    <link href="css/tabs.css" rel="stylesheet" type="text/css">-->
     <script type="text/javascript" src="/main.js"></script>
     <!-- Javascript  -->
 
@@ -267,10 +270,11 @@
                 </div>
                 <!--text area for mobile-->
                 <div class="mobileOnly mb-2 text-box">
-                    <div class="mobile-bg" style="height:300px" id="draggableAreaMobile">
+                    <div class="mobile-bg customText" style="height:300px" id="draggableAreaMobile">
                         <div>
                             <label class="switch">
-                                <input class="inputCheck"id="inputs" type="checkbox" onchange='handleChange(this);' checked>
+                                <input class="inputCheck" id="inputs" type="checkbox" onchange='handleChange(this);'
+                                       checked>
                                 <span class="slider round"></span>
                             </label>
                         </div>
@@ -346,15 +350,15 @@
                         <div class="p-2" style="width: 50%;">
                             <div class="active box-size px-2">
                                 <p style="text-align:left;">
-                                    <strong>SMALL</strong>
+                                    <strong style="font-size: 11px; font-weight: bolder;">SMALL</strong>
                                     <span style="float:right;">
-                                    Length: 9cm
+                                    Length: <span id="slength"></span>cm
                                     </span>
                                 </p>
                                 <p style="text-align:left;">
-                                    <strong>&pound;300</strong>
+                                    <strong style="font-size: 11px; font-weight: bolder;">&pound;<span id="small-size"></span></strong>
                                     <span style="float:right;">
-                                   Height: 80-120cm
+                                   Height: <span id="sheight-one"></span> - <span id="sheight-two"></span>cm
                                     </span>
                                 </p>
                             </div>
@@ -362,15 +366,15 @@
                         <div class="p-2" style="width: 50%">
                             <div class="box-size px-2">
                                 <p style="text-align:left;">
-                                    <strong>SMALL</strong>
+                                    <strong style="font-size: 11px; font-weight: bolder;">MEDIUM</strong>
                                     <span style="float:right;">
-                                    Length: 9cm
+                                    Length: <span id="mlength"></span>cm
                                     </span>
                                 </p>
                                 <p style="text-align:left;">
-                                    <strong>&pound;300</strong>
+                                    <strong style="font-size: 11px; font-weight: bolder;">&pound;<span id="medium-size"></span></strong>
                                     <span style="float:right;">
-                                   Height: 80-120cm
+                                   Height: <span id="mheight-one"></span> - <span id="mheight-two"></span>cm
                                     </span>
                                 </p>
                             </div>
@@ -381,50 +385,15 @@
                         <div class="p-2" style="width: 50%">
                             <div class="box-size px-2">
                                 <p style="text-align:left;">
-                                    <strong>SMALL</strong>
+                                    <strong style="font-size: 11px; font-weight: bolder;">LARGE</strong>
                                     <span style="float:right;">
-                                    Length: 9cm
+                                    Length: <span id="llength"></span>cm
                                     </span>
                                 </p>
                                 <p style="text-align:left;">
-                                    <strong>&pound;300</strong>
+                                    <strong style="font-size: 11px; font-weight: bolder;">&pound;<span id="large-size"></span></strong>
                                     <span style="float:right;">
-                                   Height: 80-120cm
-                                    </span>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="p-2" style="width: 50%">
-                            <div class="box-size px-2">
-                                <p style="text-align:left;">
-                                    <strong>SMALL</strong>
-                                    <span style="float:right;">
-                                    Length: 9cm
-                                    </span>
-                                </p>
-                                <p style="text-align:left;">
-                                    <strong>&pound;300</strong>
-                                    <span style="float:right;">
-                                   Height: 80-120cm
-                                    </span>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <!--                    row3-->
-                    <div class="row justify-content-end">
-                        <div class="p-2" style="width: 50%">
-                            <div class="box-size px-2">
-                                <p style="text-align:left;">
-                                    <strong>SMALL</strong>
-                                    <span style="float:right;">
-                                    Length: 9cm
-                                    </span>
-                                </p>
-                                <p style="text-align:left;">
-                                    <strong>&pound;300</strong>
-                                    <span style="float:right;">
-                                   Height: 80-120cm
+                                   Height: <span id="lheight-one"></span> - <span id="lheight-two"></span>cm
                                     </span>
                                 </p>
                             </div>
@@ -432,15 +401,15 @@
                         <div class="p-2" style="width: 50%">
                             <div class="box-size px-2">
                                 <p style="text-align:left;">
-                                    <strong>SMALL</strong>
+                                    <strong style="font-size: 11px; font-weight: bolder;">XLARGE</strong>
                                     <span style="float:right;">
-                                    Length: 9cm
+                                    Length: <span id="xllength"></span>cm
                                     </span>
                                 </p>
                                 <p style="text-align:left;">
-                                    <strong>&pound;300</strong>
+                                    <strong style="font-size: 11px; font-weight: bolder;">&pound;<span id="xlarge-size"></span></strong>
                                     <span style="float:right;">
-                                   Height: 80-120cm
+                                   Height: <span id="xlheight-one"></span> - <span id="xlheight-two"></span>cm
                                     </span>
                                 </p>
                             </div>
@@ -451,15 +420,20 @@
                 </div>
                 <!-- location-->
                 <div>
-                    <select name="location" id="location" multiple>
-                        <option value="1">Indoor</option>
-                        <option value="2">Water Resistant</option>
-                    </select>
+                    <div class="row px-3 justify-content-between">
+                        <div class="location">
+                            Indoor
+                        </div>
+                        <div class="location">
+                            Water Resistant
+                        </div>
+                    </div>
                     <label class="size_note">*Please note: The sign will be treated with a clear seal that will
                         splash-proof it. If
                         the sign will be exposed to wet weather, please order the 'Clear Acrylic Box' backboard option
                         below.</label>
                 </div>
+
                 <!-- pug-->
                 <div class="row px-3">
                     <div class="text-center" style="width: 30%; height: 30px; line-height: 30px">
@@ -472,6 +446,17 @@
                         <option value="Australia/NZ">Australia/NZ</option>
                         <option value="Japan">Japan</option>
                         <option value="Other">Other: Ask at checkout</option>
+                    </select>
+                </div>
+<!--            colors-->
+                <div class="row mt-2 px-3">
+                    <div class="" style="width: 30%; height: 30px; line-height: 30px">
+                        <p style="font-size: 15px; font-weight: bolder">SELECT COLOUR:</p>
+                    </div>
+                    <select name="pug" id="select-col">
+                        <option value="Single Colour">Single Colour</option>
+                        <option value="Dimmer Remote">Dimmer Remote</option>
+                        <option value="Multicolour Remote">Multicolour Remote</option>
                     </select>
                 </div>
                 <!--backboard-->
@@ -558,8 +543,8 @@
             </div>
             <!-- price box-->
             <div class="price-box px-3">
-                <p style="text-align:left;">
-                    <strong>Total with selected options:</strong>
+                <p style="text-align:left; font-weight: bold">
+                    <span>Total with selected options:</span>
                     <span style="float:right;">
                                     &pound;300
                                     </span>
@@ -574,10 +559,11 @@
         <!--  text area for dessktop-->
         <div class="col-md-7">
             <div class="text-box desktopOnly" style="position: relative">
-                <div class="desk" style="height: 550px;" id="draggableArea">
+                <div class="desk customText" style="height: 550px;" id="draggableArea">
                     <div>
                         <label class="switch">
-                            <input class="inputCheck"id="inputs" type="checkbox" onchange='handleChange(this);' checked>
+                            <input class="inputCheck" id="inputs" type="checkbox" onchange='handleChange(this);'
+                                   checked>
                             <span class="slider round"></span>
                         </label>
                     </div>
@@ -692,6 +678,17 @@
                 <input type='file' id="imageInput" accept="image/*" onchange="readURL(event)"/>
                 <input type="hidden" id="select-bg" name="background">
             </div>
+        </div>
+    </div>
+    <div class="dialogBox" id="dialogBox">
+        <div>
+            <p class="text-center">
+                For Custom Neons over 30 letters, please contact us for a quote
+            </p>
+        </div>
+        <div class="modal-close-btn">
+            <button class="btn btn-sm py-2" onclick="closeModal()" title="Close">OK
+            </button>
         </div>
     </div>
 </div>

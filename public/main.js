@@ -1,3 +1,24 @@
+let smallPrice = 91;
+let mediumPrice = 101;
+let largePrice = 129;
+let xlargePrice = 137
+let sizeDetails = {
+    length: 9,
+    heightOne: 7,
+    heightTwo: 35,
+
+    mLength: 11,
+    mHeightOne: 9,
+    mHeightTwo: 45,
+
+    lLength: 14,
+    lHeightOne: 12,
+    lHeightTwo: 56,
+
+    xlLength: 17,
+    xlHeightOne: 14,
+    xlHeightTwo: 68,
+};
 let smallSize = {
     length: 9,
     heightL: 7,
@@ -49,8 +70,6 @@ let backBoard = [
     {id: "6", url: '/images/back7.png', name: 'Clear Acrylic Box: Free-Standing', price: '284'},
 ];
 
-let lines = 1;
-
 let defaultNeon = "0 0 5px #fff, 0 0 10px #fff, 0 0 20px #98ff98, 0 0 30px #98ff98, 0 0 40px #98ff98, 0 0 55px #98ff98, 0 0 75px #98ff98";
 let defaultColor = '#98ff98';
 
@@ -72,8 +91,26 @@ window.onload = function () {
         }
         break;
     }
-};
+    document.getElementById("small-size").innerHTML = smallPrice.toString();
+    document.getElementById("medium-size").innerHTML = mediumPrice.toString();
+    document.getElementById("large-size").innerHTML = largePrice.toString();
+    document.getElementById("xlarge-size").innerHTML = xlargePrice.toString();
 
+    document.getElementById("slength").innerHTML = small.length.toString();
+    document.getElementById("llength").innerHTML = large.length.toString();
+    document.getElementById("mlength").innerHTML = medium.length.toString();
+    document.getElementById("xllength").innerHTML = extraLarge.length.toString();
+
+    document.getElementById("sheight-one").innerHTML = small.heightL.toString();
+    document.getElementById("lheight-one").innerHTML = large.heightL.toString();
+    document.getElementById("mheight-one").innerHTML = medium.heightL.toString();
+    document.getElementById("xlheight-one").innerHTML = extraLarge.heightL.toString();
+
+    document.getElementById("sheight-two").innerHTML = small.heightR.toString();
+    document.getElementById("lheight-two").innerHTML = large.heightR.toString();
+    document.getElementById("mheight-two").innerHTML = medium.heightR.toString();
+    document.getElementById("xlheight-two").innerHTML = extraLarge.heightR.toString();
+};
 
 function openTab(evt, actionName) {
     let i, tabContent, tabLink;
@@ -97,7 +134,6 @@ function changeFontFamily(font) {
     let displayTextMobile = document.getElementById('displayTextMobile');
     displayTextMobile.style.fontFamily = font, 'cursive';
 }
-
 
 function setColor(color) {
     let textColor, color_string;
@@ -275,7 +311,8 @@ function toggleTextShadow(state) {
             document.getElementById('displayTextMobile').style.color = textColor;
             document.getElementById('displayTextMobile').style.textShadow = colorString;
         } else {
-            document.getElementById('line-one').style.textShadow = defaultNeon;
+            document.getElementById('displayText').style.textShadow = defaultNeon;
+            document.getElementById('displayTextMobile').style.textShadow = defaultNeon;
         }
     } else {
         if (colorString !== null) {
@@ -299,26 +336,6 @@ function handleChange(checkbox) {
         this.toggleTextShadow('on')
     } else {
         this.toggleTextShadow('off')
-    }
-}
-
-function addToCart() {
-
-    let text = localStorage.getItem('text');
-    let board = localStorage.getItem('selectBackBoard');
-    let pug = localStorage.getItem('electricPug');
-    if (text === null) {
-        alert('Text is missing');
-    }
-    if (board === null) {
-        alert('Select the back board');
-    }
-    if (pug === null) {
-        alert('Select the electric pug');
-    }
-    if (text !== null && board !== null && pug !== null) {
-        alert('Your customization added to cart');
-        window.location.href = window.location.origin + '/add-to-cart';
     }
 }
 
@@ -378,27 +395,6 @@ function selectTheSize() {
             document.getElementById('box-small').style.display = 'block';
     }
 
-}
-
-function addLine() {
-    lines = lines + 1;
-    if (lines === 2) {
-        document.getElementById('box2').classList.add('activeBtn');
-        document.getElementById('box3').classList.remove('activeBtn');
-        document.getElementById('box1').classList.remove('activeBtn');
-        document.getElementById('text1').classList.remove('displayInput');
-        document.getElementById('text3').classList.remove('displayInput');
-        document.getElementById('text2').classList.add('displayInput');
-
-    } else if (lines === 3) {
-        document.getElementById('box3').classList.add('activeBtn');
-        document.getElementById('box2').classList.remove('activeBtn');
-        document.getElementById('box1').classList.remove('activeBtn');
-
-        document.getElementById('text1').classList.remove('displayInput');
-        document.getElementById('text2').classList.remove('displayInput');
-        document.getElementById('text3').classList.add('displayInput');
-    }
 }
 
 function displayToggleButtons() {
@@ -495,8 +491,31 @@ function displayText(event) {
     let textInput = document.getElementById("textInput");
     let displayText = document.getElementById("displayText");
     let displayTextMobile = document.getElementById("displayTextMobile");
+    let smallPrices = document.getElementById("small-size");
+    let mediumPrices = document.getElementById("medium-size");
+    let largePrices = document.getElementById("large-size");
+    let xlargePrices = document.getElementById("xlarge-size");
 
+
+    let slength = document.getElementById("slength");
+    let mlength = document.getElementById("mlength");
+    let llength = document.getElementById("llength");
+    let xllength = document.getElementById("xllength");
+
+    let sheightOne = document.getElementById("sheight-one");
+    let mheightOne = document.getElementById("mheight-one");
+    let lheightOne = document.getElementById("lheight-one");
+    let xlheightOne = document.getElementById("xlheight-one");
+
+    let sheightTwo = document.getElementById("sheight-two");
+    let mheightTwo = document.getElementById("mheight-two");
+    let lheightTwo = document.getElementById("lheight-two");
+    let xlheightTwo = document.getElementById("xlheight-two");
     let text = textInput.value;
+    smallPrices.innerHTML = (smallPrice + ((text.length-1) * 12)).toString();
+    mediumPrices.innerHTML = (mediumPrice + ((text.length-1) * 12)).toString();
+    largePrices.innerHTML = (largePrice + ((text.length-1) * 12)).toString();
+    xlargePrices.innerHTML = (xlargePrice + ((text.length-1) * 12)).toString();
     if (text.length > 30) {
         document.getElementById("textInput").disabled = true;
         this.openModal();
@@ -518,6 +537,65 @@ function displayText(event) {
         }
         finalText += newText[i] + "<br>";
     }
+    if (text.length === 1) {
+        slength.innerHTML = ((longStringCount * small.length) + 1).toString();
+        mlength.innerHTML = ((longStringCount * medium.length) + 1).toString();
+        llength.innerHTML = ((longStringCount * large.length) + 1).toString();
+        xllength.innerHTML = ((longStringCount * extraLarge.length) + 1).toString();
+        sizeDetails.length = ((longStringCount * small.length) + 1);
+        sizeDetails.mLength = ((longStringCount * medium.length) + 1);
+        sizeDetails.lLength = ((longStringCount * large.length) + 1);
+        sizeDetails.xLength = ((longStringCount * extraLarge.length) + 1);
+        smallSize.length = ((longStringCount * small.length) + 1);
+        mediumSize.length = ((longStringCount * medium.length) + 1);
+        largeSize.length = ((longStringCount * large.length) + 1);
+        extraLargeSize.length = ((longStringCount * extraLarge.length) + 1);
+    }
+
+    let heightCount = newText.length;
+    if (heightCount > 0) {
+        sheightOne.innerHTML = (heightCount * small.heightL).toString();
+        mheightOne.innerHTML = (heightCount * medium.heightL).toString();
+        lheightOne.innerHTML = (heightCount * large.heightL).toString();
+        xlheightOne.innerHTML = (heightCount * extraLarge.heightL).toString();
+        sizeDetails.heightOne = (heightCount * small.heightL);
+        sizeDetails.mHeightOne = (heightCount * medium.heightL);
+        sizeDetails.lHeightOne = (heightCount * large.heightL);
+        sizeDetails.xlHeightOne = (heightCount * extraLarge.heightL);
+
+        smallSize.heightL = (heightCount * small.heightL);
+        mediumSize.heightL = (heightCount * medium.heightL);
+        largeSize.heightL = (heightCount * large.heightL);
+        extraLarge.heightL = (heightCount * extraLarge.heightL);
+
+        sheightTwo.innerHTML = (heightCount * small.heightR).toString();
+        mheightTwo.innerHTML = (heightCount * medium.heightR).toString();
+        lheightTwo.innerHTML = (heightCount * large.heightR).toString();
+        xlheightTwo.innerHTML = (heightCount * extraLarge.heightR).toString();
+        sizeDetails.heightTwo = (heightCount * small.heightR);
+        sizeDetails.mHeightTwo = (heightCount * medium.heightR);
+        sizeDetails.lHeightTwo = (heightCount * large.heightR);
+        sizeDetails.xlHeightTwo = (heightCount * extraLarge.heightR);
+
+        smallSize.heightR = (heightCount * small.heightR);
+        mediumSize.heightR = (heightCount * medium.heightR);
+        largeSize.heightR = (heightCount * large.heightL);
+        extraLarge.heightR = (heightCount * extraLarge.heightR);
+
+    }
+    slength.innerHTML = ((longStringCount * small.length) - 1).toString();
+    mlength.innerHTML = ((longStringCount * medium.length) - 1).toString();
+    llength.innerHTML = ((longStringCount * large.length) - 1).toString();
+    xllength.innerHTML = ((longStringCount * extraLarge.length) - 1).toString();
+    sizeDetails.length = ((longStringCount * small.length) - 1);
+    sizeDetails.mLength = ((longStringCount * medium.length) - 1);
+    sizeDetails.lLength = ((longStringCount * large.length) - 1);
+    sizeDetails.xLength = ((longStringCount * extraLarge.length) - 1);
+
+    smallSize.length = ((longStringCount * small.length) - 1);
+    mediumSize.length = ((longStringCount * medium.length) - 1);
+    largeSize.length = ((longStringCount * large.length) - 1);
+    extraLargeSize.length = ((longStringCount * extraLarge.length) - 1);
     displayText.innerHTML = finalText;
     displayTextMobile.innerHTML = finalText;
 

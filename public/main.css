@@ -200,9 +200,21 @@
     font-weight: normal;
     font-style: normal;
 }
+.customText {
+    background-image: url('');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    cursor: pointer;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    word-wrap: break-word;
+}
 
 .custom-box {
-    height: 1170px;
+    height: 1150px;
 }
 .switch {
     position: relative;
@@ -272,7 +284,34 @@
 {
     content:'ON';
 }
+/** Modal */
+.dialogBox {
+    display: none;
+    transition: opacity 0.3s;
+    position: absolute;
+    top: 25%;
+    left: 0;
+    right: 0;
+    width: 33.33%;
+    margin: 0 auto;
+    padding: 30px;
+    background: whitesmoke;
+    border-radius: 4px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+    z-index: 2;
+}
 
+.modal-close-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.modal-close-btn button {
+    background-color: #35398e;
+    color: white;
+}
 .tab {
     width: 33.33%;
     height: 40px;
@@ -303,7 +342,8 @@
     position: relative;
     background: white;
     cursor: pointer;
-    border: 1px solid #4bc3c9;
+    border-bottom: 1px solid #4bc3c9;
+    border-top: 1px solid #4bc3c9;
     color: #4bc3c9;
 }
 
@@ -319,17 +359,17 @@
     border-bottom: 20px solid transparent;
 }
 
-.tab1:before {
-    content: "";
-    position: absolute;
-    right: -20px;
-    bottom: 0;
-    width: 0;
-    height: 0;
-    border-left: 20px solid white;
-    border-top: 20px solid transparent;
-    border-bottom: 20px solid transparent;
-}
+/*.tab1:before {*/
+/*    content: "";*/
+/*    position: absolute;*/
+/*    right: -20px;*/
+/*    bottom: 0;*/
+/*    width: 0;*/
+/*    height: 0;*/
+/*    border-left: 20px solid white;*/
+/*    border-top: 20px solid transparent;*/
+/*    border-bottom: 20px solid transparent;*/
+/*}*/
 
 .tab2 {
     width: 33.33%;
@@ -379,11 +419,11 @@
     font-feature-settings: calt 0;
 }
 .myFont {
-    width: 33.33%;
+    width: 25%;
     cursor: pointer;
 }
 .color {
-    width: 25%;
+    width: 16.67%;
 }
 
 .alignBox {
@@ -427,11 +467,14 @@
     font-size: 8px;
     cursor: pointer;
     padding-top: 10px;
-    padding-bottom: 5px;
     min-height: 64px;
 }
 
 .box-size:active {
+    background-color: white;
+    border: 2px solid #F55aff;
+}
+.box-size:hover {
     background-color: white;
     border: 2px solid #F55aff;
 }
@@ -470,30 +513,25 @@ label.size_note, .sign_note {
     -moz-box-shadow: 0 0 5px 2px #4bc3c9;
     box-shadow: 0 0 5px 2px #4bc3c9;
 }
-
-#location {
-    width: 100%;
-    height: 64px;
-    border: none;
+#select-col {
+    width: 70%;
+    background-color: #f5f5f5;
     overflow: hidden;
-}
-
-#location::-moz-focus-inner {
-    border: 0;
-}
-
-#location:focus {
+    border: none;
+    z-index: 1;
     outline: none;
+    height: 30px;
 }
 
-#location option:active {
-    color: red;
+#select-col:hover {
+    -webkit-box-shadow: 0 0 5px 2px #4bc3c9;
+    -moz-box-shadow: 0 0 5px 2px #4bc3c9;
+    box-shadow: 0 0 5px 2px #4bc3c9;
 }
 
-#location option {
-    width: 49%;
-    margin-right: 2%;
-    /*height: 64px;*/
+.location {
+    width: 48%;
+    height: 64px;
     font-size: 1.2em;
     text-align: center;
     display: inline-block;
@@ -502,7 +540,14 @@ label.size_note, .sign_note {
     border-radius: 15px;
     background-color: #f5f5f5;
 }
-
+.location:active {
+    background-color: white;
+    border: 2px solid #F55aff;
+}
+.location:hover {
+    background-color: white;
+    border: 2px solid #F55aff;
+}
 .backboard {
     background-color: #f5f5f5;
     border-radius: 15px;
@@ -675,7 +720,6 @@ a {
 .quote {
     display: none;
 }
-
 @media only screen and (min-width: 600px) {
     .desktopOnly {
         display: block;
