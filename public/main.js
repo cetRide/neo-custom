@@ -63,7 +63,7 @@ let extraLarge = {
 let backBoard = [
     {id: "0", url: '/images/back1.png', name: 'Cut Around Acrylic', price: 'Free'},
     {id: "1", url: '/images/back2.png', name: 'Rectangle Acrylic', price: 'Free'},
-    {id: "2", url: '/images/back3.png', name: 'Cut To Letter Acrylic', price: '82'},
+    {id: "2", url: '/images/back3.png', name: 'Cut To Letter Acrylic', price: 'Free'},
     {id: "3", url: '/images/back4.png', name: 'Stand Acrylic', price: '124'},
     {id: "4", url: '/images/back5.png', name: 'Clear Acrylic Box: For hanging', price: '284'},
     {id: "5", url: '/images/back6.png', name: 'Clear Acrylic Box: For wall Mounting', price: '284'},
@@ -664,11 +664,11 @@ function selectLocation(location) {
     let indoor = document.getElementById("indoor");
     let waterResistant = document.getElementById("waterResistant");
     if (location === 'waterResistant') {
-        waterResistant.classList.add('active');
-        indoor.classList.remove('active');
+        waterResistant.classList.add('actives');
+        indoor.classList.remove('actives');
     } else {
-        waterResistant.classList.remove('active');
-        indoor.classList.add('active');
+        waterResistant.classList.remove('actives');
+        indoor.classList.add('actives');
     }
 }
 
