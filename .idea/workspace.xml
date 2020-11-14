@@ -61,7 +61,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/images/color_images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/images/background" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -71,8 +71,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/public/images/color_images" />
       <recent name="$PROJECT_DIR$/public/images/background" />
+      <recent name="$PROJECT_DIR$/public/images/color_images" />
       <recent name="$PROJECT_DIR$/public/images" />
       <recent name="$PROJECT_DIR$/public/images/color_images/lemon yellow" />
       <recent name="$PROJECT_DIR$/public/fonts" />
@@ -127,7 +127,7 @@
       <workItem from="1605089811972" duration="10114000" />
       <workItem from="1605102359850" duration="3986000" />
       <workItem from="1605159179982" duration="22013000" />
-      <workItem from="1605335017977" duration="28795000" />
+      <workItem from="1605335017977" duration="30190000" />
     </task>
     <servers />
   </component>
@@ -151,10 +151,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="421" y="205" width="598" height="548" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1605370934287" />
-    <state x="385" y="210" key="run.anything.popup" timestamp="1605366418914">
+    <state x="385" y="210" key="run.anything.popup" timestamp="1605382853550">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="385" y="210" key="run.anything.popup/0.0.1440.900@0.0.1440.900" timestamp="1605366418914" />
+    <state x="385" y="210" key="run.anything.popup/0.0.1440.900@0.0.1440.900" timestamp="1605382853550" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
