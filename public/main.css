@@ -11,6 +11,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Roboto:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Londrina+Outline&family=Roboto:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Oswald:500,600,700');
 
 @font-face {
     font-family: Hamillton;
@@ -28,6 +29,18 @@
 @font-face {
     font-family: Brandon_light;
     src: url('./fonts/brandon_light.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: Brandon_bld;
+    src: url('./fonts/Brandon_bld.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: Brandon_reg;
+    src: url('./fonts/Brandon_reg.ttf');
     font-weight: normal;
     font-style: normal;
 }
@@ -215,9 +228,13 @@
 }
 
 .custom-box {
-    height: 1100px;
+    /*min-height: 1270px;*/
+    /*max-height: 1300px;*/
 }
+.textInput {
+    background-color: #f5f5f5;
 
+}
 .switch {
     position: relative;
     display: inline-block;
@@ -430,6 +447,15 @@
 
 .color {
     width: 16.67%;
+    padding-top: 0;
+}
+.color span {
+    font-size: 30px;
+    font-weight: 900;
+}
+.color-desc {
+    height: 250px;
+    width: 100%;
 }
 
 .alignBox {
@@ -449,12 +475,18 @@
 .tabContent textarea {
     width: 100%;
     border-radius: 15px;
-    padding: 10px;
-    outline: none;
+    border: 2px solid #f5f5f5;
+    text-align: center;
+    padding-top: 20px;
 }
 
-.tabContent textarea:hover {
-    border: 1px solid #35398e;
+.tabContent textarea:focus {
+    border-radius: 15px;
+    border: 1px solid steelblue;
+    outline: none;
+    -webkit-box-shadow: 0 0 5px 2px #f5f5f5;
+    -moz-box-shadow: 0 0 5px 2px #f5f5f5;
+    box-shadow: 0 0 5px 2px #f5f5f5;
 }
 
 .text-box {
@@ -474,18 +506,14 @@
 .box-size {
     background-color: #f5f5f5;
     border-radius: 16px;
-    font-size: 8px;
+    font-size: 11px;
     cursor: pointer;
+    color: black;
     padding-top: 10px;
     min-height: 64px;
 }
 
-.box-size:active {
-    background-color: white;
-    border: 2px solid #F55aff;
-}
-
-.box-size:hover {
+.box-size:focus {
     background-color: white;
     border: 2px solid #F55aff;
 }
@@ -510,7 +538,7 @@ label.size_note, .sign_note {
 }
 
 #pug {
-    width: 70%;
+    width: 50%;
     background-color: #f5f5f5;
     overflow: hidden;
     border: none;
@@ -580,11 +608,6 @@ label.size_note, .sign_note {
 .select-board {
     position: relative;
 }
-
-a {
-    color: black;
-}
-
 .contain {
     display: block;
     position: relative;
@@ -651,7 +674,8 @@ a {
     background-color: #f5f5f5;
     border-radius: 15px;
     height: 45px;
-    padding-top: 15px;
+    line-height: 45px;
+    /*padding-top: 15px;*/
 }
 
 .checkout-btn {
@@ -688,7 +712,6 @@ a {
     min-height: 30px;
     text-align: center;
     line-height: 30px;
-    font-weight: bold;
     font-size: 15px;
     width: 100%;
 }
