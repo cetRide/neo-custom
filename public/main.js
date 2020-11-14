@@ -17459,6 +17459,19 @@ function openTab(evt, actionName) {
     }
     document.getElementById(actionName).style.display = "block";
     evt.currentTarget.className += " active";
+    if (actionName === 'Color') {
+        document.getElementById('color-tab').classList.add('active');
+        document.getElementById('text-tab').classList.remove('active');
+        document.getElementById('font-tab').classList.remove('active');
+    } else if (actionName === 'Font') {
+        document.getElementById('font-tab').classList.add('active');
+        document.getElementById('color-tab').classList.remove('active');
+        document.getElementById('text-tab').classList.remove('active');
+    } else if (actionName === 'Text') {
+        document.getElementById('text-tab').classList.add('active')
+        document.getElementById('color-tab').classList.remove('active');
+        document.getElementById('font-tab').classList.remove('active');
+    }
 }
 
 function changeFontFamily(font) {

@@ -32,12 +32,14 @@
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
     font-family: Brandon_bld;
     src: url('./fonts/Brandon_bld.ttf');
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
     font-family: Brandon_reg;
     src: url('./fonts/Brandon_reg.ttf');
@@ -214,6 +216,148 @@
     font-style: normal;
 }
 
+.right-cont {
+    width: 48.00%;
+}
+
+.left-cont {
+    width: 41.50%;
+}
+/* ==================================================
+   Tabs
+================================================== */
+.tabs{
+    margin-bottom:25px;
+}
+.nav-tabs.custom_tab {
+    border: none;
+    background-image: linear-gradient(to bottom, #1e1e1e, #353535 47%, #353535 48%, #000 49%);
+    /* background: #F55aff;
+    background-image: linear-gradient(to right top, #F55aff, #e93f6e, #e73972, #e43276, #e12b7a); */
+}
+.nav-tabs li{
+    position:relative;
+    display:block;
+    float:left;
+    margin-right:0;
+    font-size:13px;
+    border-radius: 0;
+    width: calc( 100% / 3);
+    border-right: 1px solid #000;
+}
+.nav-tabs li:nth-child(3) {
+    border: none;
+}
+.nav-tabs li a{
+    display:block;
+    padding:8px 10px;
+    background: none;
+    text-decoration:none;
+    font-family: 'Brandon_light';
+    color: #fff;
+    font-size: 13pt;
+    border-radius: 0;
+    border: none;
+    border-bottom: 2px solid #a6a6a6;
+    margin: 0;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px #000;
+}
+.nav-tabs li a:hover{
+    color:#fff;
+    text-decoration:none;
+    border-color:#F55aff ;
+    background: none!important;
+}
+.nav-tabs li a:active, .nav-tabs li.active a{
+    color:#fff;
+    border-color:#F55aff ;
+}
+/*tabnew*/
+.nav-tabs li a {
+    border: 0 !important;
+}
+
+.nav-tabs.custom_tab {
+    border: 1px solid #4bc3c9;
+}
+
+.nav-tabs.custom_tab {
+    background: none;
+}
+
+.nav-tabs.custom_tab li {
+    border-right: 0;
+}
+
+.nav-tabs.custom_tab > li > a:before {
+    content: " ";
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 10px solid #4bc3c9;
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+    margin-left: 1px;
+    left: 100%;
+    z-index: 1;
+}
+
+.nav-tabs.custom_tab > li > a:after {
+    content: " ";
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 10px solid #ffffff;
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+    left: 100%;
+    z-index: 2;
+}
+
+.nav-tabs.custom_tab li a {
+    color: #4bc3c9;
+    text-shadow: none;
+}
+
+.nav-tabs.custom_tab > li.active > a, .nav-wizard > li.active > a:hover, .nav-tabs.custom_tab > li.active > a:focus {
+    color: #ffffff;
+    background: #4bc3c9 !important;
+}
+
+.nav-tabs.custom_tab > li.active > a, .nav-tabs.custom_tab > li.active > a:focus, .nav-tabs.custom_tab > li.active > a:hover {
+    background-color: #4bc3c9;
+}
+
+.nav-tabs.custom_tab > li:not(:last-child) > a {
+    margin-right: 0;
+}
+
+.nav-tabs.custom_tab > li.active:not(:last-child) > a:after {
+    border-left: 10px solid #4bc3c9;
+}
+
+.nav-tabs.custom_tab > li:last-child.active > a:before,
+.nav-tabs.custom_tab > li:last-child > a:after, .nav-tabs.custom_tab > li:last-child > a:before {
+    display: none;
+}
+
+.nav-tabs.custom_tab > li:last-child.active > a:after {
+    width: 1px;
+    right: -1px;
+    background: #4bc3c9;
+    content: "";
+    display: inline-block;
+    border: 0;
+    height: 100%;
+    left: inherit;
+}
 .customText {
     background-image: url('');
     background-repeat: no-repeat;
@@ -231,10 +375,12 @@
     /*min-height: 1270px;*/
     /*max-height: 1300px;*/
 }
+
 .textInput {
     background-color: #f5f5f5;
 
 }
+
 .switch {
     position: relative;
     display: inline-block;
@@ -254,7 +400,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #ca2222;
+    background-color: dimgrey;
     -webkit-transition: .4s;
     transition: .4s;
     border-radius: 34px;
@@ -274,7 +420,7 @@
 }
 
 .inputCheck:checked + .slider {
-    background-color: #35398e;
+    background-color: #4bc3c9;
 }
 
 .inputCheck:focus + .slider {
@@ -333,92 +479,6 @@
     color: white;
 }
 
-.tab {
-    width: 33.33%;
-    height: 40px;
-    line-height: 40px;
-    position: relative;
-    background: #4bc3c9;
-    cursor: pointer;
-    color: white;
-    border: 1px solid #4bc3c9;
-}
-
-.tab:before {
-    content: "";
-    position: absolute;
-    right: -20px;
-    bottom: 0;
-    width: 0;
-    height: 0;
-    border-left: 20px solid #4bc3c9;
-    border-top: 20px solid transparent;
-    border-bottom: 20px solid transparent;
-}
-
-.tab1 {
-    width: 33.33%;
-    height: 40px;
-    line-height: 40px;
-    position: relative;
-    background: white;
-    cursor: pointer;
-    border-bottom: 1px solid #4bc3c9;
-    border-top: 1px solid #4bc3c9;
-    color: #4bc3c9;
-}
-
-.tab1:after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 0;
-    height: 0;
-    border-left: 20px solid #4bc3c9;
-    border-top: 20px solid transparent;
-    border-bottom: 20px solid transparent;
-}
-
-/*.tab1:before {*/
-/*    content: "";*/
-/*    position: absolute;*/
-/*    right: -20px;*/
-/*    bottom: 0;*/
-/*    width: 0;*/
-/*    height: 0;*/
-/*    border-left: 20px solid white;*/
-/*    border-top: 20px solid transparent;*/
-/*    border-bottom: 20px solid transparent;*/
-/*}*/
-
-.tab2 {
-    width: 33.33%;
-    height: 40px;
-    line-height: 40px;
-    position: relative;
-    background: white;
-    cursor: pointer;
-    border: 1px solid #4bc3c9;
-    color: #4bc3c9;
-}
-
-.tab2:after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 0;
-    height: 0;
-    border-left: 20px solid #4bc3c9;
-    border-top: 20px solid transparent;
-    border-bottom: 20px solid transparent;
-}
-
-.tab :active {
-    background-color: #4bc3c9;
-}
-
 .col1 {
     width: 40%;
 }
@@ -446,13 +506,15 @@
 }
 
 .color {
-    width: 16.67%;
+    width: 14.29%;
     padding-top: 0;
 }
+
 .color span {
     font-size: 30px;
     font-weight: 900;
 }
+
 .color-desc {
     height: 250px;
     width: 100%;
@@ -608,6 +670,7 @@ label.size_note, .sign_note {
 .select-board {
     position: relative;
 }
+
 .contain {
     display: block;
     position: relative;
@@ -781,5 +844,9 @@ label.size_note, .sign_note {
 
     .dialogBox {
         width: 70%;
+    }
+
+    .left-cont {
+        width: 100%;
     }
 }
