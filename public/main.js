@@ -89,13 +89,9 @@ let extraLarge = {
     heightR: 40
 };
 let backBoard = [
-    {id: "0", url: '/images/back1.png', name: 'Cut Around Acrylic', price: 'Free'},
-    {id: "1", url: '/images/back2.png', name: 'Rectangle Acrylic', price: 'Free'},
-    {id: "2", url: '/images/back3.png', name: 'Cut To Letter Acrylic', price: 'Free'},
-    {id: "3", url: '/images/back4.png', name: 'Stand Acrylic', price: '124'},
-    {id: "4", url: '/images/back5.png', name: 'Clear Acrylic Box: For hanging', price: '284'},
-    {id: "5", url: '/images/back6.png', name: 'Clear Acrylic Box: For wall Mounting', price: '284'},
-    {id: "6", url: '/images/back7.png', name: 'Clear Acrylic Box: Free-Standing', price: '284'},
+    {id: "0", url: '/images/1.png', name: 'Cut Around Acrylic', price: 'Free'},
+    {id: "1", url: '/images/2.png', name: 'Rectangle Acrylic', price: 'Free'},
+    {id: "2", url: '/images/3.png', name: 'Cut To Letter Acrylic', price: 'Free'},
 ];
 let colorImages = [
     {
