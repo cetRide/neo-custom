@@ -21,10 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="34e2fa6b-206e-4a2f-aba6-4cd322ed47ef" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/tabs.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/tabs.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -129,7 +127,7 @@
       <workItem from="1605089811972" duration="10114000" />
       <workItem from="1605102359850" duration="3986000" />
       <workItem from="1605159179982" duration="22013000" />
-      <workItem from="1605335017977" duration="25627000" />
+      <workItem from="1605335017977" duration="28795000" />
     </task>
     <servers />
   </component>
@@ -173,28 +171,28 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/public/main.js</url>
-          <line>17325</line>
+          <line>88</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/public/main.js</url>
-          <line>17302</line>
+          <line>65</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/public/main.js</url>
-          <line>17449</line>
+          <line>166</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/public/main.js</url>
-          <line>17287</line>
+          <line>50</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/public/main.js</url>
-          <line>17322</line>
+          <line>85</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="10" />
         </line-breakpoint>

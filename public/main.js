@@ -100,7 +100,7 @@ let backBoard = [
 let colorImages = [
     {
         id: "Lemon Yellow",
-        url: '/images/color_images/lemonyellow.jpg',
+        url: '/images/color_images/lemonyellow.jpeg',
         desc: 'Lemon Yellow is a very bright, eye-catching yellow. The tube is yellow when off.'
     },
     {
@@ -163,7 +163,6 @@ let colorImages = [
 ];
 let defaultNeon = "0 0 5px #fff, 0 0 10px #fff, 0 0 20px #98ff98, 0 0 30px #98ff98, 0 0 40px #98ff98, 0 0 55px #98ff98, 0 0 75px #98ff98";
 let defaultColor = '#98ff98';
-
 
 function openTab(evt, actionName) {
     let i, tabContent, tabLink;
@@ -699,9 +698,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 22000,
+        "price": 2000,
         "weight": 0,
-        "compare_at_price": 26400,
+        "compare_at_price": 2000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -723,9 +722,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 82500,
+        "price": 3000,
         "weight": 0,
-        "compare_at_price": 99000,
+        "compare_at_price": 3000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -747,9 +746,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 49500,
+        "price": 11900,
         "weight": 0,
-        "compare_at_price": 59400,
+        "compare_at_price": 11900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -771,9 +770,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 77000,
+        "price": 11900,
         "weight": 0,
-        "compare_at_price": 92400,
+        "compare_at_price": 11900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -795,9 +794,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 27500,
+        "price": 12900,
         "weight": 0,
-        "compare_at_price": 33000,
+        "compare_at_price": 12900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -819,9 +818,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 27500,
+        "price": 21800,
         "weight": 0,
-        "compare_at_price": 33000,
+        "compare_at_price": 21800,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -843,9 +842,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 27500,
+        "price": 4000,
         "weight": 0,
-        "compare_at_price": 33000,
+        "compare_at_price": 4000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -867,9 +866,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 22000,
+        "price": 5000,
         "weight": 0,
-        "compare_at_price": 26400,
+        "compare_at_price": 5000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -891,9 +890,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 88000,
+        "price": 13900,
         "weight": 0,
-        "compare_at_price": 105600,
+        "compare_at_price": 13900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -915,9 +914,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 22000,
+        "price": 13900,
         "weight": 0,
-        "compare_at_price": 26400,
+        "compare_at_price": 13900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -939,9 +938,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 55000,
+        "price": 14900,
         "weight": 0,
-        "compare_at_price": 66000,
+        "compare_at_price": 14900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -963,9 +962,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 49500,
+        "price": 23800,
         "weight": 0,
-        "compare_at_price": 59400,
+        "compare_at_price": 23800,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -987,9 +986,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 82500,
+        "price": 6000,
         "weight": 0,
-        "compare_at_price": 99000,
+        "compare_at_price": 6000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -1011,9 +1010,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 77000,
+        "price": 7000,
         "weight": 0,
-        "compare_at_price": 92400,
+        "compare_at_price": 7000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -1035,9 +1034,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 82500,
+        "price": 15900,
         "weight": 0,
-        "compare_at_price": 99000,
+        "compare_at_price": 15900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -1059,9 +1058,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 88000,
+        "price": 15900,
         "weight": 0,
-        "compare_at_price": 105600,
+        "compare_at_price": 15900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -1083,9 +1082,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 77000,
+        "price": 16900,
         "weight": 0,
-        "compare_at_price": 92400,
+        "compare_at_price": 16900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -1107,9 +1106,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 16500,
+        "price": 25800,
         "weight": 0,
-        "compare_at_price": 19800,
+        "compare_at_price": 25800,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -1131,9 +1130,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 55000,
+        "price": 8000,
         "weight": 0,
-        "compare_at_price": 66000,
+        "compare_at_price": 8000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -1155,9 +1154,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 93500,
+        "price": 9000,
         "weight": 0,
-        "compare_at_price": 112200,
+        "compare_at_price": 9000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -1179,9 +1178,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 38500,
+        "price": 17900,
         "weight": 0,
-        "compare_at_price": 46200,
+        "compare_at_price": 17900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -1203,9 +1202,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 55000,
+        "price": 17900,
         "weight": 0,
-        "compare_at_price": 66000,
+        "compare_at_price": 17900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -1227,9 +1226,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 66000,
+        "price": 18900,
         "weight": 0,
-        "compare_at_price": 79200,
+        "compare_at_price": 18900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -1251,9 +1250,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 88000,
+        "price": 27800,
         "weight": 0,
-        "compare_at_price": 105600,
+        "compare_at_price": 27800,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -1275,9 +1274,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 55000,
+        "price": 10000,
         "weight": 0,
-        "compare_at_price": 66000,
+        "compare_at_price": 10000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -1299,9 +1298,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 66000,
+        "price": 11000,
         "weight": 0,
-        "compare_at_price": 79200,
+        "compare_at_price": 11000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -1323,9 +1322,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 60500,
+        "price": 19900,
         "weight": 0,
-        "compare_at_price": 72600,
+        "compare_at_price": 19900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -1347,9 +1346,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 93500,
+        "price": 19900,
         "weight": 0,
-        "compare_at_price": 112200,
+        "compare_at_price": 19900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -1371,9 +1370,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 88000,
+        "price": 20900,
         "weight": 0,
-        "compare_at_price": 105600,
+        "compare_at_price": 20900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -1395,9 +1394,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 82500,
+        "price": 29800,
         "weight": 0,
-        "compare_at_price": 99000,
+        "compare_at_price": 29800,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -1419,9 +1418,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 27500,
+        "price": 12000,
         "weight": 0,
-        "compare_at_price": 33000,
+        "compare_at_price": 12000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -1443,9 +1442,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 77000,
+        "price": 13000,
         "weight": 0,
-        "compare_at_price": 92400,
+        "compare_at_price": 13000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -1467,9 +1466,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 66000,
+        "price": 21900,
         "weight": 0,
-        "compare_at_price": 79200,
+        "compare_at_price": 21900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -1491,9 +1490,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 27500,
+        "price": 21900,
         "weight": 0,
-        "compare_at_price": 33000,
+        "compare_at_price": 21900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -1515,9 +1514,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 66000,
+        "price": 22900,
         "weight": 0,
-        "compare_at_price": 79200,
+        "compare_at_price": 22900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -1539,9 +1538,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 33000,
+        "price": 31800,
         "weight": 0,
-        "compare_at_price": 39600,
+        "compare_at_price": 31800,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -1563,9 +1562,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 88000,
+        "price": 14000,
         "weight": 0,
-        "compare_at_price": 105600,
+        "compare_at_price": 14000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -1587,9 +1586,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 27500,
+        "price": 15000,
         "weight": 0,
-        "compare_at_price": 33000,
+        "compare_at_price": 15000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -1611,9 +1610,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 38500,
+        "price": 23900,
         "weight": 0,
-        "compare_at_price": 46200,
+        "compare_at_price": 23900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -1635,9 +1634,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 44000,
+        "price": 23900,
         "weight": 0,
-        "compare_at_price": 52800,
+        "compare_at_price": 23900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -1659,9 +1658,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 60500,
+        "price": 24900,
         "weight": 0,
-        "compare_at_price": 72600,
+        "compare_at_price": 24900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -1683,9 +1682,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 82500,
+        "price": 33800,
         "weight": 0,
-        "compare_at_price": 99000,
+        "compare_at_price": 33800,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -1707,9 +1706,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 33000,
+        "price": 16000,
         "weight": 0,
-        "compare_at_price": 39600,
+        "compare_at_price": 16000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -1731,9 +1730,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 93500,
+        "price": 17000,
         "weight": 0,
-        "compare_at_price": 112200,
+        "compare_at_price": 17000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -1755,9 +1754,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 93500,
+        "price": 25900,
         "weight": 0,
-        "compare_at_price": 112200,
+        "compare_at_price": 25900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -1779,9 +1778,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 55000,
+        "price": 25900,
         "weight": 0,
-        "compare_at_price": 66000,
+        "compare_at_price": 25900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -1803,9 +1802,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 27500,
+        "price": 26900,
         "weight": 0,
-        "compare_at_price": 33000,
+        "compare_at_price": 26900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -1827,9 +1826,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 55000,
+        "price": 35800,
         "weight": 0,
-        "compare_at_price": 66000,
+        "compare_at_price": 35800,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -1851,9 +1850,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 27500,
+        "price": 18000,
         "weight": 0,
-        "compare_at_price": 33000,
+        "compare_at_price": 18000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -1875,9 +1874,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 66000,
+        "price": 19000,
         "weight": 0,
-        "compare_at_price": 79200,
+        "compare_at_price": 19000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -1899,9 +1898,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 55000,
+        "price": 27900,
         "weight": 0,
-        "compare_at_price": 66000,
+        "compare_at_price": 27900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -1923,9 +1922,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 16500,
+        "price": 27900,
         "weight": 0,
-        "compare_at_price": 19800,
+        "compare_at_price": 27900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -1947,9 +1946,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 55000,
+        "price": 28900,
         "weight": 0,
-        "compare_at_price": 66000,
+        "compare_at_price": 28900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -1971,9 +1970,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 22000,
+        "price": 37800,
         "weight": 0,
-        "compare_at_price": 26400,
+        "compare_at_price": 37800,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -1995,9 +1994,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 49500,
+        "price": 20000,
         "weight": 0,
-        "compare_at_price": 59400,
+        "compare_at_price": 20000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -2019,9 +2018,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 93500,
+        "price": 21000,
         "weight": 0,
-        "compare_at_price": 112200,
+        "compare_at_price": 21000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -2043,9 +2042,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 55000,
+        "price": 29900,
         "weight": 0,
-        "compare_at_price": 66000,
+        "compare_at_price": 29900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -2067,9 +2066,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 22000,
+        "price": 29900,
         "weight": 0,
-        "compare_at_price": 26400,
+        "compare_at_price": 29900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -2091,9 +2090,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 71500,
+        "price": 30900,
         "weight": 0,
-        "compare_at_price": 85800,
+        "compare_at_price": 30900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -2115,9 +2114,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 88000,
+        "price": 39800,
         "weight": 0,
-        "compare_at_price": 105600,
+        "compare_at_price": 39800,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -2139,9 +2138,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 77000,
+        "price": 22000,
         "weight": 0,
-        "compare_at_price": 92400,
+        "compare_at_price": 22000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -2163,9 +2162,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 16500,
+        "price": 23000,
         "weight": 0,
-        "compare_at_price": 19800,
+        "compare_at_price": 23000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -2187,9 +2186,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 55000,
+        "price": 31900,
         "weight": 0,
-        "compare_at_price": 66000,
+        "compare_at_price": 31900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -2211,9 +2210,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 66000,
+        "price": 31900,
         "weight": 0,
-        "compare_at_price": 79200,
+        "compare_at_price": 31900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -2235,9 +2234,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 22000,
+        "price": 32900,
         "weight": 0,
-        "compare_at_price": 26400,
+        "compare_at_price": 32900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -2259,9 +2258,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 55000,
+        "price": 41800,
         "weight": 0,
-        "compare_at_price": 66000,
+        "compare_at_price": 41800,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -2283,9 +2282,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 71500,
+        "price": 24000,
         "weight": 0,
-        "compare_at_price": 85800,
+        "compare_at_price": 24000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -2307,9 +2306,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 55000,
+        "price": 25000,
         "weight": 0,
-        "compare_at_price": 66000,
+        "compare_at_price": 25000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -2331,9 +2330,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 82500,
+        "price": 33900,
         "weight": 0,
-        "compare_at_price": 99000,
+        "compare_at_price": 33900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -2355,9 +2354,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 33000,
+        "price": 33900,
         "weight": 0,
-        "compare_at_price": 39600,
+        "compare_at_price": 33900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -2379,9 +2378,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 38500,
+        "price": 34900,
         "weight": 0,
-        "compare_at_price": 46200,
+        "compare_at_price": 34900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -2403,9 +2402,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 82500,
+        "price": 43800,
         "weight": 0,
-        "compare_at_price": 99000,
+        "compare_at_price": 43800,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -2427,9 +2426,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 82500,
+        "price": 26000,
         "weight": 0,
-        "compare_at_price": 99000,
+        "compare_at_price": 26000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -2451,9 +2450,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 55000,
+        "price": 27000,
         "weight": 0,
-        "compare_at_price": 66000,
+        "compare_at_price": 27000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -2475,9 +2474,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 38500,
+        "price": 35900,
         "weight": 0,
-        "compare_at_price": 46200,
+        "compare_at_price": 35900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -2499,9 +2498,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 22000,
+        "price": 35900,
         "weight": 0,
-        "compare_at_price": 26400,
+        "compare_at_price": 35900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -2523,9 +2522,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 55000,
+        "price": 36900,
         "weight": 0,
-        "compare_at_price": 66000,
+        "compare_at_price": 36900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -2547,9 +2546,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 16500,
+        "price": 45800,
         "weight": 0,
-        "compare_at_price": 19800,
+        "compare_at_price": 45800,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -2571,9 +2570,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 71500,
+        "price": 28000,
         "weight": 0,
-        "compare_at_price": 85800,
+        "compare_at_price": 28000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -2595,9 +2594,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 66000,
+        "price": 29000,
         "weight": 0,
-        "compare_at_price": 79200,
+        "compare_at_price": 29000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -2619,9 +2618,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 82500,
+        "price": 37900,
         "weight": 0,
-        "compare_at_price": 99000,
+        "compare_at_price": 37900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -2643,9 +2642,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 88000,
+        "price": 37900,
         "weight": 0,
-        "compare_at_price": 105600,
+        "compare_at_price": 37900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -2667,9 +2666,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 44000,
+        "price": 38900,
         "weight": 0,
-        "compare_at_price": 52800,
+        "compare_at_price": 38900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -2691,9 +2690,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 33000,
+        "price": 47800,
         "weight": 0,
-        "compare_at_price": 39600,
+        "compare_at_price": 47800,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -2715,9 +2714,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 55000,
+        "price": 30000,
         "weight": 0,
-        "compare_at_price": 66000,
+        "compare_at_price": 30000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -2739,9 +2738,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 16500,
+        "price": 31000,
         "weight": 0,
-        "compare_at_price": 19800,
+        "compare_at_price": 31000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -2763,9 +2762,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 44000,
+        "price": 39900,
         "weight": 0,
-        "compare_at_price": 52800,
+        "compare_at_price": 39900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -2787,9 +2786,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 38500,
+        "price": 39900,
         "weight": 0,
-        "compare_at_price": 46200,
+        "compare_at_price": 39900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -2811,9 +2810,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 22000,
+        "price": 40900,
         "weight": 0,
-        "compare_at_price": 26400,
+        "compare_at_price": 40900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -2835,9 +2834,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 49500,
+        "price": 49800,
         "weight": 0,
-        "compare_at_price": 59400,
+        "compare_at_price": 49800,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -2859,9 +2858,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 33000,
+        "price": 2000,
         "weight": 0,
-        "compare_at_price": 39600,
+        "compare_at_price": 2000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -2883,9 +2882,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 44000,
+        "price": 33000,
         "weight": 0,
-        "compare_at_price": 52800,
+        "compare_at_price": 33000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -2907,9 +2906,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 66000,
+        "price": 41900,
         "weight": 0,
-        "compare_at_price": 79200,
+        "compare_at_price": 41900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -2931,9 +2930,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 44000,
+        "price": 41900,
         "weight": 0,
-        "compare_at_price": 52800,
+        "compare_at_price": 41900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -2955,9 +2954,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 66000,
+        "price": 42900,
         "weight": 0,
-        "compare_at_price": 79200,
+        "compare_at_price": 42900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -2979,9 +2978,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 49500,
+        "price": 51800,
         "weight": 0,
-        "compare_at_price": 59400,
+        "compare_at_price": 51800,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -3003,9 +3002,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 60500,
+        "price": 34000,
         "weight": 0,
-        "compare_at_price": 72600,
+        "compare_at_price": 34000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -3027,9 +3026,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 88000,
+        "price": 35000,
         "weight": 0,
-        "compare_at_price": 105600,
+        "compare_at_price": 35000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -3051,9 +3050,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 33000,
+        "price": 43900,
         "weight": 0,
-        "compare_at_price": 39600,
+        "compare_at_price": 43900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -3075,9 +3074,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 60500,
+        "price": 43900,
         "weight": 0,
-        "compare_at_price": 72600,
+        "compare_at_price": 43900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -3099,9 +3098,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 93500,
+        "price": 44900,
         "weight": 0,
-        "compare_at_price": 112200,
+        "compare_at_price": 44900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -3123,9 +3122,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 77000,
+        "price": 53800,
         "weight": 0,
-        "compare_at_price": 92400,
+        "compare_at_price": 53800,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -3147,9 +3146,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 38500,
+        "price": 36000,
         "weight": 0,
-        "compare_at_price": 46200,
+        "compare_at_price": 36000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -3171,9 +3170,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 33000,
+        "price": 37000,
         "weight": 0,
-        "compare_at_price": 39600,
+        "compare_at_price": 37000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -3195,9 +3194,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 88000,
+        "price": 45900,
         "weight": 0,
-        "compare_at_price": 105600,
+        "compare_at_price": 45900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -3219,9 +3218,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 88000,
+        "price": 45900,
         "weight": 0,
-        "compare_at_price": 105600,
+        "compare_at_price": 45900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -3243,9 +3242,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 22000,
+        "price": 46900,
         "weight": 0,
-        "compare_at_price": 26400,
+        "compare_at_price": 46900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -3267,9 +3266,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 55000,
+        "price": 55800,
         "weight": 0,
-        "compare_at_price": 66000,
+        "compare_at_price": 55800,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -3291,9 +3290,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 66000,
+        "price": 38000,
         "weight": 0,
-        "compare_at_price": 79200,
+        "compare_at_price": 38000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -3315,9 +3314,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 44000,
+        "price": 39000,
         "weight": 0,
-        "compare_at_price": 52800,
+        "compare_at_price": 39000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -3339,9 +3338,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 33000,
+        "price": 47900,
         "weight": 0,
-        "compare_at_price": 39600,
+        "compare_at_price": 47900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -3363,9 +3362,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 16500,
+        "price": 47900,
         "weight": 0,
-        "compare_at_price": 19800,
+        "compare_at_price": 47900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -3387,9 +3386,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 16500,
+        "price": 48900,
         "weight": 0,
-        "compare_at_price": 19800,
+        "compare_at_price": 48900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -3411,9 +3410,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 16500,
+        "price": 57800,
         "weight": 0,
-        "compare_at_price": 19800,
+        "compare_at_price": 57800,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -3435,9 +3434,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 77000,
+        "price": 40000,
         "weight": 0,
-        "compare_at_price": 92400,
+        "compare_at_price": 40000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -3459,9 +3458,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 66000,
+        "price": 41000,
         "weight": 0,
-        "compare_at_price": 79200,
+        "compare_at_price": 41000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -3483,9 +3482,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 16500,
+        "price": 49900,
         "weight": 0,
-        "compare_at_price": 19800,
+        "compare_at_price": 49900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -3507,9 +3506,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 88000,
+        "price": 49900,
         "weight": 0,
-        "compare_at_price": 105600,
+        "compare_at_price": 49900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -3531,9 +3530,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 16500,
+        "price": 50900,
         "weight": 0,
-        "compare_at_price": 19800,
+        "compare_at_price": 50900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -3555,9 +3554,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 93500,
+        "price": 59800,
         "weight": 0,
-        "compare_at_price": 112200,
+        "compare_at_price": 59800,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -3579,9 +3578,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 93500,
+        "price": 42000,
         "weight": 0,
-        "compare_at_price": 112200,
+        "compare_at_price": 42000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -3603,9 +3602,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 49500,
+        "price": 43000,
         "weight": 0,
-        "compare_at_price": 59400,
+        "compare_at_price": 43000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -3627,9 +3626,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 66000,
+        "price": 51900,
         "weight": 0,
-        "compare_at_price": 79200,
+        "compare_at_price": 51900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -3651,9 +3650,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 66000,
+        "price": 51900,
         "weight": 0,
-        "compare_at_price": 79200,
+        "compare_at_price": 51900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -3675,9 +3674,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 55000,
+        "price": 52900,
         "weight": 0,
-        "compare_at_price": 66000,
+        "compare_at_price": 52900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -3699,9 +3698,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 71500,
+        "price": 61800,
         "weight": 0,
-        "compare_at_price": 85800,
+        "compare_at_price": 61800,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -3723,9 +3722,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 49500,
+        "price": 44000,
         "weight": 0,
-        "compare_at_price": 59400,
+        "compare_at_price": 44000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -3747,9 +3746,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 27500,
+        "price": 45000,
         "weight": 0,
-        "compare_at_price": 33000,
+        "compare_at_price": 45000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -3771,9 +3770,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 88000,
+        "price": 53900,
         "weight": 0,
-        "compare_at_price": 105600,
+        "compare_at_price": 53900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -3795,9 +3794,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 27500,
+        "price": 53900,
         "weight": 0,
-        "compare_at_price": 33000,
+        "compare_at_price": 53900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -3819,9 +3818,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 66000,
+        "price": 54900,
         "weight": 0,
-        "compare_at_price": 79200,
+        "compare_at_price": 54900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -3843,9 +3842,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 22000,
+        "price": 63800,
         "weight": 0,
-        "compare_at_price": 26400,
+        "compare_at_price": 63800,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -3867,9 +3866,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 93500,
+        "price": 46000,
         "weight": 0,
-        "compare_at_price": 112200,
+        "compare_at_price": 46000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -3891,9 +3890,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 49500,
+        "price": 47000,
         "weight": 0,
-        "compare_at_price": 59400,
+        "compare_at_price": 47000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -3915,9 +3914,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 77000,
+        "price": 55900,
         "weight": 0,
-        "compare_at_price": 92400,
+        "compare_at_price": 55900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -3939,9 +3938,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 60500,
+        "price": 55900,
         "weight": 0,
-        "compare_at_price": 72600,
+        "compare_at_price": 55900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -3963,9 +3962,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 88000,
+        "price": 56900,
         "weight": 0,
-        "compare_at_price": 105600,
+        "compare_at_price": 56900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -3987,9 +3986,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 55000,
+        "price": 65800,
         "weight": 0,
-        "compare_at_price": 66000,
+        "compare_at_price": 65800,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -4011,9 +4010,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 44000,
+        "price": 48000,
         "weight": 0,
-        "compare_at_price": 52800,
+        "compare_at_price": 48000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -4035,9 +4034,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 16500,
+        "price": 49000,
         "weight": 0,
-        "compare_at_price": 19800,
+        "compare_at_price": 49000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -4059,9 +4058,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 33000,
+        "price": 57900,
         "weight": 0,
-        "compare_at_price": 39600,
+        "compare_at_price": 57900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -4083,9 +4082,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 66000,
+        "price": 57900,
         "weight": 0,
-        "compare_at_price": 79200,
+        "compare_at_price": 57900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -4107,9 +4106,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 44000,
+        "price": 58900,
         "weight": 0,
-        "compare_at_price": 52800,
+        "compare_at_price": 58900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -4131,9 +4130,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 44000,
+        "price": 67800,
         "weight": 0,
-        "compare_at_price": 52800,
+        "compare_at_price": 67800,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -4155,9 +4154,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 60500,
+        "price": 50000,
         "weight": 0,
-        "compare_at_price": 72600,
+        "compare_at_price": 50000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -4179,9 +4178,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 49500,
+        "price": 51000,
         "weight": 0,
-        "compare_at_price": 59400,
+        "compare_at_price": 51000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -4203,9 +4202,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 44000,
+        "price": 59900,
         "weight": 0,
-        "compare_at_price": 52800,
+        "compare_at_price": 59900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -4227,9 +4226,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 60500,
+        "price": 59900,
         "weight": 0,
-        "compare_at_price": 72600,
+        "compare_at_price": 59900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -4251,9 +4250,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 33000,
+        "price": 60900,
         "weight": 0,
-        "compare_at_price": 39600,
+        "compare_at_price": 60900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -4275,9 +4274,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 49500,
+        "price": 69800,
         "weight": 0,
-        "compare_at_price": 59400,
+        "compare_at_price": 69800,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -4299,9 +4298,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 44000,
+        "price": 52000,
         "weight": 0,
-        "compare_at_price": 52800,
+        "compare_at_price": 52000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -4323,9 +4322,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 33000,
+        "price": 53000,
         "weight": 0,
-        "compare_at_price": 39600,
+        "compare_at_price": 53000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -4347,9 +4346,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 88000,
+        "price": 61900,
         "weight": 0,
-        "compare_at_price": 105600,
+        "compare_at_price": 61900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -4371,9 +4370,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 55000,
+        "price": 61900,
         "weight": 0,
-        "compare_at_price": 66000,
+        "compare_at_price": 61900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -4395,9 +4394,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 27500,
+        "price": 62900,
         "weight": 0,
-        "compare_at_price": 33000,
+        "compare_at_price": 62900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -4419,9 +4418,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 71500,
+        "price": 71800,
         "weight": 0,
-        "compare_at_price": 85800,
+        "compare_at_price": 71800,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -4443,9 +4442,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 77000,
+        "price": 54000,
         "weight": 0,
-        "compare_at_price": 92400,
+        "compare_at_price": 54000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -4467,9 +4466,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 82500,
+        "price": 55000,
         "weight": 0,
-        "compare_at_price": 99000,
+        "compare_at_price": 55000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -4491,9 +4490,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 49500,
+        "price": 63900,
         "weight": 0,
-        "compare_at_price": 59400,
+        "compare_at_price": 63900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -4515,9 +4514,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 27500,
+        "price": 63900,
         "weight": 0,
-        "compare_at_price": 33000,
+        "compare_at_price": 63900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -4539,9 +4538,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 77000,
+        "price": 64900,
         "weight": 0,
-        "compare_at_price": 92400,
+        "compare_at_price": 64900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -4563,9 +4562,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 49500,
+        "price": 73800,
         "weight": 0,
-        "compare_at_price": 59400,
+        "compare_at_price": 73800,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -4587,9 +4586,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 66000,
+        "price": 56000,
         "weight": 0,
-        "compare_at_price": 79200,
+        "compare_at_price": 56000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -4611,9 +4610,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 49500,
+        "price": 57000,
         "weight": 0,
-        "compare_at_price": 59400,
+        "compare_at_price": 57000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -4635,9 +4634,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 88000,
+        "price": 65900,
         "weight": 0,
-        "compare_at_price": 105600,
+        "compare_at_price": 65900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -4659,9 +4658,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 60500,
+        "price": 65900,
         "weight": 0,
-        "compare_at_price": 72600,
+        "compare_at_price": 65900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -4683,9 +4682,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 82500,
+        "price": 66900,
         "weight": 0,
-        "compare_at_price": 99000,
+        "compare_at_price": 66900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -4707,9 +4706,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 44000,
+        "price": 75800,
         "weight": 0,
-        "compare_at_price": 52800,
+        "compare_at_price": 75800,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -4731,9 +4730,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 22000,
+        "price": 58000,
         "weight": 0,
-        "compare_at_price": 26400,
+        "compare_at_price": 58000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -4755,9 +4754,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 66000,
+        "price": 59000,
         "weight": 0,
-        "compare_at_price": 79200,
+        "compare_at_price": 59000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -4779,9 +4778,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 66000,
+        "price": 67900,
         "weight": 0,
-        "compare_at_price": 79200,
+        "compare_at_price": 67900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -4803,9 +4802,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 49500,
+        "price": 67900,
         "weight": 0,
-        "compare_at_price": 59400,
+        "compare_at_price": 67900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -4827,9 +4826,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 49500,
+        "price": 68900,
         "weight": 0,
-        "compare_at_price": 59400,
+        "compare_at_price": 68900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -4851,9 +4850,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 88000,
+        "price": 77800,
         "weight": 0,
-        "compare_at_price": 105600,
+        "compare_at_price": 77800,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -4875,9 +4874,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 38500,
+        "price": 60000,
         "weight": 0,
-        "compare_at_price": 46200,
+        "compare_at_price": 60000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -4899,9 +4898,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 33000,
+        "price": 61000,
         "weight": 0,
-        "compare_at_price": 39600,
+        "compare_at_price": 61000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -4923,9 +4922,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 44000,
+        "price": 69900,
         "weight": 0,
-        "compare_at_price": 52800,
+        "compare_at_price": 69900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -4947,9 +4946,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 33000,
+        "price": 69900,
         "weight": 0,
-        "compare_at_price": 39600,
+        "compare_at_price": 69900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -4971,9 +4970,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 49500,
+        "price": 70900,
         "weight": 0,
-        "compare_at_price": 59400,
+        "compare_at_price": 70900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -4995,9 +4994,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 82500,
+        "price": 79800,
         "weight": 0,
-        "compare_at_price": 99000,
+        "compare_at_price": 79800,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -5019,9 +5018,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 71500,
+        "price": 32000,
         "weight": 0,
-        "compare_at_price": 85800,
+        "compare_at_price": 32000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -5043,9 +5042,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 55000,
+        "price": 5500,
         "weight": 0,
-        "compare_at_price": 66000,
+        "compare_at_price": 5500,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -5067,9 +5066,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 49500,
+        "price": 14400,
         "weight": 0,
-        "compare_at_price": 59400,
+        "compare_at_price": 14400,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -5091,9 +5090,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 16500,
+        "price": 14400,
         "weight": 0,
-        "compare_at_price": 19800,
+        "compare_at_price": 14400,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -5115,9 +5114,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 93500,
+        "price": 15400,
         "weight": 0,
-        "compare_at_price": 112200,
+        "compare_at_price": 15400,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -5139,9 +5138,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 44000,
+        "price": 24300,
         "weight": 0,
-        "compare_at_price": 52800,
+        "compare_at_price": 24300,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -5163,9 +5162,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 33000,
+        "price": 9000,
         "weight": 0,
-        "compare_at_price": 39600,
+        "compare_at_price": 9000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -5187,9 +5186,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 88000,
+        "price": 10000,
         "weight": 0,
-        "compare_at_price": 105600,
+        "compare_at_price": 10000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -5211,9 +5210,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 55000,
+        "price": 18900,
         "weight": 0,
-        "compare_at_price": 66000,
+        "compare_at_price": 18900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -5235,9 +5234,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 77000,
+        "price": 18900,
         "weight": 0,
-        "compare_at_price": 92400,
+        "compare_at_price": 18900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -5259,9 +5258,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 60500,
+        "price": 19900,
         "weight": 0,
-        "compare_at_price": 72600,
+        "compare_at_price": 19900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -5283,9 +5282,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 33000,
+        "price": 28800,
         "weight": 0,
-        "compare_at_price": 39600,
+        "compare_at_price": 28800,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -5307,9 +5306,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 88000,
+        "price": 13500,
         "weight": 0,
-        "compare_at_price": 105600,
+        "compare_at_price": 13500,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -5331,9 +5330,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 60500,
+        "price": 14500,
         "weight": 0,
-        "compare_at_price": 72600,
+        "compare_at_price": 14500,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -5355,9 +5354,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 71500,
+        "price": 23400,
         "weight": 0,
-        "compare_at_price": 85800,
+        "compare_at_price": 23400,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -5379,9 +5378,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 66000,
+        "price": 23400,
         "weight": 0,
-        "compare_at_price": 79200,
+        "compare_at_price": 23400,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -5403,9 +5402,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 27500,
+        "price": 24400,
         "weight": 0,
-        "compare_at_price": 33000,
+        "compare_at_price": 24400,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -5427,9 +5426,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 27500,
+        "price": 33300,
         "weight": 0,
-        "compare_at_price": 33000,
+        "compare_at_price": 33300,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -5451,9 +5450,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 49500,
+        "price": 18000,
         "weight": 0,
-        "compare_at_price": 59400,
+        "compare_at_price": 18000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -5475,9 +5474,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 22000,
+        "price": 19000,
         "weight": 0,
-        "compare_at_price": 26400,
+        "compare_at_price": 19000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -5499,9 +5498,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 66000,
+        "price": 27900,
         "weight": 0,
-        "compare_at_price": 79200,
+        "compare_at_price": 27900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -5523,9 +5522,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 77000,
+        "price": 27900,
         "weight": 0,
-        "compare_at_price": 92400,
+        "compare_at_price": 27900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -5547,9 +5546,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 88000,
+        "price": 28900,
         "weight": 0,
-        "compare_at_price": 105600,
+        "compare_at_price": 28900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -5571,9 +5570,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 44000,
+        "price": 37800,
         "weight": 0,
-        "compare_at_price": 52800,
+        "compare_at_price": 37800,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -5595,9 +5594,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 77000,
+        "price": 22500,
         "weight": 0,
-        "compare_at_price": 92400,
+        "compare_at_price": 22500,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -5619,9 +5618,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 16500,
+        "price": 23500,
         "weight": 0,
-        "compare_at_price": 19800,
+        "compare_at_price": 23500,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -5643,9 +5642,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 82500,
+        "price": 32400,
         "weight": 0,
-        "compare_at_price": 99000,
+        "compare_at_price": 32400,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -5667,9 +5666,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 16500,
+        "price": 32400,
         "weight": 0,
-        "compare_at_price": 19800,
+        "compare_at_price": 32400,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -5691,9 +5690,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 44000,
+        "price": 33400,
         "weight": 0,
-        "compare_at_price": 52800,
+        "compare_at_price": 33400,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -5715,9 +5714,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 77000,
+        "price": 42300,
         "weight": 0,
-        "compare_at_price": 92400,
+        "compare_at_price": 42300,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -5739,9 +5738,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 16500,
+        "price": 27000,
         "weight": 0,
-        "compare_at_price": 19800,
+        "compare_at_price": 27000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -5763,9 +5762,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 77000,
+        "price": 28000,
         "weight": 0,
-        "compare_at_price": 92400,
+        "compare_at_price": 28000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -5787,9 +5786,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 88000,
+        "price": 36900,
         "weight": 0,
-        "compare_at_price": 105600,
+        "compare_at_price": 36900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -5811,9 +5810,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 22000,
+        "price": 36900,
         "weight": 0,
-        "compare_at_price": 26400,
+        "compare_at_price": 36900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -5835,9 +5834,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 82500,
+        "price": 37900,
         "weight": 0,
-        "compare_at_price": 99000,
+        "compare_at_price": 37900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -5859,9 +5858,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 77000,
+        "price": 46800,
         "weight": 0,
-        "compare_at_price": 92400,
+        "compare_at_price": 46800,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -5883,9 +5882,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 88000,
+        "price": 31500,
         "weight": 0,
-        "compare_at_price": 105600,
+        "compare_at_price": 31500,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -5907,9 +5906,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 60500,
+        "price": 32500,
         "weight": 0,
-        "compare_at_price": 72600,
+        "compare_at_price": 32500,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -5931,9 +5930,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 27500,
+        "price": 41400,
         "weight": 0,
-        "compare_at_price": 33000,
+        "compare_at_price": 41400,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -5955,9 +5954,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 33000,
+        "price": 41400,
         "weight": 0,
-        "compare_at_price": 39600,
+        "compare_at_price": 41400,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -5979,9 +5978,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 66000,
+        "price": 42400,
         "weight": 0,
-        "compare_at_price": 79200,
+        "compare_at_price": 42400,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -6003,9 +6002,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 33000,
+        "price": 51300,
         "weight": 0,
-        "compare_at_price": 39600,
+        "compare_at_price": 51300,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -6027,9 +6026,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 44000,
+        "price": 36000,
         "weight": 0,
-        "compare_at_price": 52800,
+        "compare_at_price": 36000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -6051,9 +6050,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 60500,
+        "price": 37000,
         "weight": 0,
-        "compare_at_price": 72600,
+        "compare_at_price": 37000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -6075,9 +6074,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 16500,
+        "price": 45900,
         "weight": 0,
-        "compare_at_price": 19800,
+        "compare_at_price": 45900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -6099,9 +6098,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 38500,
+        "price": 45900,
         "weight": 0,
-        "compare_at_price": 46200,
+        "compare_at_price": 45900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -6123,9 +6122,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 93500,
+        "price": 46900,
         "weight": 0,
-        "compare_at_price": 112200,
+        "compare_at_price": 46900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -6147,9 +6146,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 44000,
+        "price": 55800,
         "weight": 0,
-        "compare_at_price": 52800,
+        "compare_at_price": 55800,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -6171,9 +6170,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 93500,
+        "price": 40500,
         "weight": 0,
-        "compare_at_price": 112200,
+        "compare_at_price": 40500,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -6195,9 +6194,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 38500,
+        "price": 41500,
         "weight": 0,
-        "compare_at_price": 46200,
+        "compare_at_price": 41500,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -6219,9 +6218,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 71500,
+        "price": 50400,
         "weight": 0,
-        "compare_at_price": 85800,
+        "compare_at_price": 50400,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -6243,9 +6242,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 93500,
+        "price": 50400,
         "weight": 0,
-        "compare_at_price": 112200,
+        "compare_at_price": 50400,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -6267,9 +6266,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 88000,
+        "price": 51400,
         "weight": 0,
-        "compare_at_price": 105600,
+        "compare_at_price": 51400,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -6291,9 +6290,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 93500,
+        "price": 60300,
         "weight": 0,
-        "compare_at_price": 112200,
+        "compare_at_price": 60300,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -6315,9 +6314,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 55000,
+        "price": 45000,
         "weight": 0,
-        "compare_at_price": 66000,
+        "compare_at_price": 45000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -6339,9 +6338,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 33000,
+        "price": 46000,
         "weight": 0,
-        "compare_at_price": 39600,
+        "compare_at_price": 46000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -6363,9 +6362,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 44000,
+        "price": 54900,
         "weight": 0,
-        "compare_at_price": 52800,
+        "compare_at_price": 54900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -6387,9 +6386,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 71500,
+        "price": 54900,
         "weight": 0,
-        "compare_at_price": 85800,
+        "compare_at_price": 54900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -6411,9 +6410,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 44000,
+        "price": 55900,
         "weight": 0,
-        "compare_at_price": 52800,
+        "compare_at_price": 55900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -6435,9 +6434,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 88000,
+        "price": 64800,
         "weight": 0,
-        "compare_at_price": 105600,
+        "compare_at_price": 64800,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -6459,9 +6458,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 38500,
+        "price": 49500,
         "weight": 0,
-        "compare_at_price": 46200,
+        "compare_at_price": 49500,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -6483,9 +6482,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 71500,
+        "price": 50500,
         "weight": 0,
-        "compare_at_price": 85800,
+        "compare_at_price": 50500,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -6507,7 +6506,7 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 49500,
+        "price": 59400,
         "weight": 0,
         "compare_at_price": 59400,
         "inventory_management": "shopify",
@@ -6531,9 +6530,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 71500,
+        "price": 59400,
         "weight": 0,
-        "compare_at_price": 85800,
+        "compare_at_price": 59400,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -6555,9 +6554,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 88000,
+        "price": 60400,
         "weight": 0,
-        "compare_at_price": 105600,
+        "compare_at_price": 60400,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -6579,9 +6578,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 66000,
+        "price": 69300,
         "weight": 0,
-        "compare_at_price": 79200,
+        "compare_at_price": 69300,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -6603,9 +6602,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 93500,
+        "price": 54000,
         "weight": 0,
-        "compare_at_price": 112200,
+        "compare_at_price": 54000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -6627,9 +6626,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 22000,
+        "price": 55000,
         "weight": 0,
-        "compare_at_price": 26400,
+        "compare_at_price": 55000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -6651,9 +6650,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 82500,
+        "price": 63900,
         "weight": 0,
-        "compare_at_price": 99000,
+        "compare_at_price": 63900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -6675,9 +6674,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 88000,
+        "price": 63900,
         "weight": 0,
-        "compare_at_price": 105600,
+        "compare_at_price": 63900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -6699,9 +6698,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 71500,
+        "price": 64900,
         "weight": 0,
-        "compare_at_price": 85800,
+        "compare_at_price": 64900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -6723,9 +6722,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 71500,
+        "price": 73800,
         "weight": 0,
-        "compare_at_price": 85800,
+        "compare_at_price": 73800,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -6747,9 +6746,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 60500,
+        "price": 58500,
         "weight": 0,
-        "compare_at_price": 72600,
+        "compare_at_price": 58500,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -6771,9 +6770,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 55000,
+        "price": 59500,
         "weight": 0,
-        "compare_at_price": 66000,
+        "compare_at_price": 59500,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -6795,9 +6794,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 60500,
+        "price": 68400,
         "weight": 0,
-        "compare_at_price": 72600,
+        "compare_at_price": 68400,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -6819,9 +6818,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 93500,
+        "price": 68400,
         "weight": 0,
-        "compare_at_price": 112200,
+        "compare_at_price": 68400,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -6843,9 +6842,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 60500,
+        "price": 69400,
         "weight": 0,
-        "compare_at_price": 72600,
+        "compare_at_price": 69400,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -6867,9 +6866,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 93500,
+        "price": 78300,
         "weight": 0,
-        "compare_at_price": 112200,
+        "compare_at_price": 78300,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -6891,9 +6890,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 33000,
+        "price": 63000,
         "weight": 0,
-        "compare_at_price": 39600,
+        "compare_at_price": 63000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -6915,9 +6914,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 60500,
+        "price": 64000,
         "weight": 0,
-        "compare_at_price": 72600,
+        "compare_at_price": 64000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -6939,9 +6938,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 49500,
+        "price": 72900,
         "weight": 0,
-        "compare_at_price": 59400,
+        "compare_at_price": 72900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -6963,9 +6962,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 33000,
+        "price": 72900,
         "weight": 0,
-        "compare_at_price": 39600,
+        "compare_at_price": 72900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -6987,9 +6986,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 60500,
+        "price": 73900,
         "weight": 0,
-        "compare_at_price": 72600,
+        "compare_at_price": 73900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -7011,9 +7010,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 71500,
+        "price": 82800,
         "weight": 0,
-        "compare_at_price": 85800,
+        "compare_at_price": 82800,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -7035,9 +7034,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 93500,
+        "price": 67500,
         "weight": 0,
-        "compare_at_price": 112200,
+        "compare_at_price": 67500,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -7059,9 +7058,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 82500,
+        "price": 68500,
         "weight": 0,
-        "compare_at_price": 99000,
+        "compare_at_price": 68500,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -7083,9 +7082,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 55000,
+        "price": 77400,
         "weight": 0,
-        "compare_at_price": 66000,
+        "compare_at_price": 77400,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -7107,9 +7106,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 49500,
+        "price": 77400,
         "weight": 0,
-        "compare_at_price": 59400,
+        "compare_at_price": 77400,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -7131,9 +7130,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 88000,
+        "price": 78400,
         "weight": 0,
-        "compare_at_price": 105600,
+        "compare_at_price": 78400,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -7155,9 +7154,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 49500,
+        "price": 87300,
         "weight": 0,
-        "compare_at_price": 59400,
+        "compare_at_price": 87300,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -7179,9 +7178,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 16500,
+        "price": 4500,
         "weight": 0,
-        "compare_at_price": 19800,
+        "compare_at_price": 4500,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -7203,9 +7202,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 44000,
+        "price": 73000,
         "weight": 0,
-        "compare_at_price": 52800,
+        "compare_at_price": 73000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -7227,9 +7226,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 60500,
+        "price": 81900,
         "weight": 0,
-        "compare_at_price": 72600,
+        "compare_at_price": 81900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -7251,9 +7250,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 44000,
+        "price": 81900,
         "weight": 0,
-        "compare_at_price": 52800,
+        "compare_at_price": 81900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -7275,9 +7274,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 71500,
+        "price": 82900,
         "weight": 0,
-        "compare_at_price": 85800,
+        "compare_at_price": 82900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -7299,9 +7298,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 55000,
+        "price": 91800,
         "weight": 0,
-        "compare_at_price": 66000,
+        "compare_at_price": 91800,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -7323,9 +7322,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 33000,
+        "price": 76500,
         "weight": 0,
-        "compare_at_price": 39600,
+        "compare_at_price": 76500,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -7347,9 +7346,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 93500,
+        "price": 77500,
         "weight": 0,
-        "compare_at_price": 112200,
+        "compare_at_price": 77500,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -7371,9 +7370,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 55000,
+        "price": 86400,
         "weight": 0,
-        "compare_at_price": 66000,
+        "compare_at_price": 86400,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -7395,9 +7394,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 38500,
+        "price": 86400,
         "weight": 0,
-        "compare_at_price": 46200,
+        "compare_at_price": 86400,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -7419,9 +7418,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 33000,
+        "price": 87400,
         "weight": 0,
-        "compare_at_price": 39600,
+        "compare_at_price": 87400,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -7443,9 +7442,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 33000,
+        "price": 96300,
         "weight": 0,
-        "compare_at_price": 39600,
+        "compare_at_price": 96300,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -7467,9 +7466,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 60500,
+        "price": 81000,
         "weight": 0,
-        "compare_at_price": 72600,
+        "compare_at_price": 81000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -7491,9 +7490,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 16500,
+        "price": 82000,
         "weight": 0,
-        "compare_at_price": 19800,
+        "compare_at_price": 82000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -7515,9 +7514,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 71500,
+        "price": 90900,
         "weight": 0,
-        "compare_at_price": 85800,
+        "compare_at_price": 90900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -7539,9 +7538,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 77000,
+        "price": 90900,
         "weight": 0,
-        "compare_at_price": 92400,
+        "compare_at_price": 90900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -7563,9 +7562,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 44000,
+        "price": 91900,
         "weight": 0,
-        "compare_at_price": 52800,
+        "compare_at_price": 91900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -7587,9 +7586,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 22000,
+        "price": 100800,
         "weight": 0,
-        "compare_at_price": 26400,
+        "compare_at_price": 100800,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -7611,9 +7610,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 55000,
+        "price": 85500,
         "weight": 0,
-        "compare_at_price": 66000,
+        "compare_at_price": 85500,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -7635,9 +7634,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 77000,
+        "price": 86500,
         "weight": 0,
-        "compare_at_price": 92400,
+        "compare_at_price": 86500,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -7659,9 +7658,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 38500,
+        "price": 95400,
         "weight": 0,
-        "compare_at_price": 46200,
+        "compare_at_price": 95400,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -7683,9 +7682,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 38500,
+        "price": 95400,
         "weight": 0,
-        "compare_at_price": 46200,
+        "compare_at_price": 95400,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -7707,9 +7706,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 71500,
+        "price": 96400,
         "weight": 0,
-        "compare_at_price": 85800,
+        "compare_at_price": 96400,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -7731,9 +7730,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 44000,
+        "price": 105300,
         "weight": 0,
-        "compare_at_price": 52800,
+        "compare_at_price": 105300,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -7755,9 +7754,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 49500,
+        "price": 90000,
         "weight": 0,
-        "compare_at_price": 59400,
+        "compare_at_price": 90000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -7779,9 +7778,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 44000,
+        "price": 91000,
         "weight": 0,
-        "compare_at_price": 52800,
+        "compare_at_price": 91000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -7803,9 +7802,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 44000,
+        "price": 99900,
         "weight": 0,
-        "compare_at_price": 52800,
+        "compare_at_price": 99900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -7827,9 +7826,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 16500,
+        "price": 99900,
         "weight": 0,
-        "compare_at_price": 19800,
+        "compare_at_price": 99900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -7851,9 +7850,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 49500,
+        "price": 100900,
         "weight": 0,
-        "compare_at_price": 59400,
+        "compare_at_price": 100900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -7875,9 +7874,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 16500,
+        "price": 109800,
         "weight": 0,
-        "compare_at_price": 19800,
+        "compare_at_price": 109800,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -7899,9 +7898,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 71500,
+        "price": 94500,
         "weight": 0,
-        "compare_at_price": 85800,
+        "compare_at_price": 94500,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -7923,9 +7922,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 44000,
+        "price": 95500,
         "weight": 0,
-        "compare_at_price": 52800,
+        "compare_at_price": 95500,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -7947,9 +7946,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 16500,
+        "price": 104400,
         "weight": 0,
-        "compare_at_price": 19800,
+        "compare_at_price": 104400,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -7971,9 +7970,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 49500,
+        "price": 104400,
         "weight": 0,
-        "compare_at_price": 59400,
+        "compare_at_price": 104400,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -7995,9 +7994,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 55000,
+        "price": 105400,
         "weight": 0,
-        "compare_at_price": 66000,
+        "compare_at_price": 105400,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -8019,9 +8018,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 27500,
+        "price": 114300,
         "weight": 0,
-        "compare_at_price": 33000,
+        "compare_at_price": 114300,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -8043,9 +8042,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 77000,
+        "price": 99000,
         "weight": 0,
-        "compare_at_price": 92400,
+        "compare_at_price": 99000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -8067,9 +8066,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 82500,
+        "price": 100000,
         "weight": 0,
-        "compare_at_price": 99000,
+        "compare_at_price": 100000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -8091,9 +8090,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 27500,
+        "price": 108900,
         "weight": 0,
-        "compare_at_price": 33000,
+        "compare_at_price": 108900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -8115,9 +8114,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 82500,
+        "price": 108900,
         "weight": 0,
-        "compare_at_price": 99000,
+        "compare_at_price": 108900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -8139,9 +8138,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 38500,
+        "price": 109900,
         "weight": 0,
-        "compare_at_price": 46200,
+        "compare_at_price": 109900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -8163,9 +8162,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 93500,
+        "price": 118800,
         "weight": 0,
-        "compare_at_price": 112200,
+        "compare_at_price": 118800,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -8187,9 +8186,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 88000,
+        "price": 103500,
         "weight": 0,
-        "compare_at_price": 105600,
+        "compare_at_price": 103500,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -8211,9 +8210,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 22000,
+        "price": 104500,
         "weight": 0,
-        "compare_at_price": 26400,
+        "compare_at_price": 104500,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -8235,9 +8234,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 55000,
+        "price": 113400,
         "weight": 0,
-        "compare_at_price": 66000,
+        "compare_at_price": 113400,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -8259,9 +8258,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 71500,
+        "price": 113400,
         "weight": 0,
-        "compare_at_price": 85800,
+        "compare_at_price": 113400,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -8283,9 +8282,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 27500,
+        "price": 114400,
         "weight": 0,
-        "compare_at_price": 33000,
+        "compare_at_price": 114400,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -8307,9 +8306,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 82500,
+        "price": 123300,
         "weight": 0,
-        "compare_at_price": 99000,
+        "compare_at_price": 123300,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -8331,9 +8330,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 71500,
+        "price": 108000,
         "weight": 0,
-        "compare_at_price": 85800,
+        "compare_at_price": 108000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -8355,9 +8354,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 55000,
+        "price": 109000,
         "weight": 0,
-        "compare_at_price": 66000,
+        "compare_at_price": 109000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -8379,9 +8378,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 55000,
+        "price": 117900,
         "weight": 0,
-        "compare_at_price": 66000,
+        "compare_at_price": 117900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -8403,9 +8402,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 77000,
+        "price": 117900,
         "weight": 0,
-        "compare_at_price": 92400,
+        "compare_at_price": 117900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -8427,9 +8426,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 60500,
+        "price": 118900,
         "weight": 0,
-        "compare_at_price": 72600,
+        "compare_at_price": 118900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -8451,9 +8450,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 71500,
+        "price": 127800,
         "weight": 0,
-        "compare_at_price": 85800,
+        "compare_at_price": 127800,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -8475,9 +8474,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 60500,
+        "price": 112500,
         "weight": 0,
-        "compare_at_price": 72600,
+        "compare_at_price": 112500,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -8499,9 +8498,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 60500,
+        "price": 113500,
         "weight": 0,
-        "compare_at_price": 72600,
+        "compare_at_price": 113500,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -8523,9 +8522,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 88000,
+        "price": 122400,
         "weight": 0,
-        "compare_at_price": 105600,
+        "compare_at_price": 122400,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -8547,9 +8546,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 60500,
+        "price": 122400,
         "weight": 0,
-        "compare_at_price": 72600,
+        "compare_at_price": 122400,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -8571,9 +8570,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 71500,
+        "price": 123400,
         "weight": 0,
-        "compare_at_price": 85800,
+        "compare_at_price": 123400,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -8595,9 +8594,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 33000,
+        "price": 132300,
         "weight": 0,
-        "compare_at_price": 39600,
+        "compare_at_price": 132300,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -8619,9 +8618,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 44000,
+        "price": 117000,
         "weight": 0,
-        "compare_at_price": 52800,
+        "compare_at_price": 117000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -8643,9 +8642,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 66000,
+        "price": 118000,
         "weight": 0,
-        "compare_at_price": 79200,
+        "compare_at_price": 118000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -8667,9 +8666,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 27500,
+        "price": 126900,
         "weight": 0,
-        "compare_at_price": 33000,
+        "compare_at_price": 126900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -8691,9 +8690,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 27500,
+        "price": 126900,
         "weight": 0,
-        "compare_at_price": 33000,
+        "compare_at_price": 126900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -8715,9 +8714,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 77000,
+        "price": 127900,
         "weight": 0,
-        "compare_at_price": 92400,
+        "compare_at_price": 127900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -8739,9 +8738,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 44000,
+        "price": 136800,
         "weight": 0,
-        "compare_at_price": 52800,
+        "compare_at_price": 136800,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -8763,9 +8762,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 33000,
+        "price": 121500,
         "weight": 0,
-        "compare_at_price": 39600,
+        "compare_at_price": 121500,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -8787,9 +8786,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 93500,
+        "price": 122500,
         "weight": 0,
-        "compare_at_price": 112200,
+        "compare_at_price": 122500,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -8811,9 +8810,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 16500,
+        "price": 131400,
         "weight": 0,
-        "compare_at_price": 19800,
+        "compare_at_price": 131400,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -8835,9 +8834,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 93500,
+        "price": 131400,
         "weight": 0,
-        "compare_at_price": 112200,
+        "compare_at_price": 131400,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -8859,9 +8858,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 44000,
+        "price": 132400,
         "weight": 0,
-        "compare_at_price": 52800,
+        "compare_at_price": 132400,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -8883,9 +8882,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 16500,
+        "price": 141300,
         "weight": 0,
-        "compare_at_price": 19800,
+        "compare_at_price": 141300,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -8907,9 +8906,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 60500,
+        "price": 126000,
         "weight": 0,
-        "compare_at_price": 72600,
+        "compare_at_price": 126000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -8931,9 +8930,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 38500,
+        "price": 127000,
         "weight": 0,
-        "compare_at_price": 46200,
+        "compare_at_price": 127000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -8955,9 +8954,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 49500,
+        "price": 135900,
         "weight": 0,
-        "compare_at_price": 59400,
+        "compare_at_price": 135900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -8979,9 +8978,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 49500,
+        "price": 135900,
         "weight": 0,
-        "compare_at_price": 59400,
+        "compare_at_price": 135900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -9003,9 +9002,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 60500,
+        "price": 136900,
         "weight": 0,
-        "compare_at_price": 72600,
+        "compare_at_price": 136900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -9027,9 +9026,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 71500,
+        "price": 145800,
         "weight": 0,
-        "compare_at_price": 85800,
+        "compare_at_price": 145800,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -9051,9 +9050,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 71500,
+        "price": 130500,
         "weight": 0,
-        "compare_at_price": 85800,
+        "compare_at_price": 130500,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -9075,9 +9074,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 38500,
+        "price": 131500,
         "weight": 0,
-        "compare_at_price": 46200,
+        "compare_at_price": 131500,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -9099,9 +9098,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 88000,
+        "price": 140400,
         "weight": 0,
-        "compare_at_price": 105600,
+        "compare_at_price": 140400,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -9123,9 +9122,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 16500,
+        "price": 140400,
         "weight": 0,
-        "compare_at_price": 19800,
+        "compare_at_price": 140400,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -9147,9 +9146,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 49500,
+        "price": 141400,
         "weight": 0,
-        "compare_at_price": 59400,
+        "compare_at_price": 141400,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -9171,9 +9170,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 66000,
+        "price": 150300,
         "weight": 0,
-        "compare_at_price": 79200,
+        "compare_at_price": 150300,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -9195,9 +9194,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 22000,
+        "price": 135000,
         "weight": 0,
-        "compare_at_price": 26400,
+        "compare_at_price": 135000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -9219,9 +9218,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 38500,
+        "price": 136000,
         "weight": 0,
-        "compare_at_price": 46200,
+        "compare_at_price": 136000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -9243,9 +9242,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 33000,
+        "price": 144900,
         "weight": 0,
-        "compare_at_price": 39600,
+        "compare_at_price": 144900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -9267,9 +9266,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 60500,
+        "price": 144900,
         "weight": 0,
-        "compare_at_price": 72600,
+        "compare_at_price": 144900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -9291,9 +9290,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 93500,
+        "price": 145900,
         "weight": 0,
-        "compare_at_price": 112200,
+        "compare_at_price": 145900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -9315,9 +9314,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 55000,
+        "price": 154800,
         "weight": 0,
-        "compare_at_price": 66000,
+        "compare_at_price": 154800,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -9339,9 +9338,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 66000,
+        "price": 72000,
         "weight": 0,
-        "compare_at_price": 79200,
+        "compare_at_price": 72000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -9363,9 +9362,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 88000,
+        "price": 8500,
         "weight": 0,
-        "compare_at_price": 105600,
+        "compare_at_price": 8500,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -9387,9 +9386,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 49500,
+        "price": 17400,
         "weight": 0,
-        "compare_at_price": 59400,
+        "compare_at_price": 17400,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -9411,9 +9410,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 82500,
+        "price": 17400,
         "weight": 0,
-        "compare_at_price": 99000,
+        "compare_at_price": 17400,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -9435,9 +9434,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 16500,
+        "price": 18400,
         "weight": 0,
-        "compare_at_price": 19800,
+        "compare_at_price": 18400,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -9459,9 +9458,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 93500,
+        "price": 27300,
         "weight": 0,
-        "compare_at_price": 112200,
+        "compare_at_price": 27300,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -9483,9 +9482,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 27500,
+        "price": 15000,
         "weight": 0,
-        "compare_at_price": 33000,
+        "compare_at_price": 15000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -9507,9 +9506,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 27500,
+        "price": 16000,
         "weight": 0,
-        "compare_at_price": 33000,
+        "compare_at_price": 16000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -9531,9 +9530,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 33000,
+        "price": 24900,
         "weight": 0,
-        "compare_at_price": 39600,
+        "compare_at_price": 24900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -9555,9 +9554,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 82500,
+        "price": 24900,
         "weight": 0,
-        "compare_at_price": 99000,
+        "compare_at_price": 24900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -9579,9 +9578,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 71500,
+        "price": 25900,
         "weight": 0,
-        "compare_at_price": 85800,
+        "compare_at_price": 25900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -9603,9 +9602,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 71500,
+        "price": 34800,
         "weight": 0,
-        "compare_at_price": 85800,
+        "compare_at_price": 34800,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -9627,9 +9626,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 38500,
+        "price": 22500,
         "weight": 0,
-        "compare_at_price": 46200,
+        "compare_at_price": 22500,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -9651,9 +9650,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 71500,
+        "price": 23500,
         "weight": 0,
-        "compare_at_price": 85800,
+        "compare_at_price": 23500,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -9675,9 +9674,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 93500,
+        "price": 32400,
         "weight": 0,
-        "compare_at_price": 112200,
+        "compare_at_price": 32400,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -9699,9 +9698,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 77000,
+        "price": 32400,
         "weight": 0,
-        "compare_at_price": 92400,
+        "compare_at_price": 32400,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -9723,9 +9722,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 60500,
+        "price": 33400,
         "weight": 0,
-        "compare_at_price": 72600,
+        "compare_at_price": 33400,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -9747,9 +9746,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 77000,
+        "price": 42300,
         "weight": 0,
-        "compare_at_price": 92400,
+        "compare_at_price": 42300,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -9771,9 +9770,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 82500,
+        "price": 30000,
         "weight": 0,
-        "compare_at_price": 99000,
+        "compare_at_price": 30000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -9795,9 +9794,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 60500,
+        "price": 31000,
         "weight": 0,
-        "compare_at_price": 72600,
+        "compare_at_price": 31000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -9819,9 +9818,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 22000,
+        "price": 39900,
         "weight": 0,
-        "compare_at_price": 26400,
+        "compare_at_price": 39900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -9843,9 +9842,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 49500,
+        "price": 39900,
         "weight": 0,
-        "compare_at_price": 59400,
+        "compare_at_price": 39900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -9867,9 +9866,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 60500,
+        "price": 40900,
         "weight": 0,
-        "compare_at_price": 72600,
+        "compare_at_price": 40900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -9891,9 +9890,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 93500,
+        "price": 49800,
         "weight": 0,
-        "compare_at_price": 112200,
+        "compare_at_price": 49800,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -9915,9 +9914,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 49500,
+        "price": 37500,
         "weight": 0,
-        "compare_at_price": 59400,
+        "compare_at_price": 37500,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -9939,9 +9938,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 82500,
+        "price": 38500,
         "weight": 0,
-        "compare_at_price": 99000,
+        "compare_at_price": 38500,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -9963,9 +9962,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 33000,
+        "price": 47400,
         "weight": 0,
-        "compare_at_price": 39600,
+        "compare_at_price": 47400,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -9987,9 +9986,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 38500,
+        "price": 47400,
         "weight": 0,
-        "compare_at_price": 46200,
+        "compare_at_price": 47400,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -10011,9 +10010,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 49500,
+        "price": 48400,
         "weight": 0,
-        "compare_at_price": 59400,
+        "compare_at_price": 48400,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -10035,9 +10034,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 82500,
+        "price": 57300,
         "weight": 0,
-        "compare_at_price": 99000,
+        "compare_at_price": 57300,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -10059,9 +10058,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 77000,
+        "price": 45000,
         "weight": 0,
-        "compare_at_price": 92400,
+        "compare_at_price": 45000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -10083,9 +10082,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 22000,
+        "price": 46000,
         "weight": 0,
-        "compare_at_price": 26400,
+        "compare_at_price": 46000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -10107,9 +10106,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 16500,
+        "price": 54900,
         "weight": 0,
-        "compare_at_price": 19800,
+        "compare_at_price": 54900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -10131,9 +10130,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 71500,
+        "price": 54900,
         "weight": 0,
-        "compare_at_price": 85800,
+        "compare_at_price": 54900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -10155,9 +10154,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 82500,
+        "price": 55900,
         "weight": 0,
-        "compare_at_price": 99000,
+        "compare_at_price": 55900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -10179,9 +10178,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 44000,
+        "price": 64800,
         "weight": 0,
-        "compare_at_price": 52800,
+        "compare_at_price": 64800,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -10203,9 +10202,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 93500,
+        "price": 52500,
         "weight": 0,
-        "compare_at_price": 112200,
+        "compare_at_price": 52500,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -10227,9 +10226,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 16500,
+        "price": 53500,
         "weight": 0,
-        "compare_at_price": 19800,
+        "compare_at_price": 53500,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -10251,9 +10250,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 38500,
+        "price": 62400,
         "weight": 0,
-        "compare_at_price": 46200,
+        "compare_at_price": 62400,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -10275,9 +10274,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 55000,
+        "price": 62400,
         "weight": 0,
-        "compare_at_price": 66000,
+        "compare_at_price": 62400,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -10299,9 +10298,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 88000,
+        "price": 63400,
         "weight": 0,
-        "compare_at_price": 105600,
+        "compare_at_price": 63400,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -10323,9 +10322,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 93500,
+        "price": 72300,
         "weight": 0,
-        "compare_at_price": 112200,
+        "compare_at_price": 72300,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -10347,9 +10346,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 38500,
+        "price": 60000,
         "weight": 0,
-        "compare_at_price": 46200,
+        "compare_at_price": 60000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -10371,9 +10370,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 16500,
+        "price": 61000,
         "weight": 0,
-        "compare_at_price": 19800,
+        "compare_at_price": 61000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -10395,9 +10394,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 38500,
+        "price": 69900,
         "weight": 0,
-        "compare_at_price": 46200,
+        "compare_at_price": 69900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -10419,9 +10418,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 49500,
+        "price": 69900,
         "weight": 0,
-        "compare_at_price": 59400,
+        "compare_at_price": 69900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -10443,9 +10442,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 33000,
+        "price": 70900,
         "weight": 0,
-        "compare_at_price": 39600,
+        "compare_at_price": 70900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -10467,9 +10466,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 88000,
+        "price": 79800,
         "weight": 0,
-        "compare_at_price": 105600,
+        "compare_at_price": 79800,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -10491,9 +10490,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 44000,
+        "price": 67500,
         "weight": 0,
-        "compare_at_price": 52800,
+        "compare_at_price": 67500,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -10515,9 +10514,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 66000,
+        "price": 68500,
         "weight": 0,
-        "compare_at_price": 79200,
+        "compare_at_price": 68500,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -10539,9 +10538,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 60500,
+        "price": 77400,
         "weight": 0,
-        "compare_at_price": 72600,
+        "compare_at_price": 77400,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -10563,9 +10562,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 82500,
+        "price": 77400,
         "weight": 0,
-        "compare_at_price": 99000,
+        "compare_at_price": 77400,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -10587,9 +10586,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 93500,
+        "price": 78400,
         "weight": 0,
-        "compare_at_price": 112200,
+        "compare_at_price": 78400,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -10611,9 +10610,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 44000,
+        "price": 87300,
         "weight": 0,
-        "compare_at_price": 52800,
+        "compare_at_price": 87300,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -10635,9 +10634,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 16500,
+        "price": 75000,
         "weight": 0,
-        "compare_at_price": 19800,
+        "compare_at_price": 75000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -10659,9 +10658,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 77000,
+        "price": 76000,
         "weight": 0,
-        "compare_at_price": 92400,
+        "compare_at_price": 76000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -10683,9 +10682,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 33000,
+        "price": 84900,
         "weight": 0,
-        "compare_at_price": 39600,
+        "compare_at_price": 84900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -10707,9 +10706,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 77000,
+        "price": 84900,
         "weight": 0,
-        "compare_at_price": 92400,
+        "compare_at_price": 84900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -10731,9 +10730,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 38500,
+        "price": 85900,
         "weight": 0,
-        "compare_at_price": 46200,
+        "compare_at_price": 85900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -10755,9 +10754,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 44000,
+        "price": 94800,
         "weight": 0,
-        "compare_at_price": 52800,
+        "compare_at_price": 94800,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -10781,7 +10780,7 @@ const variants = [
         ],
         "price": 82500,
         "weight": 0,
-        "compare_at_price": 99000,
+        "compare_at_price": 82500,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -10803,9 +10802,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 38500,
+        "price": 83500,
         "weight": 0,
-        "compare_at_price": 46200,
+        "compare_at_price": 83500,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -10827,9 +10826,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 71500,
+        "price": 92400,
         "weight": 0,
-        "compare_at_price": 85800,
+        "compare_at_price": 92400,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -10851,9 +10850,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 27500,
+        "price": 92400,
         "weight": 0,
-        "compare_at_price": 33000,
+        "compare_at_price": 92400,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -10875,9 +10874,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 33000,
+        "price": 93400,
         "weight": 0,
-        "compare_at_price": 39600,
+        "compare_at_price": 93400,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -10899,9 +10898,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 44000,
+        "price": 102300,
         "weight": 0,
-        "compare_at_price": 52800,
+        "compare_at_price": 102300,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -10923,9 +10922,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 55000,
+        "price": 90000,
         "weight": 0,
-        "compare_at_price": 66000,
+        "compare_at_price": 90000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -10947,9 +10946,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 38500,
+        "price": 91000,
         "weight": 0,
-        "compare_at_price": 46200,
+        "compare_at_price": 91000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -10971,9 +10970,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 16500,
+        "price": 99900,
         "weight": 0,
-        "compare_at_price": 19800,
+        "compare_at_price": 99900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -10995,9 +10994,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 55000,
+        "price": 99900,
         "weight": 0,
-        "compare_at_price": 66000,
+        "compare_at_price": 99900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -11019,9 +11018,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 49500,
+        "price": 100900,
         "weight": 0,
-        "compare_at_price": 59400,
+        "compare_at_price": 100900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -11043,9 +11042,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 82500,
+        "price": 109800,
         "weight": 0,
-        "compare_at_price": 99000,
+        "compare_at_price": 109800,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -11067,9 +11066,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 93500,
+        "price": 97500,
         "weight": 0,
-        "compare_at_price": 112200,
+        "compare_at_price": 97500,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -11091,9 +11090,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 16500,
+        "price": 98500,
         "weight": 0,
-        "compare_at_price": 19800,
+        "compare_at_price": 98500,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -11115,9 +11114,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 16500,
+        "price": 107400,
         "weight": 0,
-        "compare_at_price": 19800,
+        "compare_at_price": 107400,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -11139,9 +11138,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 82500,
+        "price": 107400,
         "weight": 0,
-        "compare_at_price": 99000,
+        "compare_at_price": 107400,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -11163,9 +11162,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 38500,
+        "price": 108400,
         "weight": 0,
-        "compare_at_price": 46200,
+        "compare_at_price": 108400,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -11187,9 +11186,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 27500,
+        "price": 117300,
         "weight": 0,
-        "compare_at_price": 33000,
+        "compare_at_price": 117300,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -11211,9 +11210,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 82500,
+        "price": 105000,
         "weight": 0,
-        "compare_at_price": 99000,
+        "compare_at_price": 105000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -11235,9 +11234,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 38500,
+        "price": 106000,
         "weight": 0,
-        "compare_at_price": 46200,
+        "compare_at_price": 106000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -11259,9 +11258,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 60500,
+        "price": 114900,
         "weight": 0,
-        "compare_at_price": 72600,
+        "compare_at_price": 114900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -11283,9 +11282,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 66000,
+        "price": 114900,
         "weight": 0,
-        "compare_at_price": 79200,
+        "compare_at_price": 114900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -11307,9 +11306,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 44000,
+        "price": 115900,
         "weight": 0,
-        "compare_at_price": 52800,
+        "compare_at_price": 115900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -11331,9 +11330,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 33000,
+        "price": 124800,
         "weight": 0,
-        "compare_at_price": 39600,
+        "compare_at_price": 124800,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -11355,9 +11354,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 93500,
+        "price": 112500,
         "weight": 0,
-        "compare_at_price": 112200,
+        "compare_at_price": 112500,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -11379,9 +11378,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 22000,
+        "price": 113500,
         "weight": 0,
-        "compare_at_price": 26400,
+        "compare_at_price": 113500,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -11403,9 +11402,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 22000,
+        "price": 122400,
         "weight": 0,
-        "compare_at_price": 26400,
+        "compare_at_price": 122400,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -11427,9 +11426,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 55000,
+        "price": 122400,
         "weight": 0,
-        "compare_at_price": 66000,
+        "compare_at_price": 122400,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -11451,9 +11450,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 93500,
+        "price": 123400,
         "weight": 0,
-        "compare_at_price": 112200,
+        "compare_at_price": 123400,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -11475,9 +11474,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 88000,
+        "price": 132300,
         "weight": 0,
-        "compare_at_price": 105600,
+        "compare_at_price": 132300,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -11499,9 +11498,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 22000,
+        "price": 7500,
         "weight": 0,
-        "compare_at_price": 26400,
+        "compare_at_price": 7500,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -11523,9 +11522,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 38500,
+        "price": 121000,
         "weight": 0,
-        "compare_at_price": 46200,
+        "compare_at_price": 121000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -11547,9 +11546,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 55000,
+        "price": 129900,
         "weight": 0,
-        "compare_at_price": 66000,
+        "compare_at_price": 129900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -11571,9 +11570,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 33000,
+        "price": 129900,
         "weight": 0,
-        "compare_at_price": 39600,
+        "compare_at_price": 129900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -11595,9 +11594,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 82500,
+        "price": 130900,
         "weight": 0,
-        "compare_at_price": 99000,
+        "compare_at_price": 130900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -11619,9 +11618,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 77000,
+        "price": 139800,
         "weight": 0,
-        "compare_at_price": 92400,
+        "compare_at_price": 139800,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -11643,9 +11642,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 49500,
+        "price": 127500,
         "weight": 0,
-        "compare_at_price": 59400,
+        "compare_at_price": 127500,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -11667,9 +11666,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 82500,
+        "price": 128500,
         "weight": 0,
-        "compare_at_price": 99000,
+        "compare_at_price": 128500,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -11691,9 +11690,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 88000,
+        "price": 137400,
         "weight": 0,
-        "compare_at_price": 105600,
+        "compare_at_price": 137400,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -11715,9 +11714,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 49500,
+        "price": 137400,
         "weight": 0,
-        "compare_at_price": 59400,
+        "compare_at_price": 137400,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -11739,9 +11738,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 71500,
+        "price": 138400,
         "weight": 0,
-        "compare_at_price": 85800,
+        "compare_at_price": 138400,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -11763,9 +11762,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 38500,
+        "price": 147300,
         "weight": 0,
-        "compare_at_price": 46200,
+        "compare_at_price": 147300,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -11787,9 +11786,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 55000,
+        "price": 135000,
         "weight": 0,
-        "compare_at_price": 66000,
+        "compare_at_price": 135000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -11811,9 +11810,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 88000,
+        "price": 136000,
         "weight": 0,
-        "compare_at_price": 105600,
+        "compare_at_price": 136000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -11835,9 +11834,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 60500,
+        "price": 144900,
         "weight": 0,
-        "compare_at_price": 72600,
+        "compare_at_price": 144900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -11859,9 +11858,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 71500,
+        "price": 144900,
         "weight": 0,
-        "compare_at_price": 85800,
+        "compare_at_price": 144900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -11883,9 +11882,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 55000,
+        "price": 145900,
         "weight": 0,
-        "compare_at_price": 66000,
+        "compare_at_price": 145900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -11907,9 +11906,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 22000,
+        "price": 154800,
         "weight": 0,
-        "compare_at_price": 26400,
+        "compare_at_price": 154800,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -11931,9 +11930,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 60500,
+        "price": 142500,
         "weight": 0,
-        "compare_at_price": 72600,
+        "compare_at_price": 142500,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -11955,9 +11954,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 55000,
+        "price": 143500,
         "weight": 0,
-        "compare_at_price": 66000,
+        "compare_at_price": 143500,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -11979,9 +11978,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 82500,
+        "price": 152400,
         "weight": 0,
-        "compare_at_price": 99000,
+        "compare_at_price": 152400,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -12003,9 +12002,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 16500,
+        "price": 152400,
         "weight": 0,
-        "compare_at_price": 19800,
+        "compare_at_price": 152400,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -12027,9 +12026,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 93500,
+        "price": 153400,
         "weight": 0,
-        "compare_at_price": 112200,
+        "compare_at_price": 153400,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -12051,9 +12050,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 49500,
+        "price": 162300,
         "weight": 0,
-        "compare_at_price": 59400,
+        "compare_at_price": 162300,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -12075,9 +12074,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 27500,
+        "price": 150000,
         "weight": 0,
-        "compare_at_price": 33000,
+        "compare_at_price": 150000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -12099,9 +12098,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 66000,
+        "price": 151000,
         "weight": 0,
-        "compare_at_price": 79200,
+        "compare_at_price": 151000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -12123,9 +12122,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 60500,
+        "price": 159900,
         "weight": 0,
-        "compare_at_price": 72600,
+        "compare_at_price": 159900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -12147,9 +12146,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 71500,
+        "price": 159900,
         "weight": 0,
-        "compare_at_price": 85800,
+        "compare_at_price": 159900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -12171,9 +12170,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 55000,
+        "price": 160900,
         "weight": 0,
-        "compare_at_price": 66000,
+        "compare_at_price": 160900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -12195,9 +12194,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 66000,
+        "price": 169800,
         "weight": 0,
-        "compare_at_price": 79200,
+        "compare_at_price": 169800,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -12219,9 +12218,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 93500,
+        "price": 157500,
         "weight": 0,
-        "compare_at_price": 112200,
+        "compare_at_price": 157500,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -12243,9 +12242,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 44000,
+        "price": 158500,
         "weight": 0,
-        "compare_at_price": 52800,
+        "compare_at_price": 158500,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -12267,9 +12266,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 16500,
+        "price": 167400,
         "weight": 0,
-        "compare_at_price": 19800,
+        "compare_at_price": 167400,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -12291,9 +12290,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 49500,
+        "price": 167400,
         "weight": 0,
-        "compare_at_price": 59400,
+        "compare_at_price": 167400,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -12315,9 +12314,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 88000,
+        "price": 168400,
         "weight": 0,
-        "compare_at_price": 105600,
+        "compare_at_price": 168400,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -12339,9 +12338,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 22000,
+        "price": 177300,
         "weight": 0,
-        "compare_at_price": 26400,
+        "compare_at_price": 177300,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -12363,9 +12362,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 55000,
+        "price": 165000,
         "weight": 0,
-        "compare_at_price": 66000,
+        "compare_at_price": 165000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -12387,9 +12386,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 27500,
+        "price": 166000,
         "weight": 0,
-        "compare_at_price": 33000,
+        "compare_at_price": 166000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -12411,9 +12410,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 49500,
+        "price": 174900,
         "weight": 0,
-        "compare_at_price": 59400,
+        "compare_at_price": 174900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -12435,9 +12434,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 77000,
+        "price": 174900,
         "weight": 0,
-        "compare_at_price": 92400,
+        "compare_at_price": 174900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -12459,9 +12458,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 71500,
+        "price": 175900,
         "weight": 0,
-        "compare_at_price": 85800,
+        "compare_at_price": 175900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -12483,9 +12482,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 16500,
+        "price": 184800,
         "weight": 0,
-        "compare_at_price": 19800,
+        "compare_at_price": 184800,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -12507,9 +12506,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 82500,
+        "price": 172500,
         "weight": 0,
-        "compare_at_price": 99000,
+        "compare_at_price": 172500,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -12531,9 +12530,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 55000,
+        "price": 173500,
         "weight": 0,
-        "compare_at_price": 66000,
+        "compare_at_price": 173500,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -12555,9 +12554,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 77000,
+        "price": 182400,
         "weight": 0,
-        "compare_at_price": 92400,
+        "compare_at_price": 182400,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -12579,9 +12578,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 27500,
+        "price": 182400,
         "weight": 0,
-        "compare_at_price": 33000,
+        "compare_at_price": 182400,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -12603,9 +12602,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 49500,
+        "price": 183400,
         "weight": 0,
-        "compare_at_price": 59400,
+        "compare_at_price": 183400,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -12627,9 +12626,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 33000,
+        "price": 192300,
         "weight": 0,
-        "compare_at_price": 39600,
+        "compare_at_price": 192300,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -12651,9 +12650,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 93500,
+        "price": 180000,
         "weight": 0,
-        "compare_at_price": 112200,
+        "compare_at_price": 180000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -12675,9 +12674,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 49500,
+        "price": 181000,
         "weight": 0,
-        "compare_at_price": 59400,
+        "compare_at_price": 181000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -12699,9 +12698,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 33000,
+        "price": 189900,
         "weight": 0,
-        "compare_at_price": 39600,
+        "compare_at_price": 189900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -12723,9 +12722,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 16500,
+        "price": 189900,
         "weight": 0,
-        "compare_at_price": 19800,
+        "compare_at_price": 189900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -12747,9 +12746,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 71500,
+        "price": 190900,
         "weight": 0,
-        "compare_at_price": 85800,
+        "compare_at_price": 190900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -12771,9 +12770,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 44000,
+        "price": 199800,
         "weight": 0,
-        "compare_at_price": 52800,
+        "compare_at_price": 199800,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -12795,9 +12794,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 71500,
+        "price": 187500,
         "weight": 0,
-        "compare_at_price": 85800,
+        "compare_at_price": 187500,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -12819,9 +12818,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 44000,
+        "price": 188500,
         "weight": 0,
-        "compare_at_price": 52800,
+        "compare_at_price": 188500,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -12843,9 +12842,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 16500,
+        "price": 197400,
         "weight": 0,
-        "compare_at_price": 19800,
+        "compare_at_price": 197400,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -12867,9 +12866,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 38500,
+        "price": 197400,
         "weight": 0,
-        "compare_at_price": 46200,
+        "compare_at_price": 197400,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -12891,9 +12890,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 55000,
+        "price": 198400,
         "weight": 0,
-        "compare_at_price": 66000,
+        "compare_at_price": 198400,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -12915,9 +12914,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 60500,
+        "price": 207300,
         "weight": 0,
-        "compare_at_price": 72600,
+        "compare_at_price": 207300,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -12939,9 +12938,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 38500,
+        "price": 195000,
         "weight": 0,
-        "compare_at_price": 46200,
+        "compare_at_price": 195000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -12963,9 +12962,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 77000,
+        "price": 196000,
         "weight": 0,
-        "compare_at_price": 92400,
+        "compare_at_price": 196000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -12987,9 +12986,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 71500,
+        "price": 204900,
         "weight": 0,
-        "compare_at_price": 85800,
+        "compare_at_price": 204900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -13011,9 +13010,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 27500,
+        "price": 204900,
         "weight": 0,
-        "compare_at_price": 33000,
+        "compare_at_price": 204900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -13035,9 +13034,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 66000,
+        "price": 205900,
         "weight": 0,
-        "compare_at_price": 79200,
+        "compare_at_price": 205900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -13059,9 +13058,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 55000,
+        "price": 214800,
         "weight": 0,
-        "compare_at_price": 66000,
+        "compare_at_price": 214800,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -13083,9 +13082,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 82500,
+        "price": 202500,
         "weight": 0,
-        "compare_at_price": 99000,
+        "compare_at_price": 202500,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -13107,9 +13106,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 93500,
+        "price": 203500,
         "weight": 0,
-        "compare_at_price": 112200,
+        "compare_at_price": 203500,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -13131,9 +13130,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 77000,
+        "price": 212400,
         "weight": 0,
-        "compare_at_price": 92400,
+        "compare_at_price": 212400,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -13155,9 +13154,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 44000,
+        "price": 212400,
         "weight": 0,
-        "compare_at_price": 52800,
+        "compare_at_price": 212400,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -13179,9 +13178,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 82500,
+        "price": 213400,
         "weight": 0,
-        "compare_at_price": 99000,
+        "compare_at_price": 213400,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -13203,9 +13202,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 22000,
+        "price": 222300,
         "weight": 0,
-        "compare_at_price": 26400,
+        "compare_at_price": 222300,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -13227,9 +13226,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 27500,
+        "price": 210000,
         "weight": 0,
-        "compare_at_price": 33000,
+        "compare_at_price": 210000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -13251,9 +13250,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 27500,
+        "price": 211000,
         "weight": 0,
-        "compare_at_price": 33000,
+        "compare_at_price": 211000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -13275,9 +13274,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 77000,
+        "price": 219900,
         "weight": 0,
-        "compare_at_price": 92400,
+        "compare_at_price": 219900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -13299,9 +13298,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 66000,
+        "price": 219900,
         "weight": 0,
-        "compare_at_price": 79200,
+        "compare_at_price": 219900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -13323,9 +13322,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 16500,
+        "price": 220900,
         "weight": 0,
-        "compare_at_price": 19800,
+        "compare_at_price": 220900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -13347,9 +13346,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 77000,
+        "price": 229800,
         "weight": 0,
-        "compare_at_price": 92400,
+        "compare_at_price": 229800,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -13371,9 +13370,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 22000,
+        "price": 217500,
         "weight": 0,
-        "compare_at_price": 26400,
+        "compare_at_price": 217500,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -13395,9 +13394,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 60500,
+        "price": 218500,
         "weight": 0,
-        "compare_at_price": 72600,
+        "compare_at_price": 218500,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -13419,9 +13418,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 77000,
+        "price": 227400,
         "weight": 0,
-        "compare_at_price": 92400,
+        "compare_at_price": 227400,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -13443,9 +13442,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 60500,
+        "price": 227400,
         "weight": 0,
-        "compare_at_price": 72600,
+        "compare_at_price": 227400,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -13467,9 +13466,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 93500,
+        "price": 228400,
         "weight": 0,
-        "compare_at_price": 112200,
+        "compare_at_price": 228400,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -13491,9 +13490,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 82500,
+        "price": 237300,
         "weight": 0,
-        "compare_at_price": 99000,
+        "compare_at_price": 237300,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -13515,9 +13514,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 66000,
+        "price": 225000,
         "weight": 0,
-        "compare_at_price": 79200,
+        "compare_at_price": 225000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -13539,9 +13538,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 82500,
+        "price": 226000,
         "weight": 0,
-        "compare_at_price": 99000,
+        "compare_at_price": 226000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -13563,9 +13562,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 16500,
+        "price": 234900,
         "weight": 0,
-        "compare_at_price": 19800,
+        "compare_at_price": 234900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -13587,9 +13586,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 44000,
+        "price": 234900,
         "weight": 0,
-        "compare_at_price": 52800,
+        "compare_at_price": 234900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -13611,9 +13610,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 16500,
+        "price": 235900,
         "weight": 0,
-        "compare_at_price": 19800,
+        "compare_at_price": 235900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -13635,9 +13634,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 77000,
+        "price": 244800,
         "weight": 0,
-        "compare_at_price": 92400,
+        "compare_at_price": 244800,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -13659,9 +13658,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 88000,
+        "price": 120000,
         "weight": 0,
-        "compare_at_price": 105600,
+        "compare_at_price": 120000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -13683,9 +13682,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 38500,
+        "price": 11000,
         "weight": 0,
-        "compare_at_price": 46200,
+        "compare_at_price": 11000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -13707,9 +13706,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 93500,
+        "price": 19900,
         "weight": 0,
-        "compare_at_price": 112200,
+        "compare_at_price": 19900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -13731,9 +13730,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 27500,
+        "price": 19900,
         "weight": 0,
-        "compare_at_price": 33000,
+        "compare_at_price": 19900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -13755,9 +13754,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 22000,
+        "price": 20900,
         "weight": 0,
-        "compare_at_price": 26400,
+        "compare_at_price": 20900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -13779,9 +13778,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 55000,
+        "price": 29800,
         "weight": 0,
-        "compare_at_price": 66000,
+        "compare_at_price": 29800,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -13803,9 +13802,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 44000,
+        "price": 20000,
         "weight": 0,
-        "compare_at_price": 52800,
+        "compare_at_price": 20000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -13827,9 +13826,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 22000,
+        "price": 21000,
         "weight": 0,
-        "compare_at_price": 26400,
+        "compare_at_price": 21000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -13851,9 +13850,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 82500,
+        "price": 29900,
         "weight": 0,
-        "compare_at_price": 99000,
+        "compare_at_price": 29900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -13875,9 +13874,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 60500,
+        "price": 29900,
         "weight": 0,
-        "compare_at_price": 72600,
+        "compare_at_price": 29900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -13899,9 +13898,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 16500,
+        "price": 30900,
         "weight": 0,
-        "compare_at_price": 19800,
+        "compare_at_price": 30900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -13923,9 +13922,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 93500,
+        "price": 39800,
         "weight": 0,
-        "compare_at_price": 112200,
+        "compare_at_price": 39800,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -13947,9 +13946,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 22000,
+        "price": 30000,
         "weight": 0,
-        "compare_at_price": 26400,
+        "compare_at_price": 30000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -13971,9 +13970,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 60500,
+        "price": 31000,
         "weight": 0,
-        "compare_at_price": 72600,
+        "compare_at_price": 31000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -13995,9 +13994,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 44000,
+        "price": 39900,
         "weight": 0,
-        "compare_at_price": 52800,
+        "compare_at_price": 39900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -14019,9 +14018,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 77000,
+        "price": 39900,
         "weight": 0,
-        "compare_at_price": 92400,
+        "compare_at_price": 39900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -14043,9 +14042,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 27500,
+        "price": 40900,
         "weight": 0,
-        "compare_at_price": 33000,
+        "compare_at_price": 40900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -14067,9 +14066,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 49500,
+        "price": 49800,
         "weight": 0,
-        "compare_at_price": 59400,
+        "compare_at_price": 49800,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -14091,9 +14090,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 22000,
+        "price": 40000,
         "weight": 0,
-        "compare_at_price": 26400,
+        "compare_at_price": 40000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -14115,9 +14114,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 77000,
+        "price": 41000,
         "weight": 0,
-        "compare_at_price": 92400,
+        "compare_at_price": 41000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -14139,9 +14138,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 27500,
+        "price": 49900,
         "weight": 0,
-        "compare_at_price": 33000,
+        "compare_at_price": 49900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -14163,9 +14162,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 55000,
+        "price": 49900,
         "weight": 0,
-        "compare_at_price": 66000,
+        "compare_at_price": 49900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -14187,9 +14186,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 49500,
+        "price": 50900,
         "weight": 0,
-        "compare_at_price": 59400,
+        "compare_at_price": 50900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -14211,9 +14210,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 38500,
+        "price": 59800,
         "weight": 0,
-        "compare_at_price": 46200,
+        "compare_at_price": 59800,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -14235,9 +14234,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 71500,
+        "price": 50000,
         "weight": 0,
-        "compare_at_price": 85800,
+        "compare_at_price": 50000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -14259,9 +14258,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 82500,
+        "price": 51000,
         "weight": 0,
-        "compare_at_price": 99000,
+        "compare_at_price": 51000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -14283,9 +14282,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 33000,
+        "price": 59900,
         "weight": 0,
-        "compare_at_price": 39600,
+        "compare_at_price": 59900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -14307,9 +14306,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 77000,
+        "price": 59900,
         "weight": 0,
-        "compare_at_price": 92400,
+        "compare_at_price": 59900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -14331,9 +14330,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 77000,
+        "price": 60900,
         "weight": 0,
-        "compare_at_price": 92400,
+        "compare_at_price": 60900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -14355,9 +14354,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 88000,
+        "price": 69800,
         "weight": 0,
-        "compare_at_price": 105600,
+        "compare_at_price": 69800,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -14379,9 +14378,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 27500,
+        "price": 60000,
         "weight": 0,
-        "compare_at_price": 33000,
+        "compare_at_price": 60000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -14403,9 +14402,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 44000,
+        "price": 61000,
         "weight": 0,
-        "compare_at_price": 52800,
+        "compare_at_price": 61000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -14427,9 +14426,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 38500,
+        "price": 69900,
         "weight": 0,
-        "compare_at_price": 46200,
+        "compare_at_price": 69900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -14451,9 +14450,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 88000,
+        "price": 69900,
         "weight": 0,
-        "compare_at_price": 105600,
+        "compare_at_price": 69900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -14475,9 +14474,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 71500,
+        "price": 70900,
         "weight": 0,
-        "compare_at_price": 85800,
+        "compare_at_price": 70900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -14499,9 +14498,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 60500,
+        "price": 79800,
         "weight": 0,
-        "compare_at_price": 72600,
+        "compare_at_price": 79800,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -14523,9 +14522,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 66000,
+        "price": 70000,
         "weight": 0,
-        "compare_at_price": 79200,
+        "compare_at_price": 70000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -14547,9 +14546,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 55000,
+        "price": 71000,
         "weight": 0,
-        "compare_at_price": 66000,
+        "compare_at_price": 71000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -14571,9 +14570,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 66000,
+        "price": 79900,
         "weight": 0,
-        "compare_at_price": 79200,
+        "compare_at_price": 79900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -14595,9 +14594,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 38500,
+        "price": 79900,
         "weight": 0,
-        "compare_at_price": 46200,
+        "compare_at_price": 79900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -14619,9 +14618,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 22000,
+        "price": 80900,
         "weight": 0,
-        "compare_at_price": 26400,
+        "compare_at_price": 80900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -14643,9 +14642,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 44000,
+        "price": 89800,
         "weight": 0,
-        "compare_at_price": 52800,
+        "compare_at_price": 89800,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -14667,9 +14666,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 55000,
+        "price": 80000,
         "weight": 0,
-        "compare_at_price": 66000,
+        "compare_at_price": 80000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -14691,9 +14690,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 49500,
+        "price": 81000,
         "weight": 0,
-        "compare_at_price": 59400,
+        "compare_at_price": 81000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -14715,9 +14714,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 66000,
+        "price": 89900,
         "weight": 0,
-        "compare_at_price": 79200,
+        "compare_at_price": 89900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -14739,9 +14738,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 49500,
+        "price": 89900,
         "weight": 0,
-        "compare_at_price": 59400,
+        "compare_at_price": 89900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -14763,9 +14762,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 16500,
+        "price": 90900,
         "weight": 0,
-        "compare_at_price": 19800,
+        "compare_at_price": 90900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -14787,9 +14786,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 71500,
+        "price": 99800,
         "weight": 0,
-        "compare_at_price": 85800,
+        "compare_at_price": 99800,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -14811,9 +14810,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 38500,
+        "price": 90000,
         "weight": 0,
-        "compare_at_price": 46200,
+        "compare_at_price": 90000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -14835,9 +14834,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 82500,
+        "price": 91000,
         "weight": 0,
-        "compare_at_price": 99000,
+        "compare_at_price": 91000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -14859,9 +14858,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 38500,
+        "price": 99900,
         "weight": 0,
-        "compare_at_price": 46200,
+        "compare_at_price": 99900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -14883,9 +14882,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 55000,
+        "price": 99900,
         "weight": 0,
-        "compare_at_price": 66000,
+        "compare_at_price": 99900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -14907,9 +14906,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 88000,
+        "price": 100900,
         "weight": 0,
-        "compare_at_price": 105600,
+        "compare_at_price": 100900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -14931,9 +14930,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 22000,
+        "price": 109800,
         "weight": 0,
-        "compare_at_price": 26400,
+        "compare_at_price": 109800,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -14955,9 +14954,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 27500,
+        "price": 100000,
         "weight": 0,
-        "compare_at_price": 33000,
+        "compare_at_price": 100000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -14979,9 +14978,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 60500,
+        "price": 101000,
         "weight": 0,
-        "compare_at_price": 72600,
+        "compare_at_price": 101000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -15003,9 +15002,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 55000,
+        "price": 109900,
         "weight": 0,
-        "compare_at_price": 66000,
+        "compare_at_price": 109900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -15027,9 +15026,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 44000,
+        "price": 109900,
         "weight": 0,
-        "compare_at_price": 52800,
+        "compare_at_price": 109900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -15051,9 +15050,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 44000,
+        "price": 110900,
         "weight": 0,
-        "compare_at_price": 52800,
+        "compare_at_price": 110900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -15075,9 +15074,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 60500,
+        "price": 119800,
         "weight": 0,
-        "compare_at_price": 72600,
+        "compare_at_price": 119800,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -15099,9 +15098,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 44000,
+        "price": 110000,
         "weight": 0,
-        "compare_at_price": 52800,
+        "compare_at_price": 110000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -15123,9 +15122,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 66000,
+        "price": 111000,
         "weight": 0,
-        "compare_at_price": 79200,
+        "compare_at_price": 111000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -15147,9 +15146,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 16500,
+        "price": 119900,
         "weight": 0,
-        "compare_at_price": 19800,
+        "compare_at_price": 119900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -15171,9 +15170,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 93500,
+        "price": 119900,
         "weight": 0,
-        "compare_at_price": 112200,
+        "compare_at_price": 119900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -15195,9 +15194,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 49500,
+        "price": 120900,
         "weight": 0,
-        "compare_at_price": 59400,
+        "compare_at_price": 120900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -15219,9 +15218,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 55000,
+        "price": 129800,
         "weight": 0,
-        "compare_at_price": 66000,
+        "compare_at_price": 129800,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -15243,9 +15242,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 82500,
+        "price": 120000,
         "weight": 0,
-        "compare_at_price": 99000,
+        "compare_at_price": 120000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -15267,9 +15266,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 93500,
+        "price": 121000,
         "weight": 0,
-        "compare_at_price": 112200,
+        "compare_at_price": 121000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -15291,9 +15290,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 93500,
+        "price": 129900,
         "weight": 0,
-        "compare_at_price": 112200,
+        "compare_at_price": 129900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -15315,9 +15314,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 49500,
+        "price": 129900,
         "weight": 0,
-        "compare_at_price": 59400,
+        "compare_at_price": 129900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -15339,9 +15338,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 16500,
+        "price": 130900,
         "weight": 0,
-        "compare_at_price": 19800,
+        "compare_at_price": 130900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -15363,9 +15362,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 77000,
+        "price": 139800,
         "weight": 0,
-        "compare_at_price": 92400,
+        "compare_at_price": 139800,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -15387,9 +15386,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 27500,
+        "price": 130000,
         "weight": 0,
-        "compare_at_price": 33000,
+        "compare_at_price": 130000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -15411,9 +15410,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 82500,
+        "price": 131000,
         "weight": 0,
-        "compare_at_price": 99000,
+        "compare_at_price": 131000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -15435,9 +15434,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 55000,
+        "price": 139900,
         "weight": 0,
-        "compare_at_price": 66000,
+        "compare_at_price": 139900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -15459,9 +15458,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 93500,
+        "price": 139900,
         "weight": 0,
-        "compare_at_price": 112200,
+        "compare_at_price": 139900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -15483,9 +15482,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 71500,
+        "price": 140900,
         "weight": 0,
-        "compare_at_price": 85800,
+        "compare_at_price": 140900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -15507,9 +15506,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 44000,
+        "price": 149800,
         "weight": 0,
-        "compare_at_price": 52800,
+        "compare_at_price": 149800,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -15531,9 +15530,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 22000,
+        "price": 140000,
         "weight": 0,
-        "compare_at_price": 26400,
+        "compare_at_price": 140000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -15555,9 +15554,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 33000,
+        "price": 141000,
         "weight": 0,
-        "compare_at_price": 39600,
+        "compare_at_price": 141000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -15579,9 +15578,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 38500,
+        "price": 149900,
         "weight": 0,
-        "compare_at_price": 46200,
+        "compare_at_price": 149900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -15603,9 +15602,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 49500,
+        "price": 149900,
         "weight": 0,
-        "compare_at_price": 59400,
+        "compare_at_price": 149900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -15627,9 +15626,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 22000,
+        "price": 150900,
         "weight": 0,
-        "compare_at_price": 26400,
+        "compare_at_price": 150900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -15651,9 +15650,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 66000,
+        "price": 159800,
         "weight": 0,
-        "compare_at_price": 79200,
+        "compare_at_price": 159800,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -15675,9 +15674,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 71500,
+        "price": 150000,
         "weight": 0,
-        "compare_at_price": 85800,
+        "compare_at_price": 150000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -15699,9 +15698,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 49500,
+        "price": 151000,
         "weight": 0,
-        "compare_at_price": 59400,
+        "compare_at_price": 151000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -15723,9 +15722,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 71500,
+        "price": 159900,
         "weight": 0,
-        "compare_at_price": 85800,
+        "compare_at_price": 159900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -15747,9 +15746,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 44000,
+        "price": 159900,
         "weight": 0,
-        "compare_at_price": 52800,
+        "compare_at_price": 159900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -15771,9 +15770,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 33000,
+        "price": 160900,
         "weight": 0,
-        "compare_at_price": 39600,
+        "compare_at_price": 160900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -15795,9 +15794,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 88000,
+        "price": 169800,
         "weight": 0,
-        "compare_at_price": 105600,
+        "compare_at_price": 169800,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -15819,9 +15818,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 44000,
+        "price": 10000,
         "weight": 0,
-        "compare_at_price": 52800,
+        "compare_at_price": 10000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -15843,9 +15842,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 66000,
+        "price": 161000,
         "weight": 0,
-        "compare_at_price": 79200,
+        "compare_at_price": 161000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -15867,9 +15866,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 55000,
+        "price": 169900,
         "weight": 0,
-        "compare_at_price": 66000,
+        "compare_at_price": 169900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -15891,9 +15890,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 38500,
+        "price": 169900,
         "weight": 0,
-        "compare_at_price": 46200,
+        "compare_at_price": 169900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -15915,9 +15914,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 16500,
+        "price": 170900,
         "weight": 0,
-        "compare_at_price": 19800,
+        "compare_at_price": 170900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -15939,9 +15938,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 93500,
+        "price": 179800,
         "weight": 0,
-        "compare_at_price": 112200,
+        "compare_at_price": 179800,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -15963,9 +15962,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 22000,
+        "price": 170000,
         "weight": 0,
-        "compare_at_price": 26400,
+        "compare_at_price": 170000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -15987,9 +15986,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 22000,
+        "price": 171000,
         "weight": 0,
-        "compare_at_price": 26400,
+        "compare_at_price": 171000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -16011,9 +16010,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 27500,
+        "price": 179900,
         "weight": 0,
-        "compare_at_price": 33000,
+        "compare_at_price": 179900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -16035,9 +16034,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 93500,
+        "price": 179900,
         "weight": 0,
-        "compare_at_price": 112200,
+        "compare_at_price": 179900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -16059,9 +16058,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 88000,
+        "price": 180900,
         "weight": 0,
-        "compare_at_price": 105600,
+        "compare_at_price": 180900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -16083,9 +16082,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 71500,
+        "price": 189800,
         "weight": 0,
-        "compare_at_price": 85800,
+        "compare_at_price": 189800,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -16107,9 +16106,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 49500,
+        "price": 180000,
         "weight": 0,
-        "compare_at_price": 59400,
+        "compare_at_price": 180000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -16131,9 +16130,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 66000,
+        "price": 181000,
         "weight": 0,
-        "compare_at_price": 79200,
+        "compare_at_price": 181000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -16155,9 +16154,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 60500,
+        "price": 189900,
         "weight": 0,
-        "compare_at_price": 72600,
+        "compare_at_price": 189900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -16179,9 +16178,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 27500,
+        "price": 189900,
         "weight": 0,
-        "compare_at_price": 33000,
+        "compare_at_price": 189900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -16203,9 +16202,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 49500,
+        "price": 190900,
         "weight": 0,
-        "compare_at_price": 59400,
+        "compare_at_price": 190900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -16227,9 +16226,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 22000,
+        "price": 199800,
         "weight": 0,
-        "compare_at_price": 26400,
+        "compare_at_price": 199800,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -16251,9 +16250,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 33000,
+        "price": 190000,
         "weight": 0,
-        "compare_at_price": 39600,
+        "compare_at_price": 190000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -16275,9 +16274,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 33000,
+        "price": 191000,
         "weight": 0,
-        "compare_at_price": 39600,
+        "compare_at_price": 191000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -16299,9 +16298,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 71500,
+        "price": 199900,
         "weight": 0,
-        "compare_at_price": 85800,
+        "compare_at_price": 199900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -16323,9 +16322,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 60500,
+        "price": 199900,
         "weight": 0,
-        "compare_at_price": 72600,
+        "compare_at_price": 199900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -16347,9 +16346,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 60500,
+        "price": 200900,
         "weight": 0,
-        "compare_at_price": 72600,
+        "compare_at_price": 200900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -16371,9 +16370,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 71500,
+        "price": 209800,
         "weight": 0,
-        "compare_at_price": 85800,
+        "compare_at_price": 209800,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -16395,9 +16394,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 49500,
+        "price": 200000,
         "weight": 0,
-        "compare_at_price": 59400,
+        "compare_at_price": 200000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -16419,9 +16418,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 77000,
+        "price": 201000,
         "weight": 0,
-        "compare_at_price": 92400,
+        "compare_at_price": 201000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -16443,9 +16442,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 38500,
+        "price": 209900,
         "weight": 0,
-        "compare_at_price": 46200,
+        "compare_at_price": 209900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -16467,9 +16466,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 82500,
+        "price": 209900,
         "weight": 0,
-        "compare_at_price": 99000,
+        "compare_at_price": 209900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -16491,9 +16490,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 82500,
+        "price": 210900,
         "weight": 0,
-        "compare_at_price": 99000,
+        "compare_at_price": 210900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -16515,9 +16514,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 82500,
+        "price": 219800,
         "weight": 0,
-        "compare_at_price": 99000,
+        "compare_at_price": 219800,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -16539,9 +16538,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 77000,
+        "price": 210000,
         "weight": 0,
-        "compare_at_price": 92400,
+        "compare_at_price": 210000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -16563,9 +16562,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 49500,
+        "price": 211000,
         "weight": 0,
-        "compare_at_price": 59400,
+        "compare_at_price": 211000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -16587,9 +16586,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 16500,
+        "price": 219900,
         "weight": 0,
-        "compare_at_price": 19800,
+        "compare_at_price": 219900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -16611,9 +16610,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 27500,
+        "price": 219900,
         "weight": 0,
-        "compare_at_price": 33000,
+        "compare_at_price": 219900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -16635,9 +16634,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 22000,
+        "price": 220900,
         "weight": 0,
-        "compare_at_price": 26400,
+        "compare_at_price": 220900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -16659,9 +16658,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 66000,
+        "price": 229800,
         "weight": 0,
-        "compare_at_price": 79200,
+        "compare_at_price": 229800,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -16683,9 +16682,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 49500,
+        "price": 220000,
         "weight": 0,
-        "compare_at_price": 59400,
+        "compare_at_price": 220000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -16707,9 +16706,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 60500,
+        "price": 221000,
         "weight": 0,
-        "compare_at_price": 72600,
+        "compare_at_price": 221000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -16731,9 +16730,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 60500,
+        "price": 229900,
         "weight": 0,
-        "compare_at_price": 72600,
+        "compare_at_price": 229900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -16755,9 +16754,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 71500,
+        "price": 229900,
         "weight": 0,
-        "compare_at_price": 85800,
+        "compare_at_price": 229900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -16779,9 +16778,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 22000,
+        "price": 230900,
         "weight": 0,
-        "compare_at_price": 26400,
+        "compare_at_price": 230900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -16803,9 +16802,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 49500,
+        "price": 239800,
         "weight": 0,
-        "compare_at_price": 59400,
+        "compare_at_price": 239800,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -16827,9 +16826,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 88000,
+        "price": 230000,
         "weight": 0,
-        "compare_at_price": 105600,
+        "compare_at_price": 230000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -16851,9 +16850,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 60500,
+        "price": 231000,
         "weight": 0,
-        "compare_at_price": 72600,
+        "compare_at_price": 231000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -16875,9 +16874,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 27500,
+        "price": 239900,
         "weight": 0,
-        "compare_at_price": 33000,
+        "compare_at_price": 239900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -16899,9 +16898,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 38500,
+        "price": 239900,
         "weight": 0,
-        "compare_at_price": 46200,
+        "compare_at_price": 239900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -16923,9 +16922,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 77000,
+        "price": 240900,
         "weight": 0,
-        "compare_at_price": 92400,
+        "compare_at_price": 240900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -16947,9 +16946,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 60500,
+        "price": 249800,
         "weight": 0,
-        "compare_at_price": 72600,
+        "compare_at_price": 249800,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -16971,9 +16970,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 16500,
+        "price": 240000,
         "weight": 0,
-        "compare_at_price": 19800,
+        "compare_at_price": 240000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -16995,9 +16994,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 38500,
+        "price": 241000,
         "weight": 0,
-        "compare_at_price": 46200,
+        "compare_at_price": 241000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -17019,9 +17018,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 44000,
+        "price": 249900,
         "weight": 0,
-        "compare_at_price": 52800,
+        "compare_at_price": 249900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -17043,9 +17042,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 66000,
+        "price": 249900,
         "weight": 0,
-        "compare_at_price": 79200,
+        "compare_at_price": 249900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -17067,9 +17066,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 27500,
+        "price": 250900,
         "weight": 0,
-        "compare_at_price": 33000,
+        "compare_at_price": 250900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -17091,9 +17090,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 71500,
+        "price": 259800,
         "weight": 0,
-        "compare_at_price": 85800,
+        "compare_at_price": 259800,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -17115,9 +17114,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 77000,
+        "price": 250000,
         "weight": 0,
-        "compare_at_price": 92400,
+        "compare_at_price": 250000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -17139,9 +17138,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 82500,
+        "price": 251000,
         "weight": 0,
-        "compare_at_price": 99000,
+        "compare_at_price": 251000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -17163,9 +17162,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 82500,
+        "price": 259900,
         "weight": 0,
-        "compare_at_price": 99000,
+        "compare_at_price": 259900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -17187,9 +17186,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 88000,
+        "price": 259900,
         "weight": 0,
-        "compare_at_price": 105600,
+        "compare_at_price": 259900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -17211,9 +17210,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 60500,
+        "price": 260900,
         "weight": 0,
-        "compare_at_price": 72600,
+        "compare_at_price": 260900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -17235,9 +17234,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 60500,
+        "price": 269800,
         "weight": 0,
-        "compare_at_price": 72600,
+        "compare_at_price": 269800,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -17259,9 +17258,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 38500,
+        "price": 260000,
         "weight": 0,
-        "compare_at_price": 46200,
+        "compare_at_price": 260000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -17283,9 +17282,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 60500,
+        "price": 261000,
         "weight": 0,
-        "compare_at_price": 72600,
+        "compare_at_price": 261000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -17307,9 +17306,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 27500,
+        "price": 269900,
         "weight": 0,
-        "compare_at_price": 33000,
+        "compare_at_price": 269900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -17331,9 +17330,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 44000,
+        "price": 269900,
         "weight": 0,
-        "compare_at_price": 52800,
+        "compare_at_price": 269900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -17355,9 +17354,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 93500,
+        "price": 270900,
         "weight": 0,
-        "compare_at_price": 112200,
+        "compare_at_price": 270900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -17379,9 +17378,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 60500,
+        "price": 279800,
         "weight": 0,
-        "compare_at_price": 72600,
+        "compare_at_price": 279800,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -17403,9 +17402,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 77000,
+        "price": 270000,
         "weight": 0,
-        "compare_at_price": 92400,
+        "compare_at_price": 270000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -17427,9 +17426,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 88000,
+        "price": 271000,
         "weight": 0,
-        "compare_at_price": 105600,
+        "compare_at_price": 271000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -17451,9 +17450,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 27500,
+        "price": 279900,
         "weight": 0,
-        "compare_at_price": 33000,
+        "compare_at_price": 279900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -17475,9 +17474,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 27500,
+        "price": 279900,
         "weight": 0,
-        "compare_at_price": 33000,
+        "compare_at_price": 279900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -17499,9 +17498,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 22000,
+        "price": 280900,
         "weight": 0,
-        "compare_at_price": 26400,
+        "compare_at_price": 280900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -17523,9 +17522,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 82500,
+        "price": 289800,
         "weight": 0,
-        "compare_at_price": 99000,
+        "compare_at_price": 289800,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -17547,9 +17546,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 66000,
+        "price": 280000,
         "weight": 0,
-        "compare_at_price": 79200,
+        "compare_at_price": 280000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -17571,9 +17570,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 60500,
+        "price": 281000,
         "weight": 0,
-        "compare_at_price": 72600,
+        "compare_at_price": 281000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -17595,9 +17594,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 16500,
+        "price": 289900,
         "weight": 0,
-        "compare_at_price": 19800,
+        "compare_at_price": 289900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -17619,9 +17618,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 55000,
+        "price": 289900,
         "weight": 0,
-        "compare_at_price": 66000,
+        "compare_at_price": 289900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -17643,9 +17642,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 93500,
+        "price": 290900,
         "weight": 0,
-        "compare_at_price": 112200,
+        "compare_at_price": 290900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -17667,9 +17666,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 16500,
+        "price": 299800,
         "weight": 0,
-        "compare_at_price": 19800,
+        "compare_at_price": 299800,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -17691,9 +17690,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 93500,
+        "price": 290000,
         "weight": 0,
-        "compare_at_price": 112200,
+        "compare_at_price": 290000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -17715,9 +17714,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 93500,
+        "price": 291000,
         "weight": 0,
-        "compare_at_price": 112200,
+        "compare_at_price": 291000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -17739,9 +17738,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 27500,
+        "price": 299900,
         "weight": 0,
-        "compare_at_price": 33000,
+        "compare_at_price": 299900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -17763,9 +17762,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 38500,
+        "price": 299900,
         "weight": 0,
-        "compare_at_price": 46200,
+        "compare_at_price": 299900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -17787,9 +17786,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 93500,
+        "price": 300900,
         "weight": 0,
-        "compare_at_price": 112200,
+        "compare_at_price": 300900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -17811,9 +17810,9 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 60500,
+        "price": 309800,
         "weight": 0,
-        "compare_at_price": 72600,
+        "compare_at_price": 309800,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -17835,9 +17834,9 @@ const variants = [
             "Indoors",
             "Single Colour"
         ],
-        "price": 49500,
+        "price": 300000,
         "weight": 0,
-        "compare_at_price": 59400,
+        "compare_at_price": 300000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -17859,9 +17858,9 @@ const variants = [
             "Indoors",
             "Dimmer Remote"
         ],
-        "price": 16500,
+        "price": 301000,
         "weight": 0,
-        "compare_at_price": 19800,
+        "compare_at_price": 301000,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -17883,9 +17882,9 @@ const variants = [
             "Indoors",
             "Multicolour Remote"
         ],
-        "price": 22000,
+        "price": 309900,
         "weight": 0,
-        "compare_at_price": 26400,
+        "compare_at_price": 309900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -17907,9 +17906,9 @@ const variants = [
             "Water Resistance",
             "Single Colour"
         ],
-        "price": 88000,
+        "price": 309900,
         "weight": 0,
-        "compare_at_price": 105600,
+        "compare_at_price": 309900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -17931,9 +17930,9 @@ const variants = [
             "Water Resistance",
             "Dimmer Remote"
         ],
-        "price": 82500,
+        "price": 310900,
         "weight": 0,
-        "compare_at_price": 99000,
+        "compare_at_price": 310900,
         "inventory_management": "shopify",
         "barcode": null
     },
@@ -17955,13 +17954,14 @@ const variants = [
             "Water Resistance",
             "Multicolour Remote"
         ],
-        "price": 22000,
+        "price": 319800,
         "weight": 0,
-        "compare_at_price": 26400,
+        "compare_at_price": 319800,
         "inventory_management": "shopify",
         "barcode": null
     }
 ];
+
 function getUserSelections() {
     let size = document.getElementById('select-size').value;
     let count = document.getElementById('count').value;
@@ -17969,7 +17969,8 @@ function getUserSelections() {
     let location = document.getElementById('select-location').value;
     let title = size + '_' + count + " " + '/' + " " + location + " " + '/' + " " + color;
     let resultObject = searchVariants(title, variants);
-    let id = resultObject.id;
+    let product = document.getElementsByClassName("variant");
+    product[0].value = resultObject.id
     let thePrice = (resultObject.price) / 100;
     document.getElementById('myPice').innerHTML = thePrice;
 }

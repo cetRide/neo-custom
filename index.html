@@ -232,7 +232,7 @@
                 </div>
                 <!--text area for mobile-->
                 <div class="mobileOnly mb-2 text-box">
-                    <div class="mobile-bg customText" style="height:300px" id="draggableAreaMobile">
+                    <div class="mobile-bg customText" style="height:300px; background-image: url(/images/background/b7.jpg)" id="draggableAreaMobile">
                         <div>
                             <label class="switch">
                                 <input class="inputCheck" id="mobile-switch" type="checkbox"
@@ -384,7 +384,7 @@
                 <!-- location-->
                 <div>
                     <div class="row px-3 justify-content-between" id="location">
-                        <div class="location" id="indoor" style="font-weight: 700;font-family: Brandon_bld"
+                        <div class="actives location" id="indoor" style="font-weight: 700;font-family: Brandon_bld"
                              onclick="selectLocation('indoor')">
                             Indoor &pound;<span>0</span>
                         </div>
@@ -482,7 +482,7 @@
             <!--  text area for dessktop-->
             <div class="col-md-7">
                 <div class="text-box desktopOnly" style="position: relative">
-                    <div class="desk customText" style="height: 550px;" id="draggableArea">
+                    <div class="desk customText" style="height: 550px; background-image: url(/images/background/b7.jpg);" id="draggableArea">
                         <div>
                             <label class="switch">
                                 <input class="inputCheck" id="desktop-switch" type="checkbox"
@@ -609,6 +609,10 @@
                 </button>
             </div>
         </div>
+<!--        all user selections-->
+            <select style="display: none" name="product" id="variant" class="variant">
+                <option value="">test1</option>
+            </select>
     </div>
     <script>
         function setDesktopBG(bg) {
