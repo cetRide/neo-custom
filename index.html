@@ -50,209 +50,222 @@
                 </ul>
                 <!--text box-->
                 <div class="px-2">
-                <div id="Text" class="tabContent line-item-property__field">
+                    <div id="Text" class="tabContent line-item-property__field">
                     <textarea style="width: 100%" rows="2" required name="properties[Custom text]"
                               class='mt-2 textInput'
                               id='textInput'
                               onkeyUp="displayText(event)" placeholder="ENTER YOUR TEXT HERE"></textarea>
-                    <div class="row alignText" id="alignText">
-                        <div class="alignBox" id="left" style="width: 33.33%; font-size: 25px"
-                             onclick="alignText('Left')">
-                            <p class="text-center mt-1"><i class="fas fa-align-left"></i></p>
-                        </div>
-                        <div class="alignBox activate-align" id="center" style="width: 33.33%; font-size: 25px"
-                             onclick="alignText('Center')">
-                            <p class="text-center mt-1"><i class="fas fa-align-center"></i></p>
-                        </div>
-                        <div class="alignBox" id="right" style="width: 33.33%; font-size: 25px"
-                             onclick="alignText('Right')">
-                            <p class="text-center mt-1"><i class="fas fa-align-right"></i></p>
-                        </div>
-                    </div>
-                </div>
-                <!-- font box-->
-                <div id="Font" class="tabContent text-center">
-                    <h6 class="text-center my-3">CHOOSE FONT</h6>
-                    <div class="row justify-content-between" style=" overflow: auto; height: 175px">
-                        <div class="myFont" onclick="changeFontFamily('Alex Brush')"
-                             style="font-family: Alex Brush">Alexa
-                        </div>
-                        <div class="myFont" onclick="changeFontFamily('Dancing Script')"
-                             style="font-family: Dancing Script;">Dancer
-                        </div>
-                        <div class="myFont" onclick="changeFontFamily('Gruenewald')"
-                             style="font-family: Gruenewald">
-                            Gruenewald
-                        </div>
-
-                        <div class="myFont" onclick="changeFontFamily('Andasia Regular')"
-                             style="font-family: Andasia Regular">Bayshore
-                        </div>
-                        <div class="myFont" onclick="changeFontFamily('Hamillton')"
-                             style="font-family: Hamillton">Hamillton
-                        </div>
-                        <div class="myFont" style="font-family: Real Kindly Demo"
-                             onclick="changeFontFamily('Real Kindly Demo')">WildSpirit
-                        </div>
-
-                        <div class="myFont" onclick="changeFontFamily('Satisfy Regular')"
-                             style="font-family: Satisfy Regular">Satisfy
-                        </div>
-                        <div class="myFont" onclick="changeFontFamily('Kiona')" style="font-family: Kiona">
-                            Kiona
-                        </div>
-                        <div class="myFont" onclick="changeFontFamily('Paper Daisy')"
-                             style="font-family: Paper Daisy">
-                            Paper Daisy
-                        </div>
-
-                        <div class="myFont" onclick="changeFontFamily('Lovelo')" style="font-family: Lovelo">
-                            Lovelo
-                        </div>
-                        <div class="myFont" onclick="changeFontFamily('Marquee Moon')"
-                             style="font-family: Marquee Moon">Marquee
-                        </div>
-                        <div class="myFont" onclick="changeFontFamily('Neon Glow')"
-                             style="font-family: Neon Glow">Neon
-                            Glow
-                        </div>
-                        <div class="myFont" onclick="changeFontFamily('Pi in the SciFi')"
-                             style="font-family: Pi in the SciFi">SCIFI
-                        </div>
-
-                        <div class="myFont" onclick="changeFontFamily('Nixie One')"
-                             style="font-family: Nixie One">Nixie
-                            One
-                        </div>
-                        <div class="myFont" style="font-family: Red Velvet"
-                             onclick="changeFontFamily('Red Velvet')">Red
-                            Velvet
-                        </div>
-                        <div class="myFont" style="font-family: Quinzey" onclick="changeFontFamily('Quinzey')">
-                            Quinzey
-                        </div>
-                        <div class="myFont" style="font-family: Sophistica"
-                             onclick="changeFontFamily('Sophistica')">
-                            NorthWell
-                        </div>
-
-                        <div class="myFont" style="font-family: Lettia" onclick="changeFontFamily('Lettia')">
-                            Hesterica
-                        </div>
-                        <div class="myFont" style="font-family: Signature"
-                             onclick="changeFontFamily('Signature')">
-                            Signature
-                        </div>
-                        <div class="myFont" style="font-family: kevinandamandadotcom"
-                             onclick="changeFontFamily('kevinandamandadotcom')">Amanda
-                        </div>
-                        <div class="myFont" style="font-family: Andrea" onclick="changeFontFamily('Andrea')">
-                            Sebastrian
-                        </div>
-                        <div class="myFont" style="font-family: vintage_MartavanEck"
-                             onclick="changeFontFamily('vintage_MartavanEck')">Vintage
-                        </div>
-                        <div class="myFont" style="font-family: Yesie" onclick="changeFontFamily('Yesie')">
-                            Barceloy
-                        </div>
-                        <div class="myFont" onclick="changeFontFamily('Syne Mono')">Syne Mono</div>
-                    </div>
-                    <p class="line-item-property__field">
-                        <label for="select-font"></label>
-                        <input type="hidden" id="select-font" name="properties[font]" value="Andasia Regular">
-                    </p>
-                </div>
-                <!-- color box-->
-                <div id="Color" class="tabContent text-center">
-                    <h6 class="text-center my-3">CHOOSE COLOUR</h6>
-                    <div class="row justify-content-between" style="cursor: pointer">
-                        <div class="color" onclick="setColor('lemon', 'Lemon Yellow')">
-                            <span style="color: #fff44f" id="lemon">&#9734</span>
-                            <p style="font-size: 9px">Lemon Yellow</p>
-                        </div>
-                        <div class="color" onclick="setColor('yellow','Yellow')">
-                            <span style="color: #FFFF00" id="yellow">&#9734</span>
-                            <p style="font-size: 9px">Yellow</p>
-                        </div>
-                        <div class="color" onclick="setColor('girl_pink','Girl Pink')">
-                            <span style="color: #f8b9d4" id="girl_pink">&#9734</span>
-                            <p style="font-size: 9px">Girl Pink</p>
-                        </div>
-                        <div class="color" onclick="setColor('pink','Pink')">
-                            <span style="color: #FFC0CB" id="pink">&#9734</span>
-                            <p style="font-size: 9px">Pink</p>
-                        </div>
-                        <div class="color" onclick="setColor('orange','Orange')">
-                            <span style="color: #FFA500" id="orange">&#9734</span>
-                            <p style="font-size: 9px">Orange</p>
-                        </div>
-                        <div class="color" onclick="setColor('green','Green')">
-                            <span style="color: #008000" id="green">&#9734</span>
-                            <p style="font-size: 9px">Green</p>
-                        </div>
-                        <div class="color" onclick="setColor('ice_blue','Ice Blue')">
-                            <span style="color: #A5F2F3" id="ice_blue">&#9734</span>
-                            <p style="font-size: 9px">Ice Blue</p>
-                        </div>
-
-                        <div class="color" onclick="setColor('red','Red')">
-                            <span style="color: #FF0000" id="red">&#9734</span>
-                            <p style="font-size: 9px">Red</p>
-                        </div>
-                        <div class="color" onclick="setColor('blue_green','Blue Green')">
-                            <span style="color: #0d98ba" id="blue_green">&#9734</span>
-                            <p style="font-size: 9px">Blue Green</p>
-                        </div>
-                        <div class="color" style="display: none" onclick="setColor('deep_pink','Deep Pink')">
-                            <span style="color: #FF1493" id="deep_pink">&#9734</span>
-                            <p style="font-size: 9px">Deep Pink</p>
-                        </div>
-                        <div class="color" onclick="setColor('purple','Purple')">
-                            <span style="color: #800080" id="purple">&#9734</span>
-                            <p style="font-size: 9px">Purple</p>
-                        </div>
-                        <div class="color" onclick="setColor('warmwhite','Warm White')">
-                            <span style="color: #efebd8" id="warmwhite">&#9734</span>
-                            <p style="font-size: 9px">Warm White</p></div>
-                        <div class="color" onclick="setColor('white','White')">
-                            <span style="color: lightgrey" id="white">&#9734</span>
-                            <p style="font-size: 9px">White</p>
-                        </div>
-                        <p class="line-item-property__field">
-                            <label for="select-color"></label>
-                            <input type="hidden" id="select-color" name="properties[color]" value="Mint">
-                        </p>
-                    </div>
-                    <div class="color-desc">
-                        <div style="font-family: Brandon_light">
-                            <p class="text-center" id="descr"></p>
-                        </div>
-                        <p><img id="color-image" src="/images/color_images/pink.jpg" width="100%" height="180"/></p>
-                    </div>
-                </div>
-                <!--text area for mobile-->
-                <div class="mobileOnly mb-2 text-box">
-                    <div class="mobile-bg customText" style="height:300px; background-image: url(/images/background/b7.jpeg)" id="draggableAreaMobile">
-                        <div>
-                            <label class="switch">
-                                <input class="inputCheck" id="mobile-switch" type="checkbox"
-                                       onchange='handleChange(this);'
-                                       checked>
-                                <span class="slider round"></span>
-                            </label>
-                        </div>
-                        <div style="text-align:center">
-                            <div id="draggableMobile" style="display:inline-block">
-                                <p class="mobileText" id="displayTextMobile"></p>
+                        <div class="row alignText" id="alignText">
+                            <div class="alignBox" id="left" style="width: 33.33%; font-size: 25px"
+                                 onclick="alignText('Left')">
+                                <p class="text-center mt-1"><i class="fas fa-align-left"></i></p>
+                            </div>
+                            <div class="alignBox activate-align" id="center" style="width: 33.33%; font-size: 25px"
+                                 onclick="alignText('Center')">
+                                <p class="text-center mt-1"><i class="fas fa-align-center"></i></p>
+                            </div>
+                            <div class="alignBox" id="right" style="width: 33.33%; font-size: 25px"
+                                 onclick="alignText('Right')">
+                                <p class="text-center mt-1"><i class="fas fa-align-right"></i></p>
                             </div>
                         </div>
                     </div>
-                    <div>
+                    <!-- font box-->
+                    <div id="Font" class="tabContent text-center">
+                        <h6 class="text-center my-3">CHOOSE FONT</h6>
+                        <div class="row justify-content-between" style=" overflow: auto; height: 175px">
+                            <div class="myFont" id="k" onclick="changeFontFamily('k','Alex Brush')"
+                                 style="font-family: Alex Brush">Alexa
+                            </div>
+                            <div class="myFont" id="j" onclick="changeFontFamily('j','Dancing Script')"
+                                 style="font-family: Dancing Script;">Dancer
+                            </div>
+                            <div class="myFont" id="i" onclick="changeFontFamily('i','Gruenewald')"
+                                 style="font-family: Gruenewald">
+                                Gruenewald
+                            </div>
+
+                            <div class="myFont" id="h" onclick="changeFontFamily('h','Andasia Regular')"
+                                 style="font-family: Andasia Regular">Bayshore
+                            </div>
+                            <div class="myFont" id="g" onclick="changeFontFamily('g','Hamillton')"
+                                 style="font-family: Hamillton">Hamillton
+                            </div>
+                            <div class="myFont" style="font-family: Real Kindly Demo" id="f"
+                                 onclick="changeFontFamily('f','Real Kindly Demo')">WildSpirit
+                            </div>
+
+                            <div class="myFont" id="e" onclick="changeFontFamily('e','Satisfy Regular')"
+                                 style="font-family: Satisfy Regular">Satisfy
+                            </div>
+                            <div class="myFont" id="d" onclick="changeFontFamily('d','Kiona')"
+                                 style="font-family: Kiona">
+                                Kiona
+                            </div>
+                            <div class="myFont" id="c" onclick="changeFontFamily('c','Paper Daisy')"
+                                 style="font-family: Paper Daisy">
+                                Paper Daisy
+                            </div>
+
+                            <div class="myFont" id="b" onclick="changeFontFamily('b','Lovelo')"
+                                 style="font-family: Lovelo">
+                                Lovelo
+                            </div>
+                            <div class="myFont" id="a" onclick="changeFontFamily('a','Marquee Moon')"
+                                 style="font-family: Marquee Moon">Marquee
+                            </div>
+                            <div class="myFont" id="glow" onclick="changeFontFamily('glow','Neon Glow')"
+                                 style="font-family: Neon Glow">Neon
+                                Glow
+                            </div>
+                            <div class="myFont" id="scifi" onclick="changeFontFamily('scifi','Pi in the SciFi')"
+                                 style="font-family: Pi in the SciFi">SCIFI
+                            </div>
+
+                            <div class="myFont" id="nixie" onclick="changeFontFamily('nixie','Nixie One')"
+                                 style="font-family: Nixie One">Nixie
+                                One
+                            </div>
+                            <div class="myFont" style="font-family: Red Velvet" id="velvet"
+                                 onclick="changeFontFamily('velvet','Red Velvet')">Red
+                                Velvet
+                            </div>
+                            <div class="myFont" style="font-family: Quinzey" id="quinz"
+                                 onclick="changeFontFamily('quinz','Quinzey')">
+                                Quinzey
+                            </div>
+                            <div class="myFont" style="font-family: Sophistica" id="northwel"
+                                 onclick="changeFontFamily('northwel','Sophistica')">
+                                NorthWell
+                            </div>
+
+                            <div class="myFont" style="font-family: Lettia" id="lettia"
+                                 onclick="changeFontFamily('lettia','Lettia')">
+                                Hesterica
+                            </div>
+                            <div class="myFont" style="font-family: Signature" id="signature"
+                                 onclick="changeFontFamily('signature','Signature')">
+                                Signature
+                            </div>
+                            <div class="myFont" style="font-family: kevinandamandadotcom" id="amanda"
+                                 onclick="changeFontFamily('amanda','kevinandamandadotcom')">Amanda
+                            </div>
+                            <div class="myFont" style="font-family: Andrea" id="l"
+                                 onclick="changeFontFamily('l','Andrea')">
+                                Sebastrian
+                            </div>
+                            <div class="myFont" style="font-family: vintage_MartavanEck" id="vintage"
+                                 onclick="changeFontFamily('vintage','vintage_MartavanEck')">Vintage
+                            </div>
+                            <div class="myFont" style="font-family: Yesie" id="yesie"
+                                 onclick="changeFontFamily('yesie','Yesie')">
+                                Barceloy
+                            </div>
+                            <div class="myFont" style="font-family: Syne Mono" id="mono"
+                                 onclick="changeFontFamily('mono','Syne Mono')">Syne Mono
+                            </div>
+                        </div>
+                        <p class="line-item-property__field">
+                            <label for="select-font"></label>
+                            <input type="hidden" id="select-font" name="properties[font]" value="Andasia Regular">
+                        </p>
+                    </div>
+                    <!-- color box-->
+                    <div id="Color" class="tabContent text-center">
+                        <h6 class="text-center my-3">CHOOSE COLOUR</h6>
+                        <div class="row justify-content-between" style="cursor: pointer">
+                            <div class="color" onclick="setColor('lemon', 'Lemon Yellow')">
+                                <span style="color: #f3f111" id="lemon">&#9734</span>
+                                <p style="font-size: 9px">Lemon Yellow</p>
+                            </div>
+                            <div class="color" onclick="setColor('blue','Blue')">
+                                <span style="color: #0000FF" id="blue">&#9734</span>
+                                <p style="font-size: 9px">Blue</p>
+                            </div>
+                            <div class="color" onclick="setColor('yellow','Yellow')">
+                                <span style="color: #FFFF00" id="yellow">&#9734</span>
+                                <p style="font-size: 9px">Yellow</p>
+                            </div>
+                            <div class="color" onclick="setColor('girl_pink','Girl Pink')">
+                                <span style="color: #f8b9d4" id="girl_pink">&#9734</span>
+                                <p style="font-size: 9px">Girl Pink</p>
+                            </div>
+                            <div class="color" onclick="setColor('pink','Pink')">
+                                <span style="color: #FFC0CB" id="pink">&#9734</span>
+                                <p style="font-size: 9px">Pink</p>
+                            </div>
+                            <div class="color" onclick="setColor('orange','Orange')">
+                                <span style="color: #FFA500" id="orange">&#9734</span>
+                                <p style="font-size: 9px">Orange</p>
+                            </div>
+                            <div class="color" onclick="setColor('green','Green')">
+                                <span style="color: #008000" id="green">&#9734</span>
+                                <p style="font-size: 9px">Green</p>
+                            </div>
+                            <div class="color" onclick="setColor('ice_blue','Ice Blue')">
+                                <span style="color: #A5F2F3" id="ice_blue">&#9734</span>
+                                <p style="font-size: 9px">Ice Blue</p>
+                            </div>
+
+                            <div class="color" onclick="setColor('red','Red')">
+                                <span style="color: #FF0000" id="red">&#9734</span>
+                                <p style="font-size: 9px">Red</p>
+                            </div>
+                            <div class="color" onclick="setColor('blue_green','Blue Green')">
+                                <span style="color: #0d98ba" id="blue_green">&#9734</span>
+                                <p style="font-size: 9px">Blue Green</p>
+                            </div>
+                            <div class="color" style="display: none" onclick="setColor('deep_pink','Deep Pink')">
+                                <span style="color: #FF1493" id="deep_pink">&#9734</span>
+                                <p style="font-size: 9px">Deep Pink</p>
+                            </div>
+                            <div class="color" onclick="setColor('purple','Purple')">
+                                <span style="color: #800080" id="purple">&#9734</span>
+                                <p style="font-size: 9px">Purple</p>
+                            </div>
+                            <div class="color" onclick="setColor('warmwhite','Warm White')">
+                                <span style="color: #efebd8" id="warmwhite">&#9734</span>
+                                <p style="font-size: 9px">Warm White</p></div>
+                            <div class="color" onclick="setColor('white','White')">
+                                <span style="color: lightgrey" id="white">&#9734</span>
+                                <p style="font-size: 9px">White</p>
+                            </div>
+                            <p class="line-item-property__field">
+                                <label for="select-color"></label>
+                                <input type="hidden" id="select-color" name="properties[color]" value="Mint">
+                            </p>
+                        </div>
+                        <div class="color-desc">
+                            <div style="font-family: Brandon_light">
+                                <p class="text-center" id="descr"></p>
+                            </div>
+                            <p><img id="color-image" src="/images/color_images/pink.jpg" width="100%" height="180"/></p>
+                        </div>
+                    </div>
+                    <!--text area for mobile-->
+                    <div class="mobileOnly text-box">
+                        <div class="mobile-bg customText"
+                             style="height:350px; position: relative; background-image: url(/images/background/b7.jpeg)"
+                             id="draggableAreaMobile">
+                            <div>
+                                <label class="switch">
+                                    <input class="inputCheck" id="mobile-switch" type="checkbox"
+                                           onchange='handleChange(this);'
+                                           checked>
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                            <div style="text-align:center">
+                                <div id="draggableMobile" style="display:inline-block">
+                                    <p style="line-height: 40px;" class="mobileText" id="displayTextMobile"></p>
+                                </div>
+                            </div>
+                        </div>
                         <!-- Carousel -->
                         <link type="text/css" rel="stylesheet" href="css/magicscroll.css"/>
                         <script type="text/javascript" src="js/magicscroll.js"></script>
-                        <div class="MagicScroll" data-options="height: 100;  mode: cover-flow; draggable: true;"
-                             style="width:100%; float:left">
+                        <div class="MagicScroll " data-options="height: 100;  mode: cover-flow; draggable: true;"
+                             style="width:100%; top: -50px; z-index: 10; float:left;">
                             <a onclick="setMobileBG('images/background/b1.jpg');"><img
                                     srcset="images/background/b1.jpg"
                                     src="images/background/b1.jpg" width="100px" height="80px"/></a>
@@ -298,191 +311,193 @@
                         </div>
                         <!-- End Carousel -->
                     </div>
-                </div>
-                <!-- sizes box-->
-                <div class="px-2">
-                    <h>SELECT YOUR OPTIONS</h>
-                    <!-- row1-->
-                    <div class="row justify-content-end">
-                        <div class="p-2" style="width: 50%;">
-                            <div class="actives box-size px-2" id="small" onclick="selectSize('small')">
-                                <p style="text-align:left;">
-                                    <strong style="font-weight: 900;font-family: Brandon_bld"><b>SMALL</b></strong>
-                                    <span style="float:right;">
+                    <!-- sizes box-->
+                    <div class="px-2">
+                        <h>SELECT YOUR OPTIONS</h>
+                        <!-- row1-->
+                        <div class="row justify-content-end">
+                            <div class="p-2" style="width: 50%;">
+                                <div class="actives box-size px-2" id="small" onclick="selectSize('small')">
+                                    <p style="text-align:left;">
+                                        <strong style="font-weight: 900;font-family: Brandon_bld"><b>SMALL</b></strong>
+                                        <span style="float:right;">
                                     Length: <span id="slength"></span>cm
                                     </span>
-                                </p>
-                                <p style="text-align:left;">
-                                    <strong style="font-weight: 900;font-family: Brandon_bld">&pound;<span
-                                            id="small-size"></span></strong>
-                                    <span style="float:right;">
+                                    </p>
+                                    <p style="text-align:left;">
+                                        <strong style="font-weight: 900;font-family: Brandon_bld">&pound;<span
+                                                id="small-size"></span></strong>
+                                        <span style="float:right;">
                                    Height: <span id="sheight-one"></span> - <span id="sheight-two"></span>cm
                                     </span>
-                                </p>
+                                    </p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="p-2" style="width: 50%">
-                            <div class="box-size px-2" id="medium" onclick="selectSize('medium')">
-                                <p style="text-align:left;">
-                                    <strong style="font-weight: 900;font-family: Brandon_bld">MEDIUM</strong>
-                                    <span style="float:right;">
+                            <div class="p-2" style="width: 50%">
+                                <div class="box-size px-2" id="medium" onclick="selectSize('medium')">
+                                    <p style="text-align:left;">
+                                        <strong style="font-weight: 900;font-family: Brandon_bld">MEDIUM</strong>
+                                        <span style="float:right;">
                                     Length: <span id="mlength"></span>cm
                                     </span>
-                                </p>
-                                <p style="text-align:left;">
-                                    <strong style="font-weight: 900;font-family: Brandon_bld">&pound;<span
-                                            id="medium-size"></span></strong>
-                                    <span style="float:right;">
+                                    </p>
+                                    <p style="text-align:left;">
+                                        <strong style="font-weight: 900;font-family: Brandon_bld">&pound;<span
+                                                id="medium-size"></span></strong>
+                                        <span style="float:right;">
                                    Height: <span id="mheight-one"></span> - <span id="mheight-two"></span>cm
                                     </span>
-                                </p>
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <!--                    row2-->
-                    <div class="row justify-content-end">
-                        <div class="p-2" style="width: 50%">
-                            <div class="box-size px-2" id="large" onclick="selectSize('large')">
-                                <p style="text-align:left;">
-                                    <strong style="font-weight: 900;font-family: Brandon_bld">LARGE</strong>
-                                    <span style="float:right;">
+                        <!--                    row2-->
+                        <div class="row justify-content-end">
+                            <div class="p-2" style="width: 50%">
+                                <div class="box-size px-2" id="large" onclick="selectSize('large')">
+                                    <p style="text-align:left;">
+                                        <strong style="font-weight: 900;font-family: Brandon_bld">LARGE</strong>
+                                        <span style="float:right;">
                                     Length: <span id="llength"></span>cm
                                     </span>
-                                </p>
-                                <p style="text-align:left;">
-                                    <strong style="font-weight: 900;font-family: Brandon_bld">&pound;<span
-                                            id="large-size"></span></strong>
-                                    <span style="float:right;">
+                                    </p>
+                                    <p style="text-align:left;">
+                                        <strong style="font-weight: 900;font-family: Brandon_bld">&pound;<span
+                                                id="large-size"></span></strong>
+                                        <span style="float:right;">
                                    Height: <span id="lheight-one"></span> - <span id="lheight-two"></span>cm
                                     </span>
-                                </p>
+                                    </p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="p-2" style="width: 50%">
-                            <div class="box-size px-2" id="xlarge" onclick="selectSize('xlarge')">
-                                <p style="text-align:left;">
-                                    <strong style="font-weight: 900;font-family: Brandon_bld">XLARGE</strong>
-                                    <span style="float:right;">
+                            <div class="p-2" style="width: 50%">
+                                <div class="box-size px-2" id="xlarge" onclick="selectSize('xlarge')">
+                                    <p style="text-align:left;">
+                                        <strong style="font-weight: 900;font-family: Brandon_bld">XLARGE</strong>
+                                        <span style="float:right;">
                                     Length: <span id="xllength"></span>cm
                                     </span>
-                                </p>
-                                <p style="text-align:left;">
-                                    <strong style="font-weight: 900;font-family: Brandon_bld">&pound;<span
-                                            id="xlarge-size"></span></strong>
-                                    <span style="float:right;">
+                                    </p>
+                                    <p style="text-align:left;">
+                                        <strong style="font-weight: 900;font-family: Brandon_bld">&pound;<span
+                                                id="xlarge-size"></span></strong>
+                                        <span style="float:right;">
                                    Height: <span id="xlheight-one"></span> - <span id="xlheight-two"></span>cm
                                     </span>
-                                </p>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <input type="hidden" id="select-size">
+                        <input type="hidden" id="count">
+                        <label class="size_note">*The Height shown is a range. Sizes vary depending on choice of font
+                            style, and whether the text includes upper & lower case. </label>
+                    </div>
+                    <!-- location-->
+                    <div>
+                        <div class="row px-3 justify-content-between" id="location">
+                            <div class="actives location" id="indoor" style="font-weight: 700;font-family: Brandon_bld"
+                                 onclick="selectLocation('indoor')">
+                                Indoor &pound;<span>0</span>
+                            </div>
+                            <div class="location" style="font-weight: 700;font-family: Brandon_bld" id="waterResistant"
+                                 onclick="selectLocation('waterResistant')">
+                                Water Resistant &pound;<span>99</span>
+                            </div>
+                        </div>
+                        <label class="size_note">*Please note: The sign will be treated with a clear seal that will
+                            splash-proof it. If
+                            the sign will be exposed to wet weather, please order the 'Clear Acrylic Box' backboard
+                            option
+                            below.</label>
+                        <input type="hidden" id="select-location">
+                    </div>
+                    <!-- pug-->
+                    <div class="row mb-2 px-3">
+                        <div class="" style="width: 40%; min-height: 30px; line-height: 30px">
+                            <p style="font-size: 15px;">ELECTRICAL PUG:</p>
+                        </div>
+                        <select name="pug" id="pug">
+                            <option value="United Kingdom">United Kingdom</option>
+                            <option value="European">European</option>
+                            <option value="USA/Canada">USA/Canada</option>
+                            <option value="Australia/NZ">Australia/NZ</option>
+                            <option value="Japan">Japan</option>
+                            <option value="Other">Other: Ask at checkout</option>
+                        </select>
+                    </div>
+                    <!--backboard-->
+                    <div class="p-3">
+                        <h6 class="text-center" style="font-weight: bold">SELECT YOUR BACK BOARD:</h6>
+                        <div class="backboard">
+                            <div style="width: 192.89px" class="row ml-auto mr-auto">
+                                <div class="backboard-image-box">
+                                    <p><img id="blackboard" src="/images/1.png" width="172.89" height="100"/></p>
+                                    <p class="text-center" id="blackboardPrice"></p>
+                                </div>
+                                <div class="select-board">
+                                    <select style="margin-top: 42.5px; width: 20px" id="selectedBackBoard"
+                                            onchange="selectBlackBord()" name="selectedBackBoard">
+                                        <option value="0">
+                                            <div class="justify-content-end">
+                                                <p>Cut Around Acrylic</p>
+                                                <p class="text-right">FREE</p>
+                                            </div>
+                                        </option>
+                                        <option value="1">
+                                            <div class="justify-content-end">
+                                                <p>Rectangle Acrylic</p>
+                                                <p class="text-right">FREE</p>
+                                            </div>
+                                        </option>
+                                        <option value="2">
+                                            <div class="justify-content-end">
+                                                <p>Cut To Letter Acrylic</p>
+                                                <p class="text-right">FREE</p>
+                                            </div>
+                                        </option>
+                                    </select>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <input type="hidden" id="select-size">
-                    <input type="hidden" id="count">
-                    <label class="size_note">*The Height shown is a range. Sizes vary depending on choice of font
-                        style, and whether the text includes upper & lower case. </label>
-                </div>
-                <!-- location-->
-                <div>
-                    <div class="row px-3 justify-content-between" id="location">
-                        <div class="actives location" id="indoor" style="font-weight: 700;font-family: Brandon_bld"
-                             onclick="selectLocation('indoor')">
-                            Indoor &pound;<span>0</span>
-                        </div>
-                        <div class="location" style="font-weight: 700;font-family: Brandon_bld" id="waterResistant"
-                             onclick="selectLocation('waterResistant')">
-                            Water Resistant &pound;<span>99</span>
-                        </div>
+                    <!--select colours-->
+                    <div>
+                        <label class="contain">Single Colour &pound;<span>0</span>
+                            <input class="inputs" type="checkbox" id="check1" onclick="selectOnlyThis(this.id)" checked>
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="contain">Dimmer Remote &pound;<span>10</span>
+                            <input class="inputs" type="checkbox" id="check2" onclick="selectOnlyThis(this.id)">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="contain">Multicolour Remote &pound;<span>99</span>
+                            <input class="inputs" type="checkbox" id="check3" onclick="selectOnlyThis(this.id)">
+                            <span class="checkmark"></span>
+                        </label>
+                        <input type="hidden" id="select-colours">
                     </div>
-                    <label class="size_note">*Please note: The sign will be treated with a clear seal that will
-                        splash-proof it. If
-                        the sign will be exposed to wet weather, please order the 'Clear Acrylic Box' backboard option
-                        below.</label>
-                    <input type="hidden" id="select-location">
-                </div>
-                <!-- pug-->
-                <div class="row mb-2 px-3">
-                    <div class="" style="width: 40%; min-height: 30px; line-height: 30px">
-                        <p style="font-size: 15px;">ELECTRICAL PUG:</p>
-                    </div>
-                    <select name="pug" id="pug">
-                        <option value="United Kingdom">United Kingdom</option>
-                        <option value="European">European</option>
-                        <option value="USA/Canada">USA/Canada</option>
-                        <option value="Australia/NZ">Australia/NZ</option>
-                        <option value="Japan">Japan</option>
-                        <option value="Other">Other: Ask at checkout</option>
-                    </select>
-                </div>
-                <!--backboard-->
-                <div class="p-3">
-                    <h6 class="text-center" style="font-weight: bold">SELECT YOUR BACK BOARD:</h6>
-                    <div class="backboard">
-                        <div style="width: 192.89px" class="row ml-auto mr-auto">
-                            <div class="backboard-image-box">
-                                <p><img id="blackboard" src="/images/1.png" width="172.89" height="100"/></p>
-                                <p class="text-center" id="blackboardPrice"></p>
-                            </div>
-                            <div class="select-board">
-                                <select style="margin-top: 42.5px; width: 20px" id="selectedBackBoard"
-                                        onchange="selectBlackBord()" name="selectedBackBoard">
-                                    <option value="0">
-                                        <div class="justify-content-end">
-                                            <p>Cut Around Acrylic</p>
-                                            <p class="text-right">FREE</p>
-                                        </div>
-                                    </option>
-                                    <option value="1">
-                                        <div class="justify-content-end">
-                                            <p>Rectangle Acrylic</p>
-                                            <p class="text-right">FREE</p>
-                                        </div>
-                                    </option>
-                                    <option value="2">
-                                        <div class="justify-content-end">
-                                            <p>Cut To Letter Acrylic</p>
-                                            <p class="text-right">FREE</p>
-                                        </div>
-                                    </option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--select colours-->
-                <div>
-                    <label class="contain">Single Colour &pound;<span>0</span>
-                        <input class="inputs" type="checkbox" id="check1" onclick="selectOnlyThis(this.id)" checked>
-                        <span class="checkmark"></span>
-                    </label>
-                    <label class="contain">Dimmer Remote &pound;<span>10</span>
-                        <input class="inputs" type="checkbox" id="check2" onclick="selectOnlyThis(this.id)">
-                        <span class="checkmark"></span>
-                    </label>
-                    <label class="contain">Multicolour Remote &pound;<span>99</span>
-                        <input class="inputs" type="checkbox" id="check3" onclick="selectOnlyThis(this.id)">
-                        <span class="checkmark"></span>
-                    </label>
-                    <input type="hidden" id="select-colours">
-                </div>
-                <!-- price box-->
-                <div class="price-box px-3">
-                    <p style="text-align:left; font-weight: 900;font-family: Brandon_bld">
-                        <span>Total with selected options:</span>
-                        <span style="float:right;">
+                    <!-- price box-->
+                    <div class="price-box px-3">
+                        <p style="text-align:left; font-weight: 900;font-family: Brandon_bld">
+                            <span>Total with selected options:</span>
+                            <span style="float:right;">
                                     &pound;<span id="myPice"></span>
                                     </span>
-                    </p>
-                </div>
-                <!--checkout-button-->
-                <div class="mt-3 btn checkout-btn btn-block">
-                    ADD TO CART
-                </div>
+                        </p>
+                    </div>
+                    <!--checkout-button-->
+                    <div class="mt-3 btn checkout-btn btn-block">
+                        ADD TO CART
+                    </div>
                 </div>
             </div>
             <!--  text area for dessktop-->
             <div class="col-md-7">
                 <div class="text-box desktopOnly" style="position: relative">
-                    <div class="desk customText" style="height: 550px; background-size: cover; background-image: url(/images/background/b7.jpeg);" id="draggableArea">
+                    <div class="desk customText"
+                         style="height: 620px; background-size: cover; background-image: url(/images/background/b7.jpeg);"
+                         id="draggableArea">
                         <div>
                             <label class="switch">
                                 <input class="inputCheck" id="desktop-switch" type="checkbox"
@@ -493,72 +508,74 @@
                         </div>
                         <div style="text-align:center">
                             <div id="draggable" style="display:inline-block">
-                                <p class="mytext" id="displayText"></p>
+                                <p style="line-height: 70px;" class="mytext" id="displayText"></p>
                             </div>
                         </div>
                     </div>
                     <!-- Carousel -->
-                    <div>
-                        <link type="text/css" rel="stylesheet" href="css/magicscroll.css"/>
-                        <script type="text/javascript" src="js/magicscroll.js"></script>
-                        <div class="MagicScroll" data-options="height: 146;  mode: carousel; draggable: true;"
-                             style="width:100%; float:left">
-                            <a onclick="setDesktopBG('images/background/b2.png');"><img
-                                    srcset="images/background/b2.png" src="images/background/b2.png"
-                                    width="100px" height="80px"/></a>
-                            <a onclick="setDesktopBG('images/background/b3.png');"><img
-                                    srcset="images/background/b3.png" src="images/background/b3.png"
-                                    width="100px" height="80px"/></a>
-                            <a onclick="setDesktopBG('images/background/b1.jpg');"><img
-                                    srcset="images/background/b1.jpg" src="images/background/b1.jpg"
-                                    width="100px" height="80px"/></a>
-                            <a onclick="setDesktopBG('images/background/b4.jpg');"><img
-                                    srcset="images/background/b4.jpg" src="images/background/b4.jpg"
-                                    width="100px" height="80px"/></a>
-                            <a onclick="setDesktopBG('images/background/b5.jpg');"><img
-                                    srcset="images/background/b5.jpg" src="images/background/b5.jpg"
-                                    width="100px" height="80px"/></a>
-                            <a onclick="setDesktopBG('images/background/b6.jpg');"><img
-                                    srcset="images/background/b6.jpg" src="images/background/b6.jpg"
-                                    width="100px" height="80px"/></a>
-                            <a onclick="setDesktopBG('images/background/b7.jpeg');"><img
-                                    srcset="images/background/b7.jpeg" src="images/background/b7.jpeg"
-                                    width="100px" height="80px"/></a>
-                            <a onclick="setDesktopBG('images/background/b2.png');"><img
-                                    srcset="images/background/b2.png" src="images/background/b2.png"
-                                    width="100px" height="80px"/></a>
-                            <a onclick="setDesktopBG('images/background/b3.png');"><img
-                                    srcset="images/background/b3.png" src="images/background/b3.png"
-                                    width="100px" height="80px"/></a>
-                            <a onclick="setDesktopBG('images/background/b1.jpg');"><img
-                                    srcset="images/background/b1.jpg" src="images/background/b1.jpg"
-                                    width="100px" height="80px"/></a>
-                            <a onclick="setDesktopBG('images/background/b4.jpg');"><img
-                                    srcset="images/background/b4.jpg" src="images/background/b4.jpg"
-                                    width="100px" height="80px"/></a>
-                            <a onclick="setDesktopBG('images/background/b5.jpg');"><img
-                                    srcset="images/background/b5.jpg" src="images/background/b5.jpg"
-                                    width="100px" height="80px"/></a>
-                            <a onclick="setDesktopBG('images/background/b6.jpg');"><img
-                                    srcset="images/background/b6.jpg" src="images/background/b6.jpg"
-                                    width="100px" height="80px"/></a>
-                            <a onclick="setDesktopBG('images/background/b7.jpeg');"><img
-                                    srcset="images/background/b7.jpeg" src="images/background/b7.jpeg"
-                                    width="100px" height="80px"/></a>
-                        </div>
+                    <link type="text/css" rel="stylesheet" href="css/magicscroll.css"/>
+                    <script type="text/javascript" src="js/magicscroll.js"></script>
+                    <div class="MagicScroll" data-options="min-height: 146;  mode: carousel; draggable: true;"
+                         style="width:100%; top: -20px; z-index: 20; float:left">
+                        <a onclick="setDesktopBG('images/background/b2.png');"><img
+                                srcset="images/background/b2.png" src="images/background/b2.png"
+                                width="100px" height="80px"/></a>
+                        <a onclick="setDesktopBG('images/background/b3.png');"><img
+                                srcset="images/background/b3.png" src="images/background/b3.png"
+                                width="100px" height="80px"/></a>
+                        <a onclick="setDesktopBG('images/background/b1.jpg');"><img
+                                srcset="images/background/b1.jpg" src="images/background/b1.jpg"
+                                width="100px" height="80px"/></a>
+                        <a onclick="setDesktopBG('images/background/b4.jpg');"><img
+                                srcset="images/background/b4.jpg" src="images/background/b4.jpg"
+                                width="100px" height="80px"/></a>
+                        <a onclick="setDesktopBG('images/background/b5.jpg');"><img
+                                srcset="images/background/b5.jpg" src="images/background/b5.jpg"
+                                width="100px" height="80px"/></a>
+                        <a onclick="setDesktopBG('images/background/b6.jpg');"><img
+                                srcset="images/background/b6.jpg" src="images/background/b6.jpg"
+                                width="100px" height="80px"/></a>
+                        <a onclick="setDesktopBG('images/background/b7.jpeg');"><img
+                                srcset="images/background/b7.jpeg" src="images/background/b7.jpeg"
+                                width="100px" height="80px"/></a>
+                        <a onclick="setDesktopBG('images/background/b2.png');"><img
+                                srcset="images/background/b2.png" src="images/background/b2.png"
+                                width="100px" height="80px"/></a>
+                        <a onclick="setDesktopBG('images/background/b3.png');"><img
+                                srcset="images/background/b3.png" src="images/background/b3.png"
+                                width="100px" height="80px"/></a>
+                        <a onclick="setDesktopBG('images/background/b1.jpg');"><img
+                                srcset="images/background/b1.jpg" src="images/background/b1.jpg"
+                                width="100px" height="80px"/></a>
+                        <a onclick="setDesktopBG('images/background/b4.jpg');"><img
+                                srcset="images/background/b4.jpg" src="images/background/b4.jpg"
+                                width="100px" height="80px"/></a>
+                        <a onclick="setDesktopBG('images/background/b5.jpg');"><img
+                                srcset="images/background/b5.jpg" src="images/background/b5.jpg"
+                                width="100px" height="80px"/></a>
+                        <a onclick="setDesktopBG('images/background/b6.jpg');"><img
+                                srcset="images/background/b6.jpg" src="images/background/b6.jpg"
+                                width="100px" height="80px"/></a>
+                        <a onclick="setDesktopBG('images/background/b7.jpeg');"><img
+                                srcset="images/background/b7.jpeg" src="images/background/b7.jpeg"
+                                width="100px" height="80px"/></a>
                     </div>
                     <!-- End Carousel -->
                 </div>
-                <div class="desc mt-2">
-                    Digital mockup only; colours may appear differently in real life. See <u><a
-                        href="images/photos/goldenyellow.jpg" data-lightbox="goldenyellow"></a></u> signs.
+                <div class="desc">
+                    <p>Digital mockup only; colours may appear differently in real life. See <u><a
+                            href="images/photos/goldenyellow.jpg" data-lightbox="goldenyellow"></a></u> signs.</p>
                 </div>
+
                 <div class="row p-3 justify-content-between">
                     <div class="info-box" onclick="openQuote()">
                         I need Help - Get Quote
                     </div>
                     <div class="info-box" onclick="openUpload()">
-                        Upload an image or Logo
+                        Upload an image
+                    </div>
+                    <div class="info-box">
+                        <a style="color: #1e1e1e" href="https://neons.com/pages/contact-us">Contact Us</a>
                     </div>
                 </div>
                 <div class="quote" id="send-quote">
@@ -609,10 +626,10 @@
                 </button>
             </div>
         </div>
-<!--        all user selections-->
-            <select style="display: none" name="product" id="variant" class="variant">
-                <option value="">test1</option>
-            </select>
+        <!--        all user selections-->
+        <select style="display: none" name="product" id="variant" class="variant">
+            <option value="">test1</option>
+        </select>
     </div>
     <script>
         function setDesktopBG(bg) {

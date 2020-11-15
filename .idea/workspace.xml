@@ -21,59 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="34e2fa6b-206e-4a2f-aba6-4cd322ed47ef" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/custom.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/custompage.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/entypo.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/jquery-ui.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/lightbox.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/neons.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/tabs.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/OneToFive.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/b1.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/b2.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/b3.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/b4.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/b5.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/b6.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/b8.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/b9.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/back1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/back2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/back3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/back4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/back5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/back6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/back7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/centeron.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/close.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/customneonlogoWhite.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/download.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/facebook.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/goldenyellow.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/iconadapter.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/icondesign.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/iconinstall.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/iconpower.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/iconremote.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/iconshipping.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/iconstrong.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/instagram.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/leftoff.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/lightning.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/loading.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/next.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/off_new.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/payment-icon-n.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/pink (1).jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/pink.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/pinterest.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/prev.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/rightoff.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/searchicon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/warm white.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/warranty.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -178,7 +127,8 @@
       <workItem from="1605089811972" duration="10114000" />
       <workItem from="1605102359850" duration="3986000" />
       <workItem from="1605159179982" duration="22013000" />
-      <workItem from="1605335017977" duration="30823000" />
+      <workItem from="1605335017977" duration="32347000" />
+      <workItem from="1605417766716" duration="7729000" />
     </task>
     <servers />
   </component>
@@ -198,10 +148,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="421" y="205" width="598" height="548" key="find.popup" timestamp="1605370934287">
+    <state x="421" y="205" width="598" height="548" key="find.popup" timestamp="1605423678120">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="421" y="205" width="598" height="548" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1605370934287" />
+    <state x="421" y="205" width="598" height="548" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1605423678120" />
     <state x="385" y="210" key="run.anything.popup" timestamp="1605382853550">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -232,19 +182,17 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/public/main.js</url>
-          <line>162</line>
+          <line>167</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/public/main.js</url>
           <line>50</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/public/main.js</url>
           <line>85</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
