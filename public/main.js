@@ -1,5 +1,9 @@
+let defaultColor = '#FF0107';
+let defaultNeon = "0 0 5px #fff, 0 0 10px #fff, 0 0 20px #FF0000, 0 0 30px #FF0000, 0 0 40px #FF0000, 0 0 55px #FF0000, 0 0 75px #FF0000";
+let offShadow = "0px 0px 0 rgb(243,-12,0), 0px 1px 0 rgb(230,-25,0), 0px 2px 0 rgb(218,-37,0), 0px 3px 0 rgb(205,-50,0), 0px 4px 0 rgb(193,-62,0), 0px 5px 4px rgba(0,0,0,1), 0px 5px 1px rgba(0,0,0,0.5), 0px 0px 4px rgba(0,0,0,.2)";
 window.onload = function () {
     let i, tabContent;
+    localStorage.clear();
     tabContent = document.getElementsByClassName("tabContent");
     for (i = 0; i < tabContent.length; i++) {
         if (i === 0) {
@@ -18,8 +22,7 @@ window.onload = function () {
     displayText.innerHTML = '<p>Your Text</p>';
     displayTextMobile.innerHTML = '<p>Your Text</p>';
     let textInput = document.getElementById("textInput");
-    document.getElementById('descr').innerHTML = '<p>Bright, eye-catching neon Pink remains an extremely ' +
-        'popular choice. The tube is white when off.</p>';
+    document.getElementById('descr').innerHTML = '<p>A deep bright red. The tube is red when off.</p>';
     document.getElementById('count').value = 1;
     document.getElementById('select-size').value = 'SMALL';
     document.getElementById('select-colours').value = 'Single Colour';
@@ -97,7 +100,7 @@ let colorImages = [
     {
         id: "Lemon Yellow",
         url: '/images/color_images/lemonyellow.jpeg',
-        desc: 'Lemon Yellow is a very bright, eye-catching yellow. The tube is yellow when off.'
+        desc: 'Lemon Yellow is a very bright yellow, like a lemon! The tube is yellow when off.'
     },
     {
         id: 'Yellow',
@@ -112,33 +115,37 @@ let colorImages = [
     {
         id: 'Girl Pink',
         url: '/images/color_images/girl_pink.jpg',
-        desc: 'Bright, eye-catching neon Pink remains an extremely popular choice. The tube is white when off.'
+        desc: 'A lighter pink. The tube is pink when off.'
     },
     {
         id: 'Pink',
         url: '/images/color_images/pink.jpg',
-        desc: 'Bright, eye-catching neon Pink remains an extremely popular choice. The tube is white when off.'
+        desc: 'Bright, eye-catching neon Pink is a very popular choice! The tube is pink when off.'
     },
     {
         id: 'Orange',
         url: '/images/color_images/orange.jpg',
-        desc: 'A bright, eye-catching orange. The tube is orange when off.'
+        desc: 'A bright luminous orange. The tube is orange when off.'
     },
     {
         id: 'Green',
         url: '/images/color_images/green.jpg',
-        desc: 'A great-looking, very bright green. The tube is white when off.'
+        desc: 'A bright green. The tube is green when off.'
     },
     {
         id: 'Ice Blue',
         url: '/images/color_images/iceblue.png',
-        desc: 'A very bright, eye-catching blue. The tube is white when off.\n'
+        desc: 'A bright light blue. The tube is ice blue when off.'
     },
-    {id: 'Red', url: '/images/color_images/red.jpg', desc: 'A gorgeous \'Candy Apple\' red. The tube is red when off.'},
+    {
+        id: 'Red',
+        url: '/images/color_images/red.jpg',
+        desc: 'A deep bright red. The tube is red when off.'
+    },
     {
         id: 'Blue Green',
         url: '/images/color_images/blue_green.jpg',
-        desc: 'A very bright, eye-catching blue. The tube is white when off.'
+        desc: 'A bright blue green. The tube is blue green when off.'
     },
     {
         id: 'Deep Pink',
@@ -148,22 +155,20 @@ let colorImages = [
     {
         id: 'Purple',
         url: '/images/color_images/purple.jpeg',
-        desc: 'A popular stylish purple. The tube is white when off.'
+        desc: 'A very popular stylish purple. The tube is purple when off.'
     },
     {
         id: 'Warm White',
         url: '/images/color_images/warm_white.jpeg',
-        desc: 'Warm white is a very popular natural-feeling white. The tube is white when off. '
+        desc: 'Warm white is a very popular natural-feeling white. The tube is white when off.'
     },
     {
         id: 'White',
         url: '/images/color_images/white.jpeg',
-        desc: 'White is a cooler, brighter white. The tube is white when off.'
+        desc: 'A cooler brighter white. The tube is white when off.'
     },
 
 ];
-let defaultNeon = "0 0 5px #fff, 0 0 10px #fff, 0 0 20px #98ff98, 0 0 30px #98ff98, 0 0 40px #98ff98, 0 0 55px #98ff98, 0 0 75px #98ff98";
-let defaultColor = '#98ff98';
 
 function openTab(evt, actionName) {
     let i, tabContent, tabLink;
@@ -228,55 +233,50 @@ function searchVariants(nameKey, myArray) {
 function setColor(id, color) {
     let textColor, color_string, trans;
     let arrayOfIds = ['lemon', 'yellow', 'girl_pink', 'pink', 'purple', 'white',
-        'orange', 'green', 'ice_blue', 'red', 'deep_pink', 'blue', 'blue_green'];
+        'orange', 'green', 'ice_blue', 'red', 'blue', 'blue_green'];
     for (let i = 0; i < arrayOfIds.length; i++) {
         document.getElementById(arrayOfIds[i]).style.textShadow = 'none';
     }
     switch (color) {
         case 'Yellow':
-            textColor = "#FFFF00";
-            color_string = "0 0 5px #fff, 0 0 10px #fff, 0 0 20px #FFFF00, 0 0 30px #FFFF00, 0 0 40px #FFFF00, 0 0 55px #FFFF00, 0 0 75px #FFFF00";
-            trans = "0px 0px 0 rgb(243,243,0),0px 1px 0 rgb(230,230,0),0px 2px 0 rgb(218,218,0),0px 3px 0 rgb(205,205,0),0px 4px  0 rgb(193,193,0),0px 5px 4px rgba(0,0,0,1),0px 5px 1px rgba(0,0,0,0.5),0px 0px 4px rgba(0,0,0,.2)";
+            textColor = "#FFD533";
+            color_string = "0 0 5px #fff, 0 0 10px #fff, 0 0 20px #FFD533, 0 0 30px #FFD533, 0 0 40px #FFD533, 0 0 55px #FFD533, 0 0 75px #FFD533";
+            trans = "0px 0px 0 rgb(231,190,27), 1px 1px 0 rgb(207,166,3), 2px 2px 0 rgb(183,142,0), 3px 3px 0 rgb(159,118,0), 4px 4px 3px rgba(0,0,0,0.6), 4px 4px 1px rgba(0,0,0,0.5), 0px 0px 3px rgba(0,0,0,.2)";
             break;
         case 'Girl Pink':
-            textColor = "#f8b9d4";
-            color_string = "0 0 5px #fff, 0 0 10px #fff, 0 0 20px #f8b9d4, 0 0 30px #f8b9d4, 0 0 40px #f8b9d4, 0 0 55px #f8b9d4, 0 0 75px #f8b9d4";
-            trans = "0px 0px 0 rgb(236,173,200), 0px 1px 0 rgb(223,160,187), 0px 2px 0 rgb(211,148,175), 0px 3px 0 rgb(198,135,162), 0px 4px 0 rgb(186,123,150), 0px 5px 4px rgba(0,0,0,1), 0px 5px 1px rgba(0,0,0,0.5), 0px 0px 4px rgba(0,0,0,.2)";
+            textColor = "#FF46D0";
+            color_string = "0 0 5px #fff, 0 0 10px #fff, 0 0 20px #FF46D0, 0 0 30px #FF46D0, 0 0 40px #FF46D0, 0 0 55px #FF46D0, 0 0 75px #FF46D0";
+            trans = "0px 0px 0 rgb(231,46,185), 1px 1px 0 rgb(207,22,161), 2px 2px 0 rgb(183,-2,137), 3px 3px 0 rgb(159,-26,113), 4px 4px 3px rgba(0,0,0,0.6), 4px 4px 1px rgba(0,0,0,0.5), 0px 0px 3px rgba(0,0,0,.2)";
             break;
         case 'Pink':
-            textColor = "#FFC0CB";
-            color_string = "0 0 5px #fff, 0 0 10px #fff, 0 0 20px #FFC0CB, 0 0 30px #FFC0CB, 0 0 40px #FFC0CB, 0 0 55px #FFC0CB, 0 0 75px #FFC0CB";
-            trans = "0px 0px 0 rgb(243,180,191), 0px 1px 0 rgb(230,167,178), 0px 2px 0 rgb(218,155,166), 0px 3px 0 rgb(205,142,153), 0px 4px 0 rgb(193,130,141), 0px 5px 4px rgba(0,0,0,1), 0px 5px 1px rgba(0,0,0,0.5), 0px 0px 4px rgba(0,0,0,.2)";
+            textColor = "#FF01C5";
+            color_string = "0 0 5px #fff, 0 0 10px #fff, 0 0 20px #FF01C5, 0 0 30px #FF01C5, 0 0 40px #FF01C5, 0 0 55px #FF01C5, 0 0 75px #FF01C5";
+            trans = "0px 0px 0 rgb(231,-23,172), 1px 1px 0 rgb(207,-47,148), 2px 2px 0 rgb(183,-71,124), 3px 3px 0 rgb(159,-95,100), 4px 4px 3px rgba(0,0,0,0.6), 4px 4px 1px rgba(0,0,0,0.5), 0px 0px 3px rgba(0,0,0,.2)";
             break;
         case 'Lemon Yellow':
-            textColor = "#f3f111";
-            color_string = "0 0 5px #fff, 0 0 10px #fff, 0 0 20px #f3f111, 0 0 30px #f3f111, 0 0 40px #f3f111, 0 0 55px #f3f111, 0 0 75px #f3f111";
-            trans = "0px 0px 0 rgb(231,227,5), 0px 1px 0 rgb(218,214,0), 0px 2px 0 rgb(206,202,0), 0px 3px 0 rgb(193,189,0), 0px 4px 0 rgb(181,177,0), 0px 5px 4px rgba(0,0,0,1), 0px 5px 1px rgba(0,0,0,0.5), 0px 0px 4px rgba(0,0,0,.2)";
+            textColor = "#F5FD02";
+            color_string = "0 0 5px #fff, 0 0 10px #fff, 0 0 20px #F5FD02, 0 0 30px #F5FD02, 0 0 40px #F5FD02, 0 0 55px #F5FD02, 0 0 75px #F5FD02";
+            trans = "0px 0px 0 rgb(221,229,0), 1px 1px 0 rgb(197,205,0), 2px 2px 0 rgb(173,181,0), 3px 3px 0 rgb(149,157,0), 4px 4px 3px rgba(0,0,0,0.6), 4px 4px 1px rgba(0,0,0,0.5), 0px 0px 3px rgba(0,0,0,.2)";
             break;
         case 'Blue':
-            textColor = "#0000FF";
-            color_string = "0 0 5px #fff, 0 0 10px #fff, 0 0 20px #0000FF, 0 0 30px #0000FF, 0 0 40px #0000FF, 0 0 55px #0000FF, 0 0 75px #0000FF";
-            trans = "0px 0px 0 rgb(-12,-12,243), 0px 1px 0 rgb(-25,-25,230), 0px 2px 0 rgb(-37,-37,218), 0px 3px 0 rgb(-50,-50,205), 0px 4px 0 rgb(-62,-62,193), 0px 5px 4px rgba(0,0,0,1), 0px 5px 1px rgba(0,0,0,0.5), 0px 0px 4px rgba(0,0,0,.2)";
+            textColor = "#0423FD";
+            color_string = "0 0 5px #fff, 0 0 10px #fff, 0 0 20px #0423FD, 0 0 30px #0423FD, 0 0 40px #0423FD, 0 0 55px #0423FD, 0 0 75px #0423FD";
+            trans = "0px 0px 0 rgb(-20,9,229), 1px 1px 0 rgb(-44,-15,205), 2px 2px 0 rgb(-68,-39,181), 3px 3px 0 rgb(-92,-63,157), 4px 4px 3px rgba(0,0,0,0.6), 4px 4px 1px rgba(0,0,0,0.5), 0px 0px 3px rgba(0,0,0,.2)";
             break;
         case 'Blue Green':
-            textColor = "#0d98ba";
-            color_string = "0 0 5px #fff, 0 0 10px #fff, 0 0 20px #0d98ba, 0 0 30px #0d98ba, 0 0 40px #0d98ba, 0 0 55px #0d98ba, 0 0 75px #0d98ba";
-            trans = "0px 0px 0 rgb(1,139,174), 0px 1px 0 rgb(-12,126,161), 0px 2px 0 rgb(-24,114,149), 0px 3px 0 rgb(-37,101,136), 0px 4px 0 rgb(-49,89,124), 0px 5px 4px rgba(0,0,0,1), 0px 5px 1px rgba(0,0,0,0.5), 0px 0px 4px rgba(0,0,0,.2)";
-            break;
-        case 'Golden Yellow':
-            textColor = "#FFDF00";
-            color_string = "0 0 5px #fff, 0 0 10px #fff, 0 0 20px #FFDF00, 0 0 30px #FFDF00, 0 0 40px #FFDF00, 0 0 55px #FFDF00, 0 0 75px #FFDF00";
-            trans = "0px 0px 0 rgb(243,209,0), 0px 1px 0 rgb(230,196,0), 0px 2px 0 rgb(218,184,0), 0px 3px 0 rgb(205,171,0), 0px 4px 0 rgb(193,159,0), 0px 5px 4px rgba(0,0,0,1), 0px 5px 1px rgba(0,0,0,0.5), 0px 0px 4px rgba(0,0,0,.2)";
+            textColor = "#72F5C2";
+            color_string = "0 0 5px #fff, 0 0 10px #fff, 0 0 20px #72F5C2, 0 0 30px #72F5C2, 0 0 40px #72F5C2, 0 0 55px #72F5C2, 0 0 75px #72F5C2";
+            trans = "0px 0px 0 rgb(90,221,171), 1px 1px 0 rgb(66,197,147), 2px 2px 0 rgb(42,173,123), 3px 3px 0 rgb(18,149,99), 4px 4px 3px rgba(0,0,0,0.6), 4px 4px 1px rgba(0,0,0,0.5), 0px 0px 3px rgba(0,0,0,.2)";
             break;
         case 'Orange':
-            textColor = "#FFA500";
-            color_string = "0 0 5px #fff, 0 0 10px #fff, 0 0 20px #FFA500, 0 0 30px #FFA500, 0 0 40px #FFA500, 0 0 55px #FFA500, 0 0 75px #FFA500";
-            trans = "0px 0px 0 rgb(243,154,0), 0px 1px 0 rgb(230,141,0), 0px 2px 0 rgb(218,129,0), 0px 3px 0 rgb(205,116,0), 0px 4px 0 rgb(193,104,0), 0px 5px 4px rgba(0,0,0,1), 0px 5px 1px rgba(0,0,0,0.5), 0px 0px 4px rgba(0,0,0,.2)";
+            textColor = "#FA9228";
+            color_string = "0 0 5px #fff, 0 0 10px #fff, 0 0 20px #FA9228, 0 0 30px #FA9228, 0 0 40px #FA9228, 0 0 55px #FA9228, 0 0 75px #FA9228";
+            trans = "0px 0px 0 rgb(226,121,16), 1px 1px 0 rgb(202,97,0), 2px 2px 0 rgb(178,73,0), 3px 3px 0 rgb(154,49,0), 4px 4px 3px rgba(0,0,0,0.6), 4px 4px 1px rgba(0,0,0,0.5), 0px 0px 3px rgba(0,0,0,.2)";
             break;
         case 'Red':
-            textColor = "#FF0000";
-            color_string = "0 0 5px #fff, 0 0 10px #fff, 0 0 20px #FF0000, 0 0 30px #FF0000, 0 0 40px #FF0000, 0 0 55px #FF0000, 0 0 75px #FF0000";
-            trans = "0px 0px 0 rgb(243,-12,0), 0px 1px 0 rgb(230,-25,0), 0px 2px 0 rgb(218,-37,0), 0px 3px 0 rgb(205,-50,0), 0px 4px 0 rgb(193,-62,0), 0px 5px 4px rgba(0,0,0,1), 0px 5px 1px rgba(0,0,0,0.5), 0px 0px 4px rgba(0,0,0,.2)";
+            textColor = "#FF0107";
+            color_string = "0 0 5px #fff, 0 0 10px #fff, 0 0 20px #FF0107, 0 0 30px #FF0107, 0 0 40px #FF0107, 0 0 55px #FF0107, 0 0 75px #FF0107";
+            trans = "0px 0px 0 rgb(231,-23,0), 1px 1px 0 rgb(207,-47,0), 2px 2px 0 rgb(183,-71,0), 3px 3px 0 rgb(159,-95,0), 4px 4px 3px rgba(0,0,0,0.6), 4px 4px 1px rgba(0,0,0,0.5), 0px 0px 3px rgba(0,0,0,.2)";
             break;
         case 'Deep Blue':
             textColor = "#00BFFF";
@@ -309,9 +309,9 @@ function setColor(id, color) {
             trans = "0px 0px 0 rgb(243,192,191), 0px 1px 0 rgb(230,179,178), 0px 2px 0 rgb(218,167,166), 0px 3px 0 rgb(205,154,153), 0px 4px 0 rgb(193,142,141), 0px 5px 4px rgba(0,0,0,1), 0px 5px 1px rgba(0,0,0,0.5), 0px 0px 4px rgba(0,0,0,.2)";
             break;
         case 'Purple':
-            textColor = "#800080";
-            color_string = "0 0 5px #fff, 0 0 10px #fff, 0 0 20px #800080, 0 0 30px #800080, 0 0 40px #800080, 0 0 55px #800080, 0 0 75px #800080";
-            trans = "0px 0px 0 rgb(116,-12,116), 0px 1px 0 rgb(103,-25,103), 0px 2px 0 rgb(91,-37,91), 0px 3px 0 rgb(78,-50,78), 0px 4px 0 rgb(66,-62,66), 0px 5px 4px rgba(0,0,0,1), 0px 5px 1px rgba(0,0,0,0.5), 0px 0px 4px rgba(0,0,0,.2)";
+            textColor = "#9100D8";
+            color_string = "0 0 5px #fff, 0 0 10px #fff, 0 0 20px #9100D8, 0 0 30px #9100D8, 0 0 40px #9100D8, 0 0 55px #9100D8, 0 0 75px #9100D8";
+            trans = "0px 0px 0 rgb(120,-24,192), 1px 1px 0 rgb(96,-48,168), 2px 2px 0 rgb(72,-72,144), 3px 3px 0 rgb(48,-96,120), 4px 4px 3px rgba(0,0,0,0.6), 4px 4px 1px rgba(0,0,0,0.5), 0px 0px 3px rgba(0,0,0,.2)";
             break;
         case 'Electric Blue':
             textColor = "#7DF9FF";
@@ -319,19 +319,19 @@ function setColor(id, color) {
             trans = "0px 0px 0 rgb(113,237,243), 0px 1px 0 rgb(100,224,230), 0px 2px 0 rgb(88,212,218), 0px 3px 0 rgb(75,199,205), 0px 4px 0 rgb(63,187,193), 0px 5px 4px rgba(0,0,0,1), 0px 5px 1px rgba(0,0,0,0.5), 0px 0px 4px rgba(0,0,0,.2)";
             break;
         case 'Ice Blue':
-            textColor = "#A5F2F3";
-            color_string = "0 0 5px #fff, 0 0 10px #fff, 0 0 20px #A5F2F3, 0 0 30px #A5F2F3, 0 0 40px #A5F2F3, 0 0 55px #A5F2F3, 0 0 75px #A5F2F3";
-            trans = "0px 0px 0 rgb(153,230,231), 0px 1px 0 rgb(140,217,218), 0px 2px 0 rgb(128,205,206), 0px 3px 0 rgb(115,192,193), 0px 4px 0 rgb(103,180,181), 0px 5px 4px rgba(0,0,0,1), 0px 5px 1px rgba(0,0,0,0.5), 0px 0px 4px rgba(0,0,0,.2)";
+            textColor = "#16F0FD";
+            color_string = "0 0 5px #fff, 0 0 10px #fff, 0 0 20px #16F0FD, 0 0 30px #16F0FD, 0 0 40px #16F0FD, 0 0 55px #16F0FD, 0 0 75px #16F0FD";
+            trans = "0px 0px 0 rgb(-2,217,229), 1px 1px 0 rgb(-26,193,205), 2px 2px 0 rgb(-50,169,181), 3px 3px 0 rgb(-74,145,157), 4px 4px 3px rgba(0,0,0,0.6), 4px 4px 1px rgba(0,0,0,0.5), 0px 0px 3px rgba(0,0,0,.2)";
             break;
         case 'Green':
-            textColor = "#008000";
-            color_string = "0 0 5px #fff, 0 0 10px #fff, 0 0 20px #008000, 0 0 30px #008000, 0 0 40px #008000, 0 0 55px #008000, 0 0 75px #008000";
-            trans = "0px 0px 0 rgb(-12,116,0), 0px 1px 0 rgb(-25,103,0), 0px 2px 0 rgb(-37,91,0), 0px 3px 0 rgb(-50,78,0), 0px 4px 0 rgb(-62,66,0), 0px 5px 4px rgba(0,0,0,1), 0px 5px 1px rgba(0,0,0,0.5), 0px 0px 4px rgba(0,0,0,.2)";
+            textColor = "#14F43E";
+            color_string = "0 0 5px #fff, 0 0 10px #fff, 0 0 20px #14F43E, 0 0 30px #14F43E, 0 0 40px #14F43E, 0 0 55px #14F43E, 0 0 75px #14F43E";
+            trans = "0px 0px 0 rgb(-4,220,37), 1px 1px 0 rgb(-28,196,13), 2px 2px 0 rgb(-52,172,0), 3px 3px 0 rgb(-76,148,0), 4px 4px 3px rgba(0,0,0,0.6), 4px 4px 1px rgba(0,0,0,0.5), 0px 0px 3px rgba(0,0,0,.2)";
             break;
         case 'Warm White':
-            textColor = "#FFFFFF";
-            color_string = "0 0 5px #fff, 0 0 10px #fff, 0 0 20px #efebd8, 0 0 30px #efebd8, 0 0 40px #efebd8, 0 0 55px #efebd8, 0 0 75px #efebd8";
-            trans = "0px 0px 0 rgb(227,223,204), 0px 1px 0 rgb(214,210,191), 0px 2px 0 rgb(202,198,179), 0px 3px 0 rgb(189,185,166), 0px 4px 0 rgb(177,173,154), 0px 5px 4px rgba(0,0,0,1), 0px 5px 1px rgba(0,0,0,0.5), 0px 0px 4px rgba(0,0,0,.2)";
+            textColor = "#FFEB24";
+            color_string = "0 0 5px #fff, 0 0 10px #fff, 0 0 20px #FFEB24, 0 0 30px #FFEB24, 0 0 40px #FFEB24, 0 0 55px #FFEB24, 0 0 75px #FFEB24";
+            trans = "0px 0px 0 rgb(231,213,12), 1px 1px 0 rgb(207,189,0), 2px 2px 0 rgb(183,165,0), 3px 3px 0 rgb(159,141,0), 4px 4px 3px rgba(0,0,0,0.6), 4px 4px 1px rgba(0,0,0,0.5), 0px 0px 3px rgba(0,0,0,.2)";
             break;
         case 'White':
             textColor = "#ffffff";
@@ -474,10 +474,10 @@ function toggleTextShadow(state) {
             document.getElementById('displayTextMobile').style.color = colorCode;
             document.getElementById('displayTextMobile').style.textShadow = trans;
         } else {
+            document.getElementById('displayText').style.textShadow = offShadow;
             document.getElementById('displayText').style.color = defaultColor;
-            document.getElementById('displayText').style.textShadow = 'none';
             document.getElementById('displayTextMobile').style.color = defaultColor;
-            document.getElementById('displayTextMobile').style.textShadow = 'none';
+            document.getElementById('displayTextMobile').style.textShadow = offShadow;
         }
 
     }
