@@ -329,9 +329,10 @@ function setColor(id, color) {
             trans = "0px 0px 0 rgb(-4,220,37), 1px 1px 0 rgb(-28,196,13), 2px 2px 0 rgb(-52,172,0), 3px 3px 0 rgb(-76,148,0), 4px 4px 3px rgba(0,0,0,0.6), 4px 4px 1px rgba(0,0,0,0.5), 0px 0px 3px rgba(0,0,0,.2)";
             break;
         case 'Warm White':
-            textColor = "#FFEB24";
+            textColor = "#ffffff";
             color_string = "0 0 5px #fff, 0 0 10px #fff, 0 0 20px #FFEB24, 0 0 30px #FFEB24, 0 0 40px #FFEB24, 0 0 55px #FFEB24, 0 0 75px #FFEB24";
-            trans = "0px 0px 0 rgb(231,213,12), 1px 1px 0 rgb(207,189,0), 2px 2px 0 rgb(183,165,0), 3px 3px 0 rgb(159,141,0), 4px 4px 3px rgba(0,0,0,0.6), 4px 4px 1px rgba(0,0,0,0.5), 0px 0px 3px rgba(0,0,0,.2)";
+            trans = "0px 0px 0 rgb(243,243,243), 0px 1px 0 rgb(230,230,230), 0px 2px 0 rgb(218,218,218), 0px 3px 0 rgb(205,205,205), 0px 4px 0 rgb(193,193,193), 0px 5px 4px rgba(0,0,0,1), 0px 5px 1px rgba(0,0,0,0.5), 0px 0px 4px rgba(0,0,0,.2)";
+            // trans = "0px 0px 0 rgb(231,213,12), 1px 1px 0 rgb(207,189,0), 2px 2px 0 rgb(183,165,0), 3px 3px 0 rgb(159,141,0), 4px 4px 3px rgba(0,0,0,0.6), 4px 4px 1px rgba(0,0,0,0.5), 0px 0px 3px rgba(0,0,0,.2)";
             break;
         case 'White':
             textColor = "#ffffff";

@@ -502,7 +502,7 @@
 
 .mytext {
     top: 17%;
-    font-size: 6rem !important;
+    font-size: 73px;
     font-variant-ligatures: no-common-ligatures;
     -moz-font-feature-settings: liga 0, clig 0;
     -webkit-font-feature-settings: liga 0, clig 0;
@@ -513,6 +513,7 @@
     -ms-transition:text-shadow 0.5s ease;
     -o-transition:text-shadow 0.5s ease;
     transition:text-shadow 0.5s ease;
+    white-space: normal;
 }
 
 .myFont {
